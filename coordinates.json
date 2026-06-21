@@ -1,0 +1,4570 @@
+{
+  "apostolic_church_in_jesus_name_ashland": {
+    "lat": 46.5939242,
+    "lng": -68.3872117
+  },
+  "aroostook_valley_health_center_ashland": {
+    "lat": 46.6281757,
+    "lng": -68.3918719
+  },
+  "art_s_appliance_furniture_ashland": {
+    "lat": 46.6314,
+    "lng": -68.405
+  },
+  "ashland_1_stop_citgo_ashland": {
+    "lat": 46.6269228,
+    "lng": -68.402356
+  },
+  "ashland_advent_christian_church_ashland": {
+    "lat": 46.6312022,
+    "lng": -68.4015347
+  },
+  "ashland_building_supply_ashland": {
+    "lat": 46.6318605,
+    "lng": -68.4041443
+  },
+  "ashland_community_center_ashland": {
+    "lat": 46.630763,
+    "lng": -68.410052
+  },
+  "ashland_community_library_ashland": {
+    "lat": 46.6305812,
+    "lng": -68.4007285
+  },
+  "ashland_drug_store_ashland": {
+    "lat": 46.626925,
+    "lng": -68.3985825
+  },
+  "ashland_family_pharmacy_ashland": {
+    "lat": 46.6292006,
+    "lng": -68.4030036
+  },
+  "ashland_food_mart_ashland": {
+    "lat": 46.6271197,
+    "lng": -68.3890363
+  },
+  "ashland_health_center_ashland": {
+    "lat": 46.6291273,
+    "lng": -68.4029701
+  },
+  "ashland_historical_society_ashland": {
+    "lat": 46.6294736,
+    "lng": -68.4031244
+  },
+  "ashland_recreation_ashland": {
+    "lat": 46.630763,
+    "lng": -68.409856
+  },
+  "ashland_schools_ashland": {
+    "lat": 46.630763,
+    "lng": -68.410248
+  },
+  "ashland_town_office_ashland": {
+    "lat": 46.630763,
+    "lng": -68.40966
+  },
+  "ashland_union_congregational_church_ucc_ashland": {
+    "lat": 46.6324472,
+    "lng": -68.4046629
+  },
+  "ashland_s_diner_ashland": {
+    "lat": 46.630799416806,
+    "lng": -68.402812891429
+  },
+  "burby_repair_llc_ashland": {
+    "lat": 46.6292016,
+    "lng": -68.4028117
+  },
+  "carquest_auto_parts_ashland": {
+    "lat": 46.6304261,
+    "lng": -68.4041527
+  },
+  "daigle_oil_co_ashland": {
+    "lat": 46.6285712,
+    "lng": -68.4028929
+  },
+  "family_dollar_ashland": {
+    "lat": 46.6269176,
+    "lng": -68.39137
+  },
+  "freem_s_bar_and_grill_ashland": {
+    "lat": 46.6279417,
+    "lng": -68.402572
+  },
+  "gateway_trading_post_inc_ashland": {
+    "lat": 46.6314558,
+    "lng": -68.430302
+  },
+  "katahdin_trust_company_ashland": {
+    "lat": 46.6301213,
+    "lng": -68.4038958
+  },
+  "northeast_pellets_ashland": {
+    "lat": 46.631368412508,
+    "lng": -68.431672447473
+  },
+  "northwoods_diner_old_post_cafe_ashland": {
+    "lat": 46.6277169,
+    "lng": -68.4026027
+  },
+  "old_post_cafe_ashland": {
+    "lat": 46.6277169,
+    "lng": -68.4026027
+  },
+  "prentiss_carlisle_ashland": {
+    "lat": 46.606864108785,
+    "lng": -68.395546438392
+  },
+  "qwik_stop_ii_ashland": {
+    "lat": 46.629957,
+    "lng": -68.4141664
+  },
+  "st_mark_catholic_church_ashland": {
+    "lat": 46.6351024,
+    "lng": -68.4031984
+  },
+  "stimson_ouellette_funeral_home_ashland": {
+    "lat": 46.630948372638,
+    "lng": -68.398196060535
+  },
+  "usps_ashland_post_office_ashland": {
+    "lat": 46.63125,
+    "lng": -68.4046858
+  },
+  "aim_recycling_caribou_caribou": {
+    "lat": 46.8636913,
+    "lng": -67.9975433
+  },
+  "advance_auto_parts_caribou": {
+    "lat": 46.8501917,
+    "lng": -68.0103944
+  },
+  "affordable_finds_caribou": {
+    "lat": 46.8606129,
+    "lng": -68.0158812
+  },
+  "aroostook_savings_loan_caribou": {
+    "lat": 46.8603596,
+    "lng": -68.0106998
+  },
+  "beaulieu_s_garage_body_shop_caribou": {
+    "lat": 46.8454481,
+    "lng": -68.0111524
+  },
+  "bernard_coury_realty_caribou": {
+    "lat": 46.8609652,
+    "lng": -68.0076551
+  },
+  "best_western_caribou_inn_caribou": {
+    "lat": 46.814040349591,
+    "lng": -67.996671841327
+  },
+  "big_cheese_pizza_caribou": {
+    "lat": 46.8502367,
+    "lng": -68.0113966
+  },
+  "brambleberry_market_caribou": {
+    "lat": 46.8604868,
+    "lng": -68.0131893
+  },
+  "burger_boy_caribou": {
+    "lat": 46.8600438,
+    "lng": -68.0255057
+  },
+  "burger_king_caribou": {
+    "lat": 46.8709757,
+    "lng": -68.0009422
+  },
+  "carquest_auto_parts_caribou": {
+    "lat": 46.8501917,
+    "lng": -68.0103944
+  },
+  "citgo_caribou": {
+    "lat": 46.8667123,
+    "lng": -68.0043252
+  },
+  "calvary_baptist_church_caribou": {
+    "lat": 46.8734005,
+    "lng": -67.9951454
+  },
+  "caribou_area_chamber_of_commerce_caribou": {
+    "lat": 46.8576707,
+    "lng": -68.0103083
+  },
+  "caribou_assembly_of_god_caribou": {
+    "lat": 46.8597102,
+    "lng": -68.0177355
+  },
+  "caribou_automotive_repair_services_caribou": {
+    "lat": 46.867577129273,
+    "lng": -68.004539719084
+  },
+  "caribou_bowl_a_drome_caribou": {
+    "lat": 46.86399163123,
+    "lng": -68.004745982121
+  },
+  "caribou_church_of_christ_caribou": {
+    "lat": 46.8678538,
+    "lng": -68.0059316
+  },
+  "caribou_country_club_caribou": {
+    "lat": 46.8937399,
+    "lng": -68.043438
+  },
+  "caribou_dental_caribou": {
+    "lat": 46.8711971,
+    "lng": -67.9995746
+  },
+  "caribou_eye_care_p_a_caribou": {
+    "lat": 46.8592909,
+    "lng": -68.0124876
+  },
+  "caribou_family_medicine_caribou": {
+    "lat": 46.8711963,
+    "lng": -67.9995728
+  },
+  "caribou_fire_department_caribou": {
+    "lat": 46.86033,
+    "lng": -68.0110361
+  },
+  "caribou_florist_greenhouse_caribou": {
+    "lat": 46.8599587,
+    "lng": -68.0185618
+  },
+  "caribou_ford_lincoln_caribou": {
+    "lat": 46.870818068373,
+    "lng": -68.000960979064
+  },
+  "caribou_laundry_dry_cleaning_caribou": {
+    "lat": 46.860294628497,
+    "lng": -68.014061550881
+  },
+  "caribou_parks_recreation_department_caribou": {
+    "lat": 46.864566,
+    "lng": -68.003796
+  },
+  "caribou_police_department_caribou": {
+    "lat": 46.86033,
+    "lng": -68.0110361
+  },
+  "caribou_public_library_caribou": {
+    "lat": 46.8609264,
+    "lng": -68.0111313
+  },
+  "caribou_rehab_nursing_center_caribou": {
+    "lat": 46.8711632,
+    "lng": -68.0116288
+  },
+  "caribou_seventh_day_adventist_church_caribou": {
+    "lat": 46.8572819,
+    "lng": -68.0111455
+  },
+  "caribou_sub_shop_caribou": {
+    "lat": 46.8613541,
+    "lng": -68.027938
+  },
+  "caribou_town_office_caribou": {
+    "lat": 46.86033,
+    "lng": -68.0110361
+  },
+  "caribou_uu_congregation_caribou": {
+    "lat": 46.8587883,
+    "lng": -68.01123
+  },
+  "caribou_veterinary_clinic_caribou": {
+    "lat": 46.8612819,
+    "lng": -68.0134158
+  },
+  "caribou_ward_lds_caribou": {
+    "lat": 46.8491333,
+    "lng": -68.0176283
+  },
+  "cary_medical_center_caribou": {
+    "lat": 46.8795868,
+    "lng": -68.0083492
+  },
+  "chadwick_baross_caribou": {
+    "lat": 46.8331984,
+    "lng": -68.0107305
+  },
+  "cindy_s_sub_shop_caribou": {
+    "lat": 46.8613541,
+    "lng": -68.027938
+  },
+  "circle_k_caribou": {
+    "lat": 46.8602743,
+    "lng": -68.0095639
+  },
+  "circle_k_irving_oil_caribou": {
+    "lat": 46.863099,
+    "lng": -68.0043761
+  },
+  "circle_k_on_the_run_caribou": {
+    "lat": 46.8606,
+    "lng": -68.0128
+  },
+  "clukey_s_parts_equipment_caribou": {
+    "lat": 46.8695433,
+    "lng": -68.0050074
+  },
+  "county_cuts_caribou": {
+    "lat": 46.8490248,
+    "lng": -68.0105239
+  },
+  "county_sports_inc_caribou": {
+    "lat": 46.8628892,
+    "lng": -68.0289484
+  },
+  "crown_veterinary_services_caribou": {
+    "lat": 46.8745672,
+    "lng": -67.9871125
+  },
+  "david_soucy_attorney_caribou": {
+    "lat": 46.8595155,
+    "lng": -68.0190717
+  },
+  "dollar_general_caribou": {
+    "lat": 46.8596621,
+    "lng": -68.0161714
+  },
+  "dollar_tree_caribou": {
+    "lat": 46.8699782,
+    "lng": -68.004653
+  },
+  "dunkin_caribou": {
+    "lat": 46.8635172,
+    "lng": -68.0043256
+  },
+  "evergreen_lanes_caribou": {
+    "lat": 46.8737718,
+    "lng": -67.9942346
+  },
+  "f_a_peabody_insurance_caribou": {
+    "lat": 46.8604868,
+    "lng": -68.0131893
+  },
+  "faith_lutheran_church_caribou": {
+    "lat": 46.8601739,
+    "lng": -68.013841
+  },
+  "family_dental_care_caribou_caribou": {
+    "lat": 46.8524832,
+    "lng": -68.0106506
+  },
+  "family_dollar_caribou": {
+    "lat": 46.8721401,
+    "lng": -68.0025225
+  },
+  "fox_den_tattoo_caribou": {
+    "lat": 46.8629252,
+    "lng": -68.0295752
+  },
+  "frederick_s_southside_restaurant_caribou": {
+    "lat": 46.8467854,
+    "lng": -68.0102213
+  },
+  "frontier_pharmacy_caribou": {
+    "lat": 46.8702165,
+    "lng": -68.001373
+  },
+  "gagnon_s_auto_rv_sales_inc_caribou": {
+    "lat": 46.8462631,
+    "lng": -68.0114449
+  },
+  "gallagher_insurance_agency_caribou": {
+    "lat": 46.8505711,
+    "lng": -68.0114506
+  },
+  "gifts_galore_caribou": {
+    "lat": 46.8704574,
+    "lng": -68.0008767
+  },
+  "gills_point_s_tire_auto_caribou": {
+    "lat": 46.857988,
+    "lng": -68.0041671
+  },
+  "gray_memorial_united_methodist_church_caribou": {
+    "lat": 46.8603196,
+    "lng": -68.0168531
+  },
+  "greenhouse_restaurant_caribou": {
+    "lat": 46.814040349591,
+    "lng": -67.996671841327
+  },
+  "griffeth_ford_caribou": {
+    "lat": 46.873401,
+    "lng": -68.0004042
+  },
+  "griffeth_mitsubishi_caribou": {
+    "lat": 46.873401,
+    "lng": -68.0004042
+  },
+  "h_r_block_caribou": {
+    "lat": 46.8578637,
+    "lng": -68.0111352
+  },
+  "hair_affair_caribou": {
+    "lat": 46.8467509,
+    "lng": -67.955371
+  },
+  "haney_s_building_specialties_caribou": {
+    "lat": 46.883551,
+    "lng": -68.0137394
+  },
+  "hannaford_supermarket_pharmacy_caribou": {
+    "lat": 46.8612964,
+    "lng": -68.0086663
+  },
+  "heidi_silver_attorney_caribou": {
+    "lat": 46.8721705,
+    "lng": -67.9987519
+  },
+  "highway_tire_inc_caribou": {
+    "lat": 46.843919,
+    "lng": -68.0110903
+  },
+  "holy_rosary_church_caribou": {
+    "lat": 46.8656,
+    "lng": -68.017
+  },
+  "home_sweet_salon_caribou": {
+    "lat": 46.8599152,
+    "lng": -68.0222129
+  },
+  "jade_palace_restaurant_caribou": {
+    "lat": 46.8726941,
+    "lng": -68.0046758
+  },
+  "jehovah_s_witnesses_kingdom_hall_caribou": {
+    "lat": 46.8823833,
+    "lng": -68.0407315
+  },
+  "katahdin_trust_company_caribou": {
+    "lat": 46.8679317,
+    "lng": -68.0040996
+  },
+  "keybank_caribou": {
+    "lat": 46.8610026,
+    "lng": -68.0068086
+  },
+  "kieffer_real_estate_caribou": {
+    "lat": 46.8603404,
+    "lng": -68.0089894
+  },
+  "lancaster_morgan_funeral_home_caribou": {
+    "lat": 46.8637709,
+    "lng": -68.019831
+  },
+  "leo_sons_citgo_caribou": {
+    "lat": 46.8477594,
+    "lng": -68.0102652
+  },
+  "machias_savings_bank_caribou": {
+    "lat": 46.8707155,
+    "lng": -68.0029764
+  },
+  "maine_veterans_homes_caribou_caribou": {
+    "lat": 46.8795868,
+    "lng": -68.0083492
+  },
+  "matthew_hunter_attorney_caribou": {
+    "lat": 46.86346830301,
+    "lng": -68.030260809132
+  },
+  "mcdonald_s_caribou": {
+    "lat": 46.8692185,
+    "lng": -68.0031043
+  },
+  "mike_s_quik_stop_deli_caribou": {
+    "lat": 46.8111735,
+    "lng": -67.9967045
+  },
+  "monica_s_scandinavian_imports_caribou": {
+    "lat": 46.8594571,
+    "lng": -68.0207932
+  },
+  "napa_auto_parts_coastal_auto_parts_caribou": {
+    "lat": 46.8605,
+    "lng": -68.012
+  },
+  "neale_adams_attorney_caribou": {
+    "lat": 46.8595155,
+    "lng": -68.0190717
+  },
+  "norseman_barbering_company_caribou": {
+    "lat": 46.8695433,
+    "lng": -68.0050074
+  },
+  "north_country_animal_hospital_caribou": {
+    "lat": 46.8238984,
+    "lng": -68.002844
+  },
+  "northeastern_supply_co_caribou": {
+    "lat": 46.842118,
+    "lng": -68.0100957
+  },
+  "northern_light_primary_care_caribou_caribou": {
+    "lat": 46.8695433,
+    "lng": -68.0050074
+  },
+  "northern_light_walk_in_care_caribou_caribou": {
+    "lat": 46.8695433,
+    "lng": -68.0050074
+  },
+  "northern_maine_brewing_company_caribou": {
+    "lat": 46.8149862,
+    "lng": -67.998564
+  },
+  "northern_maine_dental_caribou": {
+    "lat": 46.8721705,
+    "lng": -67.9987519
+  },
+  "northern_maine_general_caribou": {
+    "lat": 46.8743865,
+    "lng": -67.9957232
+  },
+  "noyes_flower_plant_shoppe_caribou": {
+    "lat": 46.8634709,
+    "lng": -68.0085215
+  },
+  "nylander_museum_caribou": {
+    "lat": 46.8576707,
+    "lng": -68.0103083
+  },
+  "old_iron_inn_bed_breakfast_caribou": {
+    "lat": 46.8602884,
+    "lng": -68.0062862
+  },
+  "optix_caribou": {
+    "lat": 46.8696493,
+    "lng": -68.0024514
+  },
+  "par_grill_caribou": {
+    "lat": 46.8713352,
+    "lng": -67.9958392
+  },
+  "phil_s_florist_greenhouses_caribou": {
+    "lat": 46.8470554,
+    "lng": -68.0447988
+  },
+  "pines_dental_caribou": {
+    "lat": 46.8795868,
+    "lng": -68.0083492
+  },
+  "pines_health_services_caribou_health_center_caribou": {
+    "lat": 46.873993,
+    "lng": -67.992557
+  },
+  "pizza_hut_caribou": {
+    "lat": 46.8701808,
+    "lng": -68.0016666
+  },
+  "plourde_furniture_co_caribou": {
+    "lat": 46.8708782,
+    "lng": -68.0023397
+  },
+  "priority_tractor_equipment_caribou": {
+    "lat": 46.8647265,
+    "lng": -68.0314614
+  },
+  "progressive_realty_caribou": {
+    "lat": 46.8638122,
+    "lng": -68.0043465
+  },
+  "quality_inn_suites_caribou": {
+    "lat": 46.872395362629,
+    "lng": -67.996349457184
+  },
+  "reno_s_family_restaurant_caribou": {
+    "lat": 46.860165,
+    "lng": -68.0179197
+  },
+  "richard_solman_attorney_caribou": {
+    "lat": 46.8611411,
+    "lng": -68.0113729
+  },
+  "ride_north_harley_davidson_caribou": {
+    "lat": 46.8674877,
+    "lng": -68.0034639
+  },
+  "rite_aid_walgreens_pharmacy_caribou": {
+    "lat": 46.8685551,
+    "lng": -68.0053094
+  },
+  "rose_s_shear_magic_caribou": {
+    "lat": 46.8600125,
+    "lng": -68.0141124
+  },
+  "ruska_coffee_co_caribou": {
+    "lat": 46.8598193,
+    "lng": -68.016846
+  },
+  "russell_s_motel_caribou": {
+    "lat": 46.8361495,
+    "lng": -68.0097123
+  },
+  "russell_clowes_insurance_caribou": {
+    "lat": 46.8505711,
+    "lng": -68.0114506
+  },
+  "s_w_collins_co_caribou": {
+    "lat": 46.858805,
+    "lng": -68.0154582
+  },
+  "sacred_heart_church_caribou": {
+    "lat": 46.9442702,
+    "lng": -68.0221885
+  },
+  "saint_luke_s_episcopal_church_caribou": {
+    "lat": 46.8572819,
+    "lng": -68.0111455
+  },
+  "save_a_lot_caribou": {
+    "lat": 46.8731778,
+    "lng": -68.00489
+  },
+  "sean_duplessie_state_farm_insurance_caribou": {
+    "lat": 46.8556,
+    "lng": -68.007
+  },
+  "serenity_beauty_spa_caribou": {
+    "lat": 46.8590485,
+    "lng": -68.0181884
+  },
+  "shear_precision_caribou": {
+    "lat": 46.8704574,
+    "lng": -68.0008767
+  },
+  "shell_caribou": {
+    "lat": 46.8586522,
+    "lng": -68.0101168
+  },
+  "sherwin_williams_paint_store_caribou": {
+    "lat": 46.8695433,
+    "lng": -68.0050074
+  },
+  "sizzle_slice_restaurant_bar_caribou": {
+    "lat": 46.8726941,
+    "lng": -68.0046758
+  },
+  "sleeper_s_market_caribou": {
+    "lat": 46.8565525,
+    "lng": -68.0062023
+  },
+  "solid_rock_worship_center_united_pentecostal_caribou": {
+    "lat": 46.8535715,
+    "lng": -67.998085
+  },
+  "subway_caribou": {
+    "lat": 46.8696493,
+    "lng": -68.0024514
+  },
+  "td_bank_caribou": {
+    "lat": 46.860275,
+    "lng": -68.0123126
+  },
+  "the_caribou_theater_caribou": {
+    "lat": 46.8599131,
+    "lng": -68.0151783
+  },
+  "the_cubby_thriftstore_caribou": {
+    "lat": 46.8600396,
+    "lng": -68.0137783
+  },
+  "the_pet_vet_caribou": {
+    "lat": 46.7915331,
+    "lng": -68.0416101
+  },
+  "thistle_shop_design_caribou": {
+    "lat": 46.8688131,
+    "lng": -68.0095367
+  },
+  "thomas_pelletier_attorney_caribou": {
+    "lat": 46.8592909,
+    "lng": -68.0124876
+  },
+  "threads_of_hope_outlet_catholic_charities_caribou": {
+    "lat": 46.8780479,
+    "lng": -68.0121352
+  },
+  "thrive_body_spa_caribou": {
+    "lat": 46.8603705,
+    "lng": -68.0156172
+  },
+  "tim_hortons_caribou": {
+    "lat": 46.8683675,
+    "lng": -68.0040385
+  },
+  "todd_collins_attorney_caribou": {
+    "lat": 46.8595155,
+    "lng": -68.0190717
+  },
+  "us_post_office_caribou_caribou": {
+    "lat": 46.8605216,
+    "lng": -68.0139106
+  },
+  "united_baptist_church_caribou": {
+    "lat": 46.8609313,
+    "lng": -68.009995
+  },
+  "united_insurance_caribou": {
+    "lat": 46.8603404,
+    "lng": -68.0089894
+  },
+  "valley_home_health_services_caribou": {
+    "lat": 46.8578637,
+    "lng": -68.0111352
+  },
+  "vogue_salon_caribou": {
+    "lat": 46.8696493,
+    "lng": -68.0024514
+  },
+  "works_of_heart_caribou": {
+    "lat": 46.8699782,
+    "lng": -68.004653
+  },
+  "wreaths_by_natalie_caribou": {
+    "lat": 46.8053471,
+    "lng": -67.9929537
+  },
+  "acadia_medical_supply_fort_fairfield": {
+    "lat": 46.7711189,
+    "lng": -67.8285171
+  },
+  "advance_auto_parts_fort_fairfield": {
+    "lat": 46.7723,
+    "lng": -67.8336
+  },
+  "bethel_baptist_church_fort_fairfield": {
+    "lat": 46.772499,
+    "lng": -67.835924
+  },
+  "bob_s_service_repair_fort_fairfield": {
+    "lat": 46.772387,
+    "lng": -67.8327148
+  },
+  "boondocks_grille_fort_fairfield": {
+    "lat": 46.7714267,
+    "lng": -67.8294819
+  },
+  "caldwell_s_auto_fort_fairfield": {
+    "lat": 46.766835253936,
+    "lng": -67.846341204481
+  },
+  "canterbury_royale_gourmet_fort_fairfield": {
+    "lat": 46.744912070874,
+    "lng": -67.79368321307
+  },
+  "celebration_center_assemblies_of_god_fort_fairfield": {
+    "lat": 46.746033077597,
+    "lng": -67.871187370964
+  },
+  "community_wesleyan_church_fort_fairfield": {
+    "lat": 46.7682922,
+    "lng": -67.8421496
+  },
+  "county_bluegrass_festival_fort_fairfield": {
+    "lat": 46.791497271991,
+    "lng": -67.83496224483
+  },
+  "curtis_auto_airplane_repair_sales_inc_fort_fairfield": {
+    "lat": 46.772410315229,
+    "lng": -67.834140730195
+  },
+  "dollar_general_fort_fairfield": {
+    "lat": 46.7721531,
+    "lng": -67.8346403
+  },
+  "family_haircuts_by_lisa_at_jack_s_barbershop_fort_fairfield": {
+    "lat": 46.770624219946,
+    "lng": -67.827671325832
+  },
+  "fields_realty_llc_fort_fairfield": {
+    "lat": 46.7676707,
+    "lng": -67.8236465
+  },
+  "fort_fairfield_dental_center_fort_fairfield": {
+    "lat": 46.769664937318,
+    "lng": -67.824383160138
+  },
+  "fort_fairfield_hardware_fort_fairfield": {
+    "lat": 46.768348,
+    "lng": -67.8219517
+  },
+  "fort_fairfield_public_library_fort_fairfield": {
+    "lat": 46.7720616,
+    "lng": -67.8337615
+  },
+  "fort_fairfield_town_office_fort_fairfield": {
+    "lat": 46.770533,
+    "lng": -67.8361928
+  },
+  "fort_fairfield_utilities_district_fort_fairfield": {
+    "lat": 46.781306344834,
+    "lng": -67.848447438871
+  },
+  "freshies_fort_fairfield_fort_fairfield": {
+    "lat": 46.7702044,
+    "lng": -67.8256244
+  },
+  "giggey_s_auto_repair_fort_fairfield": {
+    "lat": 46.7702085,
+    "lng": -67.8406209
+  },
+  "hillside_iga_fort_fairfield": {
+    "lat": 46.7695537,
+    "lng": -67.8251125
+  },
+  "i_care_pharmacy_fort_fairfield": {
+    "lat": 46.770295364046,
+    "lng": -67.826977388222
+  },
+  "logan_s_service_and_repair_fort_fairfield": {
+    "lat": 46.772697326273,
+    "lng": -67.83926426821
+  },
+  "one_of_a_kind_fort_fairfield": {
+    "lat": 46.770554181921,
+    "lng": -67.827423009272
+  },
+  "r_j_market_fort_fairfield": {
+    "lat": 46.7716672,
+    "lng": -67.8378231
+  },
+  "rite_aid_pharmacy_fort_fairfield": {
+    "lat": 46.7721531,
+    "lng": -67.8346403
+  },
+  "rogers_auto_repair_fort_fairfield": {
+    "lat": 46.726049350785,
+    "lng": -67.916248862775
+  },
+  "sisters_bakery_coffee_shoppe_fort_fairfield": {
+    "lat": 46.770628,
+    "lng": -67.8281335
+  },
+  "st_denis_catholic_church_fort_fairfield": {
+    "lat": 46.7674056,
+    "lng": -67.8201816
+  },
+  "st_paul_s_episcopal_church_fort_fairfield": {
+    "lat": 46.768555464957,
+    "lng": -67.822006541601
+  },
+  "subway_fort_fairfield": {
+    "lat": 46.7702044,
+    "lng": -67.8256244
+  },
+  "the_county_federal_credit_union_fort_fairfield": {
+    "lat": 46.7703524,
+    "lng": -67.8267053
+  },
+  "turner_sanitation_fort_fairfield": {
+    "lat": 46.809996205628,
+    "lng": -67.789784578705
+  },
+  "united_insurance_fort_fairfield": {
+    "lat": 46.7706839,
+    "lng": -67.8283222
+  },
+  "united_parish_church_ucc_umc_fort_fairfield": {
+    "lat": 46.7699004,
+    "lng": -67.8294115
+  },
+  "united_pentecostal_church_fort_fairfield": {
+    "lat": 46.7692505,
+    "lng": -67.8446681
+  },
+  "village_restaurant_fort_fairfield": {
+    "lat": 46.7711621,
+    "lng": -67.8290192
+  },
+  "aroostook_national_wildlife_refuge_limestone": {
+    "lat": 46.9342381,
+    "lng": -67.8704465
+  },
+  "boulevard_graphix_limestone": {
+    "lat": 46.910901379065,
+    "lng": -67.825483351037
+  },
+  "bunker_inn_limestone": {
+    "lat": 46.94185080998,
+    "lng": -67.913259500348
+  },
+  "caldwell_auto_parts_towing_limestone": {
+    "lat": 46.9080021,
+    "lng": -67.8174149
+  },
+  "cote_auto_repair_inc_limestone": {
+    "lat": 46.9144013,
+    "lng": -67.8746311
+  },
+  "dfas_limestone": {
+    "lat": 46.9344646,
+    "lng": -67.9132428
+  },
+  "dollar_general_limestone": {
+    "lat": 46.9150265,
+    "lng": -67.8337237
+  },
+  "eagles_redemption_center_limestone": {
+    "lat": 46.910542342238,
+    "lng": -67.825480376951
+  },
+  "grammie_s_treasures_limestone": {
+    "lat": 46.9115977,
+    "lng": -67.8253995
+  },
+  "high_street_baptist_church_limestone": {
+    "lat": 46.9093353,
+    "lng": -67.8275233
+  },
+  "home_town_fuels_limestone": {
+    "lat": 46.9131517,
+    "lng": -67.8266797
+  },
+  "katahdin_trust_co_limestone": {
+    "lat": 46.9098551,
+    "lng": -67.8262275
+  },
+  "limestone_community_school_limestone": {
+    "lat": 46.9066039,
+    "lng": -67.8293638
+  },
+  "limestone_country_club_limestone": {
+    "lat": 46.9459836,
+    "lng": -67.9264852
+  },
+  "limestone_development_foundation_chamber_of_commerce_limestone": {
+    "lat": 46.9060415,
+    "lng": -67.8261561
+  },
+  "limestone_pack_ship_limestone": {
+    "lat": 46.912,
+    "lng": -67.8253
+  },
+  "limestone_post_office_limestone": {
+    "lat": 46.9064638,
+    "lng": -67.825661
+  },
+  "limestone_public_library_limestone": {
+    "lat": 46.9064668,
+    "lng": -67.825421
+  },
+  "limestone_snowhawks_limestone": {
+    "lat": 46.9117525,
+    "lng": -67.8242438
+  },
+  "limestone_town_office_limestone": {
+    "lat": 46.9060415,
+    "lng": -67.8261561
+  },
+  "limestone_united_methodist_church_limestone": {
+    "lat": 46.9091198,
+    "lng": -67.8252472
+  },
+  "loring_air_museum_limestone": {
+    "lat": 46.942477,
+    "lng": -67.9057563
+  },
+  "loring_commerce_centre_limestone": {
+    "lat": 46.9344646,
+    "lng": -67.9132428
+  },
+  "loring_development_authority_limestone": {
+    "lat": 46.9117,
+    "lng": -67.8267
+  },
+  "loring_job_corps_limestone": {
+    "lat": 46.9138523,
+    "lng": -67.8926164
+  },
+  "loring_job_corps_center_limestone": {
+    "lat": 46.9353498,
+    "lng": -67.9028627
+  },
+  "loring_utilities_office_limestone": {
+    "lat": 46.9060415,
+    "lng": -67.8261561
+  },
+  "maine_school_of_science_and_mathematics_limestone": {
+    "lat": 46.907737,
+    "lng": -67.8286133
+  },
+  "manaus_books_coffee_limestone": {
+    "lat": 46.910542342238,
+    "lng": -67.825480376951
+  },
+  "mike_s_family_market_limestone": {
+    "lat": 46.9122356,
+    "lng": -67.8259074
+  },
+  "new_england_kenworth_limestone": {
+    "lat": 46.938312935806,
+    "lng": -67.895472979948
+  },
+  "nike_acres_bed_breakfast_limestone": {
+    "lat": 46.92634885551,
+    "lng": -67.796195305703
+  },
+  "pines_health_services_loring_health_center_limestone": {
+    "lat": 46.8964171,
+    "lng": -67.8249624
+  },
+  "pines_loring_health_center_limestone": {
+    "lat": 46.9410511,
+    "lng": -67.9033095
+  },
+  "rendezvous_restaurant_limestone": {
+    "lat": 46.9117,
+    "lng": -67.8267
+  },
+  "robert_a_frost_memorial_library_limestone": {
+    "lat": 46.9096207,
+    "lng": -67.825202
+  },
+  "sfe_manufacturing_limestone": {
+    "lat": 46.9424739,
+    "lng": -67.8972342
+  },
+  "st_louis_church_limestone": {
+    "lat": 46.9054893,
+    "lng": -67.8249486
+  },
+  "t_and_a_variety_limestone": {
+    "lat": 46.901345,
+    "lng": -67.8249095
+  },
+  "trp_limestone_limestone": {
+    "lat": 46.938312935806,
+    "lng": -67.895472979948
+  },
+  "talk_of_the_town_hair_salon_limestone": {
+    "lat": 46.9121811,
+    "lng": -67.8253313
+  },
+  "trombley_industries_limestone": {
+    "lat": 46.914127,
+    "lng": -67.9099964
+  },
+  "us_post_office_limestone_limestone": {
+    "lat": 46.9105941,
+    "lng": -67.8259112
+  },
+  "white_as_snow_laundromat_limestone": {
+    "lat": 46.910542342238,
+    "lng": -67.825480376951
+  },
+  "chandler_farms_inc_mapleton": {
+    "lat": 46.7311528,
+    "lng": -68.1522557
+  },
+  "main_street_hair_design_mapleton": {
+    "lat": 46.681859,
+    "lng": -68.1483598
+  },
+  "mapleton_diner_mapleton": {
+    "lat": 46.6816807,
+    "lng": -68.1581516
+  },
+  "mapleton_fire_department_mapleton": {
+    "lat": 46.6874737,
+    "lng": -68.1480704
+  },
+  "mapleton_general_store_mapleton": {
+    "lat": 46.6892,
+    "lng": -68.1643
+  },
+  "mapleton_hardware_mapleton": {
+    "lat": 46.681970737029,
+    "lng": -68.141625576414
+  },
+  "mapleton_oil_co_mapleton": {
+    "lat": 46.6843887,
+    "lng": -68.1617187
+  },
+  "mapleton_one_stop_mapleton": {
+    "lat": 46.681903751691,
+    "lng": -68.156207583039
+  },
+  "mapleton_post_office_mapleton": {
+    "lat": 46.681729071597,
+    "lng": -68.160468922089
+  },
+  "mapleton_town_office_mapleton": {
+    "lat": 46.686993,
+    "lng": -68.1488237
+  },
+  "mapleton_united_baptist_church_mapleton": {
+    "lat": 46.6821371,
+    "lng": -68.1498934
+  },
+  "mapleton_united_methodist_church_mapleton": {
+    "lat": 46.6742,
+    "lng": -68.1653
+  },
+  "mastro_motors_inc_mapleton": {
+    "lat": 46.681903751691,
+    "lng": -68.156207583039
+  },
+  "state_road_advent_christian_church_mapleton": {
+    "lat": 46.7363084,
+    "lng": -68.1108217
+  },
+  "taste_of_home_restaurant_mapleton": {
+    "lat": 46.6819144,
+    "lng": -68.1573028
+  },
+  "west_chapman_advent_christian_church_mapleton": {
+    "lat": 46.6400656,
+    "lng": -68.1595602
+  },
+  "a_m_auto_repair_mars_hill": {
+    "lat": 46.521141,
+    "lng": -67.863388
+  },
+  "al_s_diner_mars_hill": {
+    "lat": 46.5155242,
+    "lng": -67.8665531
+  },
+  "all_star_gymnastics_mars_hill": {
+    "lat": 46.5142583,
+    "lng": -67.8669192
+  },
+  "apostolic_pentecostal_church_mars_hill": {
+    "lat": 46.5693888,
+    "lng": -67.8663482
+  },
+  "aroostook_health_center_mars_hill": {
+    "lat": 46.5176393,
+    "lng": -67.8709271
+  },
+  "bear_paw_inn_mars_hill": {
+    "lat": 46.5152405,
+    "lng": -67.8674773
+  },
+  "bigrock_mountain_mars_hill": {
+    "lat": 46.51383936782,
+    "lng": -67.871073717367
+  },
+  "brewer_service_mars_hill": {
+    "lat": 46.513921,
+    "lng": -67.8674709
+  },
+  "central_aroostook_jr_sr_high_school_mars_hill": {
+    "lat": 46.5169827,
+    "lng": -67.8611105
+  },
+  "circle_k_on_the_run_mars_hill": {
+    "lat": 46.5163787,
+    "lng": -67.8672831
+  },
+  "dave_s_auto_truck_repair_mars_hill": {
+    "lat": 46.5130255,
+    "lng": -67.866834
+  },
+  "duncan_funeral_home_mars_hill": {
+    "lat": 46.5106355,
+    "lng": -67.8684824
+  },
+  "family_dollar_mars_hill": {
+    "lat": 46.5233955,
+    "lng": -67.877209
+  },
+  "fort_street_elementary_school_mars_hill": {
+    "lat": 46.5230753,
+    "lng": -67.8678467
+  },
+  "freshies_mars_hill_mars_hill": {
+    "lat": 46.5136724,
+    "lng": -67.8664503
+  },
+  "full_gospel_assembly_mars_hill": {
+    "lat": 46.512928,
+    "lng": -67.8702677
+  },
+  "hidden_country_treasures_mars_hill": {
+    "lat": 46.515392170673,
+    "lng": -67.866868844478
+  },
+  "horizons_surgical_services_mars_hill": {
+    "lat": 46.5156353,
+    "lng": -67.8673801
+  },
+  "m_e_grass_sons_mars_hill": {
+    "lat": 46.5611171,
+    "lng": -67.867404
+  },
+  "mars_hill_country_club_mars_hill": {
+    "lat": 46.534896990236,
+    "lng": -67.840022846043
+  },
+  "mars_hill_iga_mars_hill": {
+    "lat": 46.5137958,
+    "lng": -67.8652191
+  },
+  "mars_hill_pharmacy_mars_hill": {
+    "lat": 46.5156353,
+    "lng": -67.8673801
+  },
+  "mars_hill_town_office_mars_hill": {
+    "lat": 46.5142185,
+    "lng": -67.866465
+  },
+  "mars_hill_united_methodist_church_mars_hill": {
+    "lat": 46.5122475,
+    "lng": -67.8680339
+  },
+  "mcclay_s_tax_service_mars_hill": {
+    "lat": 46.5149036,
+    "lng": -67.867146
+  },
+  "mike_s_auto_sales_and_service_mars_hill": {
+    "lat": 46.549984406099,
+    "lng": -67.873211014974
+  },
+  "my_sunset_cabins_mars_hill": {
+    "lat": 46.539584165025,
+    "lng": -67.887415151595
+  },
+  "new_beginning_auto_body_mars_hill": {
+    "lat": 46.525860886929,
+    "lng": -67.883158903236
+  },
+  "pineland_farms_potato_company_inc_mars_hill": {
+    "lat": 46.524269077092,
+    "lng": -67.877481143885
+  },
+  "st_joseph_catholic_church_mars_hill": {
+    "lat": 46.511787,
+    "lng": -67.8671671
+  },
+  "the_rusty_crab_mars_hill": {
+    "lat": 46.5142437,
+    "lng": -67.8671668
+  },
+  "therapy_shoppe_llc_mars_hill": {
+    "lat": 46.5157571,
+    "lng": -67.866539
+  },
+  "timberwolves_restaurant_mars_hill": {
+    "lat": 46.514451,
+    "lng": -67.8664848
+  },
+  "us_post_office_mars_hill_mars_hill": {
+    "lat": 46.5129565,
+    "lng": -67.866276
+  },
+  "united_baptist_church_mars_hill": {
+    "lat": 46.518617,
+    "lng": -67.8624665
+  },
+  "walter_t_a_hansen_memorial_library_mars_hill": {
+    "lat": 46.513444115087,
+    "lng": -67.868382332388
+  },
+  "a_vie_presque_isle": {
+    "lat": 46.681958594153,
+    "lng": -68.015418617881
+  },
+  "academy_dental_presque_isle": {
+    "lat": 46.6763441,
+    "lng": -67.9934742
+  },
+  "ace_hardware_maine_potato_growers_inc_presque_isle": {
+    "lat": 46.6871424,
+    "lng": -68.0186791
+  },
+  "advance_auto_parts_presque_isle": {
+    "lat": 46.6853197,
+    "lng": -68.013637
+  },
+  "airport_cafe_gifts_presque_isle": {
+    "lat": 46.6922636,
+    "lng": -68.0452942
+  },
+  "amy_s_flowers_presque_isle": {
+    "lat": 46.688008,
+    "lng": -68.0066783
+  },
+  "arby_s_presque_isle": {
+    "lat": 46.69825,
+    "lng": -68.0117193
+  },
+  "aroostook_county_federal_savings_and_loan_presque_isle": {
+    "lat": 46.6792071,
+    "lng": -68.015137
+  },
+  "aroostook_county_fitness_presque_isle": {
+    "lat": 46.681958594153,
+    "lng": -68.015418617881
+  },
+  "aroostook_door_window_presque_isle": {
+    "lat": 46.6832909,
+    "lng": -68.020673
+  },
+  "aroostook_mall_presque_isle": {
+    "lat": 46.6998996,
+    "lng": -68.0056002
+  },
+  "aroostook_monuments_presque_isle": {
+    "lat": 46.7071806,
+    "lng": -68.0092109
+  },
+  "aroostook_trusses_inc_presque_isle": {
+    "lat": 46.702335252915,
+    "lng": -68.046589618074
+  },
+  "autozone_presque_isle": {
+    "lat": 46.6992318,
+    "lng": -68.0108498
+  },
+  "beacon_of_hope_ministries_presque_isle": {
+    "lat": 46.6998996,
+    "lng": -68.0056002
+  },
+  "bethany_baptist_church_presque_isle": {
+    "lat": 46.6713,
+    "lng": -68.0259
+  },
+  "big_cheese_pizza_presque_isle": {
+    "lat": 46.6760173,
+    "lng": -68.0150755
+  },
+  "bike_board_and_ski_presque_isle": {
+    "lat": 46.6808709,
+    "lng": -68.0152797
+  },
+  "bowers_funeral_home_and_cremation_services_presque_isle": {
+    "lat": 46.6752492,
+    "lng": -68.015653
+  },
+  "burger_king_presque_isle": {
+    "lat": 46.699763,
+    "lng": -68.0130372
+  },
+  "cafe_desmoiselles_presque_isle": {
+    "lat": 46.681591,
+    "lng": -68.0157176
+  },
+  "carney_family_beverage_presque_isle": {
+    "lat": 46.6820077,
+    "lng": -68.0092411
+  },
+  "carroll_s_auto_sales_chevrolet_gmc_presque_isle": {
+    "lat": 46.6769432,
+    "lng": -68.015034
+  },
+  "chopsticks_presque_isle": {
+    "lat": 46.699206,
+    "lng": -68.0046801
+  },
+  "christ_gospel_church_presque_isle": {
+    "lat": 46.6823526,
+    "lng": -68.0102836
+  },
+  "christian_life_assembly_presque_isle": {
+    "lat": 46.753896933934,
+    "lng": -68.044954326651
+  },
+  "church_of_jesus_presque_isle": {
+    "lat": 46.664869399026,
+    "lng": -68.034116277579
+  },
+  "circle_k_presque_isle": {
+    "lat": 46.6812,
+    "lng": -68.0158
+  },
+  "circle_k_pizza_deli_presque_isle": {
+    "lat": 46.6772519,
+    "lng": -68.016436
+  },
+  "city_drug_store_presque_isle": {
+    "lat": 46.6767365,
+    "lng": -67.9969689
+  },
+  "cook_florist_inc_presque_isle": {
+    "lat": 46.6720903,
+    "lng": -68.0143999
+  },
+  "country_collectibles_presque_isle": {
+    "lat": 46.6798002,
+    "lng": -68.0158669
+  },
+  "crown_of_maine_motors_presque_isle": {
+    "lat": 46.6898843,
+    "lng": -68.0188463
+  },
+  "dollar_tree_presque_isle": {
+    "lat": 46.6813,
+    "lng": -68.0159
+  },
+  "domino_s_pizza_presque_isle": {
+    "lat": 46.6797079,
+    "lng": -68.0158728
+  },
+  "duncan_graves_funeral_home_presque_isle": {
+    "lat": 46.682166,
+    "lng": -68.0128571
+  },
+  "dunkin_presque_isle": {
+    "lat": 46.6963165,
+    "lng": -68.0117157
+  },
+  "eagle_hill_stamps_coins_presque_isle": {
+    "lat": 46.6789913,
+    "lng": -68.0161072
+  },
+  "family_worship_center_presque_isle": {
+    "lat": 46.7422418,
+    "lng": -67.9959962
+  },
+  "fastenal_company_presque_isle": {
+    "lat": 46.6786258,
+    "lng": -68.028766
+  },
+  "first_united_pentecostal_church_presque_isle": {
+    "lat": 46.6900492,
+    "lng": -68.0181921
+  },
+  "for_paws_grooming_presque_isle": {
+    "lat": 46.7246423,
+    "lng": -68.0041316
+  },
+  "freddy_s_brew_pub_presque_isle": {
+    "lat": 46.680553,
+    "lng": -68.0157715
+  },
+  "freedom_church_presque_isle": {
+    "lat": 46.6998996,
+    "lng": -68.0056002
+  },
+  "freshies_presque_isle_presque_isle": {
+    "lat": 46.6909418,
+    "lng": -68.012053
+  },
+  "full_gospel_assembly_presque_isle": {
+    "lat": 46.6837378,
+    "lng": -68.0073551
+  },
+  "gary_s_furniture_appliance_presque_isle": {
+    "lat": 46.6807259,
+    "lng": -68.0160297
+  },
+  "gentile_hall_umpi_presque_isle": {
+    "lat": 46.6722415,
+    "lng": -68.0163004
+  },
+  "gills_point_s_tire_auto_formerly_hogan_tire_presque_isle": {
+    "lat": 46.6946272,
+    "lng": -68.0083711
+  },
+  "governor_s_restaurant_bakery_presque_isle": {
+    "lat": 46.6788865,
+    "lng": -68.0151389
+  },
+  "gram_russo_s_italian_restaurant_presque_isle": {
+    "lat": 46.667621783623,
+    "lng": -68.011719297435
+  },
+  "grant_memorial_united_methodist_church_presque_isle": {
+    "lat": 46.6780055,
+    "lng": -67.9991467
+  },
+  "graves_shop_n_save_presque_isle": {
+    "lat": 46.6993553,
+    "lng": -68.0128809
+  },
+  "griffeth_honda_presque_isle": {
+    "lat": 46.6685425,
+    "lng": -68.0111196
+  },
+  "hair_beyond_presque_isle": {
+    "lat": 46.6924601,
+    "lng": -68.0199587
+  },
+  "hampton_inn_presque_isle_presque_isle": {
+    "lat": 46.696909341906,
+    "lng": -68.011552680455
+  },
+  "harbor_freight_tools_presque_isle": {
+    "lat": 46.6813,
+    "lng": -68.0159
+  },
+  "hedrich_vending_presque_isle": {
+    "lat": 46.681215,
+    "lng": -68.0240186
+  },
+  "hotham_s_veterinary_services_presque_isle": {
+    "lat": 46.6626932,
+    "lng": -67.9847323
+  },
+  "houlton_farms_dairy_bar_presque_isle": {
+    "lat": 46.6983042,
+    "lng": -68.0105509
+  },
+  "hub_coffee_presque_isle": {
+    "lat": 46.6787101,
+    "lng": -68.0153778
+  },
+  "irish_setter_pub_presque_isle": {
+    "lat": 46.6917552,
+    "lng": -68.0117425
+  },
+  "katahdin_trust_company_presque_isle": {
+    "lat": 46.687882,
+    "lng": -68.0123814
+  },
+  "keybank_presque_isle": {
+    "lat": 46.6966396,
+    "lng": -68.0111871
+  },
+  "levasseur_dentistry_presque_isle": {
+    "lat": 46.676579,
+    "lng": -67.9952715
+  },
+  "lowe_s_home_improvement_presque_isle": {
+    "lat": 46.6958358,
+    "lng": -67.9991126
+  },
+  "machias_savings_bank_presque_isle": {
+    "lat": 46.6838943,
+    "lng": -68.0185385
+  },
+  "mai_tai_restaurant_presque_isle": {
+    "lat": 46.6809529,
+    "lng": -68.0158858
+  },
+  "maine_hope_center_the_hope_chest_presque_isle": {
+    "lat": 46.6808601,
+    "lng": -68.0158412
+  },
+  "mainely_mexican_presque_isle": {
+    "lat": 46.6937716,
+    "lng": -68.0210916
+  },
+  "marden_s_surplus_salvage_presque_isle": {
+    "lat": 46.6989573,
+    "lng": -68.0109688
+  },
+  "mccluskey_s_rv_center_presque_isle": {
+    "lat": 46.6603338,
+    "lng": -68.0087485
+  },
+  "mcdonald_s_presque_isle": {
+    "lat": 46.6875728,
+    "lng": -68.0125095
+  },
+  "merchants_on_the_corner_presque_isle": {
+    "lat": 46.6796937,
+    "lng": -68.015467
+  },
+  "mom_and_me_pizzeria_presque_isle": {
+    "lat": 46.6998996,
+    "lng": -68.0056002
+  },
+  "napa_auto_parts_coastal_auto_parts_presque_isle": {
+    "lat": 46.6844864,
+    "lng": -68.0151558
+  },
+  "new_life_baptist_church_presque_isle": {
+    "lat": 46.7364242,
+    "lng": -67.9984751
+  },
+  "norstate_federal_credit_union_presque_isle": {
+    "lat": 46.6939137,
+    "lng": -68.0116372
+  },
+  "north_country_auto_presque_isle": {
+    "lat": 46.6983042,
+    "lng": -68.0105509
+  },
+  "northern_light_ar_gould_hospital_presque_isle": {
+    "lat": 46.6743549,
+    "lng": -67.9987016
+  },
+  "northern_lights_motel_presque_isle": {
+    "lat": 46.65356127667,
+    "lng": -68.004633966771
+  },
+  "northern_maine_motors_presque_isle": {
+    "lat": 46.6818435,
+    "lng": -68.0189401
+  },
+  "oriental_pearl_presque_isle": {
+    "lat": 46.694731,
+    "lng": -68.0128727
+  },
+  "overhead_door_co_of_presque_isle_presque_isle": {
+    "lat": 46.6969593,
+    "lng": -68.0398572
+  },
+  "parkhurst_siding_pub_presque_isle": {
+    "lat": 46.7145773,
+    "lng": -67.9492444
+  },
+  "pat_s_pizza_of_presque_isle_presque_isle": {
+    "lat": 46.688273777731,
+    "lng": -68.011671473673
+  },
+  "pepsi_bottling_group_presque_isle": {
+    "lat": 46.679021118057,
+    "lng": -68.027388915066
+  },
+  "percy_s_auto_sales_inc_chrysler_dodge_jeep_ram_presque_isle": {
+    "lat": 46.6583869,
+    "lng": -68.006529
+  },
+  "pine_village_inc_presque_isle": {
+    "lat": 46.7406255,
+    "lng": -68.0376541
+  },
+  "pizza_box_presque_isle": {
+    "lat": 46.6825719,
+    "lng": -68.0155339
+  },
+  "pizza_hut_presque_isle": {
+    "lat": 46.6999804,
+    "lng": -68.0098804
+  },
+  "presque_isle_animal_hospital_presque_isle": {
+    "lat": 46.6774544,
+    "lng": -68.0493942
+  },
+  "presque_isle_congregational_church_ucc_presque_isle": {
+    "lat": 46.6826691,
+    "lng": -68.0130306
+  },
+  "presque_isle_hotel_presque_isle": {
+    "lat": 46.667621783623,
+    "lng": -68.011719297435
+  },
+  "presque_isle_international_airport_presque_isle": {
+    "lat": 46.694933948986,
+    "lng": -68.0454308094
+  },
+  "presque_isle_memorial_works_presque_isle": {
+    "lat": 46.7604883,
+    "lng": -67.9907646
+  },
+  "presque_isle_pharmacy_presque_isle": {
+    "lat": 46.6993553,
+    "lng": -68.0128809
+  },
+  "presque_isle_rehab_and_nursing_center_presque_isle": {
+    "lat": 46.676286852523,
+    "lng": -67.996557739483
+  },
+  "presque_isle_seventh_day_adventist_church_presque_isle": {
+    "lat": 46.6862766,
+    "lng": -68.0208371
+  },
+  "presque_isle_wesleyan_church_presque_isle": {
+    "lat": 46.6747223,
+    "lng": -67.9847724
+  },
+  "quiznos_sub_presque_isle": {
+    "lat": 46.674219,
+    "lng": -68.0177118
+  },
+  "rathbun_lumber_company_presque_isle": {
+    "lat": 46.6847662,
+    "lng": -68.0205279
+  },
+  "riverside_inn_restaurant_presque_isle": {
+    "lat": 46.680019692669,
+    "lng": -68.015710522237
+  },
+  "rob_s_pit_stop_presque_isle": {
+    "lat": 46.705085491807,
+    "lng": -67.95744451363
+  },
+  "rodney_s_at_436_main_presque_isle": {
+    "lat": 46.680729545502,
+    "lng": -68.015442199807
+  },
+  "rosella_s_pizzeria_presque_isle": {
+    "lat": 46.679606107104,
+    "lng": -68.01558362238
+  },
+  "ruby_tuesday_presque_isle": {
+    "lat": 46.6998996,
+    "lng": -68.0056002
+  },
+  "s_w_collins_co_presque_isle": {
+    "lat": 46.6955038,
+    "lng": -68.0108612
+  },
+  "save_a_lot_presque_isle": {
+    "lat": 46.689138,
+    "lng": -68.0188475
+  },
+  "second_chances_thrifts_and_boutique_presque_isle": {
+    "lat": 46.6813703,
+    "lng": -68.0160781
+  },
+  "shannon_s_home_style_variety_presque_isle": {
+    "lat": 46.6779308,
+    "lng": -68.0072664
+  },
+  "shirley_s_harold_s_presque_isle": {
+    "lat": 46.6833874,
+    "lng": -68.0194644
+  },
+  "shogun_japanese_restaurant_presque_isle": {
+    "lat": 46.6998996,
+    "lng": -68.0056002
+  },
+  "st_apollonia_dental_clinic_presque_isle": {
+    "lat": 46.6769081,
+    "lng": -68.0015528
+  },
+  "st_john_s_episcopal_church_presque_isle": {
+    "lat": 46.6713,
+    "lng": -68.0159
+  },
+  "st_mary_s_catholic_church_nativity_of_the_bvm_presque_isle": {
+    "lat": 46.678298,
+    "lng": -68.0164663
+  },
+  "star_city_iga_presque_isle": {
+    "lat": 46.6761394,
+    "lng": -68.0175013
+  },
+  "state_street_baptist_church_presque_isle": {
+    "lat": 46.6814037,
+    "lng": -68.0134484
+  },
+  "steaks_n_stuff_presque_isle": {
+    "lat": 46.6829415,
+    "lng": -68.0202469
+  },
+  "subway_presque_isle": {
+    "lat": 46.6959066,
+    "lng": -68.0127499
+  },
+  "surestay_by_best_western_presque_isle_presque_isle": {
+    "lat": 46.664301842838,
+    "lng": -68.009933990203
+  },
+  "td_bank_presque_isle": {
+    "lat": 46.6891397,
+    "lng": -68.0122181
+  },
+  "taco_bell_kfc_presque_isle": {
+    "lat": 46.6995321,
+    "lng": -68.0100589
+  },
+  "teresa_s_corner_cafe_bakery_presque_isle": {
+    "lat": 46.6779724,
+    "lng": -68.0160961
+  },
+  "the_county_glass_shop_presque_isle": {
+    "lat": 46.679883420418,
+    "lng": -68.026337115259
+  },
+  "the_cubby_thrift_store_presque_isle": {
+    "lat": 46.6795419,
+    "lng": -68.0158834
+  },
+  "the_kitchen_bath_shop_llc_presque_isle": {
+    "lat": 46.7050801,
+    "lng": -68.0072469
+  },
+  "the_maple_pig_presque_isle": {
+    "lat": 46.6917552,
+    "lng": -68.0117425
+  },
+  "the_northeastland_hotel_presque_isle": {
+    "lat": 46.680729545502,
+    "lng": -68.015442199807
+  },
+  "the_olde_rustic_attic_presque_isle": {
+    "lat": 46.6860539,
+    "lng": -68.0140742
+  },
+  "the_sandwich_shop_presque_isle": {
+    "lat": 46.6747128,
+    "lng": -68.0156791
+  },
+  "the_sidewalk_cafe_presque_isle": {
+    "lat": 46.680729545502,
+    "lng": -68.015442199807
+  },
+  "the_sled_shop_inc_presque_isle": {
+    "lat": 46.6664818,
+    "lng": -68.0103429
+  },
+  "the_total_look_presque_isle": {
+    "lat": 46.6878591,
+    "lng": -68.0082517
+  },
+  "theriault_equipment_presque_isle": {
+    "lat": 46.720452,
+    "lng": -68.007945
+  },
+  "threads_of_hope_thrift_store_catholic_charities_presque_isle": {
+    "lat": 46.6998996,
+    "lng": -68.0056002
+  },
+  "tim_hortons_presque_isle": {
+    "lat": 46.697439,
+    "lng": -68.0119769
+  },
+  "timeout_sports_bar_restaurant_presque_isle_hotel_presque_isle": {
+    "lat": 46.667621783623,
+    "lng": -68.011719297435
+  },
+  "tractor_supply_presque_isle": {
+    "lat": 46.6607339,
+    "lng": -68.0099089
+  },
+  "university_of_maine_at_presque_isle_umpi_presque_isle": {
+    "lat": 46.6722415,
+    "lng": -68.0163004
+  },
+  "vip_tires_service_presque_isle": {
+    "lat": 46.6998996,
+    "lng": -68.0056002
+  },
+  "vickie_s_hometown_pizza_presque_isle": {
+    "lat": 46.6831858,
+    "lng": -68.0196417
+  },
+  "walgreens_presque_isle": {
+    "lat": 46.6782202,
+    "lng": -68.0149792
+  },
+  "walmart_pharmacy_presque_isle": {
+    "lat": 46.6974543,
+    "lng": -68.0144845
+  },
+  "walmart_supercenter_presque_isle": {
+    "lat": 46.6974543,
+    "lng": -68.0144845
+  },
+  "white_smiles_family_dentistry_presque_isle": {
+    "lat": 46.6885177,
+    "lng": -68.0123153
+  },
+  "wilder_s_jewelry_store_presque_isle": {
+    "lat": 46.6801206,
+    "lng": -68.0159332
+  },
+  "winnie_s_restaurant_dairy_presque_isle": {
+    "lat": 46.6888277,
+    "lng": -68.0199715
+  },
+  "aroostook_hospitality_inn_washburn": {
+    "lat": 46.7650155,
+    "lng": -68.0663447
+  },
+  "cafe_sorpresso_washburn": {
+    "lat": 46.755982322267,
+    "lng": -68.068887190398
+  },
+  "dollar_general_washburn": {
+    "lat": 46.7884,
+    "lng": -68.1575
+  },
+  "first_baptist_church_of_washburn_washburn": {
+    "lat": 46.7886002,
+    "lng": -68.1568594
+  },
+  "katahdin_trust_company_washburn": {
+    "lat": 46.7896717,
+    "lng": -68.1569344
+  },
+  "krispy_krunchy_chicken_washburn": {
+    "lat": 46.7767308,
+    "lng": -68.1502397
+  },
+  "lidstone_memorial_united_methodist_church_washburn": {
+    "lat": 46.7916499,
+    "lng": -68.158561
+  },
+  "sally_s_beauty_salon_washburn": {
+    "lat": 46.7585854,
+    "lng": -68.1015378
+  },
+  "st_catherine_catholic_church_washburn": {
+    "lat": 46.791148950916,
+    "lng": -68.159001524798
+  },
+  "washburn_coffee_shop_washburn": {
+    "lat": 46.789594306732,
+    "lng": -68.156600480964
+  },
+  "washburn_family_practice_washburn": {
+    "lat": 46.7903401,
+    "lng": -68.1560513
+  },
+  "washburn_food_mart_washburn": {
+    "lat": 46.789624822796,
+    "lng": -68.156771334436
+  },
+  "washburn_memorial_public_library_washburn": {
+    "lat": 46.7901565,
+    "lng": -68.1571232
+  },
+  "washburn_pentecostal_church_washburn": {
+    "lat": 46.7836969,
+    "lng": -68.1564185
+  },
+  "washburn_post_office_washburn": {
+    "lat": 46.787549,
+    "lng": -68.1557137
+  },
+  "washburn_recreation_washburn": {
+    "lat": 46.790201493099,
+    "lng": -68.155845583235
+  },
+  "washburn_schools_washburn": {
+    "lat": 46.7901755,
+    "lng": -68.156515
+  },
+  "washburn_town_office_washburn": {
+    "lat": 46.7903413,
+    "lng": -68.1559174
+  },
+  "white_s_service_washburn": {
+    "lat": 46.782518,
+    "lng": -68.1553802
+  },
+  "9_lake_outfitters_bridgewater": {
+    "lat": 46.428448540409,
+    "lng": -67.828297437212
+  },
+  "a_t_investments_bridgewater": {
+    "lat": 46.4281,
+    "lng": -67.8444
+  },
+  "advantage_thermal_bridgewater": {
+    "lat": 46.419464172625,
+    "lng": -67.862624069314
+  },
+  "aroostook_pentecostal_campground_bridgewater": {
+    "lat": 46.4381,
+    "lng": -67.8454
+  },
+  "backridge_auto_and_truck_repair_bridgewater": {
+    "lat": 46.419512200972,
+    "lng": -67.856400226363
+  },
+  "boyd_s_repair_bridgewater": {
+    "lat": 46.4501908,
+    "lng": -67.7857384
+  },
+  "bradbury_barrel_company_bridgewater": {
+    "lat": 46.4181,
+    "lng": -67.8434
+  },
+  "bradbury_maple_farms_bridgewater": {
+    "lat": 46.419463212011,
+    "lng": -67.877555555844
+  },
+  "bradstreet_family_farm_bridgewater": {
+    "lat": 46.4302947,
+    "lng": -67.8420263
+  },
+  "bridgewater_mainway_circle_k_foster_s_bridgewater_bridgewater": {
+    "lat": 46.4081,
+    "lng": -67.8454
+  },
+  "delong_builders_bridgewater": {
+    "lat": 46.419512200904,
+    "lng": -67.854003894622
+  },
+  "halls_new_and_used_bridgewater": {
+    "lat": 46.4309479,
+    "lng": -67.8580768
+  },
+  "hidden_meadow_farm_bridgewater": {
+    "lat": 46.383718099178,
+    "lng": -67.79682704235
+  },
+  "icelandics_north_bridgewater": {
+    "lat": 46.4231,
+    "lng": -67.8454
+  },
+  "j_j_cedar_mill_bridgewater": {
+    "lat": 46.4131,
+    "lng": -67.8444
+  },
+  "rh_foster_foster_s_bridgewater_bridgewater": {
+    "lat": 46.4331,
+    "lng": -67.8434
+  },
+  "ragtime_designs_bridgewater": {
+    "lat": 46.3837229,
+    "lng": -67.8275318
+  },
+  "shaw_s_oil_bridgewater": {
+    "lat": 46.450959875066,
+    "lng": -67.796011403128
+  },
+  "smoldering_lake_outfitters_bridgewater": {
+    "lat": 46.412258201075,
+    "lng": -67.816359204898
+  },
+  "the_cooperage_bridgewater": {
+    "lat": 46.4504095,
+    "lng": -67.8526196
+  },
+  "the_corner_store_bridgewater": {
+    "lat": 46.4513468,
+    "lng": -67.8212759
+  },
+  "whited_bible_camp_bridgewater": {
+    "lat": 46.450157841088,
+    "lng": -67.851862008285
+  },
+  "wood_prairie_farm_bridgewater": {
+    "lat": 46.41524554572,
+    "lng": -67.910226292505
+  },
+  "dyer_brook_union_church_dyer_brook": {
+    "lat": 46.0369707,
+    "lng": -68.228735
+  },
+  "midnight_auto_repair_dyer_brook": {
+    "lat": 46.0823795,
+    "lng": -68.1784366
+  },
+  "anderson_s_mill_pond_dairy_bar_hodgdon": {
+    "lat": 46.0539424857,
+    "lng": -67.875990907114
+  },
+  "benn_auto_sales_inc_hodgdon": {
+    "lat": 46.0531,
+    "lng": -67.8672
+  },
+  "crown_of_maine_taxidermy_hodgdon": {
+    "lat": 46.0656,
+    "lng": -67.8662
+  },
+  "forticor_farms_hodgdon": {
+    "lat": 46.062548824744,
+    "lng": -67.887874483867
+  },
+  "hidden_spring_winery_hodgdon": {
+    "lat": 46.0541146,
+    "lng": -67.8076956
+  },
+  "hodgdon_united_methodist_church_hodgdon": {
+    "lat": 46.060968893916,
+    "lng": -67.849992020431
+  },
+  "new_life_assembly_of_god_hodgdon": {
+    "lat": 46.0597298,
+    "lng": -67.8531522
+  },
+  "pleasant_view_tree_farm_hodgdon": {
+    "lat": 46.014912900511,
+    "lng": -67.85481557181
+  },
+  "seiders_hill_top_lanes_hodgdon": {
+    "lat": 46.091416525764,
+    "lng": -67.840646321614
+  },
+  "seiders_variety_redemption_center_hodgdon": {
+    "lat": 46.0406,
+    "lng": -67.8682
+  },
+  "t_s_market_hodgdon": {
+    "lat": 46.054063344846,
+    "lng": -67.874872769758
+  },
+  "treeland_farm_hodgdon": {
+    "lat": 46.073176889223,
+    "lng": -67.850558345119
+  },
+  "wynes_trailside_popcorn_hodgdon": {
+    "lat": 46.041995856665,
+    "lng": -67.83790221196
+  },
+  "207_collectibles_houlton": {
+    "lat": 46.1250717,
+    "lng": -67.8399308
+  },
+  "38_s_auto_service_houlton": {
+    "lat": 46.1309782,
+    "lng": -67.8409589
+  },
+  "acap_aroostook_county_action_program_houlton": {
+    "lat": 46.124020347923,
+    "lng": -67.83971900051
+  },
+  "adalia_north_hair_salon_houlton": {
+    "lat": 46.1456026,
+    "lng": -67.8407779
+  },
+  "advance_auto_parts_houlton": {
+    "lat": 46.1242413,
+    "lng": -67.8440182
+  },
+  "albert_fitzpatrick_trucking_houlton": {
+    "lat": 46.1228957,
+    "lng": -67.8447591
+  },
+  "amity_baptist_church_houlton": {
+    "lat": 46.1167324,
+    "lng": -67.8314682
+  },
+  "anciently_marked_tattoo_art_studio_houlton": {
+    "lat": 46.1252441,
+    "lng": -67.8398566
+  },
+  "andy_s_iga_foodliner_houlton": {
+    "lat": 46.136605245704,
+    "lng": -67.839552611747
+  },
+  "aroostook_auto_tech_houlton": {
+    "lat": 46.1270706,
+    "lng": -67.8384379
+  },
+  "aroostook_milling_co_inc_houlton": {
+    "lat": 46.1239197,
+    "lng": -67.8279657
+  },
+  "aroostook_produce_dist_houlton": {
+    "lat": 46.125197673961,
+    "lng": -67.841961967866
+  },
+  "bam_truck_brokerage_houlton": {
+    "lat": 46.1563566,
+    "lng": -67.8413417
+  },
+  "bangor_savings_bank_houlton": {
+    "lat": 46.1257815,
+    "lng": -67.8394495
+  },
+  "bates_fuel_houlton": {
+    "lat": 46.114724011692,
+    "lng": -67.855699523073
+  },
+  "betty_marie_s_sweet_shop_houlton": {
+    "lat": 46.1257501,
+    "lng": -67.8389393
+  },
+  "bittersweet_thyme_houlton": {
+    "lat": 46.1254805,
+    "lng": -67.8325824
+  },
+  "bittersweet_thyme_cafe_houlton": {
+    "lat": 46.1254805,
+    "lng": -67.8325824
+  },
+  "brass_anchor_barbershop_houlton": {
+    "lat": 46.1253696,
+    "lng": -67.8396133
+  },
+  "buildings_etc_houlton": {
+    "lat": 46.1291557,
+    "lng": -67.8413115
+  },
+  "burger_king_houlton": {
+    "lat": 46.136477709406,
+    "lng": -67.839550789808
+  },
+  "cary_library_houlton": {
+    "lat": 46.1252709,
+    "lng": -67.837622
+  },
+  "chadwick_florist_greenhouses_houlton": {
+    "lat": 46.1223315,
+    "lng": -67.8325022
+  },
+  "church_of_christ_houlton": {
+    "lat": 46.125614,
+    "lng": -67.8316716
+  },
+  "church_of_the_nazarene_houlton": {
+    "lat": 46.1180014,
+    "lng": -67.8494932
+  },
+  "cigaret_shopper_houlton": {
+    "lat": 46.1317692,
+    "lng": -67.8405021
+  },
+  "circle_k_houlton": {
+    "lat": 46.1231228,
+    "lng": -67.844221
+  },
+  "circle_k_irving_houlton": {
+    "lat": 46.136185,
+    "lng": -67.8398257
+  },
+  "circle_k_irving_24_houlton": {
+    "lat": 46.1436583,
+    "lng": -67.839536
+  },
+  "clark_s_auto_sales_houlton": {
+    "lat": 46.0167627,
+    "lng": -67.9755943
+  },
+  "clukey_s_auto_supply_houlton": {
+    "lat": 46.147670771945,
+    "lng": -67.840365068761
+  },
+  "cold_stone_creamery_houlton": {
+    "lat": 46.1450183,
+    "lng": -67.8410686
+  },
+  "cole_s_shoe_store_shoe_service_inc_houlton": {
+    "lat": 46.1250035,
+    "lng": -67.8412779
+  },
+  "cornerstone_baptist_church_houlton": {
+    "lat": 46.1168371,
+    "lng": -67.8425129
+  },
+  "country_north_gifts_houlton": {
+    "lat": 46.125578271003,
+    "lng": -67.840856591845
+  },
+  "county_federal_credit_union_houlton": {
+    "lat": 46.1252371,
+    "lng": -67.8396206
+  },
+  "county_micro_inc_houlton": {
+    "lat": 46.125644250861,
+    "lng": -67.838609812122
+  },
+  "county_tractor_of_houlton_houlton": {
+    "lat": 46.1738574,
+    "lng": -67.8416821
+  },
+  "county_yankee_grocer_houlton": {
+    "lat": 46.1244658,
+    "lng": -67.8281777
+  },
+  "crimps_lites_salon_houlton": {
+    "lat": 46.1283574,
+    "lng": -67.8423592
+  },
+  "daigle_oil_co_houlton": {
+    "lat": 46.1237845,
+    "lng": -67.8437677
+  },
+  "daniel_s_florist_houlton": {
+    "lat": 46.1255198,
+    "lng": -67.8401867
+  },
+  "davis_gates_alward_cpa_s_houlton": {
+    "lat": 46.1256151,
+    "lng": -67.839334
+  },
+  "dead_river_company_houlton": {
+    "lat": 46.1229261,
+    "lng": -67.8460556
+  },
+  "divine_family_hair_studio_houlton": {
+    "lat": 46.1210524,
+    "lng": -67.8486959
+  },
+  "doc_s_place_houlton": {
+    "lat": 46.1450258,
+    "lng": -67.839641
+  },
+  "dollar_tree_houlton": {
+    "lat": 46.1374093,
+    "lng": -67.8388819
+  },
+  "domino_s_pizza_houlton": {
+    "lat": 46.1360815,
+    "lng": -67.8389181
+  },
+  "duff_service_station_houlton": {
+    "lat": 46.1087484,
+    "lng": -67.86104
+  },
+  "dunkin_houlton": {
+    "lat": 46.1419592,
+    "lng": -67.8410555
+  },
+  "dunn_funeral_home_houlton": {
+    "lat": 46.1208811,
+    "lng": -67.837693
+  },
+  "eastern_maine_electric_co_op_houlton": {
+    "lat": 46.1250893,
+    "lng": -67.8318955
+  },
+  "f_a_peabody_houlton": {
+    "lat": 46.1277061,
+    "lng": -67.8420024
+  },
+  "family_dollar_houlton": {
+    "lat": 46.1467107,
+    "lng": -67.8413408
+  },
+  "first_baptist_church_of_houlton_houlton": {
+    "lat": 46.1228475,
+    "lng": -67.8394639
+  },
+  "first_choice_realty_houlton": {
+    "lat": 46.1264048,
+    "lng": -67.8371877
+  },
+  "first_congregational_church_houlton": {
+    "lat": 46.1203713,
+    "lng": -67.8353406
+  },
+  "full_gospel_assembly_houlton": {
+    "lat": 46.110658,
+    "lng": -67.840153
+  },
+  "gates_accounting_houlton": {
+    "lat": 46.124020347923,
+    "lng": -67.83971900051
+  },
+  "good_as_new_thrift_shop_houlton": {
+    "lat": 46.1258036,
+    "lng": -67.8384398
+  },
+  "goodrich_s_jewelry_houlton": {
+    "lat": 46.1456026,
+    "lng": -67.8407779
+  },
+  "greater_houlton_christian_academy_houlton": {
+    "lat": 46.1200167,
+    "lng": -67.8430136
+  },
+  "greg_s_garage_houlton": {
+    "lat": 46.1344634,
+    "lng": -67.8393669
+  },
+  "hair_works_studio_houlton": {
+    "lat": 46.125130730583,
+    "lng": -67.839825621994
+  },
+  "hannaford_supermarket_houlton": {
+    "lat": 46.1351722,
+    "lng": -67.8390051
+  },
+  "harbison_plumbing_heating_houlton": {
+    "lat": 46.125167205509,
+    "lng": -67.839658427559
+  },
+  "hatfield_realty_service_inc_houlton": {
+    "lat": 46.1258012,
+    "lng": -67.8386534
+  },
+  "heart_to_heart_gift_shop_houlton": {
+    "lat": 46.1718264,
+    "lng": -67.8411743
+  },
+  "hogan_tire_houlton": {
+    "lat": 46.123370305487,
+    "lng": -67.845194732765
+  },
+  "houlton_christian_science_society_houlton": {
+    "lat": 46.1220036,
+    "lng": -67.8359924
+  },
+  "houlton_community_golf_club_houlton": {
+    "lat": 46.0999576,
+    "lng": -67.9447575
+  },
+  "houlton_farms_dairy_houlton": {
+    "lat": 46.1246651,
+    "lng": -67.8241075
+  },
+  "houlton_market_square_shopping_center_houlton": {
+    "lat": 46.1261732,
+    "lng": -67.8380621
+  },
+  "houlton_powersports_houlton": {
+    "lat": 46.1514447,
+    "lng": -67.8397084
+  },
+  "houlton_regional_hospital_houlton": {
+    "lat": 46.133566,
+    "lng": -67.8438729
+  },
+  "houlton_stamp_coins_antiques_houlton": {
+    "lat": 46.125810722664,
+    "lng": -67.841054388963
+  },
+  "houlton_united_methodist_church_houlton": {
+    "lat": 46.1241907,
+    "lng": -67.8378388
+  },
+  "houlton_water_company_houlton": {
+    "lat": 46.1249845,
+    "lng": -67.8426082
+  },
+  "houlton_wesleyan_church_houlton": {
+    "lat": 46.1224354,
+    "lng": -67.8361536
+  },
+  "hy_grow_organics_houlton": {
+    "lat": 46.1257408422,
+    "lng": -67.837136105513
+  },
+  "ivey_s_motor_lodge_houlton": {
+    "lat": 46.135336896336,
+    "lng": -67.841562702427
+  },
+  "jei_sports_of_maine_houlton": {
+    "lat": 46.121118063677,
+    "lng": -67.838304088524
+  },
+  "kfc_houlton": {
+    "lat": 46.1360815,
+    "lng": -67.8389181
+  },
+  "katahdin_trust_co_houlton": {
+    "lat": 46.1451593,
+    "lng": -67.8426208
+  },
+  "kingdom_hall_of_jehovah_s_witnesses_houlton": {
+    "lat": 46.1270982,
+    "lng": -67.8960032
+  },
+  "lds_church_houlton_branch_houlton": {
+    "lat": 46.1276611,
+    "lng": -67.8385463
+  },
+  "label_shopper_houlton": {
+    "lat": 46.136568806762,
+    "lng": -67.839552091193
+  },
+  "lincoln_agency_llc_houlton": {
+    "lat": 46.1257793,
+    "lng": -67.8391822
+  },
+  "lisa_s_hair_designs_houlton": {
+    "lat": 46.1252484,
+    "lng": -67.8284019
+  },
+  "louisiana_pacific_houlton": {
+    "lat": 46.1387,
+    "lng": -67.844467
+  },
+  "macs_trading_post_houlton": {
+    "lat": 46.1309782,
+    "lng": -67.8409589
+  },
+  "machias_savings_bank_houlton": {
+    "lat": 46.1370692,
+    "lng": -67.8402081
+  },
+  "main_street_fitness_inc_houlton": {
+    "lat": 46.125754710519,
+    "lng": -67.839002877752
+  },
+  "marden_s_houlton": {
+    "lat": 46.1374093,
+    "lng": -67.8388819
+  },
+  "market_pizza_houlton": {
+    "lat": 46.125576271914,
+    "lng": -67.840779627009
+  },
+  "mcdonald_s_houlton": {
+    "lat": 46.1356568,
+    "lng": -67.8400192
+  },
+  "military_street_baptist_church_houlton": {
+    "lat": 46.124396,
+    "lng": -67.8139257
+  },
+  "mini_music_shop_houlton": {
+    "lat": 46.125644250861,
+    "lng": -67.838609812122
+  },
+  "modern_beauty_salon_houlton": {
+    "lat": 46.125752584436,
+    "lng": -67.839115560284
+  },
+  "mooers_realty_houlton": {
+    "lat": 46.1251005,
+    "lng": -67.8414199
+  },
+  "napa_coastal_auto_parts_houlton": {
+    "lat": 46.124491374061,
+    "lng": -67.84317530351
+  },
+  "o_reilly_auto_parts_houlton": {
+    "lat": 46.1357676,
+    "lng": -67.8388202
+  },
+  "pastry_corner_houlton": {
+    "lat": 46.1239163,
+    "lng": -67.8446064
+  },
+  "pioneer_broadband_houlton": {
+    "lat": 46.1242661,
+    "lng": -67.8408996
+  },
+  "pizza_hut_houlton": {
+    "lat": 46.1377493,
+    "lng": -67.8403056
+  },
+  "porter_s_cash_fuel_houlton": {
+    "lat": 46.1387,
+    "lng": -67.836133
+  },
+  "priority_auto_sales_houlton": {
+    "lat": 46.130658634913,
+    "lng": -67.840624852675
+  },
+  "putnam_house_houlton": {
+    "lat": 46.1194856,
+    "lng": -67.8421814
+  },
+  "rather_b_quilting_houlton": {
+    "lat": 46.153546689467,
+    "lng": -67.860185373747
+  },
+  "riversbend_paddle_co_houlton": {
+    "lat": 46.1029233,
+    "lng": -67.8699612
+  },
+  "s_w_collins_houlton": {
+    "lat": 46.136916231732,
+    "lng": -67.839567722515
+  },
+  "sadie_s_bakery_houlton": {
+    "lat": 46.1137,
+    "lng": -67.844467
+  },
+  "sage_financial_houlton": {
+    "lat": 46.1249986,
+    "lng": -67.8416299
+  },
+  "salvation_army_houlton": {
+    "lat": 46.1251525,
+    "lng": -67.8392987
+  },
+  "salvation_army_family_thrift_store_houlton": {
+    "lat": 46.125641862455,
+    "lng": -67.838908232378
+  },
+  "scottish_inn_houlton": {
+    "lat": 46.1129281,
+    "lng": -67.8580836
+  },
+  "serendipitous_dragonfly_houlton": {
+    "lat": 46.1254375,
+    "lng": -67.8384387
+  },
+  "sherwin_williams_houlton": {
+    "lat": 46.136981509136,
+    "lng": -67.83957425025
+  },
+  "shiretown_baptist_church_houlton": {
+    "lat": 46.1288329,
+    "lng": -67.8303695
+  },
+  "shiretown_coins_houlton": {
+    "lat": 46.125572807207,
+    "lng": -67.84059453056
+  },
+  "shiretown_inn_suites_houlton": {
+    "lat": 46.1445317,
+    "lng": -67.8407183
+  },
+  "shiretown_stove_outdoor_living_houlton": {
+    "lat": 46.125207521228,
+    "lng": -67.839656476796
+  },
+  "sleepy_hollow_bed_breakfast_houlton": {
+    "lat": 46.1258824,
+    "lng": -67.8330882
+  },
+  "sloat_s_machining_fabrication_houlton": {
+    "lat": 46.1166164,
+    "lng": -67.8530919
+  },
+  "smith_bros_plumbing_heating_houlton": {
+    "lat": 46.121641,
+    "lng": -67.8339436
+  },
+  "st_mary_of_the_visitation_catholic_church_houlton": {
+    "lat": 46.1253832,
+    "lng": -67.8263923
+  },
+  "star_dust_motel_houlton": {
+    "lat": 46.1712307,
+    "lng": -67.8414342
+  },
+  "state_farm_insurance_houlton": {
+    "lat": 46.1251693,
+    "lng": -67.8423117
+  },
+  "steelstone_industries_houlton": {
+    "lat": 46.123370305487,
+    "lng": -67.845194732765
+  },
+  "subway_houlton": {
+    "lat": 46.1450258,
+    "lng": -67.839641
+  },
+  "swallow_electric_houlton": {
+    "lat": 46.12431926074,
+    "lng": -67.843485947038
+  },
+  "tang_s_chinese_cuisine_houlton": {
+    "lat": 46.1314628,
+    "lng": -67.841134
+  },
+  "tate_lyle_houlton": {
+    "lat": 46.1137,
+    "lng": -67.8278
+  },
+  "temple_theater_houlton": {
+    "lat": 46.1259988,
+    "lng": -67.8403909
+  },
+  "the_country_co_op_and_farm_store_houlton": {
+    "lat": 46.125639311156,
+    "lng": -67.839043451416
+  },
+  "thompson_oil_co_houlton": {
+    "lat": 46.0051251,
+    "lng": -67.9786057
+  },
+  "tim_hortons_houlton": {
+    "lat": 46.1450183,
+    "lng": -67.8410686
+  },
+  "tractor_supply_houlton": {
+    "lat": 46.1487397,
+    "lng": -67.8393594
+  },
+  "tulgey_wood_emporium_houlton": {
+    "lat": 46.1252883,
+    "lng": -67.8398541
+  },
+  "uncle_willy_s_candy_shoppe_houlton": {
+    "lat": 46.12589,
+    "lng": -67.8391613
+  },
+  "unitarian_society_of_houlton_houlton": {
+    "lat": 46.1241502,
+    "lng": -67.8370304
+  },
+  "united_construction_forestry_united_ag_turf_houlton": {
+    "lat": 46.1345263,
+    "lng": -67.8394733
+  },
+  "varney_agency_houlton": {
+    "lat": 46.125641862455,
+    "lng": -67.838908232378
+  },
+  "volumes_book_store_houlton": {
+    "lat": 46.1223499,
+    "lng": -67.8476381
+  },
+  "wbcq_radio_houlton": {
+    "lat": 46.124233204079,
+    "lng": -67.843641268801
+  },
+  "wal_mart_1974_houlton": {
+    "lat": 46.1377493,
+    "lng": -67.8403056
+  },
+  "ward_cedar_log_homes_houlton": {
+    "lat": 46.1242537,
+    "lng": -67.8429614
+  },
+  "weston_s_mobil_houlton": {
+    "lat": 46.125231,
+    "lng": -67.8239551
+  },
+  "wiggy_s_trading_post_houlton": {
+    "lat": 46.123069987385,
+    "lng": -67.845484113702
+  },
+  "york_s_of_houlton_houlton": {
+    "lat": 46.1468299,
+    "lng": -67.8395434
+  },
+  "binotto_s_farm_stand_island_falls": {
+    "lat": 45.966113961724,
+    "lng": -68.283450878525
+  },
+  "birch_point_campground_cottages_island_falls": {
+    "lat": 46.036663850765,
+    "lng": -68.199592752471
+  },
+  "bishop_s_market_island_falls": {
+    "lat": 46.010179,
+    "lng": -68.268492
+  },
+  "bowers_funeral_home_island_falls": {
+    "lat": 46.0099089,
+    "lng": -68.270087
+  },
+  "daigle_oil_co_island_falls_island_falls": {
+    "lat": 46.008502,
+    "lng": -68.2702178
+  },
+  "island_falls_animal_health_clinic_island_falls": {
+    "lat": 46.0070211,
+    "lng": -68.2886624
+  },
+  "island_falls_one_stop_island_falls": {
+    "lat": 46.008626393126,
+    "lng": -68.269456113627
+  },
+  "island_falls_opera_house_inn_lounge_island_falls": {
+    "lat": 46.0094874,
+    "lng": -68.2704537
+  },
+  "jerry_s_food_store_jerry_s_thriftway_island_falls": {
+    "lat": 45.9853,
+    "lng": -68.2727
+  },
+  "katahdin_federal_credit_union_island_falls": {
+    "lat": 46.0086477,
+    "lng": -68.2711752
+  },
+  "katahdin_trust_company_island_falls": {
+    "lat": 46.0088212,
+    "lng": -68.2695425
+  },
+  "katahdin_valley_health_center_island_falls_island_falls": {
+    "lat": 46.0070211,
+    "lng": -68.2886624
+  },
+  "mimi_s_cook_nook_island_falls": {
+    "lat": 46.0083273,
+    "lng": -68.2707573
+  },
+  "north_gate_grill_island_falls": {
+    "lat": 46.009547853514,
+    "lng": -68.263267204107
+  },
+  "northern_katahdin_valley_solid_waste_island_falls": {
+    "lat": 46.0053,
+    "lng": -68.2717
+  },
+  "porter_s_garage_island_falls": {
+    "lat": 46.0075365,
+    "lng": -68.2782776
+  },
+  "sewall_house_yoga_retreat_island_falls": {
+    "lat": 46.008659532487,
+    "lng": -68.269198363032
+  },
+  "st_agnes_catholic_church_island_falls": {
+    "lat": 46.0108141,
+    "lng": -68.2727579
+  },
+  "the_wood_shop_island_falls": {
+    "lat": 46.0324457,
+    "lng": -68.2112669
+  },
+  "united_baptist_church_island_falls": {
+    "lat": 46.0096637,
+    "lng": -68.2696595
+  },
+  "va_jo_wa_golf_course_island_falls": {
+    "lat": 46.033625855818,
+    "lng": -68.217391959812
+  },
+  "whittier_congregational_church_island_falls": {
+    "lat": 46.0100763,
+    "lng": -68.2692235
+  },
+  "aurora_mills_and_farm_linneus": {
+    "lat": 46.073469677917,
+    "lng": -67.958959874156
+  },
+  "brown_s_appliance_service_linneus": {
+    "lat": 46.01957734441,
+    "lng": -67.973630397799
+  },
+  "canine_equine_inn_linneus": {
+    "lat": 46.044304987584,
+    "lng": -67.952242050507
+  },
+  "clark_s_auto_sales_linneus": {
+    "lat": 46.017050820335,
+    "lng": -67.975481715307
+  },
+  "clark_s_variety_linneus": {
+    "lat": 46.038684211267,
+    "lng": -67.959477250457
+  },
+  "county_home_improvements_linneus": {
+    "lat": 46.063220568465,
+    "lng": -67.938853585824
+  },
+  "d_s_self_service_storage_linneus": {
+    "lat": 46.045338219713,
+    "lng": -67.950991449338
+  },
+  "fox_hollow_photography_linneus": {
+    "lat": 46.025628739392,
+    "lng": -67.931051171768
+  },
+  "hagan_farms_linneus": {
+    "lat": 46.071186767326,
+    "lng": -67.920916486961
+  },
+  "harry_s_used_sales_linneus": {
+    "lat": 46.041219378581,
+    "lng": -67.956701945943
+  },
+  "jsl_metal_recycling_linneus": {
+    "lat": 46.043712385408,
+    "lng": -67.997319672175
+  },
+  "katahdin_s_shadow_outfitters_linneus": {
+    "lat": 45.990569904989,
+    "lng": -67.97992651003
+  },
+  "linneus_church_linneus": {
+    "lat": 46.0386002,
+    "lng": -67.9622676
+  },
+  "nature_s_circle_farm_linneus": {
+    "lat": 46.0248208,
+    "lng": -67.9311868
+  },
+  "plisga_day_surveys_linneus": {
+    "lat": 46.07528860995,
+    "lng": -67.972911379783
+  },
+  "rockwater_cabins_linneus": {
+    "lat": 46.043987401778,
+    "lng": -67.928014548511
+  },
+  "stf_forest_products_linneus": {
+    "lat": 46.048146241824,
+    "lng": -67.947142151865
+  },
+  "sunnyside_family_farm_linneus": {
+    "lat": 46.067108047459,
+    "lng": -67.984776586516
+  },
+  "wood_works_rocks_of_maine_linneus": {
+    "lat": 46.0809145,
+    "lng": -67.9945266
+  },
+  "dana_foster_sons_trucking_littleton": {
+    "lat": 46.232143072884,
+    "lng": -67.840837002494
+  },
+  "golding_construction_littleton": {
+    "lat": 46.241685212237,
+    "lng": -67.846873443129
+  },
+  "henderson_helping_hand_massage_littleton": {
+    "lat": 46.198360520566,
+    "lng": -67.829795737201
+  },
+  "houlton_band_of_maliseet_indians_littleton": {
+    "lat": 46.1868597,
+    "lng": -67.8096988
+  },
+  "littleton_baptist_church_littleton": {
+    "lat": 46.2092,
+    "lng": -67.9139
+  },
+  "littleton_service_auto_body_repair_littleton": {
+    "lat": 46.243251026015,
+    "lng": -67.84092807947
+  },
+  "perrin_realty_inc_littleton": {
+    "lat": 46.1868597,
+    "lng": -67.8096988
+  },
+  "shady_ridge_disc_golf_littleton": {
+    "lat": 46.259626044793,
+    "lng": -67.884219308362
+  },
+  "southern_aroostook_agricultural_museum_littleton": {
+    "lat": 46.243251026015,
+    "lng": -67.84092807947
+  },
+  "watson_s_water_well_drilling_littleton": {
+    "lat": 46.233788826146,
+    "lng": -67.8408217268
+  },
+  "westerdahl_garage_towing_littleton": {
+    "lat": 46.2419683,
+    "lng": -67.8414245
+  },
+  "blue_moose_restaurant_monticello": {
+    "lat": 46.2917101,
+    "lng": -67.8418837
+  },
+  "folsoms_custom_meat_cutting_monticello": {
+    "lat": 46.2952455,
+    "lng": -67.839955
+  },
+  "good_farms_inc_monticello": {
+    "lat": 46.294553,
+    "lng": -67.840211
+  },
+  "monticello_baptist_church_monticello": {
+    "lat": 46.3773241,
+    "lng": -67.8426981
+  },
+  "monticello_country_store_monticello": {
+    "lat": 46.3178,
+    "lng": -67.8433
+  },
+  "threads_of_hope_outlet_catholic_charities_monticello": {
+    "lat": 46.2903841,
+    "lng": -67.840092
+  },
+  "transport_refrigeration_svc_monticello": {
+    "lat": 46.2978,
+    "lng": -67.8443
+  },
+  "bond_family_mercantile_new_limerick": {
+    "lat": 46.099,
+    "lng": -67.9792
+  },
+  "cameron_s_market_new_limerick": {
+    "lat": 46.101,
+    "lng": -67.9667
+  },
+  "carol_s_country_yarns_new_limerick": {
+    "lat": 46.1,
+    "lng": -67.97295
+  },
+  "cochran_camp_new_limerick": {
+    "lat": 46.133539338094,
+    "lng": -68.029450045776
+  },
+  "lakeside_restaurant_new_limerick": {
+    "lat": 46.102260973835,
+    "lng": -67.93877724338
+  },
+  "nature_s_circle_farm_new_limerick": {
+    "lat": 46.027042071623,
+    "lng": -67.930952274642
+  },
+  "new_limerick_baptist_church_new_limerick": {
+    "lat": 46.1019972,
+    "lng": -67.9452975
+  },
+  "s_h_nevers_inc_logging_new_limerick": {
+    "lat": 46.109624625417,
+    "lng": -67.96310817691
+  },
+  "tall_timber_lodge_new_limerick": {
+    "lat": 46.10390737037,
+    "lng": -68.033997685678
+  },
+  "tires_plus_total_car_care_new_limerick": {
+    "lat": 46.113987142245,
+    "lng": -67.958302494601
+  },
+  "wayne_s_auto_inc_new_limerick": {
+    "lat": 46.1,
+    "lng": -67.9542
+  },
+  "a_place_to_eat_oakfield": {
+    "lat": 46.111658665124,
+    "lng": -68.160398026612
+  },
+  "arborwall_solid_cedar_homes_oakfield": {
+    "lat": 46.114638,
+    "lng": -68.1608497
+  },
+  "bethel_church_oakfield": {
+    "lat": 46.1225603,
+    "lng": -68.1616088
+  },
+  "circle_k_oakfield": {
+    "lat": 46.1136985,
+    "lng": -68.1594589
+  },
+  "higgins_brook_cabins_oakfield": {
+    "lat": 46.089486,
+    "lng": -68.084371
+  },
+  "katahdin_cedar_log_homes_katahdin_forest_products_oakfield": {
+    "lat": 46.1160479,
+    "lng": -68.1608987
+  },
+  "katahdin_trust_company_oakfield": {
+    "lat": 46.1164818,
+    "lng": -68.1605427
+  },
+  "knowles_corner_atv_club_oakfield": {
+    "lat": 45.9939,
+    "lng": -68.1417
+  },
+  "oakfield_railway_museum_oakfield": {
+    "lat": 46.097816950638,
+    "lng": -68.15615224681
+  },
+  "oakfield_thriftway_oakfield": {
+    "lat": 46.100007005898,
+    "lng": -68.156043917381
+  },
+  "whitey_s_market_oakfield": {
+    "lat": 46.115674428874,
+    "lng": -68.160729617935
+  },
+  "autumn_bounty_farm_smyrna": {
+    "lat": 46.0229,
+    "lng": -68.10935
+  },
+  "brookside_inn_smyrna": {
+    "lat": 46.0239,
+    "lng": -68.131225
+  },
+  "currie_combs_stables_smyrna": {
+    "lat": 46.1300984,
+    "lng": -68.1151062
+  },
+  "farm_fresh_feeds_smyrna": {
+    "lat": 46.1459054,
+    "lng": -68.0853992
+  },
+  "kauffman_metals_roofing_smyrna": {
+    "lat": 46.0249,
+    "lng": -68.12685
+  },
+  "lilley_dairy_farms_smyrna": {
+    "lat": 46.1599485,
+    "lng": -68.0979466
+  },
+  "merri_gold_greenhouse_smyrna": {
+    "lat": 46.0239,
+    "lng": -68.1181
+  },
+  "moore_farms_smyrna": {
+    "lat": 46.0229,
+    "lng": -68.1356
+  },
+  "mt_timoney_cycle_center_smyrna": {
+    "lat": 46.1286762,
+    "lng": -68.1133427
+  },
+  "northeastern_rustic_smyrna": {
+    "lat": 46.0229,
+    "lng": -68.122475
+  },
+  "pioneer_place_general_store_smyrna": {
+    "lat": 46.1452828,
+    "lng": -68.0825253
+  },
+  "rc_logging_supplies_smyrna": {
+    "lat": 46.0249,
+    "lng": -68.1006
+  },
+  "smyrna_baptist_church_smyrna": {
+    "lat": 46.1517901,
+    "lng": -68.0649369
+  },
+  "spring_break_maple_honey_smyrna": {
+    "lat": 46.0239,
+    "lng": -68.104975
+  },
+  "sturdi_built_storage_buildings_smyrna": {
+    "lat": 46.0249,
+    "lng": -68.113725
+  },
+  "calvary_temple_assembly_of_god_east_millinocket": {
+    "lat": 45.6300244,
+    "lng": -68.5644081
+  },
+  "crandall_s_hardware_east_millinocket": {
+    "lat": 45.6229707,
+    "lng": -68.567544
+  },
+  "davis_pharmacy_east_millinocket": {
+    "lat": 45.6257603,
+    "lng": -68.575645
+  },
+  "eastmill_federal_credit_union_east_millinocket": {
+    "lat": 45.6254481,
+    "lng": -68.5762256
+  },
+  "ellis_family_market_east_millinocket": {
+    "lat": 45.6235093,
+    "lng": -68.5682344
+  },
+  "family_dollar_east_millinocket": {
+    "lat": 45.6276301,
+    "lng": -68.5807509
+  },
+  "first_baptist_church_east_millinocket": {
+    "lat": 45.6243224,
+    "lng": -68.5667547
+  },
+  "first_congregational_church_east_millinocket_east_millinocket": {
+    "lat": 45.6275088,
+    "lng": -68.5731579
+  },
+  "forget_me_not_shoppe_east_millinocket": {
+    "lat": 45.6276301,
+    "lng": -68.5807509
+  },
+  "gail_s_gentle_grooming_east_millinocket": {
+    "lat": 45.6260497,
+    "lng": -68.576553
+  },
+  "hamlet_pub_east_millinocket": {
+    "lat": 45.6236664,
+    "lng": -68.5671081
+  },
+  "living_hope_church_of_the_nazarene_east_millinocket": {
+    "lat": 45.62929,
+    "lng": -68.5647874
+  },
+  "main_street_floral_gift_shop_east_millinocket": {
+    "lat": 45.6258727,
+    "lng": -68.5763126
+  },
+  "napa_auto_parts_east_millinocket": {
+    "lat": 45.6277907,
+    "lng": -68.5814907
+  },
+  "posh_salon_east_millinocket": {
+    "lat": 45.625764800624,
+    "lng": -68.576240871537
+  },
+  "rick_s_market_east_millinocket": {
+    "lat": 45.6265774,
+    "lng": -68.5782958
+  },
+  "st_peter_s_catholic_church_east_millinocket": {
+    "lat": 45.6332117,
+    "lng": -68.5751943
+  },
+  "tri_town_baptist_church_east_millinocket": {
+    "lat": 45.6286109,
+    "lng": -68.5812193
+  },
+  "83_north_bar_grill_billiards_medway": {
+    "lat": 45.613311,
+    "lng": -68.5467804
+  },
+  "big_apple_convenience_store_medway": {
+    "lat": 45.6170474,
+    "lng": -68.5571539
+  },
+  "circle_k_medway_irving_big_stop_medway": {
+    "lat": 45.609857,
+    "lng": -68.5234447
+  },
+  "country_diner_medway": {
+    "lat": 45.6151147,
+    "lng": -68.5508767
+  },
+  "d_m_trailer_sales_medway": {
+    "lat": 45.6131881,
+    "lng": -68.5319167
+  },
+  "gilman_electrical_supply_medway": {
+    "lat": 45.6108421,
+    "lng": -68.526165
+  },
+  "glad_tidings_church_of_god_medway": {
+    "lat": 45.6131383,
+    "lng": -68.5450273
+  },
+  "grandbelly_s_country_cafe_medway": {
+    "lat": 45.613079818534,
+    "lng": -68.543239978986
+  },
+  "katahdin_general_medway_medway": {
+    "lat": 45.6186034,
+    "lng": -68.5601823
+  },
+  "katahdin_shadows_campground_medway": {
+    "lat": 45.6170665,
+    "lng": -68.5507135
+  },
+  "lennie_s_superette_medway": {
+    "lat": 45.6129755,
+    "lng": -68.5449076
+  },
+  "noah_s_ark_food_ice_cream_medway": {
+    "lat": 45.6015486,
+    "lng": -68.5316242
+  },
+  "river_s_edge_motel_pizza_medway": {
+    "lat": 45.612995360146,
+    "lng": -68.54514459447
+  },
+  "two_rivers_canoe_tackle_medway": {
+    "lat": 45.619034,
+    "lng": -68.5613504
+  },
+  "100_mile_wilderness_inn_millinocket": {
+    "lat": 45.6528909,
+    "lng": -68.7112076
+  },
+  "abol_bridge_campground_store_millinocket": {
+    "lat": 45.6589804,
+    "lng": -68.7706343
+  },
+  "advance_auto_parts_millinocket": {
+    "lat": 45.6563101,
+    "lng": -68.6884286
+  },
+  "angelos_pizza_grille_millinocket": {
+    "lat": 45.6550973,
+    "lng": -68.7092804
+  },
+  "appalachian_trail_cafe_millinocket": {
+    "lat": 45.6566713,
+    "lng": -68.7094079
+  },
+  "appalachian_trail_lodge_millinocket": {
+    "lat": 45.6533769,
+    "lng": -68.7086463
+  },
+  "bangor_savings_bank_millinocket": {
+    "lat": 45.6571201,
+    "lng": -68.7077931
+  },
+  "baxter_park_inn_millinocket": {
+    "lat": 45.6579328,
+    "lng": -68.6834987
+  },
+  "blue_ox_saloon_millinocket": {
+    "lat": 45.6541605,
+    "lng": -68.7086931
+  },
+  "bragdon_energy_svc_millinocket": {
+    "lat": 45.6571503,
+    "lng": -68.7093055
+  },
+  "campbells_service_ctr_millinocket": {
+    "lat": 45.6568484,
+    "lng": -68.7077747
+  },
+  "charleston_church_katahdin_millinocket": {
+    "lat": 45.6561882,
+    "lng": -68.684809
+  },
+  "circle_k_dunkin_millinocket": {
+    "lat": 45.6576267,
+    "lng": -68.6918159
+  },
+  "corner_car_wash_millinocket": {
+    "lat": 45.6561316,
+    "lng": -68.6843227
+  },
+  "dave_s_garage_millinocket": {
+    "lat": 45.6495245,
+    "lng": -68.7128249
+  },
+  "dead_river_co_millinocket": {
+    "lat": 45.6576872,
+    "lng": -68.6894829
+  },
+  "designlab_millinocket": {
+    "lat": 45.6554134,
+    "lng": -68.7088027
+  },
+  "dollar_general_millinocket": {
+    "lat": 45.6568876,
+    "lng": -68.6917344
+  },
+  "don_howard_insurance_millinocket": {
+    "lat": 45.6592287,
+    "lng": -68.7077629
+  },
+  "dunkin_donuts_millinocket": {
+    "lat": 45.6576267,
+    "lng": -68.6918159
+  },
+  "faith_baptist_church_millinocket": {
+    "lat": 45.6587622,
+    "lng": -68.684649
+  },
+  "family_dollar_store_millinocket": {
+    "lat": 45.6578452,
+    "lng": -68.6902701
+  },
+  "first_congregational_church_millinocket": {
+    "lat": 45.6585686,
+    "lng": -68.7130382
+  },
+  "gather_inn_millinocket": {
+    "lat": 45.65747421444,
+    "lng": -68.71032468227
+  },
+  "gracies_aunts_closet_millinocket": {
+    "lat": 45.6577444,
+    "lng": -68.7025592
+  },
+  "h_r_block_millinocket": {
+    "lat": 45.6567361,
+    "lng": -68.6846094
+  },
+  "hair_razor_millinocket": {
+    "lat": 45.6623533,
+    "lng": -68.7094137
+  },
+  "hang_wong_restaurant_millinocket": {
+    "lat": 45.6575381,
+    "lng": -68.6815345
+  },
+  "hannaford_supermarket_pharmacy_millinocket": {
+    "lat": 45.6585587,
+    "lng": -68.6879449
+  },
+  "hillcrest_golf_club_millinocket": {
+    "lat": 45.6631099,
+    "lng": -68.7005182
+  },
+  "hotel_terrace_restaurant_millinocket": {
+    "lat": 45.6561494,
+    "lng": -68.7011414
+  },
+  "ice_fish_inn_millinocket": {
+    "lat": 45.657408552674,
+    "lng": -68.709983243659
+  },
+  "jandreau_s_greenhouse_millinocket": {
+    "lat": 45.6742039,
+    "lng": -68.7042247
+  },
+  "john_sons_towing_millinocket": {
+    "lat": 45.6612341,
+    "lng": -68.7126766
+  },
+  "john_s_auto_millinocket": {
+    "lat": 45.6567442,
+    "lng": -68.7133355
+  },
+  "k_m_motors_millinocket": {
+    "lat": 45.657591,
+    "lng": -68.7084696
+  },
+  "katahdin_chamber_of_commerce_millinocket": {
+    "lat": 45.657357,
+    "lng": -68.678709
+  },
+  "katahdin_federal_credit_union_millinocket": {
+    "lat": 45.6568247,
+    "lng": -68.6799177
+  },
+  "katahdin_general_store_millinocket": {
+    "lat": 45.6636822,
+    "lng": -68.7161227
+  },
+  "katahdin_inn_suites_millinocket": {
+    "lat": 45.6564103,
+    "lng": -68.6918931
+  },
+  "katahdin_motors_chevrolet_cadillac_millinocket": {
+    "lat": 45.6576571,
+    "lng": -68.6804945
+  },
+  "katahdin_valley_health_center_millinocket": {
+    "lat": 45.6554582,
+    "lng": -68.7084064
+  },
+  "knife_edge_trading_post_millinocket": {
+    "lat": 45.656598,
+    "lng": -68.6841683
+  },
+  "lamson_funeral_home_millinocket": {
+    "lat": 45.6561882,
+    "lng": -68.684809
+  },
+  "lankhorst_chiropractic_millinocket": {
+    "lat": 45.6536496,
+    "lng": -68.7086211
+  },
+  "life_style_fitness_center_millinocket": {
+    "lat": 45.6578511,
+    "lng": -68.6857019
+  },
+  "magic_city_real_estate_millinocket": {
+    "lat": 45.6642944,
+    "lng": -68.7105515
+  },
+  "mainely_photos_millinocket": {
+    "lat": 45.6595765,
+    "lng": -68.7090018
+  },
+  "marie_s_hair_design_millinocket": {
+    "lat": 45.6638705,
+    "lng": -68.7090926
+  },
+  "mcdonald_s_millinocket": {
+    "lat": 45.6567728,
+    "lng": -68.6882072
+  },
+  "melvin_f_ferland_jewelry_millinocket": {
+    "lat": 45.6570554,
+    "lng": -68.7094694
+  },
+  "memories_of_maine_gallery_millinocket": {
+    "lat": 45.6544447,
+    "lng": -68.7093212
+  },
+  "millinocket_army_navy_store_millinocket": {
+    "lat": 45.655576838356,
+    "lng": -68.709150971963
+  },
+  "millinocket_baptist_church_millinocket": {
+    "lat": 45.658434,
+    "lng": -68.7087578
+  },
+  "millinocket_church_of_the_nazarene_millinocket": {
+    "lat": 45.6587159,
+    "lng": -68.6999532
+  },
+  "millinocket_floral_shop_millinocket": {
+    "lat": 45.6546963,
+    "lng": -68.7088731
+  },
+  "millinocket_furniture_co_millinocket": {
+    "lat": 45.6503201,
+    "lng": -68.7031964
+  },
+  "millinocket_house_of_pizza_millinocket": {
+    "lat": 45.657284356729,
+    "lng": -68.691263279934
+  },
+  "millinocket_insurance_agency_millinocket": {
+    "lat": 45.6566127,
+    "lng": -68.7094069
+  },
+  "millinocket_irving_mainway_millinocket": {
+    "lat": 45.6576267,
+    "lng": -68.6918159
+  },
+  "millinocket_memorial_library_millinocket": {
+    "lat": 45.6563444,
+    "lng": -68.71103
+  },
+  "millinocket_regional_hospital_millinocket": {
+    "lat": 45.6529691,
+    "lng": -68.716155
+  },
+  "millinocket_variety_millinocket": {
+    "lat": 45.6572498,
+    "lng": -68.7083957
+  },
+  "moose_prints_gallery_gifts_millinocket": {
+    "lat": 45.6572417,
+    "lng": -68.7069528
+  },
+  "new_england_outdoor_center_millinocket": {
+    "lat": 45.6556184,
+    "lng": -68.7090697
+  },
+  "north_woods_real_estate_millinocket": {
+    "lat": 45.6567182,
+    "lng": -68.6847869
+  },
+  "pamola_motor_lodge_millinocket": {
+    "lat": 45.6575381,
+    "lng": -68.6815345
+  },
+  "pampered_polished_millinocket": {
+    "lat": 45.6588627,
+    "lng": -68.7094485
+  },
+  "parks_edge_inn_millinocket": {
+    "lat": 45.6576358,
+    "lng": -68.7056701
+  },
+  "penobscot_pie_co_millinocket": {
+    "lat": 45.6576249,
+    "lng": -68.682616
+  },
+  "pete_s_auto_body_millinocket": {
+    "lat": 45.6564118,
+    "lng": -68.7133314
+  },
+  "preble_oil_co_millinocket": {
+    "lat": 45.6554773,
+    "lng": -68.7088049
+  },
+  "realty_resources_management_millinocket": {
+    "lat": 45.658816981647,
+    "lng": -68.711591269528
+  },
+  "rideout_s_ag_market_millinocket": {
+    "lat": 45.6521966,
+    "lng": -68.7151015
+  },
+  "rite_aid_millinocket": {
+    "lat": 45.6568876,
+    "lng": -68.6917344
+  },
+  "river_drivers_restaurant_millinocket": {
+    "lat": 45.6576746,
+    "lng": -68.6505575
+  },
+  "robert_j_adams_cpa_millinocket": {
+    "lat": 45.6565547,
+    "lng": -68.7093952
+  },
+  "russ_barber_styling_millinocket": {
+    "lat": 45.6547634,
+    "lng": -68.7088853
+  },
+  "subway_millinocket": {
+    "lat": 45.6576511,
+    "lng": -68.6893472
+  },
+  "save_a_lot_food_stores_millinocket": {
+    "lat": 45.6564654,
+    "lng": -68.6892894
+  },
+  "sawmill_bar_grill_millinocket": {
+    "lat": 45.671969,
+    "lng": -68.7198702
+  },
+  "scootic_inn_millinocket": {
+    "lat": 45.6541799,
+    "lng": -68.709267
+  },
+  "shippee_david_jay_od_millinocket": {
+    "lat": 45.6570282,
+    "lng": -68.7099623
+  },
+  "single_source_financial_ctr_millinocket": {
+    "lat": 45.6576957,
+    "lng": -68.6911132
+  },
+  "spoiled_hair_studio_millinocket": {
+    "lat": 45.6575895,
+    "lng": -68.684683
+  },
+  "st_martin_tours_thrift_store_millinocket": {
+    "lat": 45.6599701,
+    "lng": -68.7118726
+  },
+  "st_andrew_s_episcopal_church_millinocket": {
+    "lat": 45.6566002,
+    "lng": -68.7105877
+  },
+  "st_martin_of_tours_catholic_church_millinocket": {
+    "lat": 45.6596349,
+    "lng": -68.7110805
+  },
+  "steel_magnolias_day_spa_millinocket": {
+    "lat": 45.6588627,
+    "lng": -68.7094485
+  },
+  "sterns_lumber_co_millinocket": {
+    "lat": 45.6565949,
+    "lng": -68.6855795
+  },
+  "steve_s_auto_body_millinocket": {
+    "lat": 45.6475263,
+    "lng": -68.6937343
+  },
+  "tractor_supply_co_millinocket": {
+    "lat": 45.6561076,
+    "lng": -68.6899792
+  },
+  "u_haul_neighborhood_dealer_millinocket": {
+    "lat": 45.6565949,
+    "lng": -68.6855795
+  },
+  "west_branch_aviation_millinocket": {
+    "lat": 45.6529725,
+    "lng": -68.698014
+  },
+  "young_house_bed_breakfast_millinocket": {
+    "lat": 45.65747421444,
+    "lng": -68.71032468227
+  },
+  "your_family_worship_center_first_pentecostal_millinocket": {
+    "lat": 45.6538215,
+    "lng": -68.7081994
+  },
+  "back_wood_bbq_mount_chase": {
+    "lat": 46.0947394,
+    "lng": -68.4520755
+  },
+  "cvf_services_patten": {
+    "lat": 45.9671689,
+    "lng": -68.5249123
+  },
+  "calculations_inc_patten": {
+    "lat": 45.9971319,
+    "lng": -68.4475971
+  },
+  "conklin_s_lodge_camps_patten": {
+    "lat": 46.0016713,
+    "lng": -68.4761975
+  },
+  "debbie_s_deli_pizza_patten": {
+    "lat": 45.9967982,
+    "lng": -68.4470358
+  },
+  "dollar_general_patten": {
+    "lat": 45.9846236,
+    "lng": -68.4490248
+  },
+  "eastmill_federal_credit_union_patten": {
+    "lat": 45.9997125,
+    "lng": -68.4466046
+  },
+  "ellis_family_market_patten": {
+    "lat": 45.9957745,
+    "lng": -68.4469417
+  },
+  "fiddlehead_gifts_florals_patten": {
+    "lat": 45.9992548,
+    "lng": -68.4465569
+  },
+  "k_c_quik_stop_service_center_patten": {
+    "lat": 45.9815227,
+    "lng": -68.4509336
+  },
+  "katahdin_brew_works_patten": {
+    "lat": 45.9963695,
+    "lng": -68.4482272
+  },
+  "katahdin_trust_company_patten": {
+    "lat": 45.9960847,
+    "lng": -68.4469564
+  },
+  "main_street_outback_garage_patten": {
+    "lat": 45.995656,
+    "lng": -68.4477812
+  },
+  "milliken_medical_center_patten": {
+    "lat": 45.9965037,
+    "lng": -68.445666
+  },
+  "patten_drug_llc_patten": {
+    "lat": 45.9967048,
+    "lng": -68.4476149
+  },
+  "patten_pentecostal_church_assemblies_of_god_patten": {
+    "lat": 46.0022232,
+    "lng": -68.4464769
+  },
+  "patten_redemption_center_patten": {
+    "lat": 45.9984284,
+    "lng": -68.446759
+  },
+  "red_moose_gifts_laundromat_patten": {
+    "lat": 45.996177,
+    "lng": -68.4477327
+  },
+  "richardson_s_hardware_napa_patten": {
+    "lat": 45.99602,
+    "lng": -68.4477766
+  },
+  "savage_paint_body_patten": {
+    "lat": 45.9719874,
+    "lng": -68.4502874
+  },
+  "st_paul_s_catholic_church_patten": {
+    "lat": 45.9964563,
+    "lng": -68.4507515
+  },
+  "stetson_memorial_united_methodist_church_patten": {
+    "lat": 45.9950057,
+    "lng": -68.4471138
+  },
+  "brenda_s_restaurant_sherman": {
+    "lat": 45.8720802,
+    "lng": -68.4091794
+  },
+  "circle_k_irving_24_sherman": {
+    "lat": 45.8746378,
+    "lng": -68.4162362
+  },
+  "f_a_peabody_insurance_sherman": {
+    "lat": 45.8769207,
+    "lng": -68.4185593
+  },
+  "katahdin_valley_motel_sherman": {
+    "lat": 45.87139415625,
+    "lng": -68.407687714127
+  },
+  "monarda_calvary_baptist_church_sherman": {
+    "lat": 45.8584377,
+    "lng": -68.3280363
+  },
+  "salted_butter_farm_sherman": {
+    "lat": 45.8727863,
+    "lng": -68.3886383
+  },
+  "sherman_thriftway_sherman": {
+    "lat": 45.872594,
+    "lng": -68.3863404
+  },
+  "washburn_memorial_church_ucc_sherman": {
+    "lat": 45.8731084,
+    "lng": -68.3849174
+  },
+  "mike_s_elite_auto_shin_pond": {
+    "lat": 46.035270380993,
+    "lng": -68.507208534543
+  },
+  "mt_chase_lodge_shin_pond": {
+    "lat": 46.105601716931,
+    "lng": -68.555898776316
+  },
+  "shin_pond_pub_shin_pond": {
+    "lat": 46.0655465,
+    "lng": -68.5331467
+  },
+  "shin_pond_village_shin_pond": {
+    "lat": 46.1055509,
+    "lng": -68.5556933
+  },
+  "skinner_s_wilderness_variety_store_shin_pond": {
+    "lat": 46.102658,
+    "lng": -68.5563685
+  },
+  "ashley_cunningham_co_furniture_burlington": {
+    "lat": 45.2808514,
+    "lng": -68.4366773
+  },
+  "banks_electric_burlington": {
+    "lat": 45.208747,
+    "lng": -68.4268289
+  },
+  "burlington_baptist_church_burlington": {
+    "lat": 45.208683481409,
+    "lng": -68.42625291759
+  },
+  "burlington_general_store_burlington": {
+    "lat": 45.206862384474,
+    "lng": -68.425264654801
+  },
+  "dubois_lawn_landscape_burlington": {
+    "lat": 45.2764197,
+    "lng": -68.452728
+  },
+  "j_m_kilby_engineering_burlington": {
+    "lat": 45.1880568,
+    "lng": -68.4068062
+  },
+  "maine_gas_refrigerators_burlington": {
+    "lat": 45.1768889,
+    "lng": -68.3968685
+  },
+  "chester_baptist_church_chester": {
+    "lat": 45.430335368702,
+    "lng": -68.470948862097
+  },
+  "chester_forest_products_chester": {
+    "lat": 45.4,
+    "lng": -68.5167
+  },
+  "furever_friends_doggie_daycare_chester": {
+    "lat": 45.3671694,
+    "lng": -68.561512
+  },
+  "the_maine_land_store_treeline_chester": {
+    "lat": 45.3695651,
+    "lng": -68.5561507
+  },
+  "barnes_brook_golf_course_enfield": {
+    "lat": 45.2628,
+    "lng": -68.6402
+  },
+  "c_i_custom_builders_enfield": {
+    "lat": 45.249090489233,
+    "lng": -68.565728719486
+  },
+  "chip_s_citgo_enfield": {
+    "lat": 45.2553,
+    "lng": -68.6402
+  },
+  "cold_stream_lumber_enfield": {
+    "lat": 45.2478,
+    "lng": -68.6402
+  },
+  "dollar_general_enfield": {
+    "lat": 45.2395331,
+    "lng": -68.641291
+  },
+  "enfield_baptist_church_enfield": {
+    "lat": 45.24888423868,
+    "lng": -68.565746869544
+  },
+  "enfield_general_store_enfield": {
+    "lat": 45.2578,
+    "lng": -68.6392
+  },
+  "hammond_lumber_company_enfield": {
+    "lat": 45.2328,
+    "lng": -68.6402
+  },
+  "montague_public_house_enfield": {
+    "lat": 45.2391093,
+    "lng": -68.6450061
+  },
+  "northwoods_sporting_journal_enfield": {
+    "lat": 45.2428,
+    "lng": -68.6392
+  },
+  "pelletiers_greenhouse_enfield": {
+    "lat": 45.2453,
+    "lng": -68.6382
+  },
+  "penobscot_county_federal_credit_union_enfield": {
+    "lat": 45.2528,
+    "lng": -68.6382
+  },
+  "penobscot_river_realty_enfield": {
+    "lat": 45.2403009,
+    "lng": -68.6348238
+  },
+  "pine_tree_pet_supply_enfield": {
+    "lat": 45.2378,
+    "lng": -68.6382
+  },
+  "pleasant_river_lumber_company_enfield": {
+    "lat": 45.2403,
+    "lng": -68.6402
+  },
+  "r_n_french_real_estate_enfield": {
+    "lat": 45.2353,
+    "lng": -68.6392
+  },
+  "savage_line_llc_enfield": {
+    "lat": 45.271034037924,
+    "lng": -68.554276432478
+  },
+  "south_branch_concrete_company_enfield": {
+    "lat": 45.2503,
+    "lng": -68.6392
+  },
+  "thompson_s_hardware_inc_enfield": {
+    "lat": 45.2603,
+    "lng": -68.6382
+  },
+  "west_enfield_church_of_god_enfield": {
+    "lat": 45.2433889,
+    "lng": -68.6497496
+  },
+  "applebee_s_superette_greenbush": {
+    "lat": 45.0353575,
+    "lng": -68.597445
+  },
+  "c_s_auto_repair_greenbush": {
+    "lat": 45.0738233,
+    "lng": -68.5993573
+  },
+  "cardville_redemption_center_greenbush": {
+    "lat": 45.075047300279,
+    "lng": -68.600504378661
+  },
+  "cardville_united_pentecostal_church_greenbush": {
+    "lat": 45.054124147884,
+    "lng": -68.585372646883
+  },
+  "crystal_clear_communications_greenbush": {
+    "lat": 45.0823,
+    "lng": -68.6625
+  },
+  "dunrite_car_care_repair_greenbush": {
+    "lat": 45.0833,
+    "lng": -68.654167
+  },
+  "gsv_surveying_land_services_greenbush": {
+    "lat": 45.096212440824,
+    "lng": -68.643653904532
+  },
+  "michaud_woodcrafters_greenbush": {
+    "lat": 45.095434099725,
+    "lng": -68.560260034357
+  },
+  "northeast_concrete_specialists_greenbush": {
+    "lat": 45.069006677552,
+    "lng": -68.65563136038
+  },
+  "olamon_faith_bible_church_greenbush": {
+    "lat": 45.1191141,
+    "lng": -68.6112991
+  },
+  "old_country_store_greenbush": {
+    "lat": 45.0843,
+    "lng": -68.645833
+  },
+  "rick_lyford_trucking_inc_greenbush": {
+    "lat": 45.058741464874,
+    "lng": -68.590122430067
+  },
+  "riverside_heating_greenbush": {
+    "lat": 45.0823,
+    "lng": -68.6375
+  },
+  "ryan_s_carpet_cleaning_greenbush": {
+    "lat": 45.091287887358,
+    "lng": -68.620061584033
+  },
+  "95_er_market_howland": {
+    "lat": 45.2368588,
+    "lng": -68.6715657
+  },
+  "bangor_savings_bank_howland": {
+    "lat": 45.2426592,
+    "lng": -68.6571682
+  },
+  "bartlett_bench_wire_howland": {
+    "lat": 45.2375898,
+    "lng": -68.6741942
+  },
+  "handy_stop_howland": {
+    "lat": 45.237,
+    "lng": -68.6598
+  },
+  "house_of_crafts_flowers_howland": {
+    "lat": 45.2416371,
+    "lng": -68.6591216
+  },
+  "howland_baptist_church_howland": {
+    "lat": 45.2434267,
+    "lng": -68.6561307
+  },
+  "howland_enfield_federal_credit_union_howland": {
+    "lat": 45.23725,
+    "lng": -68.6600636
+  },
+  "king_s_rentals_self_storage_howland": {
+    "lat": 45.2361756,
+    "lng": -68.6524841
+  },
+  "st_leo_the_great_church_catholic_howland": {
+    "lat": 45.2404658,
+    "lng": -68.6621472
+  },
+  "christian_and_missionary_alliance_church_of_lee_lee": {
+    "lat": 45.375639354633,
+    "lng": -68.287418148462
+  },
+  "house_in_the_woods_lee": {
+    "lat": 45.36,
+    "lng": -68.2867
+  },
+  "lee_baptist_church_lee": {
+    "lat": 45.359839635758,
+    "lng": -68.2749956029
+  },
+  "mallett_s_mill_inc_lee": {
+    "lat": 45.37020528607,
+    "lng": -68.270436134313
+  },
+  "marble_creek_acres_winery_cidery_lee": {
+    "lat": 45.3779145,
+    "lng": -68.2890969
+  },
+  "raymond_s_variety_lee": {
+    "lat": 45.3590593,
+    "lng": -68.2831432
+  },
+  "sleeping_bear_campground_cabins_lee": {
+    "lat": 45.341275110312,
+    "lng": -68.306759967012
+  },
+  "acres_away_realty_lincoln": {
+    "lat": 45.354531,
+    "lng": -68.5314014
+  },
+  "aunnie_ashley_s_variety_lincoln": {
+    "lat": 45.3435064,
+    "lng": -68.5620537
+  },
+  "auto_b_washed_wright_lincoln": {
+    "lat": 45.3593625,
+    "lng": -68.5231579
+  },
+  "bangor_savings_bank_lincoln": {
+    "lat": 45.3615427,
+    "lng": -68.5155004
+  },
+  "barker_business_services_lincoln": {
+    "lat": 45.366512,
+    "lng": -68.50112
+  },
+  "bible_baptist_church_of_lincoln_lincoln": {
+    "lat": 45.366496706906,
+    "lng": -68.504475644558
+  },
+  "big_apple_store_lincoln": {
+    "lat": 45.3653456,
+    "lng": -68.5052022
+  },
+  "blazin_trailz_lincoln": {
+    "lat": 45.356339,
+    "lng": -68.5402269
+  },
+  "briarwood_motor_inn_lincoln": {
+    "lat": 45.357857191071,
+    "lng": -68.524816494803
+  },
+  "carl_s_auto_parts_lincoln": {
+    "lat": 45.3607375,
+    "lng": -68.5037805
+  },
+  "charlie_s_seafood_market_lincoln": {
+    "lat": 45.364799461041,
+    "lng": -68.501634359377
+  },
+  "cigaret_shopper_lincoln": {
+    "lat": 45.3627995,
+    "lng": -68.507943
+  },
+  "circle_k_lincoln": {
+    "lat": 45.3620354,
+    "lng": -68.5154472
+  },
+  "circle_k_lincoln_irving_mainway_lincoln": {
+    "lat": 45.365605934447,
+    "lng": -68.50314433255
+  },
+  "clay_funeral_home_lincoln": {
+    "lat": 45.366520268675,
+    "lng": -68.501332058655
+  },
+  "coastal_auto_parts_lincoln": {
+    "lat": 45.3546225,
+    "lng": -68.5285875
+  },
+  "colonial_healthcare_assisted_living_lincoln": {
+    "lat": 45.3553396,
+    "lng": -68.5035244
+  },
+  "dawson_s_family_fitness_lincoln": {
+    "lat": 45.3813865,
+    "lng": -68.4987355
+  },
+  "dead_river_company_lincoln": {
+    "lat": 45.3623765,
+    "lng": -68.5148856
+  },
+  "doc_s_place_lincoln": {
+    "lat": 45.367835245516,
+    "lng": -68.503227304481
+  },
+  "dollar_tree_lincoln": {
+    "lat": 45.355971,
+    "lng": -68.5295269
+  },
+  "dubay_auto_parts_napa_lincoln": {
+    "lat": 45.3546225,
+    "lng": -68.5285875
+  },
+  "dunkin_donuts_lincoln": {
+    "lat": 45.3614504,
+    "lng": -68.518394
+  },
+  "eagle_lodge_lincoln": {
+    "lat": 45.3393375,
+    "lng": -68.4457085
+  },
+  "earth_s_bounty_natural_foods_lincoln": {
+    "lat": 45.36704,
+    "lng": -68.504204
+  },
+  "f_a_peabody_insurance_lincoln": {
+    "lat": 45.3611785,
+    "lng": -68.5190156
+  },
+  "family_dollar_lincoln": {
+    "lat": 45.3623,
+    "lng": -68.505
+  },
+  "first_congregational_church_of_lincoln_ucc_lincoln": {
+    "lat": 45.364175,
+    "lng": -68.5016954
+  },
+  "first_united_methodist_church_of_lincoln_lincoln": {
+    "lat": 45.3655545,
+    "lng": -68.503012
+  },
+  "freedom_fitness_lincoln": {
+    "lat": 45.3609525,
+    "lng": -68.5030252
+  },
+  "full_gospel_tabernacle_lincoln": {
+    "lat": 45.3636175,
+    "lng": -68.5053845
+  },
+  "gather_brunch_bar_lincoln": {
+    "lat": 45.3625724,
+    "lng": -68.5051555
+  },
+  "gatherings_for_the_home_lincoln": {
+    "lat": 45.363823506732,
+    "lng": -68.503803436128
+  },
+  "gill_s_point_s_tire_auto_lincoln": {
+    "lat": 45.3572855,
+    "lng": -68.5267245
+  },
+  "gillmor_s_restaurant_lounge_lincoln": {
+    "lat": 45.3571065,
+    "lng": -68.524902
+  },
+  "goldstar_cleaners_lincoln": {
+    "lat": 45.367234732615,
+    "lng": -68.503237648304
+  },
+  "h_r_block_lincoln": {
+    "lat": 45.3660415,
+    "lng": -68.5016552
+  },
+  "hannaford_supermarket_lincoln": {
+    "lat": 45.360898,
+    "lng": -68.516461
+  },
+  "health_access_network_boreas_family_medicine_lincoln": {
+    "lat": 45.3475121,
+    "lng": -68.5190792
+  },
+  "heart_of_maine_winery_lincoln": {
+    "lat": 45.3647055,
+    "lng": -68.501375
+  },
+  "high_performance_hair_tanning_lincoln": {
+    "lat": 45.3635369,
+    "lng": -68.5042858
+  },
+  "jato_highlands_golf_course_lincoln": {
+    "lat": 45.4002455,
+    "lng": -68.4762379
+  },
+  "just_baked_lincoln": {
+    "lat": 45.36291,
+    "lng": -68.5160932
+  },
+  "keybank_lincoln": {
+    "lat": 45.362747,
+    "lng": -68.5151128
+  },
+  "keys_n_things_lincoln": {
+    "lat": 45.3601485,
+    "lng": -68.5014428
+  },
+  "kingdom_hall_of_jehovah_s_witnesses_lincoln": {
+    "lat": 45.3534826,
+    "lng": -68.5343743
+  },
+  "lds_church_lincoln_branch_lincoln": {
+    "lat": 45.349639,
+    "lng": -68.5190295
+  },
+  "lincoln_center_baptist_church_lincoln": {
+    "lat": 45.3813865,
+    "lng": -68.4987355
+  },
+  "lincoln_center_church_of_god_lincoln": {
+    "lat": 45.3930774,
+    "lng": -68.4936156
+  },
+  "lincoln_house_of_pizza_lincoln": {
+    "lat": 45.365396926641,
+    "lng": -68.503332241873
+  },
+  "lincoln_maine_federal_credit_union_lincoln": {
+    "lat": 45.360848,
+    "lng": -68.521168
+  },
+  "lincoln_news_lincoln": {
+    "lat": 45.362909,
+    "lng": -68.5121114
+  },
+  "lincoln_regional_food_cupboard_thrift_store_lincoln": {
+    "lat": 45.365411,
+    "lng": -68.5270224
+  },
+  "lincoln_regional_veterinary_hospital_lincoln": {
+    "lat": 45.3612945,
+    "lng": -68.5156782
+  },
+  "lincoln_seventh_day_adventist_church_lincoln": {
+    "lat": 45.359568,
+    "lng": -68.5451454
+  },
+  "lincoln_smiles_dentistry_lincoln": {
+    "lat": 45.3695985,
+    "lng": -68.4957873
+  },
+  "lincoln_tap_house_lincoln": {
+    "lat": 45.3577155,
+    "lng": -68.5240725
+  },
+  "linda_s_hair_care_lincoln": {
+    "lat": 45.363638,
+    "lng": -68.5096065
+  },
+  "machias_savings_bank_lincoln": {
+    "lat": 45.3537262,
+    "lng": -68.5308512
+  },
+  "main_street_barber_shop_lincoln": {
+    "lat": 45.362690760975,
+    "lng": -68.504281440718
+  },
+  "maranatha_riverside_church_lincoln": {
+    "lat": 45.360535,
+    "lng": -68.5463564
+  },
+  "marden_s_surplus_salvage_lincoln": {
+    "lat": 45.3631641,
+    "lng": -68.5044679
+  },
+  "mcdonald_s_lincoln": {
+    "lat": 45.3618683,
+    "lng": -68.5165605
+  },
+  "mcsea_books_lincoln": {
+    "lat": 45.3628026,
+    "lng": -68.5050512
+  },
+  "ninja_express_japanese_steakhouse_lincoln": {
+    "lat": 45.363019662122,
+    "lng": -68.50884962285
+  },
+  "northern_pines_care_estates_lincoln": {
+    "lat": 45.3553635,
+    "lng": -68.4961115
+  },
+  "pat_s_pizza_lincoln": {
+    "lat": 45.375641,
+    "lng": -68.5007328
+  },
+  "pelletier_ford_of_lincoln_lincoln": {
+    "lat": 45.36475,
+    "lng": -68.5039674
+  },
+  "penobscot_valley_hospital_lincoln": {
+    "lat": 45.3475704,
+    "lng": -68.5175463
+  },
+  "penobscot_valley_humane_society_lincoln": {
+    "lat": 45.363284,
+    "lng": -68.5148951
+  },
+  "possibilities_gift_home_lincoln": {
+    "lat": 45.363864467035,
+    "lng": -68.503785934908
+  },
+  "r_h_foster_energy_lincoln": {
+    "lat": 45.3674604,
+    "lng": -68.5026819
+  },
+  "s_w_collins_co_doitbest_lincoln": {
+    "lat": 45.3541292,
+    "lng": -68.5298156
+  },
+  "save_a_life_lincoln": {
+    "lat": 45.3623,
+    "lng": -68.505
+  },
+  "select_design_embroidery_lincoln": {
+    "lat": 45.3548045,
+    "lng": -68.5087675
+  },
+  "simple_sentiments_lincoln": {
+    "lat": 45.363823506732,
+    "lng": -68.503803436128
+  },
+  "st_mary_of_lourdes_church_catholic_lincoln": {
+    "lat": 45.3690089,
+    "lng": -68.5034658
+  },
+  "steaks_n_stuff_market_deli_lincoln": {
+    "lat": 45.363354,
+    "lng": -68.5027934
+  },
+  "stewart_professional_learning_center_cowork_lincoln": {
+    "lat": 45.363905427338,
+    "lng": -68.503768433688
+  },
+  "subway_lincoln": {
+    "lat": 45.36291,
+    "lng": -68.5160932
+  },
+  "taco_bell_lincoln": {
+    "lat": 45.363007458808,
+    "lng": -68.508585726395
+  },
+  "tangles_hair_studio_lincoln": {
+    "lat": 45.362429277285,
+    "lng": -68.515502779665
+  },
+  "the_forester_pub_lincoln": {
+    "lat": 45.3588822,
+    "lng": -68.5227018
+  },
+  "town_line_auto_sales_lincoln": {
+    "lat": 45.3658885,
+    "lng": -68.3568735
+  },
+  "town_of_lincoln_lincoln": {
+    "lat": 45.3629913,
+    "lng": -68.5030793
+  },
+  "transitions_hair_tanning_lincoln": {
+    "lat": 45.3663735,
+    "lng": -68.503504
+  },
+  "true_value_lincoln": {
+    "lat": 45.3638668,
+    "lng": -68.5035743
+  },
+  "united_country_lifestyle_properties_of_maine_lincoln": {
+    "lat": 45.362476198634,
+    "lng": -68.515792361883
+  },
+  "village_dry_cleaners_lincoln": {
+    "lat": 45.3611785,
+    "lng": -68.5190156
+  },
+  "walgreens_lincoln": {
+    "lat": 45.3618063,
+    "lng": -68.5053945
+  },
+  "walmart_supercenter_lincoln": {
+    "lat": 45.3559514,
+    "lng": -68.5246045
+  },
+  "wendy_s_lincoln": {
+    "lat": 45.3595275,
+    "lng": -68.5214663
+  },
+  "why_not_stop_lincoln": {
+    "lat": 45.3550487,
+    "lng": -68.5305208
+  },
+  "wing_wah_restaurant_lincoln": {
+    "lat": 45.364266,
+    "lng": -68.5040012
+  },
+  "lowell_baptist_church_lowell": {
+    "lat": 45.19,
+    "lng": -68.4677
+  },
+  "patriot_consulting_llc_lowell": {
+    "lat": 45.21,
+    "lng": -68.4667
+  },
+  "big_apple_store_mattawamkeag": {
+    "lat": 45.5023498,
+    "lng": -68.3558564
+  },
+  "crossroads_restaurant_motel_mattawamkeag": {
+    "lat": 45.5135404,
+    "lng": -68.3552894
+  },
+  "eva_s_beauty_shoppe_mattawamkeag": {
+    "lat": 45.527407556079,
+    "lng": -68.358512395078
+  },
+  "markie_s_garage_mattawamkeag": {
+    "lat": 45.499802233342,
+    "lng": -68.357794948895
+  },
+  "markie_s_pizza_joint_mattawamkeag": {
+    "lat": 45.521668915315,
+    "lng": -68.351740008585
+  },
+  "mattawamkeag_baptist_church_mattawamkeag": {
+    "lat": 45.509331316382,
+    "lng": -68.355229044593
+  },
+  "mattawamkeag_church_of_god_mattawamkeag": {
+    "lat": 45.5145034,
+    "lng": -68.3550226
+  },
+  "mattawamkeag_united_methodist_church_mattawamkeag": {
+    "lat": 45.5170902,
+    "lng": -68.3527058
+  },
+  "mattawamkeag_wilderness_park_campground_mattawamkeag": {
+    "lat": 45.516106,
+    "lng": -68.3486142
+  },
+  "pj_s_general_store_mattawamkeag": {
+    "lat": 45.5158621,
+    "lng": -68.3545543
+  },
+  "pinetree_pellet_fuels_llc_mattawamkeag": {
+    "lat": 45.5149936,
+    "lng": -68.3582314
+  },
+  "reflection_hair_salon_mattawamkeag": {
+    "lat": 45.498859015569,
+    "lng": -68.358608907633
+  },
+  "waggin_tails_pet_spa_mattawamkeag": {
+    "lat": 45.522328523064,
+    "lng": -68.351303208226
+  },
+  "wheeler_world_mattawamkeag": {
+    "lat": 45.562030238882,
+    "lng": -68.393382646007
+  },
+  "wyman_hardware_mattawamkeag": {
+    "lat": 45.509391489491,
+    "lng": -68.35538506932
+  },
+  "zion_pentecostal_church_mattawamkeag": {
+    "lat": 45.548739794733,
+    "lng": -68.376359775877
+  },
+  "grammy_anna_s_springfield": {
+    "lat": 45.3965699,
+    "lng": -68.1331393
+  },
+  "lee_barbershop_styling_salon_springfield": {
+    "lat": 45.3955657,
+    "lng": -68.1357278
+  },
+  "smith_s_general_store_springfield": {
+    "lat": 45.395679332725,
+    "lng": -68.134784506392
+  },
+  "springfield_congregational_church_ucc_springfield": {
+    "lat": 45.3958972,
+    "lng": -68.1375149
+  },
+  "springfield_fair_springfield": {
+    "lat": 45.404262200773,
+    "lng": -68.133353718402
+  },
+  "springfieldtyme_bed_breakfast_springfield": {
+    "lat": 45.393432007071,
+    "lng": -68.153839311971
+  },
+  "t_e_linscott_inc_springfield": {
+    "lat": 45.414101597264,
+    "lng": -68.135422379144
+  },
+  "wood_wires_guitar_shop_springfield": {
+    "lat": 45.40842398019,
+    "lng": -68.134895713696
+  },
+  "berry_land_take_out_winn": {
+    "lat": 45.484923716944,
+    "lng": -68.374542902757
+  },
+  "h_c_haynes_inc_winn": {
+    "lat": 45.461604432496,
+    "lng": -68.352281032279
+  },
+  "lakeville_shores_inc_winn": {
+    "lat": 45.461604432496,
+    "lng": -68.352281032279
+  },
+  "sacred_heart_church_catholic_winn": {
+    "lat": 45.4843,
+    "lng": -68.3747
+  },
+  "salmon_brook_grooming_winn": {
+    "lat": 45.4580937,
+    "lng": -68.4093027
+  },
+  "soucie_s_junk_yard_winn": {
+    "lat": 45.4864923,
+    "lng": -68.3721452
+  },
+  "st_thomas_episcopal_church_winn": {
+    "lat": 45.4842615,
+    "lng": -68.3773588
+  },
+  "williams_trucking_winn": {
+    "lat": 45.469335096713,
+    "lng": -68.367842291289
+  },
+  "winn_equipment_parts_inc_winn": {
+    "lat": 45.494270053281,
+    "lng": -68.361991465676
+  },
+  "winn_general_store_winn": {
+    "lat": 45.484923716944,
+    "lng": -68.374542902757
+  },
+  "winn_service_center_winn": {
+    "lat": 45.486192576874,
+    "lng": -68.372121311623
+  },
+  "richardson_remedies_presque_isle": {
+    "lat": 46.6926651,
+    "lng": -68.0127232
+  },
+  "full_bloom_cannabis_presque_isle": {
+    "lat": 46.681591,
+    "lng": -68.0157176
+  },
+  "cloud_9_presque_isle": {
+    "lat": 46.660257,
+    "lng": -68.0074762
+  },
+  "northern_maine_flower_presque_isle": {
+    "lat": 46.682953,
+    "lng": -68.0148297
+  },
+  "star_city_wellness_presque_isle": {
+    "lat": 46.690487,
+    "lng": -68.0119113
+  },
+  "richardson_remedies_caribou": {
+    "lat": 46.8840723,
+    "lng": -67.9461348
+  },
+  "safe_alternatives_caribou": {
+    "lat": 46.7957888,
+    "lng": -67.9921672
+  },
+  "vargas_farm_houlton": {
+    "lat": 46.1305547,
+    "lng": -67.7816948
+  },
+  "lifted_cannabis_houlton": {
+    "lat": 46.1468589,
+    "lng": -67.8374919
+  },
+  "family_roots_medical_marijuana_houlton": {
+    "lat": 46.1208137,
+    "lng": -67.7868492
+  },
+  "northwoods_farms_houlton": {
+    "lat": 46.1221281,
+    "lng": -67.848048
+  },
+  "magic_city_med_shop_millinocket": {
+    "lat": 45.6573904,
+    "lng": -68.7070004
+  },
+  "outer_limits_millinocket": {
+    "lat": 45.6742039,
+    "lng": -68.7042247
+  },
+  "experience_cannabis_lincoln": {
+    "lat": 45.3564555,
+    "lng": -68.5399451
+  },
+  "american_marijuana_cultivators_lincoln": {
+    "lat": 45.3564555,
+    "lng": -68.5399451
+  },
+  "fire_pharms_lincoln": {
+    "lat": 45.35525,
+    "lng": -68.530026
+  },
+  "brothers_cannabis_lincoln": {
+    "lat": 45.357715,
+    "lng": -68.524073
+  },
+  "hazy_moose_craft_cannabis_howland": {
+    "lat": 45.2426592,
+    "lng": -68.6571682
+  },
+  "big_rock_ski_area_mars_hill": {
+    "lat": 46.5215726,
+    "lng": -67.8293803
+  },
+  "starbucks_presque_isle": {
+    "lat": 46.6700898,
+    "lng": -68.0158903
+  }
+}
