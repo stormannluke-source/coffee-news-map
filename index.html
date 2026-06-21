@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Coffee News of Aroostook — Business Directory Map</title>
+<link rel="preconnect" href="https://tile.openstreetmap.org">
+<link rel="preconnect" href="https://unpkg.com">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -243,10 +245,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   #filters label { display: none; }
   #filters select, #filters input { font-size: 10px; padding: 3px 5px; max-width: 120px; }
   #main { height: calc(100vh - 44px); }
-  #sidebar { width: 100%; position: fixed; top: 0; left: 0; z-index: 2000; }
-  #sidebar.open { height: 100%; }
-  #sidebar.open + #map { display: none; }
-  #sidebar:not(.open) + #map + #sidebar { display: none; }
+  /* Bottom sheet: always visible, starts at peek height, expands on open */
+  #sidebar { display: flex; flex-direction: column; width: 100%; position: fixed; left: 0; bottom: 0; top: auto; z-index: 2000; height: 42vh; border-radius: 12px 12px 0 0; border-left: none; border-top: 1px solid #dee2e6; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); transition: height 0.25s ease; }
+  #sidebar.open { height: 85vh; }
+  #sidebar + #map { width: 100% !important; display: block !important; }
+  /* Drag handle */
+  #sidebar::before { content: ''; display: block; width: 36px; height: 4px; background: #ccc; border-radius: 2px; margin: 6px auto 4px auto; flex-shrink: 0; }
+  #sidebar.open::before { display: none; }
+  #sidebar:not(.open) .sidebar-content { flex: 1; overflow-y: auto; }
   .sidebar-tab { font-size: 11px; padding: 8px 6px; }
   .list-table { font-size: 11px; }
   .list-table th, .list-table td { padding: 4px 5px; }
@@ -266,6 +272,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   #filters select, #filters input { font-size: 9px; padding: 2px 4px; max-width: 90px; }
   .header-actions .btn { font-size: 9px; padding: 2px 5px; }
   .sidebar-tab { font-size: 10px; padding: 6px 4px; }
+  #sidebar { height: 38vh; }
+  #sidebar.open { height: 90vh; }
 }
 
 /* Active filter badges */
@@ -389,6 +397,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
       <button class="sidebar-tab" data-tab="browse" onclick="switchTab('browse')">📋 Browse</button>
       <button class="sidebar-tab" data-tab="route" onclick="switchTab('route')">📍 Route Planner</button>
       <button class="sidebar-tab" data-tab="notes" onclick="switchTab('notes')">📝 Notes &amp; Visits</button>
+      <button class="sidebar-tab" data-tab="recent" onclick="switchTab('recent')">🕐 Recent</button>
+      <div class="sidebar-tab" id="detailTab" data-tab="detail" style="display:none;flex:none;overflow:hidden;max-width:0;padding:0;border:0;"></div>
     </div>
     <div class="sidebar-content">
       <div class="sidebar-pane" id="pane-browse">
@@ -421,6 +431,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
             <input type="file" id="importSavedRoutesInput" accept=".json" style="display:none" onchange="importSavedRoutes(this)" />
           </div>
         </div>
+      </div>
+      <div class="sidebar-pane" id="pane-detail" style="padding:0;">
+        <div id="detailContent"><div class="list-empty">Click a business on the map to see details.</div></div>
+      </div>
+      <div class="sidebar-pane" id="pane-recent">
+        <div id="recentContent"><div class="list-empty">No businesses viewed yet.</div></div>
       </div>
       <div class="sidebar-pane" id="pane-notes">
         <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;align-items:center;">
@@ -517,6 +533,8 @@ let userLocationMarker = null;
 let userLat = null;
 let userLng = null;
 let routeStops = [];
+let recentlyViewed = []; // [{ key, name, address, city, town, category, lat, lng, ts }] max 10
+let currentDetailBiz = null;
 let currentTab = 'browse';
 let NOTES = {};        // { bizKey: { text: '...', updated: 'ISO-date' } }
 let VISITS = {};       // { bizKey: [ 'ISO-date', ... ] }
@@ -22605,9 +22623,14 @@ function updateMap() {
     });
 
     marker.bizData = biz;
-    marker.on('click', function() { onMarkerClick(biz); });
+    marker.on('click', function() {
+      trackViewed(biz.key);
+      onMarkerClick(biz);
+    });
     marker.bindPopup(buildPopup(biz));
-    marker.on('popupopen', function() { populatePopupNotes(biz.key); });
+    marker.on('popupopen', function() {
+      populatePopupNotes(biz.key);
+    });
 
     if (USE_CLUSTERS) {
       markerClusterGroup.addLayer(marker);
@@ -22990,18 +23013,31 @@ function displayOptimizedRoute(route, waypoints) {
 function toggleSidebar(tab) {
   const sidebar = document.getElementById('sidebar');
   const mapEl = document.getElementById('map');
+  const isMobile = window.innerWidth <= 700;
   if (sidebar.classList.contains('open')) {
     sidebar.classList.remove('open');
-    mapEl.classList.remove('has-sidebar');
+    if (!isMobile) mapEl.classList.remove('has-sidebar');
     switchTab(tab);
   } else {
     sidebar.classList.add('open');
-    mapEl.classList.add('has-sidebar');
+    if (!isMobile) mapEl.classList.add('has-sidebar');
     switchTab(tab);
     if (tab === 'browse') updateList();
+    if (tab === 'detail') updateList(); // also ensure list is populated for detail
   }
   setTimeout(function() { map.invalidateSize(); }, 300);
 }
+
+// On mobile, clicking outside the bottom sheet collapses it
+document.addEventListener('click', function(e) {
+  if (window.innerWidth > 700) return;
+  var sidebar = document.getElementById('sidebar');
+  if (!sidebar.classList.contains('open')) return;
+  if (!sidebar.contains(e.target) && !e.target.closest('.leaflet-container') && !e.target.closest('.header-actions') && !e.target.closest('.geolocate-btn')) {
+    sidebar.classList.remove('open');
+    setTimeout(function() { map.invalidateSize(); }, 300);
+  }
+});
 
 function switchTab(tab) {
   currentTab = tab;
@@ -23161,6 +23197,201 @@ function showToast(msg, type) {
 }
 
 // ============================================================
+// RECENTLY VIEWED
+// ============================================================
+function trackViewed(key) {
+  if (!key) return;
+  recentlyViewed = recentlyViewed.filter(function(r) { return r.key !== key; });
+  var biz = businesses.find(function(b) { return b.key === key; });
+  if (!biz) return;
+  var pt = coords[key];
+  recentlyViewed.unshift({
+    key: key, name: biz.name, address: biz.address || '', city: biz.city || '',
+    town: biz.town || '', category: biz.category || '',
+    lat: pt ? pt.lat : null, lng: pt ? pt.lng : null,
+    ts: new Date().toISOString(),
+  });
+  if (recentlyViewed.length > 10) recentlyViewed.length = 10;
+  updateRecentList();
+}
+
+function updateRecentList() {
+  var container = document.getElementById('recentContent');
+  if (!container) return;
+  if (recentlyViewed.length === 0) {
+    container.innerHTML = '<div class="list-empty">No businesses viewed yet. Click markers on the map to see them here.</div>';
+    return;
+  }
+  var html = '<div class="list-summary">' + recentlyViewed.length + ' recently viewed</div>';
+  html += '<div style="display:flex;flex-direction:column;gap:4px;">';
+  recentlyViewed.forEach(function(item) {
+    html += '<div class="route-stop" onclick="showDetail(\'' + item.key + '\')" style="cursor:pointer;">';
+    html += '<div class="route-stop-info">';
+    html += '<div class="route-stop-name"><span class="list-dot" style="background:' + getColor(item.category) + '"></span>' + escapeHtml(item.name) + '</div>';
+    html += '<div class="route-stop-addr">' + escapeHtml(item.address || item.town) + '</div>';
+    html += '</div>';
+    html += '<span style="font-size:10px;color:#999;">' + timeAgo(item.ts) + '</span>';
+    html += '</div>';
+  });
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+function timeAgo(isoStr) {
+  if (!isoStr) return '';
+  var diff = Date.now() - new Date(isoStr).getTime();
+  var min = Math.floor(diff / 60000);
+  if (min < 1) return 'just now';
+  if (min < 60) return min + 'm ago';
+  var hrs = Math.floor(min / 60);
+  if (hrs < 24) return hrs + 'h ago';
+  var days = Math.floor(hrs / 24);
+  return days + 'd ago';
+}
+
+// ============================================================
+// BUSINESS DETAIL PANEL
+// ============================================================
+function showDetail(key) {
+  var biz = businesses.find(function(b) { return b.key === key; });
+  if (!biz) return;
+  currentDetailBiz = biz;
+  var pt = coords[key];
+
+  var html = '<div style="padding:12px;overflow-y:auto;height:100%;">';
+
+  // Header
+  html += '<div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:8px;">';
+  html += '<div><div class="popup-name">' + escapeHtml(biz.name) + '</div>';
+  html += '<span class="list-cat" style="background:' + getColor(biz.category) + '">' + escapeHtml(biz.category) + '</span></div>';
+  html += '<button onclick="closeDetail()" style="background:none;border:none;font-size:18px;cursor:pointer;color:#999;">✕</button>';
+  html += '</div>';
+
+  // Distance
+  if (userLat != null && pt) {
+    var dist = distanceMiles(userLat, userLng, pt.lat, pt.lng);
+    html += '<div style="font-size:12px;color:#888;margin-bottom:8px;">📍 ' + formatDistance(dist) + ' from you</div>';
+  }
+
+  // Info
+  html += '<div style="background:#fff;border:1px solid #dee2e6;border-radius:6px;padding:10px;margin-bottom:10px;">';
+  if (biz.address) html += '<div style="font-size:13px;margin-bottom:4px;">📍 ' + escapeHtml(biz.address) + '</div>';
+  html += '<div style="font-size:13px;margin-bottom:4px;">' + escapeHtml(biz.city) + ', ' + biz.state + ' ' + biz.zip + '</div>';
+  if (biz.phone) html += '<div style="font-size:13px;margin-bottom:4px;">📞 <a href="tel:' + biz.phone.replace(/[^0-9]/g, '') + '" style="color:#2980b9;text-decoration:none;">' + escapeHtml(biz.phone) + '</a></div>';
+  if (biz.email) html += '<div style="font-size:13px;margin-bottom:4px;">✉ <a href="mailto:' + escapeHtml(biz.email) + '" style="color:#2980b9;text-decoration:none;">' + escapeHtml(biz.email) + '</a></div>';
+  if (biz.website) html += '<div style="font-size:13px;margin-bottom:4px;">🌐 <a href="' + escapeHtml(biz.website) + '" target="_blank" rel="noopener" style="color:#2980b9;text-decoration:none;">' + escapeHtml(biz.website) + '</a></div>';
+  html += '<div style="font-size:12px;color:#888;margin-top:4px;">Town: ' + escapeHtml(biz.town) + ' &middot; Region: ' + escapeHtml(biz.region) + '</div>';
+  html += '</div>';
+
+  // Actions
+  html += '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">';
+  if (biz.address && biz.city) {
+    var dest = encodeURIComponent(biz.address + ', ' + biz.city + ', ' + biz.state + ' ' + biz.zip);
+    var origin = (userLat != null && userLng != null) ? '&origin=' + userLat + ',' + userLng : '';
+    html += '<a href="https://www.google.com/maps/dir/?api=1' + origin + '&destination=' + dest + '" target="_blank" class="btn btn-success" style="text-decoration:none;">🗺 Directions</a>';
+  }
+  var inRoute = routeStops.some(function(s) { return s.key === key; });
+  html += '<button class="btn ' + (inRoute ? 'btn-danger' : 'btn-primary') + '" onclick="toggleRouteFromDetail(\'' + key + '\')">' + (inRoute ? '✕ Remove from Route' : '+ Add to Route') + '</button>';
+  html += '<button class="btn btn-outline" onclick="shareBusiness(\'' + key + '\')" style="color:#333;border-color:#aaa;">📤 Share</button>';
+  html += '</div>';
+
+  // Notes & Visit section
+  html += '<div style="background:#fff;border:1px solid #dee2e6;border-radius:6px;padding:10px;margin-bottom:10px;">';
+  html += '<div id="detail-visit-' + key + '"></div>';
+  html += '<div id="detail-note-' + key + '"></div>';
+  html += '</div>';
+
+  // Other businesses nearby
+  if (pt) {
+    var nearby = businesses.filter(function(b) {
+      if (b.key === key) return false;
+      if (b.suitableForAds !== 'Yes') return false;
+      var bp = coords[b.key];
+      if (!bp) return false;
+      return distanceMiles(pt.lat, pt.lng, bp.lat, bp.lng) < 0.5;
+    }).slice(0, 5);
+    if (nearby.length > 0) {
+      html += '<div style="margin-bottom:10px;">';
+      html += '<div style="font-size:12px;font-weight:600;margin-bottom:4px;">Nearby businesses</div>';
+      nearby.forEach(function(nb) {
+        var np = coords[nb.key];
+        var nd = np ? formatDistance(distanceMiles(pt.lat, pt.lng, np.lat, np.lng)) : '';
+        html += '<div class="route-stop" onclick="showDetail(\'' + nb.key + '\')" style="cursor:pointer;">';
+        html += '<div class="route-stop-info">';
+        html += '<div class="route-stop-name"><span class="list-dot" style="background:' + getColor(nb.category) + '"></span>' + escapeHtml(nb.name) + '</div>';
+        html += '<div class="route-stop-addr">' + (nd ? nd + ' &middot; ' : '') + escapeHtml(nb.category) + '</div>';
+        html += '</div></div>';
+      });
+      html += '</div>';
+    }
+  }
+
+  html += '</div>';
+  document.getElementById('detailContent').innerHTML = html;
+  document.getElementById('detailTab').style.display = '';
+  switchTab('detail');
+
+  // Populate notes/visit sub-sections after render
+  setTimeout(function() {
+    populateDetailNotes(key);
+  }, 50);
+}
+
+function closeDetail() {
+  currentDetailBiz = null;
+  document.getElementById('detailTab').style.display = 'none';
+  if (document.getElementById('pane-detail').classList.contains('active')) {
+    switchTab('browse');
+  }
+}
+
+function toggleRouteFromDetail(key) {
+  var biz = businesses.find(function(b) { return b.key === key; });
+  if (!biz) return;
+  onMarkerClick(biz);
+  // Re-render detail if it's still open
+  if (currentDetailBiz && currentDetailBiz.key === key) showDetail(key);
+}
+
+function populateDetailNotes(key) {
+  var visitDiv = document.getElementById('detail-visit-' + key);
+  if (visitDiv) {
+    var visits = VISITS[key] || [];
+    var lastVisit = visits.length > 0 ? visits[visits.length - 1] : null;
+    var vhtml = '<div class="popup-note-label" style="margin-bottom:4px;">Visit</div>';
+    if (lastVisit) {
+      vhtml += '<div style="font-size:12px;color:#27ae60;margin-bottom:4px;">✅ Visited ' + formatDate(lastVisit) + '</div>';
+      vhtml += '<button class="popup-visit-btn" onclick="toggleVisit(\'' + key + '\')">Visit Again</button>';
+    } else {
+      vhtml += '<button class="popup-visit-btn" onclick="toggleVisitFromDetail(\'' + key + '\')">✅ Mark Visited</button>';
+    }
+    visitDiv.innerHTML = vhtml;
+  }
+  var noteDiv = document.getElementById('detail-note-' + key);
+  if (noteDiv) {
+    var note = NOTES[key] ? NOTES[key].text : '';
+    var nhtml = '<div class="popup-note-label" style="margin-bottom:4px;">Note</div>';
+    nhtml += '<textarea class="popup-note-input" id="detail-note-input-' + key + '" placeholder="Add a note about this business..." oninput="autoSaveNoteDetail(\'' + key + '\')">' + escapeHtml(note) + '</textarea>';
+    noteDiv.innerHTML = nhtml;
+  }
+}
+
+function toggleVisitFromDetail(key) {
+  toggleVisit(key);
+  if (currentDetailBiz && currentDetailBiz.key === key) showDetail(key);
+}
+
+function autoSaveNoteDetail(key) {
+  var val = document.getElementById('detail-note-input-' + key).value;
+  if (val.trim()) {
+    NOTES[key] = { text: val.trim(), updated: new Date().toISOString() };
+  } else {
+    delete NOTES[key];
+  }
+  saveNotes();
+  updateMarkerIndicator(key);
+  updateNotesList();
+}
 
 // ============================================================
 // NOTES & VISITS
@@ -23334,6 +23565,7 @@ function flyToBusiness(key) {
   if (!biz) return;
   var pt = coords[key];
   if (!pt) return;
+  trackViewed(key);
   map.setView([pt.lat, pt.lng], 15);
   var marker = markerMap[key];
   if (marker) {
@@ -23506,6 +23738,43 @@ function importSavedRoutes(input) {
   };
   reader.readAsText(file);
 }
+
+// ============================================================
+// KEYBOARD SHORTCUTS
+// ============================================================
+document.addEventListener('keydown', function(e) {
+  // Ignore if typing in an input
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+  switch (e.key) {
+    case '/':
+      e.preventDefault();
+      document.getElementById('searchFilter').focus();
+      break;
+    case 'r':
+    case 'R':
+      toggleSidebar('route');
+      break;
+    case 'l':
+    case 'L':
+      toggleSidebar('browse');
+      break;
+    case 'n':
+    case 'N':
+      toggleSidebar('notes');
+      break;
+    case 'Escape':
+      if (document.getElementById('sidebar').classList.contains('open')) {
+        toggleSidebar(currentTab);
+      }
+      if (currentDetailBiz) closeDetail();
+      break;
+  }
+});
+
+// HEADER BUTTON KEYBOARD HINT
+// Show keyboard shortcut hints after the header
+// (already shown in button titles)
 
 // INIT
 // ============================================================
