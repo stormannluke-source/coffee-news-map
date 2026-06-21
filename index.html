@@ -7,10 +7,16 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<!-- MarkerCluster: toggle by uncommenting these two lines -->
-<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" /> -->
-<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" /> -->
-<!-- <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script> -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#2c3e50">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Coffee News Map">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%232c3e50'/%3E%3Ctext x='96' y='130' font-size='120' text-anchor='middle' fill='%23fff'%3E☕%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e50'/%3E%3Ctext x='16' y='24' font-size='22' text-anchor='middle' fill='%23fff'%3E☕%3C/text%3E%3C/svg%3E">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; overflow: hidden; height: 100vh; }
@@ -229,17 +235,37 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .print-header, .print-route-table { display: none; }
 
 @media (max-width: 700px) {
-  #header h1 { font-size: 14px; }
+  #header { padding: 6px 10px; }
+  #header h1 { font-size: 13px; }
   #header .subtitle { display: none; }
-  .header-actions .btn { font-size: 11px; padding: 3px 7px; }
+  .header-actions .btn { font-size: 10px; padding: 2px 6px; }
+  #filters { gap: 4px; }
   #filters label { display: none; }
-  #filters select, #filters input { font-size: 11px; padding: 3px 6px; }
-  #sidebar { width: 100%; }
-  #map.has-sidebar { width: 0; display: none; }
-  #sidebar.open + #map { display: none; }
+  #filters select, #filters input { font-size: 10px; padding: 3px 5px; max-width: 120px; }
+  #main { height: calc(100vh - 44px); }
+  #sidebar { width: 100%; position: fixed; top: 0; left: 0; z-index: 2000; }
   #sidebar.open { height: 100%; }
+  #sidebar.open + #map { display: none; }
+  #sidebar:not(.open) + #map + #sidebar { display: none; }
+  .sidebar-tab { font-size: 11px; padding: 8px 6px; }
+  .list-table { font-size: 11px; }
+  .list-table th, .list-table td { padding: 4px 5px; }
   .route-stop { padding: 6px 8px; }
   .route-stop-num { width: 20px; height: 20px; font-size: 10px; }
+  .popup-name { font-size: 13px; }
+  .popup-info { font-size: 11px; }
+  .legend { font-size: 11px; padding: 6px 10px; }
+  .legend-title { font-size: 11px; }
+  .geolocate-btn { bottom: 20px; left: 8px; width: 30px; height: 30px; font-size: 14px; }
+  .leaflet-control-zoom a { width: 28px; height: 28px; font-size: 14px; line-height: 28px; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  #header h1 { font-size: 12px; }
+  #filters select, #filters input { font-size: 9px; padding: 2px 4px; max-width: 90px; }
+  .header-actions .btn { font-size: 9px; padding: 2px 5px; }
+  .sidebar-tab { font-size: 10px; padding: 6px 4px; }
 }
 
 /* Active filter badges */
@@ -335,7 +361,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
       <label>Category</label>
       <select id="categoryFilter"><option value="">All Categories</option></select>
       <label>Search</label>
-      <input id="searchFilter" type="text" placeholder="Search name, address, town..." />
+      <input id="searchFilter" type="text" placeholder="Search name, address, town..." list="searchSuggestions" autocomplete="off" />
+      <datalist id="searchSuggestions"></datalist>
+      <label>Sort</label>
+      <select id="sortFilter">
+        <option value="">Default</option>
+        <option value="name">Name A-Z</option>
+        <option value="name-desc">Name Z-A</option>
+        <option value="distance" disabled>📍 Nearest</option>
+      </select>
       <span id="count"></span>
       <button onclick="resetFilters()" title="Reset all filters" style="background:none;border:1px solid #ddd;border-radius:4px;cursor:pointer;padding:2px 8px;font-size:13px">↺ Reset</button>
     </div>
@@ -453,14 +487,35 @@ const DEFAULT_COLOR = '#95a5a6';
 
 function getColor(category) { return CATEGORY_COLORS[category] || DEFAULT_COLOR; }
 
+// Haversine distance in miles between two lat/lng points
+function distanceMiles(lat1, lng1, lat2, lng2) {
+  var R = 3958.8; // Earth radius in miles
+  var dLat = (lat2 - lat1) * Math.PI / 180;
+  var dLng = (lng2 - lng1) * Math.PI / 180;
+  var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+          Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+          Math.sin(dLng/2) * Math.sin(dLng/2);
+  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+}
+
+function formatDistance(mi) {
+  if (mi == null || isNaN(mi)) return '';
+  if (mi < 0.1) return '<0.1 mi';
+  if (mi < 10) return mi.toFixed(1) + ' mi';
+  return Math.round(mi) + ' mi';
+}
+
 // ============================================================
 // STATE
 // ============================================================
 let businesses = [];
 let coords = {};
-let USE_CLUSTERS = false; // toggle: false = individual markers, true = MarkerCluster groups
+let USE_CLUSTERS = true; // MarkerCluster groups nearby markers at low zoom levels
 let map, markerClusterGroup, routeLayer, routePolyline;
 let userLocationMarker = null;
+let userLat = null;
+let userLng = null;
 let routeStops = [];
 let currentTab = 'browse';
 let NOTES = {};        // { bizKey: { text: '...', updated: 'ISO-date' } }
@@ -580,20 +635,29 @@ function geolocate() {
   navigator.geolocation.getCurrentPosition(
     function(pos) {
       btn.classList.remove('locating');
-      const lat = pos.coords.latitude, lng = pos.coords.longitude;
-      map.setView([lat, lng], 14);
+      userLat = pos.coords.latitude;
+      userLng = pos.coords.longitude;
+      map.setView([userLat, userLng], 14);
       if (userLocationMarker) map.removeLayer(userLocationMarker);
-      userLocationMarker = L.marker([lat, lng], {
+      userLocationMarker = L.marker([userLat, userLng], {
         icon: L.divIcon({ className: '', html: '<div class="user-location-dot"></div>', iconSize: [18, 18], iconAnchor: [9, 9] }),
       }).addTo(map);
       userLocationMarker.bindPopup('<b>You are here</b>').openPopup();
-      showToast('Location found', 'info');
+      // Enable sort by distance
+      var sortEl = document.getElementById('sortFilter');
+      if (sortEl) sortEl.disabled = false;
+      showToast('Location found. Sort by "Nearest" to see nearby businesses.', 'info');
     },
     function(err) {
       btn.classList.remove('locating');
-      showToast('Could not find your location. ' + (err.code === 1 ? 'Please allow location access.' : 'Try again.'), 'error');
+      var msg = 'Could not find your location. ';
+      if (err.code === 1) msg += 'Please allow location access in your browser settings.';
+      else if (err.code === 2) msg += 'Position unavailable. Try again.';
+      else if (err.code === 3) msg += 'Request timed out. Try again.';
+      else msg += 'Unknown error.';
+      showToast(msg, 'error');
     },
-    { enableHighAccuracy: true, timeout: 10000 }
+    { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
   );
 }
 
@@ -22363,6 +22427,24 @@ let allCategories = new Set();
     updateList();
     updateActiveFilterBadges();
   });
+  document.getElementById('sortFilter').addEventListener('change', function() {
+    updateList();
+  });
+
+  // Populate search autocomplete datalist
+  var datalist = document.getElementById('searchSuggestions');
+  if (datalist) {
+    var seen = {};
+    businesses.forEach(function(b) {
+      var name = b.name && b.name.trim();
+      if (name && !seen[name]) {
+        seen[name] = true;
+        var opt = document.createElement('option');
+        opt.value = name;
+        datalist.appendChild(opt);
+      }
+    });
+  }
 
   updateTownFilter(townByRegion);
 
@@ -22555,14 +22637,37 @@ function buildPopup(biz) {
   p += '<div class="popup-info">';
       if (biz.address) p += escapeHtml(biz.address) + '<br>';
       p += escapeHtml(biz.city) + ', ' + biz.state + ' ' + biz.zip;
-      if (biz.phone) p += '<br><a href="tel:' + biz.phone.replace(/[^0-9]/g, '') + '">' + escapeHtml(biz.phone) + '</a>';
-      if (biz.email) p += '<br><a href="mailto:' + escapeHtml(biz.email) + '">' + escapeHtml(biz.email) + '</a>';
-      if (biz.website) p += '<br><a href="' + escapeHtml(biz.website) + '" target="_blank" rel="noopener">' + escapeHtml(biz.website) + '</a>';
+      if (biz.phone) p += '<br>📞 <a href="tel:' + biz.phone.replace(/[^0-9]/g, '') + '">' + escapeHtml(biz.phone) + '</a>';
+      if (biz.email) p += '<br>✉ <a href="mailto:' + escapeHtml(biz.email) + '">' + escapeHtml(biz.email) + '</a>';
+      if (biz.website) p += '<br>🌐 <a href="' + escapeHtml(biz.website) + '" target="_blank" rel="noopener">' + escapeHtml(biz.website) + '</a>';
+
+      // Distance from user (if location known)
+      if (userLat != null && biz.key) {
+        var pt = coords[biz.key];
+        if (pt) {
+          var dist = distanceMiles(userLat, userLng, pt.lat, pt.lng);
+          p += '<br>📍 <span class="popup-distance">' + formatDistance(dist) + '</span>';
+        }
+      }
+
       p += '<div class="popup-cat">' + escapeHtml(biz.category) + '</div>';
 
       const key = biz.key;
       const inRoute = routeStops.some(function(s) { return s.key === key; });
-      p += '<div><button class="popup-route-btn' + (inRoute ? ' in-route' : '') + '" data-biz-key="' + key + '">' + (inRoute ? '✕ Remove from Route' : '+ Add to Route') + '</button></div>';
+      p += '<div style="margin-top:6px;display:flex;gap:4px;flex-wrap:wrap;">';
+      p += '<button class="popup-route-btn' + (inRoute ? ' in-route' : '') + '" data-biz-key="' + key + '">' + (inRoute ? '✕ Remove from Route' : '+ Add to Route') + '</button>';
+
+      // Directions button - opens Google Maps directions from user location or falls back to business address
+      if (biz.address && biz.city) {
+        var dest = encodeURIComponent(biz.address + ', ' + biz.city + ', ' + biz.state + ' ' + biz.zip);
+        var origin = (userLat != null && userLng != null) ? '&origin=' + userLat + ',' + userLng : '';
+        p += '<a href="https://www.google.com/maps/dir/?api=1' + origin + '&destination=' + dest + '" target="_blank" rel="noopener" style="text-decoration:none;"><button class="popup-route-btn" style="border-color:#27ae60;color:#27ae60;">🗺 Directions</button></a>';
+      }
+
+      // Share button
+      p += '<button class="popup-route-btn" style="border-color:#8e44ad;color:#8e44ad;" onclick="shareBusiness(\'' + key + '\')">📤 Share</button>';
+
+      p += '</div>';
 
   // Notes & Visit section
   p += '<div class="popup-note-section">';
@@ -22572,6 +22677,30 @@ function buildPopup(biz) {
 
   p += '</div>';
   return p;
+}
+
+function shareBusiness(key) {
+  var biz = businesses.find(function(b) { return b.key === key; });
+  if (!biz) return;
+  var text = biz.name;
+  if (biz.address) text += ' - ' + biz.address + ', ' + biz.city;
+  if (biz.phone) text += ' - ' + biz.phone;
+  var url = window.location.href.split('?')[0];
+  if (navigator.share) {
+    navigator.share({ title: biz.name, text: text, url: url }).catch(function() {});
+  } else {
+    // Fallback: copy to clipboard
+    var copyText = text + ' ' + url;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(copyText).then(function() {
+        showToast('Copied to clipboard: ' + biz.name, 'success');
+      }).catch(function() {
+        prompt('Copy this link:', copyText);
+      });
+    } else {
+      prompt('Copy this link:', copyText);
+    }
+  }
 }
 
 function escapeHtml(s) {
@@ -22754,8 +22883,31 @@ function optimizeRoute() {
   summary.innerHTML = '';
   document.getElementById('optimizeBtn').disabled = true;
 
+  // Nearest-neighbor heuristic: reorder stops for a shorter route
+  // Start from the first stop, then always visit the nearest unvisited stop
+  if (routeStops.length > 2) {
+    var ordered = [routeStops[0]];
+    var remaining = routeStops.slice(1);
+    while (remaining.length > 0) {
+      var last = ordered[ordered.length - 1];
+      var nearestIdx = 0;
+      var nearestDist = Infinity;
+      for (var i = 0; i < remaining.length; i++) {
+        var d = distanceMiles(last.lat, last.lng, remaining[i].lat, remaining[i].lng);
+        if (d < nearestDist) {
+          nearestDist = d;
+          nearestIdx = i;
+        }
+      }
+      ordered.push(remaining[nearestIdx]);
+      remaining.splice(nearestIdx, 1);
+    }
+    routeStops = ordered;
+    updateRouteView();
+    updateMap();
+  }
+
   // Build coordinate string: lng,lat;lng,lat;...
-  const coordsStr = routeStops.map(function(s) { return s.lng + ',' + s.lat; }).join(';');
   const url = OSRM_BASE + coordsStr + '?overview=full&steps=true&geometries=geojson&annotations=distance,duration';
 
   fetch(url)
@@ -22873,6 +23025,7 @@ function updateList() {
   const container = document.getElementById('listContainer');
   const summary = document.getElementById('listSummary');
   const filtered = getFilteredBusinesses();
+  const sortVal = document.getElementById('sortFilter').value;
 
   if (filtered.length === 0) {
     container.innerHTML = '<div class="list-empty">No businesses match the current filters.</div>';
@@ -22880,9 +23033,21 @@ function updateList() {
     return;
   }
 
-  // Sort
+  // Sort based on dropdown
   let sorted = filtered.slice();
-  if (listSortCol) {
+  if (sortVal === 'name') {
+    sorted.sort(function(a, b) { return (a.name || '').localeCompare(b.name || ''); });
+  } else if (sortVal === 'name-desc') {
+    sorted.sort(function(a, b) { return (b.name || '').localeCompare(a.name || ''); });
+  } else if (sortVal === 'distance' && userLat != null) {
+    sorted.sort(function(a, b) {
+      var pa = coords[a.key], pb = coords[b.key];
+      if (!pa && !pb) return 0;
+      if (!pa) return 1;
+      if (!pb) return -1;
+      return distanceMiles(userLat, userLng, pa.lat, pa.lng) - distanceMiles(userLat, userLng, pb.lat, pb.lng);
+    });
+  } else if (listSortCol) {
     sorted.sort(function(a, b) {
       var va = (a[listSortCol] || '').toLowerCase();
       var vb = (b[listSortCol] || '').toLowerCase();
@@ -22900,21 +23065,34 @@ function updateList() {
     { key: 'phone', label: 'Phone' },
     { key: 'category', label: 'Category' },
   ];
+  // Add distance column when user location known
+  if (userLat != null) {
+    cols.push({ key: 'distance', label: 'Distance' });
+  }
   cols.forEach(function(c) {
     var cls = listSortCol === c.key ? 'sorted' : '';
     var arrow = '';
     if (listSortCol === c.key) arrow = listSortDir === 1 ? ' ▲' : ' ▼';
-    html += '<th class="' + cls + '" onclick="sortList(\'' + c.key + '\')"><span class="sort-arrow">' + arrow + '</span> ' + c.label + '</th>';
+    if (c.key === 'distance') {
+      html += '<th> ' + c.label + '</th>';
+    } else {
+      html += '<th class="' + cls + '" onclick="sortList(\'' + c.key + '\')"><span class="sort-arrow">' + arrow + '</span> ' + c.label + '</th>';
+    }
   });
   html += '</tr></thead><tbody>';
 
   sorted.forEach(function(biz) {
-    html += '<tr>';
+    var hasCoords = coords[biz.key] != null;
+    html += '<tr' + (!hasCoords ? ' style="opacity:0.5"' : '') + ' onclick="flyToBusiness(\'' + biz.key + '\')" style="cursor:pointer;">';
     html += '<td><span class="list-dot" style="background:' + getColor(biz.category) + '"></span><strong>' + escapeHtml(biz.name) + '</strong></td>';
     html += '<td>' + escapeHtml(biz.address || '') + '</td>';
     html += '<td>' + escapeHtml(biz.city || '') + '</td>';
-    html += '<td>' + escapeHtml(biz.phone || '') + '</td>';
+    html += '<td>' + (biz.phone ? '<a href="tel:' + biz.phone.replace(/[^0-9]/g, '') + '" style="color:inherit;text-decoration:none;">' + escapeHtml(biz.phone) + '</a>' : '') + '</td>';
     html += '<td><span class="list-cat" style="background:' + getColor(biz.category) + '">' + escapeHtml(biz.category) + '</span></td>';
+    if (userLat != null && biz.key) {
+      var pt = coords[biz.key];
+      html += '<td style="font-size:11px;color:#888;">' + (pt ? formatDistance(distanceMiles(userLat, userLng, pt.lat, pt.lng)) : '—') + '</td>';
+    }
     html += '</tr>';
   });
 
@@ -23337,6 +23515,15 @@ updateMap();
 loadSavedData();
 updateNotesList();
 updateSavedRoutesList();
+
+// Register service worker for offline caching
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js').then(function(reg) {
+    console.log('Service worker registered', reg.scope);
+  }).catch(function(err) {
+    console.log('Service worker registration failed:', err);
+  });
+}
 </script>
 </body>
 </html>
