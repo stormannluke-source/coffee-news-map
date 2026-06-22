@@ -56,20 +56,20 @@ body.dark {
   --badge-bg: #2a2a4a;
   --toast-bg: #0f0f23;
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; overflow: hidden; height: 100vh; height: 100dvh; background: var(--bg); color: var(--text); }
+html { overflow: hidden; width: 100%; height: 100%; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; flex-direction: column; overflow: hidden; width: 100%; height: 100dvh; background: var(--bg); color: var(--text); }
 
 #header {
   background: var(--header-bg); color: var(--header-text); padding: calc(8px + var(--safe-top)) 16px 8px 16px;
   display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
-  gap: 6px; position: relative; z-index: 1000;
+  gap: 6px; position: relative; z-index: 1000; width: 100%; max-width: 100%;
 }
 #header h1 { font-size: 16px; font-weight: 600; white-space: nowrap; }
 #header .subtitle { font-size: 11px; opacity: 0.7; }
 .header-left { display: flex; align-items: center; gap: 12px; }
 .header-actions { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
 
-#filters { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+#filters { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; max-width: 100%; overflow: hidden; }
 #filters label { font-size: 12px; opacity: 0.9; }
 #filters select, #filters input {
   padding: 4px 8px; border: 1px solid #555; border-radius: 4px;
@@ -95,7 +95,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .btn-outline:hover { background: rgba(255,255,255,0.1); }
 .btn:disabled { opacity: 0.5; cursor: default; }
 
-#main { display: flex; height: calc(100vh - 52px); height: calc(100dvh - 52px); position: relative; }
+#main { display: flex; flex: 1; min-height: 0; position: relative; }
 #map { flex: 1; height: 100%; }
 
 /* Full-screen map mode */
@@ -298,7 +298,6 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
   #filters label { display: none; }
   #filters select, #filters input { font-size: 10px; padding: 3px 5px; max-width: 110px; }
   #filters select { max-width: 90px; }
-  #main { height: calc(100vh - 44px); height: calc(100dvh - 44px); }
   /* Bottom sheet: always visible, starts at peek height, expands on open */
   #sidebar { display: flex; flex-direction: column; width: 100%; position: fixed; left: 0; bottom: 0; top: auto; z-index: 2000; height: 100dvh; border-radius: 12px 12px 0 0; border-left: none; border-top: 1px solid #dee2e6; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); will-change: transform; transform: translateY(62dvh); }
   #sidebar.open { transform: translateY(15dvh); }
@@ -492,7 +491,7 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
   </div>
 </div>
 
-<div id="quickFilters" style="display:flex;gap:4px;padding:4px 16px;background:var(--bg-alt);border-bottom:1px solid var(--border);flex-wrap:wrap;">
+<div id="quickFilters" style="display:flex;gap:4px;padding:4px 16px;background:var(--bg-alt);border-bottom:1px solid var(--border);flex-wrap:wrap;max-width:100%;">
   <button class="qf-btn qf-active" data-qf="all" onclick="applyQuickFilter('all')">All</button>
   <button class="qf-btn" data-qf="food" onclick="applyQuickFilter('food')">🍔 Food</button>
   <button class="qf-btn" data-qf="retail" onclick="applyQuickFilter('retail')">🛍 Shopping</button>
