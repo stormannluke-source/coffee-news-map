@@ -791,9 +791,7 @@ function initMap() {
     if (!btn) return;
     var key = btn.dataset.bizKey;
     if (!key) return;
-    var biz = businesses.find(function(b) { return b.key === key; });
-    if (!biz) return;
-    onMarkerClick(biz);
+    toggleRouteStop(key);
   });
 }
 
@@ -24415,10 +24413,28 @@ function closeDetail() {
 }
 
 function toggleRouteFromDetail(key) {
-  var biz = businesses.find(function(b) { return b.key === key; });
-  if (!biz) return;
-  onMarkerClick(biz);
-  // Re-render detail if it's still open
+  toggleRouteStop(key);
+}
+
+function toggleRouteStop(key) {
+  var idx = routeStops.findIndex(function(s) { return s.key === key; });
+  if (idx !== -1) {
+    routeStops.splice(idx, 1);
+  } else {
+    var biz = businesses.find(function(b) { return b.key === key; });
+    if (!biz) return;
+    var pt = coords[biz.key];
+    if (!pt) return;
+    routeStops.push({
+      key: biz.key,
+      name: biz.name,
+      address: (biz.address || '') + ', ' + (biz.city || '') + ', ' + (biz.state || '') + ' ' + (biz.zip || ''),
+      lat: pt.lat,
+      lng: pt.lng
+    });
+  }
+  updateRouteView();
+  updateMap();
   if (currentDetailBiz && currentDetailBiz.key === key) showDetail(key);
 }
 
