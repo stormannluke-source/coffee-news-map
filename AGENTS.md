@@ -10,7 +10,7 @@ Business directory database for the **Coffee News of Aroostook**, a free weekly 
 - Phone numbers: 1136/1141 (99.6%)
 - Street addresses: 1141/1141 (100%)
 - Email addresses: 197/1141 (17.3%) — 57 bad emails purged (directory scrapers, garbled, placeholder)
-- Websites: 592/1141 (51.9%) — 123 bad websites purged (fandom, weather.gov, cybo, intelius, wikipedia, etc.)
+- Websites: 587/1141 (51.4%) — 128 bad websites purged (fandom, weather.gov, cybo, intelius, wikipedia, directory scrapers, etc.)
 - Geocoded (lat/lng): 1141/1141 (100%)
 - Google Geocoding API sweep: 962 ROOFTOP (84.3%), 177 road/town-level — 732 coordinates improved. Cost: $5.71
 - Dunkin' URLs: 5 entries updated dunkindonuts.com → dunkin.com
@@ -190,7 +190,7 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **18 cannabis dispensaries added**: Lincoln (5), Presque Isle (5), Caribou (2), Houlton (4), Millinocket (2), Howland (1). All geocoded via Nominatim — 17/18 building-level, 1 town center (Brothers Cannabis).
 - **Email crawl**: 28 legitimate emails found (+15%, from 208 to 236). 240 websites crawled; garbage emails filtered (telephonedirectories.us, noaa.gov, yandex.ru, etc.)
 - **Phone number search**: 51 phones found across 2 passes (+5%)
-- **DuckDuckGo website harvest**: 245 new websites applied (466→711, +52%)
+- **DuckDuckGo website harvest**: 245 new websites applied (466→711, +52%, later ~128 bad entries purged to 587)
 - **3 missing addresses found**: Cigaret Shopper (64 North St, Houlton), Serendipitous Dragonfly (79 Main St, Houlton), Smith Bros. Plumbing & Heating (32 High St, Houlton) — all geocoded via Nominatim, all three now have building-level coordinates
 - **Map features**: Category filter, extended search (name/address/town/category), active filter badges with dismiss, category color dots in Browse list, suitable-for-ads default filter, notes/visits/routes (localStorage), export/import, reset button, console diagnostics
 - **Category SVG icons**: Markers now show category-specific SVG icons (building, cup, bag, heart, wrench, home, star) inside the colored circle
@@ -208,7 +208,7 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 
 1. **5 businesses missing phone numbers** (web search exhaustive): Dollar General Fort Fairfield (non-207 number rejected), Lowell Baptist Church, Bittersweet Thyme, Bittersweet Thyme Cafe, Anciently Marked Tattoo Art Studio. Resolvable only by phone call or in-person visit.
 2. **Email research**: 234/1139 (20.5%). Further improvement requires phone calls.
-3. **Website research**: 711/1139 (62.4%). Remaining ~428 likely don't maintain a web presence.
+3. **Website research**: 587/1141 (51.4%). Remaining ~554 likely don't maintain a web presence.
 4. **Wendy's Houlton**: Permitted Jul 2025, not yet open as of Jun 2026. Monitor periodically.
 5. **363 road/town-level geocodes**: ~1-2km precision on rural routes. Most address queries already exhausted. ~92 of these are town-center fallbacks (~1-2km spread). Further precision requires manual coordinate placement.
 6. **Brothers Cannabis Lincoln**: Coordinates are at town center (Nominatim couldn't resolve "Unit 2" in address). Needs manual building-level placement.

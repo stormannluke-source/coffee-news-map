@@ -1,7 +1,7 @@
 Business Name,Street Address,City,State,Zip,Phone,Email,Website,Category,Town,SuitableForAds
 Apostolic Church in Jesus Name,697 Masardis Rd,Ashland,ME,04732,(207) 764-4207,,,Religion,Ashland,Yes
 Aroostook Valley Health Center,33 Walker St,Ashland,ME,04732,(207) 435-6341,,https://kvhc.org,Healthcare,Ashland,Yes
-Art's Appliance & Furniture,21 Main St A,Ashland,ME,04732,(207) 435-4151,customerservice@furniture.com,https://www.furniture.com/stores/maine/ashland,Appliance/Furniture,Ashland,Yes
+Art's Appliance & Furniture,21 Main St A,Ashland,ME,04732,(207) 435-4151,customerservice@furniture.com,,Appliance/Furniture,Ashland,Yes
 Ashland 1-Stop (Citgo),117 Main St,Ashland,ME,04732,(207) 435-2202,,https://umaine.edu/undiscoveredmaine/aroostook-county-maine/central-aroostook/ashland/,Gas Station,Ashland,Yes
 Ashland Advent Christian Church,42 Exchange St,Ashland,ME,04732,(207) 435-6669,,,Religion,Ashland,Yes
 Ashland Building Supply,25 Sheridan Rd,Ashland,ME,04732,(207) 435-6386,,,Building Supply,Ashland,Yes
@@ -17,7 +17,7 @@ Ashland Schools,68 Station St,Ashland,ME,04732,(207) 435-3481,,https://sad32.org
 Ashland Town Office,62 Station St,Ashland,ME,04732,(207) 435-3211,townmanager@townofashland.org,https://townofashland.org,Government,Ashland,No
 Ashland Union Congregational Church (UCC),48 Sheridan Rd,Ashland,ME,04732,(207) 435-6752,,,Religion,Ashland,Yes
 Ashland's Diner,11 Exchange St,Ashland,ME,04732,(207) 435-8240,,,Restaurant,Ashland,No
-Burby Repair LLC,54 Main St,Ashland,ME,04732,(207) 435-9010,,https://www.adsinterlock.com/locations/me/ashland/54-main-st,Auto Repair,Ashland,No
+Burby Repair LLC,54 Main St,Ashland,ME,04732,(207) 435-9010,,,Auto Repair,Ashland,No
 CARQUEST Auto Parts,11 Main St,Ashland,ME,04732,(207) 435-6940,,https://carquest.com,Auto Parts,Ashland,Yes
 Daigle Oil Co,67 Main St,Ashland,ME,04732,(207) 435-8251,,https://daigleoil.com,Fuel,Ashland,No
 Family Dollar,211 Presque Isle Rd,Ashland,ME,04732,(207) 544-7813,,https://familydollar.com,Discount Store,Ashland,Yes
@@ -58,7 +58,7 @@ Caribou Family Medicine,161 Van Buren Rd,Caribou,ME,04736,(207) 498-3141,,https:
 Caribou Fire Department,25 High St,Caribou,ME,04736,(207) 493-4261,firechief@cariboumaine.org,https://cariboumaine.org,Fire Department,Caribou,No
 Caribou Florist & Greenhouse,137 Sweden St,Caribou,ME,04736,(207) 498-2296,noyesflowers@gmail.com,https://noyesflowers.square.site,Florist,Caribou,Yes
 Caribou Ford Lincoln,169 Bennett Dr,Caribou,ME,04736,(207) 498-3100,,https://griffethford.com,Auto Dealer,Caribou,Yes
-Caribou Laundry & Dry Cleaning,31 Sweden St,Caribou,ME,04736,(207) 498-6144,,https://opengovca.com/place/ChIJM8e_tVK4vEwRd9bIRktSfKU,Dry Cleaner,Caribou,Yes
+Caribou Laundry & Dry Cleaning,31 Sweden St,Caribou,ME,04736,(207) 498-6144,,,Dry Cleaner,Caribou,Yes
 Caribou Parks & Recreation Department,55 Bennett Dr,Caribou,ME,04736,(207) 493-4224,,https://cariboumaine.org,Government,Caribou,No
 Caribou Police Department,25 High St,Caribou,ME,04736,(207) 493-4201,policechief@cariboumaine.org,https://cariboumaine.org,Police,Caribou,No
 Caribou Public Library,30 High St,Caribou,ME,04736,(207) 493-4214,librarydirector@cariboumaine.org,https://cariboumaine.org,Library,Caribou,Yes
@@ -67,7 +67,7 @@ Caribou Seventh-day Adventist Church,650 Main St,Caribou,ME,04736,(207) 768-6251
 Caribou Sub Shop,264 Sweden St,Caribou,ME,04736,(207) 498-6021,,,Restaurant,Caribou,No
 Caribou Town Office,25 High St,Caribou,ME,04736,(207) 493-3324,dbrissette@cariboumaine.org,https://cariboumaine.org,Government,Caribou,No
 Caribou UU Congregation,3 Grove St,Caribou,ME,04736,(207) 496-5683,,https://www.unitedstateschurches.com/denominations/unitarian-universalist/maine/,Religion,Caribou,Yes
-Caribou Veterinary Clinic,31 Herschel St,Caribou,ME,04736,(207) 498-3873,,https://www.wellness.com/dir/2891976/animal-hospital/me/caribou/caribou-veterinary-clinic,Veterinary,Caribou,Yes
+Caribou Veterinary Clinic,31 Herschel St,Caribou,ME,04736,(207) 498-3873,,,Veterinary,Caribou,Yes
 Caribou Ward (LDS),67 Paris Snow Dr,Caribou,ME,04736,(207) 492-4381,,,Religion,Caribou,Yes
 Cary Medical Center,163 Van Buren Rd,Caribou,ME,04736,(207) 498-3111,,https://carymedicalcenter.org,Hospital,Caribou,Yes
 Chadwick-BaRoss,314 Main St,Caribou,ME,04736,(207) 498-2547,,https://www.smhgroup-us.com/location-chadwick-baross-caribou.htm,Building Materials,Caribou,Yes
@@ -88,7 +88,7 @@ F.A. Peabody Insurance,25 Sweden St STE C,Caribou,ME,04736,(207) 498-2523,,,Insu
 Faith Lutheran Church,18 Sweden St Ste 3,Caribou,ME,04736,(207) 498-8349,,https://www.joinmychurch.com/churches/Faith-Lutheran-Church-Caribou-Maine-United-States/142506,Religion,Caribou,Yes
 Family Dental Care Caribou,1 Birdseye Ave,Caribou,ME,04736,(207) 492-4841,,https://www.deltadental.com/member/find-a-dentist/maine/caribou-dentists/,Dental,Caribou,Yes
 Family Dollar,30-42 Skyway Dr,Caribou,ME,04736,(207) 760-4219,,https://familydollar.com,Retail,Caribou,Yes
-Fox Den Tattoo,342 Sweden St # B,Caribou,ME,04736,(207) 227-2804,,https://www.tattooed.co/shop/10386/fox-den-tattoo/,Tattoo Shop,Caribou,Yes
+Fox Den Tattoo,342 Sweden St # B,Caribou,ME,04736,(207) 227-2804,,,Tattoo Shop,Caribou,Yes
 Frederick's Southside Restaurant,507 Main St,Caribou,ME,04736,(207) 498-3464,,,Restaurant,Caribou,No
 Frontier Pharmacy,153 Bennett Dr,Caribou,ME,04736,(207) 493-7771,,https://myfrontierpharmacy.com,Pharmacy,Caribou,Yes
 Gagnon's Auto & RV Sales Inc.,500 Main St,Caribou,ME,04736,(888) 621-8937,info@gagnon-inc.com,https://gagnon-inc.com/,Auto Dealer,Caribou,Yes
