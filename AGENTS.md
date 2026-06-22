@@ -2,22 +2,21 @@
 
 ## Project Overview
 
-Business directory database for the **Coffee News of Aroostook**, a free weekly community newspaper serving Aroostook County, Maine. Contains **1139** unique business listings across 4 regions (1122 original + 18 cannabis dispensaries + 2 recovered - 3 duplicates removed).
+Business directory database for the **Coffee News of Aroostook**, a free weekly community newspaper serving Aroostook County, Maine. Contains **1141** unique business listings across 4 regions.
 
 **Goal:** Maintain accurate, up-to-date business contact information for publication reference, and provide an interactive map for browsing.
 
 **Data Accuracy (as of June 22, 2026):**
 - Phone numbers: 1136/1141 (99.6%)
 - Street addresses: 1141/1141 (100%)
-- Email addresses: 197/1141 (17.3%) — 57 bad emails purged (directory scrapers, garbled, placeholder)
-- Websites: 587/1141 (51.4%) — 128 bad websites purged (fandom, weather.gov, cybo, intelius, wikipedia, directory scrapers, etc.)
+- Email addresses: 197/1141 (17.3%)
+- Websites: 587/1141 (51.4%)
 - Geocoded (lat/lng): 1141/1141 (100%)
-- Google Geocoding API sweep: 962 ROOFTOP (84.3%), 177 road/town-level — 732 coordinates improved. Cost: $5.71
-- Dunkin' URLs: 5 entries updated dunkindonuts.com → dunkin.com
+- Google Geocoding API sweep: 962 ROOFTOP (84.3%), 177 road/town-level — cost $5.71
 - All data synced: 1141 entries, 1141 coordinates, 0 orphans
-- Cannabis dispensaries: 20 (was 1 — Just Baked)
+- Cannabis dispensaries: 20
 - Suitable for ad placement: 861/1141 (75.5%)
-- Circle K names normalized: 7 variants → consistent naming (address-qualified for towns with multiple locations)
+- Circle K names normalized: 7 variants → consistent naming
 
 ---
 
@@ -203,9 +202,9 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **Data sanity audit**: Systematic check of all 1142 entries. Fixed 5 corrupted emails (phone/data fused into email fields), 2 wrong ZIP codes, removed 3 duplicates (BigRock Mountain/Old Post Cafe/Clark's Auto Sales Linneus), renamed Howland-Enfield FCU → The County FCU - Howland (5 years out of date), updated Handy Stop address to 2 Coffin St
 - **Mobile UX improvements (Tier 1)**: Touch targets bumped to WCAG-friendly sizes (header buttons 40px, sidebar tabs 10×8px, drag handle 8px). `prefers-reduced-motion` media query disables bottom sheet animation for vestibular disorders.
 - **Mobile UX improvements (Tier 2)**: 150ms debounce on browse list search + 150ms debounce on filter dropdown changes — prevents redundant 863-row rebuilds. Marker tap now shows detail pane in bottom sheet instead of route tab. OSRM fetch has 10s AbortController timeout. Loading spinner shown on initial page load.
-- **Mobile UX improvements (Tier 3)**: Marker clustering enabled at zooms ≤ 12 (individual markers at ≥ 13). Filters scroll horizontally on ≤480px screens at 10px font instead of wrapping.
-
----
+- **Mobile UX improvements (Tier 3)**: Filters scroll horizontally on ≤480px screens at 10px font. Legend moved to top-right on mobile (no longer overlaps map center). Full-screen map toggle button hides header/filters/sidebar. Leaflet popup constrained to 75vw on mobile.
+- **Filter state persistence**: Selected region/town/category/search/sort saved to localStorage, restored on page reload.
+- **Detail pane UX**: Auto-scrolls sidebar content to top on tab switch. Closing detail auto-collapses bottom sheet to peek. Swipe-right gesture on detail pane goes back to browse list.
 
 ---
 
