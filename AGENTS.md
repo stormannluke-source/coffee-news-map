@@ -193,7 +193,7 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **3 missing addresses found**: Cigaret Shopper (64 North St, Houlton), Serendipitous Dragonfly (79 Main St, Houlton), Smith Bros. Plumbing & Heating (32 High St, Houlton) — all geocoded via Nominatim, all three now have building-level coordinates
 - **Map features**: Category filter, extended search (name/address/town/category), active filter badges with dismiss, category color dots in Browse list, suitable-for-ads default filter, notes/visits/routes (localStorage), export/import, reset button, console diagnostics
 - **Category SVG icons**: Markers now show category-specific SVG icons (building, cup, bag, heart, wrench, home, star) inside the colored circle
-- **Dark mode toggle**: Persistent dark mode with dark CartoDB tiles, CSS variable system, Leaflet popup/control theming. Toggle button in header, persisted to localStorage
+- **Category SVG icons**: Markers now show category-specific SVG icons (building, cup, bag, heart, wrench, home, star) inside the colored circle
 - **Quick filter pills**: All · Food · Shopping · Health · Auto · Services · Lodging · Religion — pill buttons below header instantly filter by business type
 - **Voice search**: Microphone button in search bar uses Web Speech API (webkitSpeechRecognition). Shows listening indicator, populates search on result
 - **Auto-geolocate**: On page load, checks `navigator.permissions` — if geolocation was previously granted, auto-locates and adds user marker without user action

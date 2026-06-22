@@ -40,22 +40,6 @@
   --safe-left: env(safe-area-inset-left, 0px);
   --safe-right: env(safe-area-inset-right, 0px);
 }
-body.dark {
-  --bg: #1a1a2e;
-  --bg-alt: #16213e;
-  --text: #e0e0e0;
-  --text-muted: #999;
-  --border: #333;
-  --header-bg: #0f0f23;
-  --header-text: #e0e0e0;
-  --sidebar-bg: #1a1a2e;
-  --input-bg: #2a2a4a;
-  --input-text: #e0e0e0;
-  --card-bg: #16213e;
-  --hover-bg: #1e2a4a;
-  --badge-bg: #2a2a4a;
-  --toast-bg: #0f0f23;
-}
 html { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; flex-direction: column; overflow: hidden; width: 100%; height: 100dvh; background: var(--bg); color: var(--text); }
 
@@ -213,11 +197,6 @@ body.fullscreen #fullscreenExit { display: block; }
 /* Popup */
 .popup-name { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
 .popup-info a { color: #3498db; text-decoration: none; }
-body.dark .leaflet-popup-content-wrapper { background: var(--card-bg); color: var(--text); }
-body.dark .leaflet-popup-tip { background: var(--card-bg); }
-body.dark .leaflet-control-zoom a { background: var(--card-bg); color: var(--text); border-color: var(--border); }
-body.dark .leaflet-control-attribution { background: var(--card-bg) !important; color: var(--text-muted) !important; }
-body.dark .leaflet-control-attribution a { color: #6af !important; }
 .popup-info a:hover { text-decoration: underline; }
 .popup-cat { display: inline-block; background: #eee; padding: 1px 8px; border-radius: 3px; font-size: 11px; margin-top: 4px; }
 
@@ -229,20 +208,6 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
 .popup-route-btn:hover { background: #3498db; color: #fff; }
 .popup-route-btn.in-route { background: #e74c3c; color: #fff; border-color: #e74c3c; }
 .popup-route-btn.in-route:hover { background: #c0392b; border-color: #c0392b; }
-
-/* Geolocate button */
-.geolocate-btn {
-  position: absolute; bottom: 80px; left: 12px; z-index: 1000;
-  width: 34px; height: 34px; background: #fff; border: 2px solid rgba(0,0,0,0.2);
-  border-radius: 4px; cursor: pointer; display: flex; align-items: center; justify-content: center;
-  font-size: 16px; box-shadow: 0 1px 5px rgba(0,0,0,0.15);
-}
-.geolocate-btn:hover { background: #f4f4f4; }
-.geolocate-btn.locating { background: #e8f4fd; border-color: #3498db; }
-.user-location-dot {
-  width: 18px; height: 18px; border-radius: 50%; background: #3498db; border: 3px solid #fff;
-  box-shadow: 0 0 0 2px rgba(52,152,219,0.4), 0 2px 6px rgba(0,0,0,0.3);
-}
 
 /* Toast notification */
 .toast {
@@ -259,7 +224,6 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
 @media print {
   body { overflow: visible; }
   #header { display: none !important; }
-  .geolocate-btn { display: none !important; }
   .legend { display: none !important; }
   .leaflet-control-zoom { display: none !important; }
   #sidebar { display: none !important; }
@@ -321,7 +285,6 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
   .legend { font-size: 11px; padding: 6px 10px; }
   .leaflet-popup-content-wrapper { max-width: 75vw; }
   .legend-title { font-size: 11px; }
-  .geolocate-btn { bottom: 20px; left: 8px; width: 40px; height: 40px; font-size: 16px; }
   .leaflet-control-zoom a { width: 36px; height: 36px; font-size: 16px; line-height: 36px; }
   /* Quick filters: scroll horizontally instead of wrapping */
   #quickFilters { flex-wrap: nowrap !important; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
@@ -446,7 +409,7 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
 </style>
 </head>
 <body>
-<script>(function(){if(localStorage.getItem('coffeeNews_darkMode')==='1')document.body.classList.add('dark')})();</script>
+
 
 <div id="loadingSpinner"><div class="spinner"></div><div class="loading-text">Loading business directory...</div></div>
 
@@ -486,7 +449,6 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
     <button class="btn btn-outline" id="routeBtn" onclick="toggleSidebar('route')">📍 Route</button>
     <button class="btn btn-outline" onclick="exportCSV()">⬇ CSV</button>
     <button class="btn btn-outline" id="fullscreenBtn" onclick="toggleFullscreen()" title="Full-screen map">🗺</button>
-    <button class="btn btn-outline" id="darkModeBtn" onclick="toggleDarkMode()" title="Toggle dark mode">🌙</button>
   </div>
 </div>
 
@@ -504,7 +466,6 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
 .qf-btn { padding: 2px 10px; border: 1px solid var(--border); border-radius: 14px; background: var(--bg); color: var(--text); font-size: 11px; cursor: pointer; transition: all 0.15s; }
 .qf-btn:hover { background: var(--hover-bg); }
 .qf-btn.qf-active { background: #2c3e50; color: #fff; border-color: #2c3e50; }
-body.dark .qf-btn.qf-active { background: #4a6fa5; border-color: #4a6fa5; }
 </style>
 
 <div id="main">
@@ -693,23 +654,7 @@ function saveSavedRoutes() {
 // INIT MAP
 // ============================================================
 // ============================================================
-// DARK MODE
-// ============================================================
-var isDark = localStorage.getItem('coffeeNews_darkMode') === '1';
-var tileLayer = null;
-var darkTileLayer = null;
-function applyDarkMode(dark) {
-  isDark = dark;
-  document.body.classList.toggle('dark', dark);
-  document.getElementById('darkModeBtn').textContent = dark ? '☀️' : '🌙';
-  localStorage.setItem('coffeeNews_darkMode', dark ? '1' : '0');
-  if (tileLayer && darkTileLayer) {
-    if (dark) { map.removeLayer(tileLayer); map.addLayer(darkTileLayer); }
-    else { map.removeLayer(darkTileLayer); map.addLayer(tileLayer); }
-  }
-}
-function toggleDarkMode() { applyDarkMode(!isDark); }
-function toggleFullscreen() {
+// QUICK FILTERS
   document.body.classList.toggle('fullscreen');
   if (!document.body.classList.contains('fullscreen')) {
     map.invalidateSize();
@@ -731,7 +676,16 @@ function applyQuickFilter(qf) {
   if (qf !== 'all') {
     document.getElementById('categoryFilter').value = '';
   }
-  updateMap();
+  debouncedRefresh();
+}
+
+function toggleFullscreen() {
+  document.body.classList.toggle('fullscreen');
+  if (!document.body.classList.contains('fullscreen')) {
+    map.invalidateSize();
+  } else {
+    setTimeout(function() { map.invalidateSize(); }, 100);
+  }
 }
 
 // Override getFilteredBusinesses to incorporate quick filter
@@ -824,14 +778,10 @@ function tryAutoGeolocate() {
 // ============================================================
 function initMap() {
   map = L.map('map', { zoomControl: true }).setView([46.2, -68.5], 9);
-  tileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     maxZoom: 18,
   }).addTo(map);
-  darkTileLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
-    maxZoom: 18,
-  });
 
   if (USE_CLUSTERS) {
     markerClusterGroup = L.markerClusterGroup({
@@ -847,7 +797,6 @@ function initMap() {
   routeLayer = L.layerGroup().addTo(map);
 
   buildLegend();
-  addGeolocateButton();
 
   // Event delegation for popup route buttons
   document.getElementById('map').addEventListener('click', function(e) {
@@ -886,57 +835,6 @@ function buildLegend() {
     return div;
   };
   legend.addTo(map);
-}
-
-// ============================================================
-// GEOLOCATE
-// ============================================================
-function addGeolocateButton() {
-  const btn = L.control({ position: 'topleft' });
-  btn.onAdd = function() {
-    const el = document.createElement('div');
-    el.className = 'geolocate-btn';
-    el.innerHTML = '📍';
-    el.title = 'Find my location';
-    el.onclick = geolocate;
-    return el;
-  };
-  btn.addTo(map);
-}
-
-function addUserLocationMarker() {
-  if (userLocationMarker) map.removeLayer(userLocationMarker);
-  userLocationMarker = L.marker([userLat, userLng], {
-    icon: L.divIcon({ className: '', html: '<div class="user-location-dot"></div>', iconSize: [18, 18], iconAnchor: [9, 9] }),
-  }).addTo(map);
-  userLocationMarker.bindPopup('<b>You are here</b>');
-  var sortEl = document.getElementById('sortFilter');
-  if (sortEl) sortEl.querySelector('[value="distance"]').disabled = false;
-}
-
-function geolocate() {
-  const btn = document.querySelector('.geolocate-btn');
-  btn.classList.add('locating');
-  navigator.geolocation.getCurrentPosition(
-    function(pos) {
-      btn.classList.remove('locating');
-      userLat = pos.coords.latitude;
-      userLng = pos.coords.longitude;
-      map.setView([userLat, userLng], 14);
-      addUserLocationMarker();
-      showToast('Location found. Sort by "Nearest" to see nearby businesses.', 'info');
-    },
-    function(err) {
-      btn.classList.remove('locating');
-      var msg = 'Could not find your location. ';
-      if (err.code === 1) msg += 'Please allow location access in your browser settings.';
-      else if (err.code === 2) msg += 'Position unavailable. Try again.';
-      else if (err.code === 3) msg += 'Request timed out. Try again.';
-      else msg += 'Unknown error.';
-      showToast(msg, 'error');
-    },
-    { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
-  );
 }
 
 // ============================================================
@@ -24083,7 +23981,7 @@ document.addEventListener('click', function(e) {
   if (window.innerWidth > 700) return;
   var sidebar = document.getElementById('sidebar');
   if (!sidebar.classList.contains('open')) return;
-  if (!sidebar.contains(e.target) && !e.target.closest('.leaflet-container') && !e.target.closest('.header-actions') && !e.target.closest('.geolocate-btn')) {
+  if (!sidebar.contains(e.target) && !e.target.closest('.leaflet-container') && !e.target.closest('.header-actions')) {
     sidebar.classList.remove('open');
     setTimeout(function() { map.invalidateSize(); }, 400);
   }
@@ -24979,11 +24877,6 @@ document.addEventListener('keydown', function(e) {
 // ============================================================
 console.log('Coffee News: starting up');
 initMap();
-if (localStorage.getItem('coffeeNews_darkMode') === '1') {
-  map.removeLayer(tileLayer);
-  map.addLayer(darkTileLayer);
-}
-applyDarkMode(localStorage.getItem('coffeeNews_darkMode') === '1');
 updateMap();
 var spinner = document.getElementById('loadingSpinner');
 if (spinner) { spinner.style.display = 'none'; }
