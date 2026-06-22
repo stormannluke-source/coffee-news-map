@@ -201,6 +201,11 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **Smart default zoom**: Initial zoom increased to 9 (from 8), plus `fitBounds` on first data load for tighter auto-fit
 - **Smooth bottom sheet**: GPU-accelerated `transform: translateY()` instead of `height` for 60fps on iOS/Android. Real-time finger-following during swipe with rubber-band resistance. Computes target position dynamically from CSS classes — works on all screen sizes.
 - **Data sanity audit**: Systematic check of all 1142 entries. Fixed 5 corrupted emails (phone/data fused into email fields), 2 wrong ZIP codes, removed 3 duplicates (BigRock Mountain/Old Post Cafe/Clark's Auto Sales Linneus), renamed Howland-Enfield FCU → The County FCU - Howland (5 years out of date), updated Handy Stop address to 2 Coffin St
+- **Mobile UX improvements (Tier 1)**: Touch targets bumped to WCAG-friendly sizes (header buttons 40px, sidebar tabs 10×8px, drag handle 8px). `prefers-reduced-motion` media query disables bottom sheet animation for vestibular disorders.
+- **Mobile UX improvements (Tier 2)**: 150ms debounce on browse list search + 150ms debounce on filter dropdown changes — prevents redundant 863-row rebuilds. Marker tap now shows detail pane in bottom sheet instead of route tab. OSRM fetch has 10s AbortController timeout. Loading spinner shown on initial page load.
+- **Mobile UX improvements (Tier 3)**: Marker clustering enabled at zooms ≤ 12 (individual markers at ≥ 13). Filters scroll horizontally on ≤480px screens at 10px font instead of wrapping.
+
+---
 
 ---
 

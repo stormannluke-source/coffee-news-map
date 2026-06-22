@@ -282,7 +282,7 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
   #header { padding: calc(4px + var(--safe-top)) 10px 4px 10px; }
   #header h1 { font-size: 13px; }
   #header .subtitle { display: none; }
-  .header-actions .btn { font-size: 10px; padding: 2px 5px; min-width: 24px; text-align: center; }
+  .header-actions .btn { font-size: 10px; padding: 6px 10px; min-width: 40px; text-align: center; }
   #filters { gap: 3px; }
   #filters label { display: none; }
   #filters select, #filters input { font-size: 10px; padding: 3px 5px; max-width: 110px; }
@@ -297,14 +297,14 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
   #sidebar + #map { width: 100% !important; display: block !important; }
   #sidebar .sidebar-content { padding-bottom: calc(12px + var(--safe-bottom)); }
   /* Drag handle — real div, not pseudo-element (needs touch-action for iOS) */
-  .drag-handle { width: 36px; height: 4px; background: #ccc; border-radius: 2px; margin: 6px auto 4px auto; flex-shrink: 0; touch-action: none; }
+  .drag-handle { width: 36px; height: 8px; background: #ccc; border-radius: 4px; margin: 8px auto 6px auto; flex-shrink: 0; touch-action: none; }
   #sidebar.open .drag-handle { display: none; }
   .sidebar-tabs { touch-action: none; }
   #sidebar:not(.open) .sidebar-content { flex: 1; overflow-y: auto; }
   #sidebar.open .sidebar-content { overflow-y: auto; }
   /* Push legend and attribution above bottom sheet peek */
   .leaflet-bottom.leaflet-right { bottom: 40vh !important; }
-  .sidebar-tab { font-size: 11px; padding: 8px 4px; }
+  .sidebar-tab { font-size: 11px; padding: 10px 8px; }
   .list-table { font-size: 11px; }
   .list-table th, .list-table td { padding: 4px 5px; }
   .route-stop { padding: 6px 8px; }
@@ -313,8 +313,8 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
   .popup-info { font-size: 11px; }
   .legend { font-size: 11px; padding: 6px 10px; }
   .legend-title { font-size: 11px; }
-  .geolocate-btn { bottom: 20px; left: 8px; width: 30px; height: 30px; font-size: 14px; }
-  .leaflet-control-zoom a { width: 28px; height: 28px; font-size: 14px; line-height: 28px; }
+  .geolocate-btn { bottom: 20px; left: 8px; width: 40px; height: 40px; font-size: 16px; }
+  .leaflet-control-zoom a { width: 36px; height: 36px; font-size: 16px; line-height: 36px; }
   /* Quick filters: scroll horizontally instead of wrapping */
   #quickFilters { flex-wrap: nowrap !important; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
   #quickFilters::-webkit-scrollbar { display: none; }
@@ -326,13 +326,14 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
 @media (max-width: 480px) {
   #header { padding: calc(2px + var(--safe-top)) 4px 2px 4px; gap: 3px; }
   #header h1 { font-size: 11px; }
-  #filters { gap: 2px; }
-  #filters select, #filters input { font-size: 9px; padding: 2px 3px; max-width: 75px; }
-  #filters select { max-width: 60px; }
-  #filters #searchFilter { max-width: 85px; }
+  #filters { gap: 4px; overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  #filters::-webkit-scrollbar { display: none; }
+  #filters select, #filters input { font-size: 10px; padding: 3px 5px; max-width: 90px; }
+  #filters select { max-width: 70px; }
+  #filters #searchFilter { max-width: 100px; }
   .header-actions { gap: 3px; }
-  .header-actions .btn { font-size: 9px; padding: 1px 3px; min-width: 22px; }
-  .sidebar-tab { font-size: 9px; padding: 6px 2px; }
+  .header-actions .btn { font-size: 9px; padding: 4px 8px; min-width: 36px; }
+  .sidebar-tab { font-size: 10px; padding: 8px 6px; }
   #sidebar { transform: translateY(65dvh); }
   #sidebar.open { transform: translateY(10dvh); }
   #sidebar.hidden { transform: translateY(100dvh); }
@@ -341,6 +342,18 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
   #sidebar .sidebar-content { padding: 6px; padding-bottom: calc(8px + var(--safe-bottom)); }
   #sidebar.open .sidebar-content { padding-bottom: calc(8px + var(--safe-bottom)); }
 }
+
+/* Initial loading spinner */
+#loadingSpinner {
+  position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  z-index: 9999; text-align: center;
+}
+#loadingSpinner .spinner {
+  width: 36px; height: 36px; border: 4px solid #ddd; border-top: 4px solid #2c3e50;
+  border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 10px auto;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+#loadingSpinner .loading-text { color: #666; font-size: 13px; }
 
 /* Active filter badges */
 #activeFilters {
@@ -417,10 +430,17 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
 .save-route-input input { flex: 1; padding: 4px 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 12px; }
 .save-route-input input:focus { border-color: #3498db; outline: none; }
 
+@media (prefers-reduced-motion: reduce) {
+  #sidebar { transition: none !important; }
+  #sidebar.no-transition { transition: none !important; }
+  * { animation-duration: 0.01ms !important; }
+}
 </style>
 </head>
 <body>
 <script>(function(){if(localStorage.getItem('coffeeNews_darkMode')==='1')document.body.classList.add('dark')})();</script>
+
+<div id="loadingSpinner"><div class="spinner"></div><div class="loading-text">Loading business directory...</div></div>
 
 <div id="header">
   <div class="header-left">
@@ -491,7 +511,7 @@ body.dark .qf-btn.qf-active { background: #4a6fa5; border-color: #4a6fa5; }
     </div>
     <div class="sidebar-content">
       <div class="sidebar-pane" id="pane-browse">
-        <input id="browseSearch" type="text" placeholder="Search by name..." oninput="updateList()" style="width:100%;padding:6px 8px;border:1px solid var(--border);border-radius:4px;font-size:12px;background:var(--bg);color:var(--text);margin-bottom:6px;">
+        <input id="browseSearch" type="text" placeholder="Search by name..." oninput="debouncedBrowseList()" style="width:100%;padding:6px 8px;border:1px solid var(--border);border-radius:4px;font-size:12px;background:var(--bg);color:var(--text);margin-bottom:6px;">
         <div class="list-summary" id="listSummary"></div>
         <div id="listContainer"><div class="list-empty">No businesses match the current filters.</div></div>
       </div>
@@ -620,7 +640,7 @@ function formatDistance(mi) {
 // ============================================================
 let businesses = [];
 let coords = {};
-let USE_CLUSTERS = false; // Clustering disabled — shows all individual markers
+let USE_CLUSTERS = true; // Clustering at far zoom, individual markers at zoom ≥ 12
 let map, markerClusterGroup, routeLayer, routePolyline;
 let userLocationMarker = null;
 let userLat = null;
@@ -802,7 +822,7 @@ function initMap() {
       spiderfyOnMaxZoom: true,
       showCoverageOnHover: false,
       zoomToBoundsOnClick: true,
-      disableClusteringAtZoom: 15,
+      disableClusteringAtZoom: 12,
     });
     map.addLayer(markerClusterGroup);
   }
@@ -23356,30 +23376,30 @@ let allCategories = new Set();
     catSel.appendChild(opt);
   });
 
+  // Debounce helper for performance-sensitive handlers
+  function debounce(fn, ms) {
+    var timer;
+    return function() {
+      var ctx = this, args = arguments;
+      clearTimeout(timer);
+      timer = setTimeout(function() { fn.apply(ctx, args); }, ms);
+    };
+  }
+
+  var debouncedRefresh = debounce(function() {
+    updateMap();
+    updateList();
+    updateActiveFilterBadges();
+  }, 150);
+
   document.getElementById('regionFilter').addEventListener('change', function() {
-  updateTownFilter(townByRegion);
-  updateCategoryFilter();
-  updateActiveFilterBadges();
+    updateTownFilter(townByRegion);
     updateCategoryFilter();
-    updateMap();
-    updateList();
-    updateActiveFilterBadges();
+    debouncedRefresh();
   });
-  document.getElementById('townFilter').addEventListener('change', function() {
-    updateMap();
-    updateList();
-    updateActiveFilterBadges();
-  });
-  document.getElementById('categoryFilter').addEventListener('change', function() {
-    updateMap();
-    updateList();
-    updateActiveFilterBadges();
-  });
-  document.getElementById('searchFilter').addEventListener('input', function() {
-    updateMap();
-    updateList();
-    updateActiveFilterBadges();
-  });
+  document.getElementById('townFilter').addEventListener('change', debouncedRefresh);
+  document.getElementById('categoryFilter').addEventListener('change', debouncedRefresh);
+  document.getElementById('searchFilter').addEventListener('input', debouncedRefresh);
   document.getElementById('sortFilter').addEventListener('change', function() {
     updateList();
   });
@@ -23696,31 +23716,7 @@ function escapeHtml(s) {
 // ============================================================
 function onMarkerClick(biz) {
   const key = biz.key;
-  const idx = routeStops.findIndex(function(s) { return s.key === key; });
-
-  if (idx >= 0) {
-    routeStops.splice(idx, 1);
-  } else {
-    const pt = coords[key];
-    if (!pt) {
-      showToast('This business has no coordinates on the map.', 'error');
-      return;
-    }
-    routeStops.push({
-      key: key,
-      name: biz.name,
-      address: biz.address || '',
-      city: biz.city || '',
-      town: biz.town || '',
-      category: biz.category || '',
-      lat: pt.lat,
-      lng: pt.lng,
-    });
-  }
-
-  updateRouteView();
-  updateMap();
-  showRouteTab();
+  showDetail(key);
 }
 
 function showRouteTab() {
@@ -23931,8 +23927,12 @@ function optimizeRoute() {
   // Build coordinate string: lng,lat;lng,lat;...
   const url = OSRM_BASE + coordsStr + '?overview=full&steps=true&geometries=geojson&annotations=distance,duration';
 
-  fetch(url)
+  var controller = new AbortController();
+  var timeout = setTimeout(function() { controller.abort(); }, 10000);
+
+  fetch(url, { signal: controller.signal })
     .then(function(r) {
+      clearTimeout(timeout);
       if (!r.ok) throw new Error('OSRM returned ' + r.status + (r.status === 429 ? ' — rate limited. Wait a moment and try again.' : ''));
       return r.json();
     })
@@ -24157,6 +24157,8 @@ function switchTab(tab) {
 let listSortCol = null;
 let listSortDir = 1;
 
+var debouncedBrowseList = (typeof debounce === 'function' ? debounce(updateList, 150) : updateList);
+
 function updateList() {
   const container = document.getElementById('listContainer');
   const summary = document.getElementById('listSummary');
@@ -24361,6 +24363,7 @@ function timeAgo(isoStr) {
 function showDetail(key) {
   var biz = businesses.find(function(b) { return b.key === key; });
   if (!biz) return;
+  toggleSidebar('detail');
   currentDetailBiz = biz;
   var pt = coords[key];
 
@@ -24907,6 +24910,8 @@ if (localStorage.getItem('coffeeNews_darkMode') === '1') {
 }
 applyDarkMode(localStorage.getItem('coffeeNews_darkMode') === '1');
 updateMap();
+var spinner = document.getElementById('loadingSpinner');
+if (spinner) { spinner.style.display = 'none'; }
 loadSavedData();
 updateNotesList();
 updateSavedRoutesList();
