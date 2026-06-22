@@ -289,8 +289,10 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
   #filters select { max-width: 90px; }
   #main { height: calc(100vh - 44px); height: calc(100dvh - 44px); }
   /* Bottom sheet: always visible, starts at peek height, expands on open */
-  #sidebar { display: flex; flex-direction: column; width: 100%; position: fixed; left: 0; bottom: 0; top: auto; z-index: 2000; height: 38vh; border-radius: 12px 12px 0 0; border-left: none; border-top: 1px solid #dee2e6; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1); will-change: height; }
-  #sidebar.open { height: calc(85vh - var(--safe-top)); }
+  #sidebar { display: flex; flex-direction: column; width: 100%; position: fixed; left: 0; bottom: 0; top: auto; z-index: 2000; height: 100dvh; border-radius: 12px 12px 0 0; border-left: none; border-top: 1px solid #dee2e6; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); will-change: transform; transform: translateY(62dvh); }
+  #sidebar.open { transform: translateY(15dvh); }
+  #sidebar.no-transition { transition: none; }
+  #sidebar.dragging { transition: none; }
   #sidebar + #map { width: 100% !important; display: block !important; }
   #sidebar .sidebar-content { padding-bottom: calc(12px + var(--safe-bottom)); }
   /* Drag handle — real div, not pseudo-element (needs touch-action for iOS) */
@@ -330,8 +332,8 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
   .header-actions { gap: 3px; }
   .header-actions .btn { font-size: 9px; padding: 1px 3px; min-width: 22px; }
   .sidebar-tab { font-size: 9px; padding: 6px 2px; }
-  #sidebar { height: 35vh; }
-  #sidebar.open { height: calc(90vh - var(--safe-top)); }
+  #sidebar { transform: translateY(65dvh); }
+  #sidebar.open { transform: translateY(10dvh); }
   #quickFilters { padding: 2px 8px; gap: 3px; }
   .qf-btn { font-size: 9px; padding: 1px 5px; }
   #sidebar .sidebar-content { padding: 6px; padding-bottom: calc(8px + var(--safe-bottom)); }
@@ -23306,7 +23308,7 @@ function toggleSidebar(tab) {
     if (tab === 'browse') updateList();
     if (tab === 'detail') updateList(); // also ensure list is populated for detail
   }
-  setTimeout(function() { map.invalidateSize(); }, 300);
+  setTimeout(function() { map.invalidateSize(); }, 400);
 }
 
 // On mobile, clicking outside the bottom sheet collapses it
@@ -23316,41 +23318,93 @@ document.addEventListener('click', function(e) {
   if (!sidebar.classList.contains('open')) return;
   if (!sidebar.contains(e.target) && !e.target.closest('.leaflet-container') && !e.target.closest('.header-actions') && !e.target.closest('.geolocate-btn')) {
     sidebar.classList.remove('open');
-    setTimeout(function() { map.invalidateSize(); }, 300);
+    setTimeout(function() { map.invalidateSize(); }, 400);
   }
 });
 
-// On mobile, swipe down on the drag handle/tabs area to collapse the bottom sheet
+// Bottom sheet drag: swipe to collapse/expand with real-time finger following
 (function() {
   if (window.innerWidth > 700) return;
   var sidebar = document.getElementById('sidebar');
-  var startY = 0, startX = 0;
+  var startY = 0;
+  var startTranslate = 0;
+  var dragging = false;
+
+  function getTranslate() {
+    // If inline style exists (during drag), parse it
+    var t = sidebar.style.transform;
+    if (t) {
+      var m = t.match(/translateY\(([\d.-]+)/);
+      if (m) return parseFloat(m[1]);
+    }
+    // Fallback: compute from actual DOM position (works on any screen size / orientation)
+    // sidebar has bottom:0, so rect.top / innerHeight = how much it's translated down
+    var rect = sidebar.getBoundingClientRect();
+    return Math.round(rect.top / window.innerHeight * 100);
+  }
+
   sidebar.addEventListener('touchstart', function(e) {
-    if (!sidebar.classList.contains('open')) return;
     if (e.touches.length !== 1) return;
-    // Only capture if touch starts in the top 60px (handle + tabs area)
+    // Only capture if touch starts in the top 80px (handle + tabs area)
     var rect = sidebar.getBoundingClientRect();
     var touchY = e.touches[0].clientY - rect.top;
-    if (touchY > 60) return;
+    if (touchY > 80) return;
     startY = e.touches[0].screenY;
-    startX = e.touches[0].screenX;
-    e.stopPropagation();
+    startTranslate = getTranslate();
+    dragging = true;
+    sidebar.classList.add('no-transition', 'dragging');
   }, { passive: true });
+
   sidebar.addEventListener('touchmove', function(e) {
-    if (startY === 0) return;
-    if (!sidebar.classList.contains('open')) return;
-    if (e.touches.length !== 1) return;
+    if (!dragging || e.touches.length !== 1) return;
     var dy = e.touches[0].screenY - startY;
-    var dx = Math.abs(e.touches[0].screenX - startX);
-    // Downward swipe, more vertical than horizontal
-    if (dy > 40 && dy > dx * 1.5) {
-      startY = 0;
-      sidebar.classList.remove('open');
-      setTimeout(function() { map.invalidateSize(); }, 300);
+    var newTranslate = startTranslate + dy / window.innerHeight * 100;
+    // Rubber-band resistance when overshooting
+    if (newTranslate < 10) {
+      newTranslate = 10 + (newTranslate - 10) * 0.2;
     }
+    if (newTranslate > 72) {
+      newTranslate = 72 + (newTranslate - 72) * 0.2;
+    }
+    sidebar.style.transform = 'translateY(' + newTranslate + 'dvh)';
   }, { passive: true });
-  sidebar.addEventListener('touchend', function() { startY = 0; }, { passive: true });
-  sidebar.addEventListener('touchcancel', function() { startY = 0; }, { passive: true });
+
+  sidebar.addEventListener('touchend', function(e) {
+    if (!dragging) return;
+    dragging = false;
+    var dy = e.changedTouches[0].screenY - startY;
+    var wasOpen = sidebar.classList.contains('open');
+    var shouldOpen = dy < -window.innerHeight * 0.15;
+    var shouldClose = dy > window.innerHeight * 0.15;
+    var finalOpen = shouldOpen ? true : shouldClose ? false : wasOpen;
+
+    // Read the target translateY from CSS by temporarily applying the target class
+    sidebar.classList.toggle('open', finalOpen);
+    sidebar.style.transform = '';
+    var targetDvh = Math.round(sidebar.getBoundingClientRect().top / window.innerHeight * 100);
+    // Restore original state
+    sidebar.classList.toggle('open', wasOpen);
+
+    // Now animate: current inline style → target value
+    sidebar.style.transform = 'translateY(' + targetDvh + 'dvh)';
+    sidebar.classList.remove('no-transition', 'dragging');
+    sidebar.classList.toggle('open', finalOpen);
+    // After transition, clear inline style so CSS class takes over
+    setTimeout(function() { sidebar.style.transform = ''; map.invalidateSize(); }, 400);
+  }, { passive: true });
+
+  sidebar.addEventListener('touchcancel', function() {
+    if (!dragging) return;
+    dragging = false;
+    var wasOpen = sidebar.classList.contains('open');
+    // Read current target from CSS
+    sidebar.style.transform = '';
+    var targetDvh = Math.round(sidebar.getBoundingClientRect().top / window.innerHeight * 100);
+    // Snap back with animation
+    sidebar.style.transform = 'translateY(' + targetDvh + 'dvh)';
+    sidebar.classList.remove('no-transition', 'dragging');
+    setTimeout(function() { sidebar.style.transform = ''; map.invalidateSize(); }, 400);
+  }, { passive: true });
 })();
 
 function switchTab(tab) {
