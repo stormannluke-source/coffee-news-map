@@ -1,7 +1,7 @@
 // Coffee News of Aroostook — Service Worker
 // Provides offline tile caching and faster repeat visits
 
-var CACHE_NAME = 'coffee-news-v1';
+var CACHE_NAME = 'coffee-news-v2';
 var STATIC_URLS = [
   '/coffee-news-map/',
   '/coffee-news-map/index.html',

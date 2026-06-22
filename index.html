@@ -293,11 +293,14 @@ body.dark .leaflet-control-attribution a { color: #6af !important; }
   #sidebar.open { height: calc(85vh - var(--safe-top)); }
   #sidebar + #map { width: 100% !important; display: block !important; }
   #sidebar .sidebar-content { padding-bottom: calc(12px + var(--safe-bottom)); }
-  /* Drag handle */
-  #sidebar::before { content: ''; display: block; width: 36px; height: 4px; background: #ccc; border-radius: 2px; margin: 6px auto 4px auto; flex-shrink: 0; }
-  #sidebar.open::before { display: none; }
+  /* Drag handle — real div, not pseudo-element (needs touch-action for iOS) */
+  .drag-handle { width: 36px; height: 4px; background: #ccc; border-radius: 2px; margin: 6px auto 4px auto; flex-shrink: 0; touch-action: none; }
+  #sidebar.open .drag-handle { display: none; }
+  .sidebar-tabs { touch-action: none; }
   #sidebar:not(.open) .sidebar-content { flex: 1; overflow-y: auto; }
   #sidebar.open .sidebar-content { overflow-y: auto; }
+  /* Push legend and attribution above bottom sheet peek */
+  .leaflet-bottom.leaflet-right { bottom: 40vh !important; }
   .sidebar-tab { font-size: 11px; padding: 8px 4px; }
   .list-table { font-size: 11px; }
   .list-table th, .list-table td { padding: 4px 5px; }
@@ -474,6 +477,7 @@ body.dark .qf-btn.qf-active { background: #4a6fa5; border-color: #4a6fa5; }
 <div id="main">
   <div id="map"></div>
   <div id="sidebar">
+    <div class="drag-handle"></div>
     <div class="sidebar-tabs">
       <button class="sidebar-tab" data-tab="browse" onclick="switchTab('browse')">📋 Browse</button>
       <button class="sidebar-tab" data-tab="route" onclick="switchTab('route')">📍 Route Planner</button>
@@ -23330,6 +23334,7 @@ document.addEventListener('click', function(e) {
     if (touchY > 60) return;
     startY = e.touches[0].screenY;
     startX = e.touches[0].screenX;
+    e.stopPropagation();
   }, { passive: true });
   sidebar.addEventListener('touchmove', function(e) {
     if (startY === 0) return;
@@ -24123,7 +24128,7 @@ tryAutoGeolocate();
 
 // Register service worker for offline caching
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js').then(function(reg) {
+  navigator.serviceWorker.register('service-worker.js?v=2').then(function(reg) {
     console.log('Service worker registered', reg.scope);
   }).catch(function(err) {
     console.log('Service worker registration failed:', err);
