@@ -651,19 +651,6 @@ function saveSavedRoutes() {
 }
 
 // ============================================================
-// INIT MAP
-// ============================================================
-// ============================================================
-// QUICK FILTERS
-  document.body.classList.toggle('fullscreen');
-  if (!document.body.classList.contains('fullscreen')) {
-    map.invalidateSize();
-  } else {
-    setTimeout(function() { map.invalidateSize(); }, 100);
-  }
-}
-
-// ============================================================
 // QUICK FILTERS
 // ============================================================
 var activeQuickFilter = 'all';
