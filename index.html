@@ -323,25 +323,47 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 
 /* Landscape: ultra-compact header for short viewports */
 @media (max-height: 480px) and (orientation: landscape) {
-  #header { padding: calc(2px + var(--safe-top)) 6px 1px 6px; gap: 1px; }
+  /* --- Compact header --- */
+  #header { padding: calc(2px + var(--safe-top)) 6px 1px 6px; gap: 1px; max-height: 80px; transition: all 0.3s ease; }
   #header h1 { font-size: 9px; }
   #header .subtitle { display: none; }
   .header-left { gap: 4px; }
   .header-actions { gap: 2px; }
   .header-actions .btn { font-size: 8px; padding: 2px 5px; min-width: 28px; }
-  /* overflow-x visible kept as auto for scroll; the native select picker overlays so it isn't clipped */
-  #filters { gap: 2px; overflow-x: auto; overflow-y: visible; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
-  #filters::-webkit-scrollbar { display: none; }
-  #filters label { display: none; }
-  #filters select, #filters input { font-size: 11px; padding: 2px 4px; max-width: 90px; }
-  #filters select { max-width: 80px; }
-  #filters #searchFilter { max-width: 90px; }
-  #filters #count { font-size: 9px; }
   #activeFilters { display: none; }
-  /* Sidebar starts hidden in landscape to maximize map space */
-  #sidebar { transform: translateY(100dvh); }
-  #sidebar.open { transform: translateY(8dvh); }
-  #sidebar.hidden { transform: translateY(100dvh); }
+
+  /* --- D: Auto-hide header (collapses to 0 height and fades out) --- */
+  .header-hidden #header { max-height: 0; padding-top: 0; padding-bottom: 0; opacity: 0; overflow: hidden; }
+
+  /* --- B: Filter popover (hidden by default, shown on toggle) --- */
+  #filters { display: none; }
+  #filters.active {
+    display: flex; position: absolute; top: 100%; left: 0; right: 0;
+    background: #2c3e50; padding: 6px 8px; flex-wrap: wrap; gap: 4px;
+    z-index: 999; border-bottom: 1px solid #555; align-items: center;
+  }
+  #filters.active label { display: inline; font-size: 10px; opacity: 0.8; margin-right: 2px; }
+  #filters.active select, #filters.active input { font-size: 11px; padding: 2px 4px; max-width: 150px; background: #34495e; color: #fff; border: 1px solid #555; border-radius: 4px; }
+  #filters.active select { max-width: 120px; }
+  #filters.active #searchFilter { max-width: 130px; }
+  #filters.active #count { font-size: 10px; }
+  #filters.active #landscapeFilterClose { display: inline-block !important; }
+  #filters.active > button { display: inline-block; }
+  #landscapeFilterBtn { display: inline-block !important; }
+
+  /* --- A: Right-side panel --- */
+  #sidebar {
+    position: fixed; left: auto; right: 0; top: 0; bottom: 0;
+    width: 45vw; max-width: 340px; height: 100dvh;
+    transform: none !important; border-radius: 0;
+    border-left: 1px solid var(--border); border-top: none;
+    box-shadow: none; will-change: auto; z-index: 1500;
+  }
+  #sidebar.hidden { display: none; }
+  #sidebar:not(.open) { display: none; }
+  #map.has-sidebar { width: calc(100% - 45vw) !important; max-width: calc(100% - 340px) !important; }
+  .drag-handle { display: none !important; }
+  #sidebar .sidebar-content { padding-bottom: 0; }
 }
 
 /* iOS Safari auto-zooms text inputs with font-size < 16px on focus.
@@ -488,6 +510,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
       <datalist id="searchSuggestions"></datalist>
       <span id="count"></span>
       <button onclick="resetFilters()" title="Reset all filters" style="background:none;border:1px solid #ddd;border-radius:4px;cursor:pointer;padding:2px 8px;font-size:13px">↺ Reset</button>
+      <button id="landscapeFilterClose" onclick="toggleLandscapeFilter()" style="display:none;background:none;border:1px solid #ddd;border-radius:4px;cursor:pointer;padding:2px 8px;font-size:13px">✕ Done</button>
     </div>
     <div id="activeFilters"></div>
   </div>
@@ -495,6 +518,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
     <button class="btn btn-outline" id="toggleListBtn" onclick="toggleSidebar('browse')">📋 List</button>
     <button class="btn btn-outline" id="routeBtn" onclick="toggleSidebar('route')">📍 Route</button>
     <button class="btn btn-outline" id="notesBtn" onclick="toggleSidebar('notes')">📝 Notes</button>
+    <button class="btn btn-outline" id="landscapeFilterBtn" onclick="toggleLandscapeFilter()" style="display:none;font-size:9px;">🔍 Filter</button>
     <button class="btn btn-outline" title="Download regional CSV" onclick="showCSVMenu()" style="font-size:11px;">📥 CSV</button>
     <div id="csvMenu" style="display:none;position:absolute;top:100%;right:0;background:#fff;border:1px solid #dee2e6;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,0.15);z-index:1001;padding:4px;">
       <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Presque Isle Area')">📥 Presque Isle Area</button>
@@ -24204,7 +24228,8 @@ function displayOptimizedRoute(route, waypoints) {
 function toggleSidebar(tab) {
   const sidebar = document.getElementById('sidebar');
   const mapEl = document.getElementById('map');
-  const isMobile = window.innerWidth <= 700;
+  const isLandscape = window.innerHeight <= 480 && window.matchMedia('(orientation: landscape)').matches;
+  const isMobile = window.innerWidth <= 700 && !isLandscape;
   if (sidebar.classList.contains('open')) {
     sidebar.classList.remove('open');
     if (isMobile) sidebar.classList.add('hidden');
@@ -24226,7 +24251,8 @@ function toggleSidebar(tab) {
   if (csvMenu && csvMenu.style.display === 'block' && !e.target.closest('#csvMenu') && !e.target.closest('[onclick*="showCSVMenu"]')) {
     csvMenu.style.display = 'none';
   }
-  if (window.innerWidth > 700) return;
+  var isLandscape = window.innerHeight <= 480 && window.matchMedia('(orientation: landscape)').matches;
+  if (window.innerWidth > 700 || isLandscape) return;
   var sidebar = document.getElementById('sidebar');
   if (!sidebar.classList.contains('open')) return;
   if (!sidebar.contains(e.target) &&
@@ -24241,7 +24267,8 @@ function toggleSidebar(tab) {
 
 // Bottom sheet drag: swipe to collapse/expand with real-time finger following
 (function() {
-  if (window.innerWidth > 700) return;
+  var isLandscape = window.innerHeight <= 480 && window.matchMedia('(orientation: landscape)').matches;
+  if (window.innerWidth > 700 || isLandscape) return;
   var sidebar = document.getElementById('sidebar');
   var startY = 0;
   var startTranslate = 0;
@@ -24361,6 +24388,28 @@ function toggleSidebar(tab) {
     setTimeout(function() { sidebar.style.transform = ''; map.invalidateSize(); }, 400);
   }, { passive: true });
 })();
+
+// Landscape: toggle filter popover
+function toggleLandscapeFilter() {
+  var filters = document.getElementById('filters');
+  filters.classList.toggle('active');
+  var btn = document.getElementById('landscapeFilterBtn');
+  btn.textContent = filters.classList.contains('active') ? '✕ Filter' : '🔍 Filter';
+}
+
+// Landscape: auto-hide header after 3s idle
+var headerTimer = null;
+function resetHeaderTimer() {
+  document.body.classList.remove('header-hidden');
+  if (headerTimer) clearTimeout(headerTimer);
+  // Only auto-hide in landscape on small screens
+  if (window.innerHeight <= 480 && window.matchMedia('(orientation: landscape)').matches) {
+    headerTimer = setTimeout(function() { document.body.classList.add('header-hidden'); document.getElementById('filters').classList.remove('active'); document.getElementById('landscapeFilterBtn').textContent = '🔍 Filter'; }, 3000);
+  }
+}
+document.addEventListener('touchstart', resetHeaderTimer);
+document.addEventListener('click', resetHeaderTimer);
+resetHeaderTimer();
 
 function switchTab(tab) {
   currentTab = tab;
