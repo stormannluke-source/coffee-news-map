@@ -83,15 +83,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 #main { display: flex; flex: 1; min-height: 0; position: relative; }
 #map { flex: 1; height: 100%; overflow: hidden; }
 
-/* Full-screen map mode */
-body.fullscreen #header, body.fullscreen #quickFilters, body.fullscreen #sidebar { display: none !important; }
-body.fullscreen #map { width: 100% !important; display: block !important; }
-body.fullscreen #fullscreenExit { display: block; }
-#fullscreenExit {
-  display: none; position: fixed; bottom: calc(16px + var(--safe-bottom, 0px)); right: calc(12px + var(--safe-right, 0px)); z-index: 10000;
-  background: rgba(0,0,0,0.7); color: #fff; border: none; border-radius: 6px;
-  padding: 10px 16px; font-size: 14px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-}
 #map.has-sidebar { flex: none; width: calc(100% - 380px); }
 
 #sidebar {
@@ -186,12 +177,6 @@ body.fullscreen #fullscreenExit { display: block; }
   border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
-/* User location marker */
-.user-loc-marker {
-  width: 18px; height: 18px; border-radius: 50%;
-  background: #4285f4; border: 3px solid #fff;
-  box-shadow: 0 0 0 2px rgba(66,133,244,0.4), 0 1px 4px rgba(0,0,0,0.4);
-}
 
 /* Legend */
 .legend {
@@ -490,9 +475,7 @@ body.fullscreen #fullscreenExit { display: block; }
   <div class="header-actions">
     <button class="btn btn-outline" id="toggleListBtn" onclick="toggleSidebar('browse')">📋 List</button>
     <button class="btn btn-outline" id="routeBtn" onclick="toggleSidebar('route')">📍 Route</button>
-    <button class="btn btn-outline" id="locateBtn" onclick="locateMe()" title="Find my location">📍 Locate</button>
-    <button class="btn btn-outline" onclick="exportCSV()">⬇ CSV</button>
-    <button class="btn btn-outline" id="fullscreenBtn" onclick="toggleFullscreen()" title="Full-screen map">🗺</button>
+  
   </div>
 </div>
 
@@ -706,8 +689,6 @@ let businesses = [];
 let coords = {};
 let USE_CLUSTERS = false; // Clustering disabled — shows all individual markers
 let map, markerClusterGroup, routeLayer, routePolyline;
-let userLocationMarker = null;
-let userLocationKnown = false;
 let userLat = null;
 let userLng = null;
 let routeStops = [];
@@ -791,15 +772,6 @@ function applyQuickFilter(qf) {
     document.getElementById('categoryFilter').value = '';
   }
   debouncedRefresh();
-}
-
-function toggleFullscreen() {
-  document.body.classList.toggle('fullscreen');
-  if (!document.body.classList.contains('fullscreen')) {
-    map.invalidateSize();
-  } else {
-    setTimeout(function() { map.invalidateSize(); }, 100);
-  }
 }
 
 // Override getFilteredBusinesses to incorporate quick filter
@@ -894,67 +866,7 @@ function startVoiceSearch() {
   }
 }
 
-// ============================================================
-// AUTO-GEOLOCATE ON LOAD
-// ============================================================
-var GEO_OPTS = { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 };
 
-function onGeoSuccess(pos) {
-  userLat = pos.coords.latitude;
-  userLng = pos.coords.longitude;
-  userLocationKnown = true;
-  addUserLocationMarker();
-  var distOpt = document.querySelector('#sortFilter [value="distance"]');
-  if (distOpt) distOpt.disabled = false;
-}
-
-function addUserLocationMarker() {
-  if (!map || userLat == null || userLng == null) return;
-  if (userLocationMarker) {
-    userLocationMarker.setLatLng([userLat, userLng]);
-    return;
-  }
-  userLocationMarker = L.marker([userLat, userLng], {
-    icon: L.divIcon({
-      className: '',
-      html: '<div class="user-loc-marker" title="Your location"></div>',
-      iconSize: [18, 18], iconAnchor: [9, 9],
-    }),
-    zIndexOffset: 1000,
-    interactive: false,
-  }).addTo(map);
-}
-
-function tryAutoGeolocate() {
-  if (!('geolocation' in navigator)) return;
-  // navigator.permissions is unsupported for geolocation on iOS Safari; guard it.
-  if (navigator.permissions && navigator.permissions.query) {
-    navigator.permissions.query({ name: 'geolocation' }).then(function(result) {
-      if (result.state === 'granted') {
-        navigator.geolocation.getCurrentPosition(onGeoSuccess, function() {}, GEO_OPTS);
-      }
-    }).catch(function() {});
-  }
-}
-
-// Manual "Locate Me" — works on all browsers including iOS Safari
-function locateMe() {
-  if (!('geolocation' in navigator)) {
-    showToast('Geolocation not supported in this browser', 'info');
-    return;
-  }
-  showToast('Locating…', 'info');
-  navigator.geolocation.getCurrentPosition(function(pos) {
-    onGeoSuccess(pos);
-    if (map) map.setView([userLat, userLng], 12);
-    showToast('Location found', 'success');
-  }, function(err) {
-    var msg = 'Could not get your location';
-    if (err && err.code === 1) msg = 'Location permission denied';
-    else if (err && err.code === 3) msg = 'Location request timed out';
-    showToast(msg, 'error');
-  }, GEO_OPTS);
-}
 
 // ============================================================
 // INIT MAP
@@ -24460,36 +24372,6 @@ function sortList(col) {
 }
 
 // ============================================================
-// EXPORT CSV
-// ============================================================
-function exportCSV() {
-  const filtered = getFilteredBusinesses();
-  if (filtered.length === 0) {
-    showToast('No businesses to export (filters match nothing).', 'error');
-    return;
-  }
-
-  var csv = 'Business Name,Street Address,City,State,Zip,Phone,Email,Website,Category,Town\n';
-  filtered.forEach(function(b) {
-    var row = [
-      b.name || '', b.address || '', b.city || '', b.state || '', b.zip || '',
-      b.phone || '', b.email || '', b.website || '', b.category || '', b.town || '',
-    ].map(function(v) { return '"' + v.replace(/"/g, '""') + '"'; }).join(',');
-    csv += row + '\n';
-  });
-
-  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-  const link = document.createElement('a');
-  link.href = URL.createObjectURL(blob);
-  link.download = 'coffee_news_businesses_' + new Date().toISOString().slice(0,10) + '.csv';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-  URL.revokeObjectURL(link.href);
-  showToast('Exported ' + filtered.length + ' businesses to CSV', 'success');
-}
-
-// ============================================================
 // PRINT ROUTE
 // ============================================================
 function printRoute() {
@@ -25187,8 +25069,6 @@ var spinner = document.getElementById('loadingSpinner');
 if (spinner) { spinner.style.display = 'none'; }
 updateNotesList();
 updateSavedRoutesList();
-tryAutoGeolocate();
-
 // Register service worker for offline caching
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js?v=2').then(function(reg) {
@@ -25198,6 +25078,5 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>
-<button id="fullscreenExit" onclick="toggleFullscreen()">✕ Exit fullscreen</button>
 </body>
 </html>
