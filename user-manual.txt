@@ -1,0 +1,193 @@
+Coffee News of Aroostook — Business Directory Map
+User Manual
+===================================================
+
+OVERVIEW
+--------
+An interactive map of 1,141 businesses across Aroostook County, Maine,
+organized into 4 regions. Designed for ad-sales field use — browse, filter,
+take notes, mark visits, plan routes, and export territory lists.
+
+Open index.html in any browser. No server required.
+
+
+THE INTERFACE
+-------------
+  ┌─────────────────────────────────────────────────┐
+  │  Header — title, filter bar, action buttons      │
+  ├─────────────────────────────────────────────────┤
+  │  Quick-filter pills                              │
+  ├─────────────────────────────────────────────────┤
+  │                                   │              │
+  │        Map                        │   Sidebar    │
+  │        (markers, legend)          │   (browse,   │
+  │                                   │   route,     │
+  │                                   │   notes)     │
+  │                                   │              │
+  └─────────────────────────────────────────────────┘
+
+
+BROWSING BUSINESSES
+-------------------
+On first load, the map shows all 863 businesses suitable for ads.
+Markers are color-coded by category (see legend, bottom-right).
+
+Tap any marker to see a popup with:
+  • Business name, address, phone, email, website
+  • Add/Remove from Route button
+  • Directions (Google Maps)
+  • Share button
+  • Visit toggle
+
+
+FILTERING
+---------
+Use the header controls to narrow results:
+
+  Region ▼    — pick one of 4 regions
+  Town ▼      — filtered by selected region
+  Category ▼  — one of 7 category groups
+  Search      — matches name, address, town, category, or phone digits
+  🎤          — voice search (microphone icon)
+
+Filter count badges (N) show how many businesses match each option.
+
+Quick-filter pills (below header):
+  All · Food · Shopping · Health · Auto · Services · Lodging · Religion
+Tap one to instantly filter by business type. Count badges show results.
+
+
+BUSINESS DETAIL PANE
+--------------------
+Tap a marker or tap a row in the Browse list to open the detail pane.
+Shows full contact info with 📋 copy buttons for address and phone.
+
+From the detail pane you can:
+  • Get directions
+  • Add/Remove from route
+  • Share
+  • Write a note
+  • Set a follow-up date
+  • Mark as visited
+  • See nearby businesses (within 0.5 miles)
+
+
+NOTES
+-----
+Every business can have a note (textarea) saved to your browser.
+Access notes from:
+  1. Detail pane — textarea with auto-save
+  2. Notes & Visits sidebar tab
+
+Each note can have a follow-up date (date picker).
+When you save a note, the follow-up date is saved with it.
+
+NOTES TAB (sidebar → 📝 Notes & Visits)
+----------------------------------------
+Tabs within the Notes tab:
+
+  All           — businesses that have a note OR a visit
+  With Notes    — only businesses that have a note
+  Visited       — only businesses marked as visited
+  + Add Note    — search any business to add a note
+  ⏰ Follow-ups — grouped by urgency (see below)
+
+Each business has:
+  • Follow-up: <date input> — pick a callback date
+  • Textarea — write the note
+  • Save / Delete buttons
+  • 🗺 Show on Map — center the map on this business
+  • ✕ Remove — remove the last visit date
+
+FOLLOW-UPS ⏰
+-------------
+The Follow-ups view groups businesses with follow-up dates into:
+
+  🔴 Overdue (N)     — past due dates (red tags)
+  🟠 Due Today (N)   — due today (orange tags)
+  🔵 Coming Up (N)   — within 3 days (blue tags)
+  📅 Later (N)       — more than 3 days out
+
+The earliest follow-ups appear first within each section.
+
+
+VISITS
+------
+Mark a business as visited from its popup or detail pane.
+Each visit is date-stamped.
+Visits show a green ✅ tag in the Notes tab.
+
+To remove a visit: tap ✕ Remove next to the visit date.
+
+
+ROUTE PLANNER (📍 Route)
+------------------------
+1. Tap markers on the map (or use detail pane) to add stops
+2. Stops appear in the Route tab sidebar
+3. Drag ⠿ handles to reorder
+4. Tap 🗺 Optimize to reorder stops for shortest driving distance
+   (uses OSRM routing engine — 2 retry attempts on failure)
+5. Tap 📍 Navigate to open turn-by-turn in Apple Maps (iOS)
+   or Google Maps (Android)
+6. Tap 🖨 Print for a printed route sheet
+7. Tap 🔊 Announce to hear stops read aloud (name + address)
+8. Tap ✕ Clear to remove all stops
+
+SAVED ROUTES
+------------
+  • 💾 Save Current — name and save the current route
+  • Saved routes persist in your browser
+  • Tap a saved route to restore it
+  • ⬇ Export / ⬆ Import — backup or transfer routes as JSON
+
+
+CSV EXPORT
+----------
+Tap 📥 CSV in the header → choose a region:
+  • Presque Isle Area
+  • Houlton Region
+  • Millinocket Area
+  • Lincoln Area
+
+Downloads a UTF-8 CSV file with all 11 fields for every business
+in that region. Open in Excel, Google Sheets, or Numbers.
+
+
+RECENTLY VIEWED (🕐 Recent tab)
+-------------------------------
+Shows the last 10 businesses you viewed, newest first.
+Tap one to jump back to its detail pane.
+
+
+RESET
+-----
+Tap ↺ Reset to clear all filters, quick-filter selection, and
+the current route.
+
+
+OFFLINE
+-------
+If your internet connection drops, a red banner appears:
+  "You are offline — map tiles may not load"
+The app still works — cached tiles and all localStorage data
+(notes, visits, routes) remain available.
+
+
+STORAGE
+-------
+All notes, visits, saved routes, and filter preferences are stored
+in your browser's localStorage. They persist across page reloads.
+To clear them: browser settings → Clear site data.
+
+Export notes/visits/routes as JSON for backup before clearing.
+
+
+TIPS FOR AD-SALES FIELD USE
+----------------------------
+  • Before heading out, filter to one Town and review the list
+  • Download the CSV for that region as a printed backup
+  • Mark visits with ✅ as you complete calls
+  • Set a follow-up date when a business asks you to call back
+  • Check ⏰ Follow-ups each morning for today's callbacks
+  • Use Route Planner to optimize your driving route between stops
+  • 📍 Navigate opens turn-by-turn directions on your phone
