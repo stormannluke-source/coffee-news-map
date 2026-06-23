@@ -24686,6 +24686,39 @@ function populatePopupNotes(key) {
   }
 }
 
+function saveNoteFromNotesTab(key) {
+  var val = document.getElementById('notes-tab-note-input-' + key).value;
+  if (val.trim()) {
+    NOTES[key] = { text: val.trim(), updated: new Date().toISOString() };
+  } else {
+    delete NOTES[key];
+  }
+  saveNotes();
+  updateMarkerIndicator(key);
+  updateNotesList();
+  showToast('Note saved', 'success');
+}
+
+function deleteNoteFromNotesTab(key) {
+  if (NOTES[key]) {
+    delete NOTES[key];
+    saveNotes();
+    updateMarkerIndicator(key);
+    updateNotesList();
+    showToast('Note deleted', 'success');
+  }
+}
+
+function deleteLastVisit(key) {
+  if (!VISITS[key] || VISITS[key].length === 0) return;
+  VISITS[key].pop();
+  if (VISITS[key].length === 0) delete VISITS[key];
+  saveVisits();
+  updateMarkerIndicator(key);
+  updateNotesList();
+  showToast('Visit removed', 'success');
+}
+
 function toggleVisit(key) {
   if (!VISITS[key]) VISITS[key] = [];
   VISITS[key].push(new Date().toISOString());
@@ -24802,11 +24835,16 @@ function updateNotesList() {
     html += '<div class="note-item-addr">' + escapeHtml(item.address || item.town) + ', ' + escapeHtml(item.city) + '</div>';
     html += '<div style="margin-bottom:4px;">';
     if (item.note) html += '<span class="note-item-tag note">\ud83d\udcdd Note</span>';
-    if (item.lastVisit) html += '<span class="note-item-tag visited">\u2705 Visited ' + formatDate(item.lastVisit) + '</span>';
-    html += '</div>';
-    if (item.note) {
-      html += '<div class="note-item-text">' + escapeHtml(item.note) + '</div>';
+    if (item.lastVisit) {
+      html += '<span class="note-item-tag visited">\u2705 Visited ' + formatDate(item.lastVisit) + '</span>';
+      html += '<button class="popup-route-btn" style="border-color:#e74c3c;color:#e74c3c;font-size:10px;padding:1px 6px;margin-left:4px;" onclick="deleteLastVisit(\'' + item.key + '\')">\u2715 Remove</button>';
     }
+    html += '</div>';
+    html += '<textarea class="popup-note-input" id="notes-tab-note-input-' + item.key + '" placeholder="Add a note about this business..." style="margin-bottom:4px;">' + (item.note ? escapeHtml(item.note) : '') + '</textarea>';
+    html += '<div style="margin-bottom:4px;">';
+    html += '<button class="popup-route-btn" style="border-color:#27ae60;color:#27ae60;" onclick="saveNoteFromNotesTab(\'' + item.key + '\')">Save</button>';
+    html += '<button class="popup-route-btn" style="border-color:#e74c3c;color:#e74c3c;margin-left:4px;" onclick="deleteNoteFromNotesTab(\'' + item.key + '\')">Delete</button>';
+    html += '</div>';
     html += '<div class="note-item-actions">';
     html += '<button class="popup-route-btn" onclick="flyToBusiness(\'' + item.key + '\')">\ud83d\udccd Show on Map</button>';
     html += '</div>';
