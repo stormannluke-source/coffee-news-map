@@ -746,22 +746,29 @@ function startVoiceSearch() {
   rec.interimResults = false;
   rec.maxAlternatives = 1;
   var btn = document.getElementById('voiceSearchBtn');
+  var recTimeout;
   rec.onstart = function() {
     isListening = true;
     btn.textContent = '🔴';
     toast('Listening...', 1500);
+    // Safety: force-stop mic after 10s if no result comes through
+    recTimeout = setTimeout(function() { rec.stop(); }, 10000);
   };
   rec.onresult = function(e) {
+    clearTimeout(recTimeout);
     var q = e.results[0][0].transcript;
     document.getElementById('searchFilter').value = q;
     updateSearchSuggestions(q);
     updateMap();
+    rec.stop();
   };
   rec.onend = function() {
+    clearTimeout(recTimeout);
     isListening = false;
     btn.textContent = '🎤';
   };
   rec.onerror = function() {
+    clearTimeout(recTimeout);
     isListening = false;
     btn.textContent = '🎤';
     toast('Voice search failed', 1500);
