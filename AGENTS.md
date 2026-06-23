@@ -210,6 +210,44 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 
 ---
 
+## Smartphone Cross-Compatibility Issues
+
+**Priority:** Resolve known mobile rendering/behavior inconsistencies across iOS Safari, Android Chrome, and Samsung Internet. Target: seamless, identical UX on all modern smartphones.
+
+### Known Issues (observed anecdotally, needs systematic testing)
+
+| Issue | Affected Browsers | Description |
+|---|---|---|
+| Bottom sheet drag stutter | iOS Safari (older), Android Chrome | Occasional 60fps drop during swipe; `touch-action: none` on drag handle may conflict with Leaflet touch handlers |
+| Bottom sheet snap position drift | iOS Safari (notch devices) | `--safe-bottom` calculation may differ on devices with/without home indicator; peek position can be slightly off |
+| Map tap vs bottom sheet tap | iOS Safari | Tapping a map marker while bottom sheet is peeked sometimes fires both the marker popup AND drag handler |
+| Voice search mic icon stuck | Android Chrome (Samsung Internet) | `rec.stop()` fires `onend` but button may not reset to 🎤; `currentRec` still null check race |
+| Filter dropdowns clipped | iOS Safari (landscape) | Landscape compact header reduces height but `.sidebar-pane` overflow may still clip multi-select dropdowns |
+| Full-screen map exit button | Android Chrome | "✕ Exit fullscreen" `fixed` button may overlap with Chrome address bar hide/show |
+| PWA add-to-home-screen splash | iOS Safari | `manifest.webmanifest` may not be picked up reliably on first visit due to missing `apple-touch-icon` sizing |
+| Safari zoom on input focus | iOS Safari | When search input is focused, Safari sometimes zooms the page (font-size < 16px on the input causes this) |
+| Print route layout | iOS Safari | Print button output may differ — route data columns can overflow page width |
+
+### Debugging Approach for Claude Opus 4.8
+
+1. **Test matrix**: Verify each issue on real devices — iPhone SE (iOS 15+), iPhone 14/15 (iOS 17+), Pixel 7 (Android 14), Samsung Galaxy S23 (One UI 6)
+2. **Remote debugging**: Use Safari Web Inspector (iOS) and Chrome DevTools (Android via USB) to inspect console errors, touch event listeners, layout shifts
+3. **Fix philosophy**: Favor CSS-only solutions over JS. Use `@supports` and `@media` queries for browser-specific quirks. Avoid user-agent sniffing where possible.
+4. **Verification**: After each fix, test on all 4 target devices. Regression test the bottom sheet 3-state snap, marker taps, filter dropdowns, and voice search.
+
+### Goals
+
+- ✅ Bottom sheet drag is buttery smooth (60fps) on all devices
+- ✅ No tap conflicts between map markers and bottom sheet
+- ✅ Voice search mic never stays stuck in listening state
+- ✅ Filter dropdowns always fully visible (no clipping)
+- ✅ Full-screen mode exit button always tappable regardless of address bar state
+- ✅ No Safari auto-zoom on input focus (font-size ≥ 16px on all inputs)
+- ✅ PWA add-to-home-screen works on first visit
+- ✅ Print route renders correctly on mobile Safari
+
+---
+
 ## Remaining Work
 
 1. **5 businesses missing phone numbers** (web search exhaustive): Dollar General Fort Fairfield (non-207 number rejected), Lowell Baptist Church, Bittersweet Thyme, Bittersweet Thyme Cafe, Anciently Marked Tattoo Art Studio. Resolvable only by phone call or in-person visit.
