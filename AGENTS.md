@@ -225,6 +225,8 @@ python3 -m http.server 8000        # then visit http://localhost:8000
   - **4 regional CSVs**: 📥 CSV header button with dropdown menu, one download per region, proper UTF-8 BOM + CSV escaping
 - **Sticky hover fix (touch devices)**: All 18 `:hover` CSS rules wrapped in `@media (hover: hover)`, plus global `-webkit-tap-highlight-color: transparent` to prevent iOS Safari persistent gray tap highlight on buttons/tabs/list rows
 - **Quick-filter pills removed**: Category dropdown is the sole business-type filter. Removed HTML/CSS/JS for the 9 quick-filter pills (All · Food · Shopping · Health · Auto · Services · Lodging · Religion). Simplified filter UI — Region/Town/Category/Search/Reset in top bar.
+- **Filter popover on mobile**: Filter controls hide behind a "🔍 Filter" button on both portrait mobile and landscape. Tapping shows a popover below the header. Desktop (width > 700px) keeps filters visible inline as before.
+- **Header buttons moved to left**: 📋 List, 📍 Route, 📝 Notes, 🔍 Filter, 📥 CSV now sit between the title and the filter bar on the left side of the header.
 - **Landscape UX overhaul**: 4 improvements for horizontal phone use:
   - **Right-side panel**: Sidebar switches from bottom sheet to a right-side panel (45vw, max 340px) in landscape, so map and sidebar are visible simultaneously
   - **Collapsed filter popover**: Filter controls hide behind a single "🔍 Filter" button; tapping it shows a popover below the header with all dropdowns

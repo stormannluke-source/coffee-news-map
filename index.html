@@ -47,7 +47,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 
 #header {
   background: var(--header-bg); color: var(--header-text); padding: calc(8px + var(--safe-top)) 16px 8px 16px;
-  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  display: flex; align-items: center; flex-wrap: wrap;
   gap: 6px; position: relative; z-index: 1000; width: 100%; max-width: 100%;
 }
 #header h1 { font-size: 16px; font-weight: 600; white-space: nowrap; }
@@ -270,6 +270,22 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   #filters label { display: none; }
   #filters select, #filters input { font-size: 10px; padding: 3px 5px; max-width: 110px; }
   #filters select { max-width: 90px; }
+  /* Filter toggle: button visible, popover hidden by default */
+  #filterToggleBtn { display: inline-block !important; }
+  #filters { display: none; }
+  #filters.active {
+    display: flex; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--header-bg); padding: 6px 8px; flex-wrap: wrap; gap: 4px;
+    z-index: 999; border-bottom: 1px solid #555; align-items: center;
+  }
+  #filters.active label { display: inline; font-size: 10px; opacity: 0.8; margin-right: 2px; }
+  #filters.active select, #filters.active input { font-size: 11px; padding: 2px 4px; max-width: 150px; background: var(--input-bg); color: var(--input-text); border: 1px solid #555; border-radius: 4px; }
+  #filters.active select { max-width: 120px; }
+  #filters.active #searchFilter { max-width: 130px; }
+  #filters.active #count { font-size: 10px; }
+  #filters.active #filterToggleClose { display: inline-block !important; }
+  #filters.active > button { display: inline-block; }
+
   /* Bottom sheet: always visible, starts at peek height, expands on open */
   #sidebar { display: flex; flex-direction: column; width: 100%; position: fixed; left: 0; bottom: 0; top: auto; z-index: 2000; height: 100dvh; border-radius: 12px 12px 0 0; border-left: none; border-top: 1px solid #dee2e6; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); will-change: transform; transform: translateY(62dvh); }
   #sidebar.open { transform: translateY(15dvh); }
@@ -339,17 +355,17 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   #filters { display: none; }
   #filters.active {
     display: flex; position: absolute; top: 100%; left: 0; right: 0;
-    background: #2c3e50; padding: 6px 8px; flex-wrap: wrap; gap: 4px;
+    background: var(--header-bg); padding: 6px 8px; flex-wrap: wrap; gap: 4px;
     z-index: 999; border-bottom: 1px solid #555; align-items: center;
   }
   #filters.active label { display: inline; font-size: 10px; opacity: 0.8; margin-right: 2px; }
-  #filters.active select, #filters.active input { font-size: 11px; padding: 2px 4px; max-width: 150px; background: #34495e; color: #fff; border: 1px solid #555; border-radius: 4px; }
+  #filters.active select, #filters.active input { font-size: 11px; padding: 2px 4px; max-width: 150px; background: var(--input-bg); color: var(--input-text); border: 1px solid #555; border-radius: 4px; }
   #filters.active select { max-width: 120px; }
   #filters.active #searchFilter { max-width: 130px; }
   #filters.active #count { font-size: 10px; }
-  #filters.active #landscapeFilterClose { display: inline-block !important; }
+  #filters.active #filterToggleClose { display: inline-block !important; }
   #filters.active > button { display: inline-block; }
-  #landscapeFilterBtn { display: inline-block !important; }
+  #filterToggleBtn { display: inline-block !important; }
 
   /* --- A: Right-side panel --- */
   #sidebar {
@@ -495,6 +511,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
       <h1>Coffee News of Aroostook</h1>
       <div class="subtitle">Business Directory Map &middot; Aroostook County, Maine</div>
     </div>
+    <div class="header-actions" style="position:relative;">
+      <button class="btn btn-outline" id="toggleListBtn" onclick="toggleSidebar('browse')">📋 List</button>
+      <button class="btn btn-outline" id="routeBtn" onclick="toggleSidebar('route')">📍 Route</button>
+      <button class="btn btn-outline" id="notesBtn" onclick="toggleSidebar('notes')">📝 Notes</button>
+      <button class="btn btn-outline" id="filterToggleBtn" onclick="toggleFilterPopover()" style="display:none;">🔍 Filter</button>
+      <button class="btn btn-outline" title="Download regional CSV" onclick="showCSVMenu()" style="font-size:11px;">📥 CSV</button>
+      <div id="csvMenu" style="display:none;position:absolute;top:100%;right:0;background:#fff;border:1px solid #dee2e6;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,0.15);z-index:1001;padding:4px;">
+        <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Presque Isle Area')">📥 Presque Isle Area</button>
+        <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Houlton Region')">📥 Houlton Region</button>
+        <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Millinocket Area')">📥 Millinocket Area</button>
+        <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Lincoln Area')">📥 Lincoln Area</button>
+      </div>
+    </div>
     <div id="filters">
       <label>Region</label>
       <select id="regionFilter"><option value="">All Regions</option></select>
@@ -510,22 +539,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
       <datalist id="searchSuggestions"></datalist>
       <span id="count"></span>
       <button onclick="resetFilters()" title="Reset all filters" style="background:none;border:1px solid #ddd;border-radius:4px;cursor:pointer;padding:2px 8px;font-size:13px">↺ Reset</button>
-      <button id="landscapeFilterClose" onclick="toggleLandscapeFilter()" style="display:none;background:none;border:1px solid #ddd;border-radius:4px;cursor:pointer;padding:2px 8px;font-size:13px">✕ Done</button>
+      <button id="filterToggleClose" onclick="toggleFilterPopover()" style="display:none;background:none;border:1px solid #ddd;border-radius:4px;cursor:pointer;padding:2px 8px;font-size:13px">✕ Done</button>
     </div>
     <div id="activeFilters"></div>
   </div>
-  <div class="header-actions" style="position:relative;">
-    <button class="btn btn-outline" id="toggleListBtn" onclick="toggleSidebar('browse')">📋 List</button>
-    <button class="btn btn-outline" id="routeBtn" onclick="toggleSidebar('route')">📍 Route</button>
-    <button class="btn btn-outline" id="notesBtn" onclick="toggleSidebar('notes')">📝 Notes</button>
-    <button class="btn btn-outline" id="landscapeFilterBtn" onclick="toggleLandscapeFilter()" style="display:none;font-size:9px;">🔍 Filter</button>
-    <button class="btn btn-outline" title="Download regional CSV" onclick="showCSVMenu()" style="font-size:11px;">📥 CSV</button>
-    <div id="csvMenu" style="display:none;position:absolute;top:100%;right:0;background:#fff;border:1px solid #dee2e6;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,0.15);z-index:1001;padding:4px;">
-      <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Presque Isle Area')">📥 Presque Isle Area</button>
-      <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Houlton Region')">📥 Houlton Region</button>
-      <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Millinocket Area')">📥 Millinocket Area</button>
-      <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Lincoln Area')">📥 Lincoln Area</button>
-    </div>
   </div>
 </div>
 
@@ -24390,10 +24407,10 @@ function toggleSidebar(tab) {
 })();
 
 // Landscape: toggle filter popover
-function toggleLandscapeFilter() {
+function toggleFilterPopover() {
   var filters = document.getElementById('filters');
   filters.classList.toggle('active');
-  var btn = document.getElementById('landscapeFilterBtn');
+  var btn = document.getElementById('filterToggleBtn');
   btn.textContent = filters.classList.contains('active') ? '✕ Filter' : '🔍 Filter';
 }
 
@@ -24404,7 +24421,7 @@ function resetHeaderTimer() {
   if (headerTimer) clearTimeout(headerTimer);
   // Only auto-hide in landscape on small screens
   if (window.innerHeight <= 480 && window.matchMedia('(orientation: landscape)').matches) {
-    headerTimer = setTimeout(function() { document.body.classList.add('header-hidden'); document.getElementById('filters').classList.remove('active'); document.getElementById('landscapeFilterBtn').textContent = '🔍 Filter'; }, 3000);
+    headerTimer = setTimeout(function() { document.body.classList.add('header-hidden'); document.getElementById('filters').classList.remove('active'); document.getElementById('filterToggleBtn').textContent = '🔍 Filter'; }, 3000);
   }
 }
 document.addEventListener('touchstart', resetHeaderTimer);

@@ -56,11 +56,12 @@ Use the controls at the top to shrink your results:
 Each option has a number in parentheses, like "Food (342)". That's how
 many businesses fit that choice.
 
-On a phone held sideways, the search controls hide behind a 🔍 Filter
-button to save space. Tap it to see all the options. The list or notes
-panel appears on the right side instead of covering the whole screen.
-The top bar hides after a few seconds to show more of the map — tap
-anywhere on the screen to bring it back.
+On a phone (held normally or sideways), the search controls hide behind
+a 🔍 Filter button to save space. Tap it to see all the options. On a
+phone held sideways, the list or notes panel appears on the right side
+instead of covering the whole screen. The top bar hides after a few
+seconds to show more of the map — tap anywhere on the screen to bring
+it back.
 
 
 BUSINESS DETAIL CARD
