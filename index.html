@@ -270,7 +270,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   /* pan-y lets vertical drag work while not blocking Leaflet's own touch handlers */
   .sidebar-tabs { touch-action: pan-y; }
   #sidebar:not(.open) .sidebar-content { flex: 1; overflow-y: auto; }
-  #sidebar.open .sidebar-content { overflow-y: auto; }
+  #sidebar.open .sidebar-content { flex: 1; overflow-y: auto; }
   .sidebar-tab { font-size: 11px; padding: 10px 8px; }
   .list-table { font-size: 11px; }
   .list-table th, .list-table td { padding: 4px 5px; }
@@ -24316,23 +24316,40 @@ function toggleSidebar(tab) {
     return Math.round(rect.top / window.innerHeight * 100);
   }
 
+  var contentEl = sidebar.querySelector('.sidebar-content');
+
+  function shouldStartDrag(touchY, dy) {
+    // Upward drag (expanding the sheet) — always allow
+    if (dy < 0) return true;
+    // Downward drag (collapsing) — only if content is scrolled to top
+    if (dy > 0 && contentEl && contentEl.scrollTop <= 0) return true;
+    return false;
+  }
+
   sidebar.addEventListener('touchstart', function(e) {
     if (e.touches.length !== 1) return;
-    // Don't hijack taps on interactive controls (buttons, inputs, links) into a drag
+    // Don't hijack taps on interactive controls
     if (e.target.closest('button, input, select, textarea, a')) return;
-    // Only capture if touch starts in the top 80px (handle + tabs area)
-    var rect = sidebar.getBoundingClientRect();
-    var touchY = e.touches[0].clientY - rect.top;
-    if (touchY > 80) return;
+    // Don't hijack taps on the map container itself
+    if (e.target.closest('.leaflet-container')) return;
     startY = e.touches[0].screenY;
     startTranslate = getTranslate();
-    dragging = true;
-    sidebar.classList.add('no-transition', 'dragging');
   }, { passive: true });
 
   sidebar.addEventListener('touchmove', function(e) {
-    if (!dragging || e.touches.length !== 1) return;
+    if (e.touches.length !== 1) return;
     var dy = e.touches[0].screenY - startY;
+    // If not yet dragging, check if we should start
+    if (!dragging) {
+      if (Math.abs(dy) < 5) return; // ignore tiny moves
+      if (!shouldStartDrag(e.touches[0].clientY, dy)) return;
+      dragging = true;
+      sidebar.classList.add('no-transition', 'dragging');
+      // Recalculate starting translate now because we might have scrolled since touchstart
+      startTranslate = getTranslate();
+      startY = e.touches[0].screenY;
+      dy = 0;
+    }
     var newTranslate = startTranslate + dy / window.innerHeight * 100;
     // Rubber-band resistance when overshooting
     if (newTranslate < 10) {
