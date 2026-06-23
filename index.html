@@ -100,7 +100,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .sidebar-tab:hover { color: var(--text); background: rgba(0,0,0,0.03); }
 .sidebar-tab.active { color: var(--text); border-bottom-color: #3498db; background: var(--bg); }
 
-.sidebar-content { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 12px; }
+.sidebar-content { flex: 1; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none; -ms-overflow-style: none; padding: 12px; }
+.sidebar-content::-webkit-scrollbar { display: none; }
 .sidebar-pane { display: none; }
 .sidebar-pane.active { display: block; }
 
