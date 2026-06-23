@@ -464,7 +464,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
         <option value="">Default</option>
         <option value="name">Name A-Z</option>
         <option value="name-desc">Name Z-A</option>
-        <option value="distance" disabled>📍 Nearest</option>
+
       </select>
       <span id="count"></span>
       <button onclick="resetFilters()" title="Reset all filters" style="background:none;border:1px solid #ddd;border-radius:4px;cursor:pointer;padding:2px 8px;font-size:13px">↺ Reset</button>
@@ -475,18 +475,26 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
     <button class="btn btn-outline" id="toggleListBtn" onclick="toggleSidebar('browse')">📋 List</button>
     <button class="btn btn-outline" id="routeBtn" onclick="toggleSidebar('route')">📍 Route</button>
     <button class="btn btn-outline" id="notesBtn" onclick="toggleSidebar('notes')">📝 Notes</button>
+    <button class="btn btn-outline" title="Download regional CSV" onclick="showCSVMenu()" style="font-size:11px;">📥 CSV</button>
+  </div>
+  <div id="csvMenu" style="display:none;position:absolute;top:100%;right:8px;background:#fff;border:1px solid #dee2e6;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,0.15);z-index:1001;padding:4px;">
+    <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Presque Isle Area')">📥 Presque Isle Area</button>
+    <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Houlton Region')">📥 Houlton Region</button>
+    <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Millinocket Area')">📥 Millinocket Area</button>
+    <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Lincoln Area')">📥 Lincoln Area</button>
   </div>
 </div>
 
+<div id="offlineBanner" style="display:none;background:#e74c3c;color:#fff;text-align:center;padding:4px;font-size:12px;font-weight:500;">🌐 You are offline — map tiles may not load</div>
 <div id="quickFilters" style="display:flex;gap:4px;padding:4px 16px;background:var(--bg-alt);border-bottom:1px solid var(--border);flex-wrap:wrap;max-width:100%;">
   <button class="qf-btn qf-active" data-qf="all" onclick="applyQuickFilter('all')">All</button>
-  <button class="qf-btn" data-qf="food" onclick="applyQuickFilter('food')">🍔 Food</button>
-  <button class="qf-btn" data-qf="retail" onclick="applyQuickFilter('retail')">🛍 Shopping</button>
-  <button class="qf-btn" data-qf="health" onclick="applyQuickFilter('health')">🏥 Health</button>
-  <button class="qf-btn" data-qf="auto" onclick="applyQuickFilter('auto')">🔧 Auto</button>
-  <button class="qf-btn" data-qf="services" onclick="applyQuickFilter('services')">📋 Services</button>
-  <button class="qf-btn" data-qf="lodging" onclick="applyQuickFilter('lodging')">🏨 Lodging</button>
-  <button class="qf-btn" data-qf="religion" onclick="applyQuickFilter('religion')">⛪ Religion</button>
+  <button class="qf-btn" data-qf="food" data-label="Food" data-emoji="🍔" onclick="applyQuickFilter('food')">🍔 Food</button>
+  <button class="qf-btn" data-qf="retail" data-label="Shopping" data-emoji="🛍" onclick="applyQuickFilter('retail')">🛍 Shopping</button>
+  <button class="qf-btn" data-qf="health" data-label="Health" data-emoji="🏥" onclick="applyQuickFilter('health')">🏥 Health</button>
+  <button class="qf-btn" data-qf="auto" data-label="Auto" data-emoji="🔧" onclick="applyQuickFilter('auto')">🔧 Auto</button>
+  <button class="qf-btn" data-qf="services" data-label="Services" data-emoji="📋" onclick="applyQuickFilter('services')">📋 Services</button>
+  <button class="qf-btn" data-qf="lodging" data-label="Lodging" data-emoji="🏨" onclick="applyQuickFilter('lodging')">🏨 Lodging</button>
+  <button class="qf-btn" data-qf="religion" data-label="Religion" data-emoji="⛪" onclick="applyQuickFilter('religion')">⛪ Religion</button>
 </div>
 <style>
 .qf-btn { padding: 2px 10px; border: 1px solid var(--border); border-radius: 14px; background: var(--bg); color: var(--text); font-size: 11px; cursor: pointer; transition: all 0.15s; }
@@ -553,6 +561,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
           <button class="btn btn-outline" id="notesNotesBtn" onclick="showNotesTab('notes')" style="color:#333;border-color:#aaa;">With Notes</button>
           <button class="btn btn-outline" id="notesVisitedBtn" onclick="showNotesTab('visited')" style="color:#333;border-color:#aaa;">Visited</button>
           <button class="btn btn-outline" id="notesAddBtn" onclick="showNotesTab('add')" style="color:#333;border-color:#aaa;">+ Add Note</button>
+          <button class="btn btn-outline" id="notesFollowupsBtn" onclick="showNotesTab('followups')" style="color:#333;border-color:#aaa;">⏰ Follow-ups</button>
           <button class="btn btn-outline" onclick="exportNotes()" style="color:#333;border-color:#aaa;margin-left:auto;">⬇ Export</button>
           <button class="btn btn-outline" onclick="document.getElementById('importNotesInput').click()" style="color:#333;border-color:#aaa;">⬆ Import</button>
           <input type="file" id="importNotesInput" accept=".json" style="display:none" onchange="importNotes(this)" />
@@ -569,7 +578,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 <div id="printContainer">
   <div class="print-header"></div>
   <table class="print-route-table">
-    <thead><tr><th>#</th><th>Business</th><th>Address</th><th>Phone</th><th>Distance · Time</th></tr></thead>
+    <thead><tr><th>#</th><th>Business</th><th>Address</th><th>Phone</th><th>Distance/Time</th></tr></thead>
     <tbody id="printRouteBody"></tbody>
   </table>
 </div>
@@ -689,8 +698,6 @@ let businesses = [];
 let coords = {};
 let USE_CLUSTERS = false; // Clustering disabled — shows all individual markers
 let map, markerClusterGroup, routeLayer, routePolyline;
-let userLat = null;
-let userLng = null;
 let routeStops = [];
 let routeLegData = [];   // OSRM leg data: [{distance, duration}] per leg (index i = leg from stop i to i+1)
 let routeTotalDist = 0;  // OSRM total distance in meters
@@ -772,6 +779,69 @@ function applyQuickFilter(qf) {
     document.getElementById('categoryFilter').value = '';
   }
   debouncedRefresh();
+}
+
+function updateFilterCounts() {
+  var regionVal = document.getElementById('regionFilter').value;
+  var townVal = document.getElementById('townFilter').value;
+  var catVal = document.getElementById('categoryFilter').value;
+  var searchVal = document.getElementById('searchFilter').value.toLowerCase().trim();
+  var base = businesses.filter(function(biz) {
+    if (biz.suitableForAds !== 'Yes') return false;
+    if (regionVal && biz.region !== regionVal) return false;
+    if (townVal && biz.town !== townVal) return false;
+    if (catVal && getCategoryGroup(biz.category).label !== catVal) return false;
+    if (searchVal) {
+      if (!biz.name.toLowerCase().includes(searchVal) && !(biz.address || '').toLowerCase().includes(searchVal) && !(biz.town || '').toLowerCase().includes(searchVal) && !(biz.category || '').toLowerCase().includes(searchVal) && !(biz.phone || '').replace(/[^0-9]/g, '').includes(searchVal.replace(/[^0-9]/g, ''))) return false;
+    }
+    return true;
+  });
+  var qfMap = {
+    food: ['grocery', 'restaurant', 'food', 'bakery', 'butcher', 'convenience', 'deli', 'cafe'],
+    retail: ['retail', 'gift', 'hardware', 'clothing', 'furniture', 'florist', 'jewelry', 'sporting goods', 'books', 'music', 'electronics', 'discount', 'thrift', 'antique', 'pawn', 'vape', 'cannabis', 'dispensary'],
+    health: ['healthcare', 'dental', 'vet', 'pharmacy', 'medical', 'chiropractic', 'optical', 'therapy', 'wellness'],
+    auto: ['auto', 'repair', 'gas', 'tire', 'car', 'truck', 'garage', 'service station'],
+    services: ['services', 'bank', 'insurance', 'real estate', 'attorney', 'lawyer', 'accounting', 'financial', 'beauty', 'salon', 'barber', 'nail', 'laundry', 'dry cleaning', 'storage', 'utility', 'construction', 'plumbing', 'electrical'],
+    lodging: ['lodging', 'hotel', 'motel', 'inn', 'campground', 'cabin', 'resort', 'bed and breakfast'],
+    religion: ['religion', 'church', 'temple', 'fellowship', 'ministry', 'mission', 'catholic', 'baptist', 'methodist', 'presbyterian', 'lutheran', 'congregational', 'pentecostal', 'church of god', 'church of christ', 'salvation army']
+  };
+  document.querySelectorAll('.qf-btn').forEach(function(btn) {
+    var qf = btn.dataset.qf;
+    if (qf === 'all') {
+      btn.textContent = 'All (' + base.length + ')';
+    } else {
+      var cats = qfMap[qf] || [];
+      var count = base.filter(function(b) {
+        var c = (b.category || '').toLowerCase();
+        return cats.some(function(k) { return c.indexOf(k) !== -1; });
+      }).length;
+      btn.textContent = (btn.dataset.emoji || '') + ' ' + (btn.dataset.label || qf) + ' (' + count + ')';
+    }
+  });
+  var regionSel = document.getElementById('regionFilter');
+  for (var i = 0; i < regionSel.options.length; i++) {
+    var opt = regionSel.options[i];
+    if (!opt.value) continue;
+    if (!opt.dataset.raw) opt.dataset.raw = opt.value;
+    var count = base.filter(function(b) { return b.region === opt.value; }).length;
+    opt.textContent = opt.dataset.raw + ' (' + count + ')';
+  }
+  var townSel = document.getElementById('townFilter');
+  for (var i = 0; i < townSel.options.length; i++) {
+    var opt = townSel.options[i];
+    if (!opt.value) continue;
+    if (!opt.dataset.raw) opt.dataset.raw = opt.value;
+    var count = base.filter(function(b) { return b.town === opt.value; }).length;
+    opt.textContent = opt.dataset.raw + ' (' + count + ')';
+  }
+  var catSel = document.getElementById('categoryFilter');
+  for (var i = 0; i < catSel.options.length; i++) {
+    var opt = catSel.options[i];
+    if (!opt.value) continue;
+    if (!opt.dataset.raw) opt.dataset.raw = opt.value;
+    var count = base.filter(function(b) { return getCategoryGroup(b.category).label === opt.value; }).length;
+    opt.textContent = opt.dataset.raw + ' (' + count + ')';
+  }
 }
 
 // Override getFilteredBusinesses to incorporate quick filter
@@ -23398,6 +23468,7 @@ let allCategories = new Set();
     updateMap();
     updateList();
     updateActiveFilterBadges();
+    updateFilterCounts();
   }, 150);
 
   // Save filter state on change
@@ -23427,6 +23498,9 @@ let allCategories = new Set();
     debouncedRefresh();
     saveFilterState();
   });
+  window.addEventListener('online', function() { document.getElementById('offlineBanner').style.display = 'none'; });
+  window.addEventListener('offline', function() { document.getElementById('offlineBanner').style.display = 'block'; });
+  if (!navigator.onLine) document.getElementById('offlineBanner').style.display = 'block';
   document.getElementById('searchFilter').addEventListener('input', function() {
     debouncedRefresh();
     saveFilterState();
@@ -23452,6 +23526,7 @@ let allCategories = new Set();
   }
 
   updateTownFilter(townByRegion);
+  updateFilterCounts();
 
 function updateTownFilter(townByRegion) {
   const regionVal = document.getElementById('regionFilter').value;
@@ -23506,7 +23581,8 @@ function getFilteredBusinesses() {
       var match = biz.name.toLowerCase().includes(searchVal)
         || (biz.address || '').toLowerCase().includes(searchVal)
         || (biz.town || '').toLowerCase().includes(searchVal)
-        || (biz.category || '').toLowerCase().includes(searchVal);
+        || (biz.category || '').toLowerCase().includes(searchVal)
+        || (biz.phone || '').replace(/[^0-9]/g, '').includes(searchVal.replace(/[^0-9]/g, ''));
       if (!match) return false;
     }
     return true;
@@ -23569,6 +23645,7 @@ function refreshAfterFilterChange() {
   updateMap();
   updateList();
   updateActiveFilterBadges();
+  updateFilterCounts();
 }
 
 function resetFilters() {
@@ -23585,6 +23662,7 @@ function resetFilters() {
   updateMap();
   updateList();
   updateActiveFilterBadges();
+  updateFilterCounts();
 }
 
 // ============================================================
@@ -23671,15 +23749,6 @@ function buildPopup(biz) {
       if (biz.email) p += '<br>✉ <a href="mailto:' + escapeHtml(biz.email) + '">' + escapeHtml(biz.email) + '</a>';
       if (biz.website) p += '<br>🌐 <a href="' + escapeHtml(biz.website) + '" target="_blank" rel="noopener">' + escapeHtml(biz.website) + '</a>';
 
-      // Distance from user (if location known)
-      if (userLat != null && biz.key) {
-        var pt = coords[biz.key];
-        if (pt) {
-          var dist = distanceMiles(userLat, userLng, pt.lat, pt.lng);
-          p += '<br>📍 <span class="popup-distance">' + formatDistance(dist) + '</span>';
-        }
-      }
-
       p += '<div class="popup-cat">' + escapeHtml(biz.category) + '</div>';
 
       const key = biz.key;
@@ -23690,8 +23759,7 @@ function buildPopup(biz) {
       // Directions button - opens Google Maps directions from user location or falls back to business address
       if (biz.address && biz.city) {
         var dest = encodeURIComponent(biz.address + ', ' + biz.city + ', ' + biz.state + ' ' + biz.zip);
-        var origin = (userLat != null && userLng != null) ? '&origin=' + userLat + ',' + userLng : '';
-        p += '<a href="https://www.google.com/maps/dir/?api=1' + origin + '&destination=' + dest + '" target="_blank" rel="noopener" style="text-decoration:none;"><button class="popup-route-btn" style="border-color:#27ae60;color:#27ae60;">🗺 Directions</button></a>';
+        p += '<a href="https://www.google.com/maps/dir/?api=1&destination=' + dest + '" target="_blank" rel="noopener" style="text-decoration:none;"><button class="popup-route-btn" style="border-color:#27ae60;color:#27ae60;">🗺 Directions</button></a>';
       }
 
       // Share button
@@ -23730,6 +23798,58 @@ function shareBusiness(key) {
       prompt('Copy this link:', copyText);
     }
   }
+}
+
+function copyToClipboard(text, successMsg) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showToast(successMsg || 'Copied!', 'success');
+    }).catch(function() {
+      prompt('Copy this text:', text);
+    });
+  } else {
+    prompt('Copy this text:', text);
+  }
+}
+
+function showCSVMenu() {
+  var menu = document.getElementById('csvMenu');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+
+function downloadCSV(region) {
+  document.getElementById('csvMenu').style.display = 'none';
+  var fieldMap = {
+    'Business Name': 'name',
+    'Street Address': 'address',
+    'City': 'city',
+    'State': 'state',
+    'Zip': 'zip',
+    'Phone': 'phone',
+    'Email': 'email',
+    'Website': 'website',
+    'Category': 'category',
+    'Town': 'town',
+    'SuitableForAds': 'suitableForAds'
+  };
+  var headers = Object.keys(fieldMap);
+  var rows = businesses.filter(function(b) { return b.region === region; }).map(function(b) {
+    return headers.map(function(h) {
+      var val = b[fieldMap[h]] || '';
+      if (/[,"\n]/.test(val)) val = '"' + val.replace(/"/g, '""') + '"';
+      return val;
+    }).join(',');
+  });
+  var csv = '\uFEFF' + headers.join(',') + '\n' + rows.join('\n');
+  var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  var link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = region.replace(/ /g, '_') + '_businesses.csv';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(link.href);
+  showToast('Downloaded ' + region, 'success');
 }
 
 function escapeHtml(s) {
@@ -23981,6 +24101,32 @@ function setupRouteDragDrop() {
 // ============================================================
 // OPTIMIZE ROUTE (OSRM)
 // ============================================================
+function fetchWithRetry(url, options, maxRetries, delayMs) {
+  return new Promise(function(resolve, reject) {
+    function attempt(remaining) {
+      var controller = new AbortController();
+      var timeout = setTimeout(function() { controller.abort(); }, 10000);
+      var opts = Object.assign({}, options, { signal: controller.signal });
+      fetch(url, opts).then(function(r) {
+        clearTimeout(timeout);
+        if (!r.ok && remaining > 0 && r.status !== 429) {
+          setTimeout(function() { attempt(remaining - 1); }, delayMs);
+        } else {
+          resolve(r);
+        }
+      }).catch(function(e) {
+        clearTimeout(timeout);
+        if (remaining > 0) {
+          setTimeout(function() { attempt(remaining - 1); }, delayMs);
+        } else {
+          reject(e);
+        }
+      });
+    }
+    attempt(maxRetries);
+  });
+}
+
 function optimizeRoute() {
   if (routeStops.length < 2) return;
 
@@ -24023,12 +24169,8 @@ function optimizeRoute() {
   const coordsStr = routeStops.map(function(s) { return s.lng + ',' + s.lat; }).join(';');
   const url = OSRM_BASE + coordsStr + '?overview=full&steps=true&geometries=geojson&annotations=distance,duration';
 
-  var controller = new AbortController();
-  var timeout = setTimeout(function() { controller.abort(); }, 10000);
-
-  fetch(url, { signal: controller.signal })
+  fetchWithRetry(url, {}, 2, 1000)
     .then(function(r) {
-      clearTimeout(timeout);
       if (!r.ok) throw new Error('OSRM returned ' + r.status + (r.status === 429 ? ' — rate limited. Wait a moment and try again.' : ''));
       return r.json();
     })
@@ -24135,7 +24277,11 @@ function toggleSidebar(tab) {
 }
 
 // On mobile, clicking outside the bottom sheet collapses it
-document.addEventListener('click', function(e) {
+  document.addEventListener('click', function(e) {
+  var csvMenu = document.getElementById('csvMenu');
+  if (csvMenu && csvMenu.style.display === 'block' && !e.target.closest('#csvMenu') && !e.target.closest('[onclick*="showCSVMenu"]')) {
+    csvMenu.style.display = 'none';
+  }
   if (window.innerWidth > 700) return;
   var sidebar = document.getElementById('sidebar');
   if (!sidebar.classList.contains('open')) return;
@@ -24298,14 +24444,6 @@ function updateList() {
     sorted.sort(function(a, b) { return (a.name || '').localeCompare(b.name || ''); });
   } else if (sortVal === 'name-desc') {
     sorted.sort(function(a, b) { return (b.name || '').localeCompare(a.name || ''); });
-  } else if (sortVal === 'distance' && userLat != null) {
-    sorted.sort(function(a, b) {
-      var pa = coords[a.key], pb = coords[b.key];
-      if (!pa && !pb) return 0;
-      if (!pa) return 1;
-      if (!pb) return -1;
-      return distanceMiles(userLat, userLng, pa.lat, pa.lng) - distanceMiles(userLat, userLng, pb.lat, pb.lng);
-    });
   } else if (listSortCol) {
     sorted.sort(function(a, b) {
       var va = (a[listSortCol] || '').toLowerCase();
@@ -24324,19 +24462,11 @@ function updateList() {
     { key: 'phone', label: 'Phone' },
     { key: 'category', label: 'Category' },
   ];
-  // Add distance column when user location known
-  if (userLat != null) {
-    cols.push({ key: 'distance', label: 'Distance' });
-  }
   cols.forEach(function(c) {
     var cls = listSortCol === c.key ? 'sorted' : '';
     var arrow = '';
     if (listSortCol === c.key) arrow = listSortDir === 1 ? ' ▲' : ' ▼';
-    if (c.key === 'distance') {
-      html += '<th> ' + c.label + '</th>';
-    } else {
-      html += '<th class="' + cls + '" onclick="sortList(\'' + c.key + '\')"><span class="sort-arrow">' + arrow + '</span> ' + c.label + '</th>';
-    }
+    html += '<th class="' + cls + '" onclick="sortList(\'' + c.key + '\')"><span class="sort-arrow">' + arrow + '</span> ' + c.label + '</th>';
   });
   html += '</tr></thead><tbody>';
 
@@ -24348,10 +24478,6 @@ function updateList() {
     html += '<td>' + escapeHtml(biz.city || '') + '</td>';
     html += '<td>' + (biz.phone ? '<a href="tel:' + biz.phone.replace(/[^0-9]/g, '') + '" style="color:inherit;text-decoration:none;">' + escapeHtml(biz.phone) + '</a>' : '') + '</td>';
     html += '<td><span class="list-cat" style="background:' + getColor(biz.category) + '">' + escapeHtml(biz.category) + '</span></td>';
-    if (userLat != null && biz.key) {
-      var pt = coords[biz.key];
-      html += '<td style="font-size:11px;color:#888;">' + (pt ? formatDistance(distanceMiles(userLat, userLng, pt.lat, pt.lng)) : '—') + '</td>';
-    }
     html += '</tr>';
   });
 
@@ -24494,17 +24620,11 @@ function showDetail(key) {
   html += '<button onclick="closeDetail()" style="background:none;border:none;font-size:18px;cursor:pointer;color:#999;">✕</button>';
   html += '</div>';
 
-  // Distance
-  if (userLat != null && pt) {
-    var dist = distanceMiles(userLat, userLng, pt.lat, pt.lng);
-    html += '<div style="font-size:12px;color:#888;margin-bottom:8px;">📍 ' + formatDistance(dist) + ' from you</div>';
-  }
-
   // Info
   html += '<div style="background:#fff;border:1px solid #dee2e6;border-radius:6px;padding:10px;margin-bottom:10px;">';
-  if (biz.address) html += '<div style="font-size:13px;margin-bottom:4px;">📍 ' + escapeHtml(biz.address) + '</div>';
+  if (biz.address) html += '<div style="font-size:13px;margin-bottom:4px;">📍 ' + escapeHtml(biz.address) + ' <button onclick="copyToClipboard(\'' + escapeHtml(biz.address) + '\', \'Address copied\')" style="background:none;border:none;cursor:pointer;font-size:11px;color:#3498db;padding:0;">📋</button></div>';
   html += '<div style="font-size:13px;margin-bottom:4px;">' + escapeHtml(biz.city) + ', ' + biz.state + ' ' + biz.zip + '</div>';
-  if (biz.phone) html += '<div style="font-size:13px;margin-bottom:4px;">📞 <a href="tel:' + biz.phone.replace(/[^0-9]/g, '') + '" style="color:#2980b9;text-decoration:none;">' + escapeHtml(biz.phone) + '</a></div>';
+  if (biz.phone) html += '<div style="font-size:13px;margin-bottom:4px;">📞 <a href="tel:' + biz.phone.replace(/[^0-9]/g, '') + '" style="color:#2980b9;text-decoration:none;">' + escapeHtml(biz.phone) + '</a> <button onclick="copyToClipboard(\'' + biz.phone + '\', \'Phone copied\')" style="background:none;border:none;cursor:pointer;font-size:11px;color:#3498db;padding:0;">📋</button></div>';
   if (biz.email) html += '<div style="font-size:13px;margin-bottom:4px;">✉ <a href="mailto:' + escapeHtml(biz.email) + '" style="color:#2980b9;text-decoration:none;">' + escapeHtml(biz.email) + '</a></div>';
   if (biz.website) html += '<div style="font-size:13px;margin-bottom:4px;">🌐 <a href="' + escapeHtml(biz.website) + '" target="_blank" rel="noopener" style="color:#2980b9;text-decoration:none;">' + escapeHtml(biz.website) + '</a></div>';
   html += '<div style="font-size:12px;color:#888;margin-top:4px;">Town: ' + escapeHtml(biz.town) + ' &middot; Region: ' + escapeHtml(biz.region) + '</div>';
@@ -24514,8 +24634,7 @@ function showDetail(key) {
   html += '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">';
   if (biz.address && biz.city) {
     var dest = encodeURIComponent(biz.address + ', ' + biz.city + ', ' + biz.state + ' ' + biz.zip);
-    var origin = (userLat != null && userLng != null) ? '&origin=' + userLat + ',' + userLng : '';
-    html += '<a href="https://www.google.com/maps/dir/?api=1' + origin + '&destination=' + dest + '" target="_blank" class="btn btn-success" style="text-decoration:none;">🗺 Directions</a>';
+    html += '<a href="https://www.google.com/maps/dir/?api=1&destination=' + dest + '" target="_blank" class="btn btn-success" style="text-decoration:none;">🗺 Directions</a>';
   }
   var inRoute = routeStops.some(function(s) { return s.key === key; });
   html += '<button class="btn ' + (inRoute ? 'btn-danger' : 'btn-primary') + '" onclick="toggleRouteFromDetail(\'' + key + '\')">' + (inRoute ? '✕ Remove from Route' : '+ Add to Route') + '</button>';
@@ -24637,7 +24756,9 @@ function populateDetailNotes(key) {
   var noteDiv = document.getElementById('detail-note-' + key);
   if (noteDiv) {
     var note = NOTES[key] ? NOTES[key].text : '';
+    var followUp = NOTES[key] ? (NOTES[key].followUp || '') : '';
     var nhtml = '<div class="popup-note-label" style="margin-bottom:4px;">Note</div>';
+    nhtml += '<div style="font-size:11px;color:#888;margin-bottom:4px;">Follow-up: <input type="date" class="followup-input" id="detail-followup-' + key + '" value="' + followUp + '" style="font-size:11px;padding:2px;border:1px solid #ddd;border-radius:3px;" onchange="autoSaveNoteDetail(\'' + key + '\')"></div>';
     nhtml += '<textarea class="popup-note-input" id="detail-note-input-' + key + '" placeholder="Add a note about this business..." oninput="autoSaveNoteDetail(\'' + key + '\')">' + escapeHtml(note) + '</textarea>';
     noteDiv.innerHTML = nhtml;
   }
@@ -24650,8 +24771,12 @@ function toggleVisitFromDetail(key) {
 
 function autoSaveNoteDetail(key) {
   var val = document.getElementById('detail-note-input-' + key).value;
+  var fu = document.getElementById('detail-followup-' + key);
+  var followUp = fu ? fu.value : '';
   if (val.trim()) {
     NOTES[key] = { text: val.trim(), updated: new Date().toISOString() };
+    if (followUp) NOTES[key].followUp = followUp;
+    else if (NOTES[key].followUp) delete NOTES[key].followUp;
   } else {
     delete NOTES[key];
   }
@@ -24689,8 +24814,12 @@ function populatePopupNotes(key) {
 
 function saveNoteFromNotesTab(key) {
   var val = document.getElementById('notes-tab-note-input-' + key).value;
+  var fu = document.getElementById('notes-tab-followup-' + key);
+  var followUp = fu ? fu.value : '';
   if (val.trim()) {
     NOTES[key] = { text: val.trim(), updated: new Date().toISOString() };
+    if (followUp) NOTES[key].followUp = followUp;
+    else if (NOTES[key].followUp) delete NOTES[key].followUp;
   } else {
     delete NOTES[key];
   }
@@ -24701,6 +24830,7 @@ function saveNoteFromNotesTab(key) {
 }
 
 function deleteNoteFromNotesTab(key) {
+  if (!confirm('Delete this note?')) return;
   if (NOTES[key]) {
     delete NOTES[key];
     saveNotes();
@@ -24711,6 +24841,7 @@ function deleteNoteFromNotesTab(key) {
 }
 
 function deleteLastVisit(key) {
+  if (!confirm('Remove this visit record?')) return;
   if (!VISITS[key] || VISITS[key].length === 0) return;
   VISITS[key].pop();
   if (VISITS[key].length === 0) delete VISITS[key];
@@ -24778,7 +24909,7 @@ function showNotesTab(filter) {
     b.style.color = '#333';
     b.style.borderColor = '#aaa';
   });
-  var btnIds = { all: 'notesAllBtn', notes: 'notesNotesBtn', visited: 'notesVisitedBtn', add: 'notesAddBtn' };
+  var btnIds = { all: 'notesAllBtn', notes: 'notesNotesBtn', visited: 'notesVisitedBtn', add: 'notesAddBtn', followups: 'notesFollowupsBtn' };
   var btn = document.getElementById(btnIds[notesTabFilter]);
   if (btn) { btn.className = 'btn btn-primary'; btn.style.background = '#2c3e50'; }
   // Update search placeholder to match mode
@@ -24793,11 +24924,13 @@ function renderNoteItem(item) {
   html += '<div class="note-item-addr">' + escapeHtml(item.address || item.town) + ', ' + escapeHtml(item.city) + '</div>';
   html += '<div style="margin-bottom:4px;">';
   if (item.note) html += '<span class="note-item-tag note">\ud83d\udcdd Note</span>';
+  if (item.followUp) html += '<span class="note-item-tag" style="background:#f39c12;">\u23f0 ' + item.followUp + '</span>';
   if (item.lastVisit) {
     html += '<span class="note-item-tag visited">\u2705 Visited ' + formatDate(item.lastVisit) + '</span>';
     html += '<button class="popup-route-btn" style="border-color:#e74c3c;color:#e74c3c;font-size:10px;padding:1px 6px;margin-left:4px;" onclick="deleteLastVisit(\'' + item.key + '\')">\u2715 Remove</button>';
   }
   html += '</div>';
+  html += '<div style="font-size:11px;color:#888;margin-bottom:4px;">Follow-up: <input type="date" class="followup-input" id="notes-tab-followup-' + item.key + '" value="' + (item.followUp || '') + '" style="font-size:11px;padding:2px;border:1px solid #ddd;border-radius:3px;"></div>';
   html += '<textarea class="popup-note-input" id="notes-tab-note-input-' + item.key + '" placeholder="Add a note about this business..." style="margin-bottom:4px;">' + (item.note ? escapeHtml(item.note) : '') + '</textarea>';
   html += '<div style="margin-bottom:4px;">';
   html += '<button class="popup-route-btn" style="border-color:#27ae60;color:#27ae60;" onclick="saveNoteFromNotesTab(\'' + item.key + '\')">Save</button>';
@@ -24854,6 +24987,7 @@ function updateNotesList() {
     // Only list businesses that actually have a note or a visit
     if (notesTabFilter === 'notes' && !note) return;
     if (notesTabFilter === 'visited' && visits.length === 0) return;
+    if (notesTabFilter === 'followups' && !(note && NOTES[key] && NOTES[key].followUp)) return;
     if (notesTabFilter === 'all' && !note && visits.length === 0) return;
 
     items.push({
@@ -24866,6 +25000,7 @@ function updateNotesList() {
       visits: visits,
       lastVisit: visits.length > 0 ? visits[visits.length - 1] : null,
       updated: note ? (NOTES[key].updated || '') : '',
+      followUp: note && NOTES[key].followUp ? NOTES[key].followUp : '',
     });
   });
 
@@ -24874,15 +25009,21 @@ function updateNotesList() {
     items = items.filter(function(item) { return (item.name || '').toLowerCase().indexOf(notesSearchTerm) !== -1; });
   }
 
-  // Sort: most recently updated/visited first
-  items.sort(function(a, b) {
-    var aDate = a.updated || a.lastVisit || '';
-    var bDate = b.updated || b.lastVisit || '';
-    return bDate.localeCompare(aDate);
-  });
+  // Sort: most recently updated/visited first, or follow-up date ascending
+  if (notesTabFilter === 'followups') {
+    items.sort(function(a, b) {
+      return (a.followUp || '9999-99-99').localeCompare(b.followUp || '9999-99-99');
+    });
+  } else {
+    items.sort(function(a, b) {
+      var aDate = a.updated || a.lastVisit || '';
+      var bDate = b.updated || b.lastVisit || '';
+      return bDate.localeCompare(aDate);
+    });
+  }
 
   if (items.length === 0) {
-    container.innerHTML = '<div class="note-empty">No ' + (notesTabFilter === 'notes' ? 'notes' : notesTabFilter === 'visited' ? 'visits' : 'notes or visits') + (notesSearchTerm ? ' matching "' + escapeHtml(notesSearchTerm) + '"' : '') + ' yet. Click a business on the map to get started, or use “+ Add Note”.</div>';
+    container.innerHTML = '<div class="note-empty">No ' + (notesTabFilter === 'notes' ? 'notes' : notesTabFilter === 'visited' ? 'visits' : notesTabFilter === 'followups' ? 'follow-ups' : 'notes or visits') + (notesSearchTerm ? ' matching "' + escapeHtml(notesSearchTerm) + '"' : '') + ' yet. Click a business on the map to get started, or use “+ Add Note”.</div>';
     return;
   }
 

@@ -128,13 +128,17 @@ Coffee News/
 - **Default filter**: Only suitable-for-ads businesses shown (861 of 1139) — churches, schools, campgrounds excluded by default
 - Hierarchical filtering: Region → Town → Category → Search
 - Active filter badges: pill-shaped tags showing current filters, dismissible individually
-- Extended search: searches across name, address, town, and category
+- Extended search: searches across name, address, town, category, and **phone number**
+- **Filter count badges**: (N) counts on quick-filter pills and all dropdown options (region, town, category)
 - Category color dots in Browse list table
 - Color-coded markers with category SVG icons (see below)
-- Notes (textarea per business, saved to localStorage, red dot indicator)
+- Notes (textarea per business, saved to localStorage, red dot indicator) with **follow-up date** support
 - Visit tracking (date-stamped, green checkmark indicator)
 - Saved routes (named, persist in localStorage, exportable as JSON)
 - Export/import all notes, visits, routes as JSON for backup/transfer
+- **4-region CSV download**: 📥 CSV button in header downloads per-region business lists
+- **Copy address/phone**: 📋 clipboard buttons in detail pane
+- **Offline banner**: red bar when no internet connection
 - Reset button — clears all filters + active route
 - Console diagnostics on page load (business/coord counts)
 - Legend: bottom-right color key
@@ -210,6 +214,16 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **Bug fix pass (Jun 23, 2026)**: Fixed toast() undefined (voice search), notes localStorage key typo (coffeNews_notes→coffeeNews_notes) with legacy migration, geolocate crash (addUserLocationMarker, permissions guards, GEO_OPTS), navigateBtn stuck disabled after OSRM (re-enabled in .then/.catch), QuotaExceededError handling (toast on setItem failure). Added global error boundary (window.onerror/unhandledrejection → toast). Fixed startup ordering (loadSavedData before initMap). Added .gitignore.
 - **Category filter collapsed to 7 legend groups**: Replaced ~30 raw category options with the 7 broad groups matching the map legend. Added shared `CATEGORY_GROUPS` constant and `getCategoryGroup()` helper. Merged Grocery/Restaurant/Food with Retail/Gift/Hardware into Food/Retail (7 groups total).
 - **Announce route simplified**: Removed intro sentence, leg distances, and drive times from speech output. Now reads only "Stop N: {name}. Located at {address}."
+- **UX improvement batch (Jun 23, 2026)**: 8 improvements in one pass:
+  - **Location remnants removed**: Nearest sort, distance column, "X miles from you" text, route origin param, dead userLat/userLng vars all cleaned up
+  - **Copy address/phone**: 📋 clipboard buttons in detail pane with HTTP fallback (prompt)
+  - **Delete confirmation**: confirm() dialogs before note/visit deletion
+  - **Filter count badges**: (N) counts on quick-filter pills + region/town/category dropdown options, updated on every filter change
+  - **Phone search**: getFilteredBusinesses now matches against phone digits (strip non-numeric)
+  - **OSRM retry**: fetchWithRetry wrapper (2 retries, 1s delay), keeps current stop order on total failure
+  - **Offline banner**: red bar at top toggled by navigator.onLine + online/offline events
+  - **Follow-up dates**: date input in note editor (detail pane + notes tab), ⏰ Follow-ups filter button in Notes tab, sorted by follow-up date ascending
+  - **4 regional CSVs**: 📥 CSV header button with dropdown menu, one download per region, proper UTF-8 BOM + CSV escaping
 
 ---
 
@@ -241,7 +255,5 @@ All known cross-compatibility issues resolved in a single sweep. See Completed W
 6. **Brothers Cannabis Lincoln**: Coordinates are at town center (Nominatim couldn't resolve "Unit 2" in address). Needs manual building-level placement.
 7. **Churches currently excluded** from suitable-for-ads (client requested). Confirm this is still desired.
 8. **Chain naming normalization**: NAPA (4 variants), Dunkin' Donuts → Dunkin' (2 entries still use old name), Circle K naming inconsistencies (7+ variants across 16 locations).
-9. **Offline awareness**: Show banner when user is offline.
-10. **OSRM retry**: Graceful retry on OSRM timeout/failure.
-11. **Tile error handling**: Show fallback when map tiles fail to load.
-12. **Route auto-save**: Automatically save route as named entry on creation.
+9. **Tile error handling**: Show fallback when map tiles fail to load.
+10. **Route auto-save**: Automatically save route as named entry on creation.
