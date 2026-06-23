@@ -657,6 +657,30 @@ const DEFAULT_COLOR = '#95a5a6';
 
 function getColor(category) { return CATEGORY_COLORS[category] || DEFAULT_COLOR; }
 
+// Broad category groups shown in the legend and the category filter dropdown.
+// Each group maps to one marker color; individual business categories are
+// assigned to a group by their color in CATEGORY_COLORS.
+const CATEGORY_GROUPS = [
+  { label: 'Government/Education', color: '#3498db' },
+  { label: 'Grocery/Restaurant/Food', color: '#27ae60' },
+  { label: 'Auto/Auto Parts/Repair', color: '#e74c3c' },
+  { label: 'Healthcare/Dental/Vet', color: '#8e44ad' },
+  { label: 'Retail/Gift/Hardware', color: '#f39c12' },
+  { label: 'Lodging/Hotel/Motel', color: '#cd7f32' },
+  { label: 'Religion', color: '#f1c40f' },
+  { label: 'Services/Other', color: '#95a5a6' },
+];
+
+// Map a raw business category to its broad legend group (via marker color).
+// Anything not in CATEGORY_COLORS falls back to Services/Other.
+function getCategoryGroup(category) {
+  var color = CATEGORY_COLORS[category] || DEFAULT_COLOR;
+  for (var i = 0; i < CATEGORY_GROUPS.length; i++) {
+    if (CATEGORY_GROUPS[i].color === color) return CATEGORY_GROUPS[i];
+  }
+  return CATEGORY_GROUPS[CATEGORY_GROUPS.length - 1];
+}
+
 // Haversine distance in miles between two lat/lng points
 function distanceMiles(lat1, lng1, lat2, lng2) {
   var R = 3958.8; // Earth radius in miles
@@ -977,17 +1001,7 @@ function buildLegend() {
   legend.onAdd = function() {
     const div = L.DomUtil.create('div', 'legend');
     div.innerHTML = '<div class="legend-title">Categories</div>';
-    const groups = [
-      { label: 'Government/Education', color: '#3498db' },
-      { label: 'Grocery/Restaurant/Food', color: '#27ae60' },
-      { label: 'Auto/Auto Parts/Repair', color: '#e74c3c' },
-      { label: 'Healthcare/Dental/Vet', color: '#8e44ad' },
-      { label: 'Retail/Gift/Hardware', color: '#f39c12' },
-      { label: 'Lodging/Hotel/Motel', color: '#cd7f32' },
-      { label: 'Religion', color: '#f1c40f' },
-      { label: 'Services/Other', color: '#95a5a6' },
-    ];
-    groups.forEach(g => {
+    CATEGORY_GROUPS.forEach(g => {
       div.innerHTML += '<div class="legend-item"><span class="legend-dot" style="background:' + g.color + '"></span>' + g.label + '</div>';
     });
     return div;
@@ -23444,9 +23458,9 @@ let allCategories = new Set();
   });
 
   const catSel = document.getElementById('categoryFilter');
-  Array.from(allCategories).sort().forEach(function(c) {
+  CATEGORY_GROUPS.forEach(function(g) {
     const opt = document.createElement('option');
-    opt.value = c; opt.textContent = c;
+    opt.value = g.label; opt.textContent = g.label;
     catSel.appendChild(opt);
   });
 
@@ -23553,23 +23567,18 @@ function updateTownFilter(townByRegion) {
 }
 
 function updateCategoryFilter() {
-  const regionVal = document.getElementById('regionFilter').value;
   const catSel = document.getElementById('categoryFilter');
   const current = catSel.value;
   catSel.innerHTML = '<option value="">All Categories</option>';
-
-  let cats = new Set();
-  if (regionVal) {
-    businesses.forEach(function(b) { if (b.region === regionVal && b.category) cats.add(b.category); });
-  } else {
-    businesses.forEach(function(b) { if (b.category) cats.add(b.category); });
-  }
-  Array.from(cats).sort().forEach(function(c) {
+  CATEGORY_GROUPS.forEach(function(g) {
     const opt = document.createElement('option');
-    opt.value = c; opt.textContent = c;
+    opt.value = g.label; opt.textContent = g.label;
     catSel.appendChild(opt);
   });
-  if (current && cats.has(current)) catSel.value = current;
+  // Preserve current selection if it still matches a group
+  for (var i = 0; i < catSel.options.length; i++) {
+    if (catSel.options[i].value === current) { catSel.value = current; break; }
+  }
 }
 
 function getFilteredBusinesses() {
@@ -23581,7 +23590,7 @@ function getFilteredBusinesses() {
     if (biz.suitableForAds !== 'Yes') return false;
     if (regionVal && biz.region !== regionVal) return false;
     if (townVal && biz.town !== townVal) return false;
-    if (catVal && biz.category !== catVal) return false;
+    if (catVal && getCategoryGroup(biz.category).label !== catVal) return false;
     if (searchVal) {
       var match = biz.name.toLowerCase().includes(searchVal)
         || (biz.address || '').toLowerCase().includes(searchVal)
