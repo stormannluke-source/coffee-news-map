@@ -135,23 +135,27 @@ ROUTE PLANNER (📍 Route)
 ------------------------
 1. Pick a preloaded route from the 📋 Preloaded Routes section,
    or tap dots on the map to add your own stops
-2. Stops appear in the Route tab
+2. Stops appear in the Route tab — each stop shows its distance
+   from the previous stop (straight-line estimate by default, or
+   actual driving distance after tapping 🗺 Optimize)
 3. Slide the ⠿ handle up or down to change the order
 4. Tap 🗺 Optimize to reorder stops for the shortest drive
 5. Tap 📍 Navigate to get turn-by-turn directions on your phone
    (Apple Maps on iPhone, Google Maps on Android)
 6. Tap 🖨 Print for a paper copy of the route
-7. Tap 🔊 Announce to hear stops read out loud (name + address)
-8. Tap ✕ Clear to remove all stops
+7. Tap ✕ Clear to remove all stops
 
 
 PRELOADED ROUTES
 -----------------
 The Route tab has a "Preloaded Routes" section with routes ready to go:
-  • One route per town — tap a town name to load the top 15 businesses
+  • One route per town — tap a town name to load every suitable
+    business, sorted by distance from town center (closest first)
   • Corridor routes — multi-town trips like "Presque Isle to Caribou"
   • Tap any route to load it instantly, then add/remove stops as needed
   • No manual setup needed
+  • Far-away stops (like Eagle Lodge 3.6 mi from center) appear at
+    the bottom, so you can skip them if they're not worth the drive
 
 SAVED ROUTES
 ------------

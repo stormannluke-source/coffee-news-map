@@ -199,7 +199,7 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **Category SVG icons**: Markers now show category-specific SVG icons (building, cup, bag, heart, wrench, home, star) inside the colored circle
 - **Voice search**: Microphone button in search bar uses Web Speech API (webkitSpeechRecognition). Shows listening indicator, populates search on result. Pressing 🎤 while listening stops recording. `rec.stop()` called on result + 10s safety timeout prevents mic from staying on indefinitely
 - **Auto-geolocate**: On page load, checks `navigator.permissions` — if geolocation was previously granted, auto-locates and adds user marker without user action
-- **Route planner upgrades**: "📍 Navigate" button launches native maps in turn-by-turn navigation mode — Apple Maps `dirflg=d` (iOS), Google Maps `dir_action=navigate` (Android) — with all stops as waypoints. Per-stop driving distances/times from OSRM shown inline in route list (falls back to Haversine straight-line before optimization). "🔊 Announce" button reads full route aloud via Web Speech API (stop name + address only).
+- **Route planner upgrades**: "📍 Navigate" button launches native maps in turn-by-turn navigation mode — Apple Maps `dirflg=d` (iOS), Google Maps `dir_action=navigate` (Android) — with all stops as waypoints. Per-stop driving distances/times from OSRM shown inline in route list (falls back to Haversine straight-line before optimization).
 - **OSRM bug fix**: `coordsStr` variable was undefined in `optimizeRoute()` — OSRM calls silently failed. Added missing coordinate string construction.
 - **Voice search mic safety**: Added `rec.stop()` on result + 10s `AbortController`-style safety timeout so microphone never stays on indefinitely.
 - **Smart default zoom**: Initial zoom increased to 9 (from 8), plus `fitBounds` on first data load for tighter auto-fit
@@ -212,7 +212,6 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **Detail pane UX**: Auto-scrolls sidebar content to top on tab switch. Closing detail auto-collapses bottom sheet to peek. Swipe-right gesture on detail pane goes back to browse list.
 - **Bug fix pass (Jun 23, 2026)**: Fixed toast() undefined (voice search), notes localStorage key typo (coffeNews_notes→coffeeNews_notes) with legacy migration, geolocate crash (addUserLocationMarker, permissions guards, GEO_OPTS), navigateBtn stuck disabled after OSRM (re-enabled in .then/.catch), QuotaExceededError handling (toast on setItem failure). Added global error boundary (window.onerror/unhandledrejection → toast). Fixed startup ordering (loadSavedData before initMap). Added .gitignore.
 - **Category filter grouped into 8 legend groups**: Replaced ~30 raw category options with 8 broad groups matching the map legend. Retail/Gift/Hardware kept as its own group (orange) since Cannabis Dispensary and similar businesses use that color.
-- **Announce route simplified**: Removed intro sentence, leg distances, and drive times from speech output. Now reads only "Stop N: {name}. Located at {address}."
 - **UX improvement batch (Jun 23, 2026)**: 8 improvements in one pass:
   - **Location remnants removed**: Nearest sort, distance column, "X miles from you" text, route origin param, dead userLat/userLng vars all cleaned up
   - **Copy address/phone**: 📋 clipboard buttons in detail pane with HTTP fallback (prompt)
@@ -228,6 +227,7 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **Filter popover on mobile**: Filter controls hide behind a "🔍 Filter" button on both portrait mobile and landscape. Tapping shows a popover below the header. Desktop (width > 700px) keeps filters visible inline as before.
 - **Header buttons moved to left**: 📋 List, 📍 Route, 📝 Notes, 🔍 Filter, 📥 CSV now sit between the title and the filter bar on the left side of the header.
 - **Preloaded routes**: 📋 Preloaded Routes section in Route tab with 24 per-town routes (all suitable-for-ads businesses sorted by distance from town center, closest first) and 5 cross-town corridor routes (top 5 per town). One-tap load, no manual route building needed.
+- **Leg distances in route list**: Each stop shows distance from previous stop (~straight-line by default, actual driving distance/time after Optimize). Lets salesperson decide if an outlier stop is worth the drive.
 - **Landscape UX overhaul**: 4 improvements for horizontal phone use:
   - **Right-side panel**: Sidebar switches from bottom sheet to a right-side panel (45vw, max 340px) in landscape, so map and sidebar are visible simultaneously
   - **Collapsed filter popover**: Filter controls hide behind a single "🔍 Filter" button; tapping it shows a popover below the header with all dropdowns

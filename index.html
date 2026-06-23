@@ -587,7 +587,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
           <button class="btn btn-primary" id="navigateBtn" onclick="openRouteInMaps()" disabled style="background:#27ae60;">📍 Navigate</button>
           <button class="btn btn-danger" id="clearRouteBtn" onclick="clearRoute()">✕ Clear</button>
           <button class="btn btn-outline" onclick="printRoute()" id="printRouteBtn" disabled style="color:#333;border-color:#aaa;">🖨 Print</button>
-          <button class="btn btn-outline" onclick="announceRoute()" id="announceBtn" disabled style="color:#333;border-color:#aaa;">🔊 Announce</button>
         </div>
         <div id="routeError"></div>
         <div id="routeSummary"></div>
@@ -23884,13 +23883,10 @@ function updateRouteView() {
   const optimizeBtn = document.getElementById('optimizeBtn');
   const navigateBtn = document.getElementById('navigateBtn');
   const printBtn = document.getElementById('printRouteBtn');
-  const announceBtn = document.getElementById('announceBtn');
-
   error.innerHTML = '';
   optimizeBtn.disabled = routeStops.length < 2;
   navigateBtn.disabled = routeStops.length < 2;
   printBtn.disabled = routeStops.length === 0;
-  announceBtn.disabled = routeStops.length === 0;
 
   // Update route stop markers on map
   routeLayer.clearLayers();
@@ -24022,42 +24018,6 @@ function openRouteInMaps() {
     googleUrl += '&travelmode=driving&dir_action=navigate';
     window.open(googleUrl, '_blank');
   }
-}
-
-// ============================================================
-// ANNOUNCE ROUTE (Web Speech API)
-// ============================================================
-function announceRoute() {
-  if (routeStops.length === 0) return;
-  if (!window.speechSynthesis) {
-    showToast('Speech synthesis not supported in this browser', 'error');
-    return;
-  }
-
-  // Cancel any ongoing speech
-  window.speechSynthesis.cancel();
-
-  var text = '';
-  routeStops.forEach(function(stop, i) {
-    text += 'Stop ' + (i + 1) + ': ' + stop.name + '. ';
-    if (stop.address) {
-      text += 'Located at ' + stop.address + '. ';
-    }
-  });
-
-  var utterance = new SpeechSynthesisUtterance(text);
-  utterance.rate = 0.85;
-  utterance.pitch = 1.0;
-  utterance.volume = 1.0;
-  utterance.onend = function() {
-    showToast('✅ Route announcement finished', 'success');
-  };
-  utterance.onerror = function(e) {
-    showToast('⚠ Speech error: ' + e.error, 'error');
-  };
-
-  window.speechSynthesis.speak(utterance);
-  showToast('🔊 Announcing route...', 'info');
 }
 
 // ============================================================
