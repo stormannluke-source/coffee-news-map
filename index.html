@@ -25230,8 +25230,7 @@ var PRESET_ROUTES = {
   ]
 };
 
-function loadPresetTownRoute(town, maxStops) {
-  if (!maxStops) maxStops = 15;
+function loadPresetTownRoute(town) {
   var bizs = businesses.filter(function(b) {
     return b.town === town && b.suitableForAds === 'Yes';
   });
@@ -25239,14 +25238,13 @@ function loadPresetTownRoute(town, maxStops) {
     showToast('No suitable businesses in ' + town, 'error');
     return;
   }
-  // Sort by category group for logical grouping, then limit
+  // Sort by category group for logical grouping
   bizs.sort(function(a, b) {
     var ga = getCategoryGroup(a.category).label;
     var gb = getCategoryGroup(b.category).label;
     if (ga !== gb) return ga < gb ? -1 : 1;
     return a.name < b.name ? -1 : 1;
   });
-  bizs = bizs.slice(0, maxStops);
   var stops = [];
   bizs.forEach(function(biz) {
     var pt = coords[biz.key];
@@ -25316,7 +25314,7 @@ function renderPresetRoutes() {
   PRESET_ROUTES.towns.forEach(function(town, i) {
     var count = businesses.filter(function(b) { return b.town === town && b.suitableForAds === 'Yes'; }).length;
     if (count === 0) return;
-    row += '<button class="preset-route-btn" onclick="loadPresetTownRoute(\'' + town + '\')">📍 ' + town + ' (' + Math.min(count, 15) + ')</button>';
+    row += '<button class="preset-route-btn" onclick="loadPresetTownRoute(\'' + town + '\')">📍 ' + town + ' (' + count + ')</button>';
     if ((i + 1) % 6 === 0 || i === PRESET_ROUTES.towns.length - 1) {
       html += '<div>' + row + '</div>';
       row = '';
