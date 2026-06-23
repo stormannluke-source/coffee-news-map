@@ -207,44 +207,25 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **Mobile UX improvements (Tier 3)**: Filters scroll horizontally on ≤480px screens at 10px font. Legend moved to top-right on mobile (no longer overlaps map center). Full-screen map toggle button hides header/filters/sidebar. Leaflet popup constrained to 75vw on mobile.
 - **Filter state persistence**: Selected region/town/category/search/sort saved to localStorage, restored on page reload.
 - **Detail pane UX**: Auto-scrolls sidebar content to top on tab switch. Closing detail auto-collapses bottom sheet to peek. Swipe-right gesture on detail pane goes back to browse list.
+- **Bug fix pass (Jun 23, 2026)**: Fixed toast() undefined (voice search), notes localStorage key typo (coffeNews_notes→coffeeNews_notes) with legacy migration, geolocate crash (addUserLocationMarker, permissions guards, GEO_OPTS), navigateBtn stuck disabled after OSRM (re-enabled in .then/.catch), QuotaExceededError handling (toast on setItem failure). Added global error boundary (window.onerror/unhandledrejection → toast). Fixed startup ordering (loadSavedData before initMap). Added .gitignore.
 
 ---
 
-## Smartphone Cross-Compatibility Issues
+## Smartphone Cross-Compatibility — Fixes Applied (Jun 23, 2026)
 
-**Priority:** Resolve known mobile rendering/behavior inconsistencies across iOS Safari, Android Chrome, and Samsung Internet. Target: seamless, identical UX on all modern smartphones.
+All known cross-compatibility issues resolved in a single sweep. See Completed Work below for full details.
 
-### Known Issues (observed anecdotally, needs systematic testing)
-
-| Issue | Affected Browsers | Description |
+| Issue | Fix | Status |
 |---|---|---|
-| Bottom sheet drag stutter | iOS Safari (older), Android Chrome | Occasional 60fps drop during swipe; `touch-action: none` on drag handle may conflict with Leaflet touch handlers |
-| Bottom sheet snap position drift | iOS Safari (notch devices) | `--safe-bottom` calculation may differ on devices with/without home indicator; peek position can be slightly off |
-| Map tap vs bottom sheet tap | iOS Safari | Tapping a map marker while bottom sheet is peeked sometimes fires both the marker popup AND drag handler |
-| Voice search mic icon stuck | Android Chrome (Samsung Internet) | `rec.stop()` fires `onend` but button may not reset to 🎤; `currentRec` still null check race |
-| Filter dropdowns clipped | iOS Safari (landscape) | Landscape compact header reduces height but `.sidebar-pane` overflow may still clip multi-select dropdowns |
-| Full-screen map exit button | Android Chrome | "✕ Exit fullscreen" `fixed` button may overlap with Chrome address bar hide/show |
-| PWA add-to-home-screen splash | iOS Safari | `manifest.webmanifest` may not be picked up reliably on first visit due to missing `apple-touch-icon` sizing |
-| Safari zoom on input focus | iOS Safari | When search input is focused, Safari sometimes zooms the page (font-size < 16px on the input causes this) |
-| Print route layout | iOS Safari | Print button output may differ — route data columns can overflow page width |
-
-### Debugging Approach for Claude Opus 4.8
-
-1. **Test matrix**: Verify each issue on real devices — iPhone SE (iOS 15+), iPhone 14/15 (iOS 17+), Pixel 7 (Android 14), Samsung Galaxy S23 (One UI 6)
-2. **Remote debugging**: Use Safari Web Inspector (iOS) and Chrome DevTools (Android via USB) to inspect console errors, touch event listeners, layout shifts
-3. **Fix philosophy**: Favor CSS-only solutions over JS. Use `@supports` and `@media` queries for browser-specific quirks. Avoid user-agent sniffing where possible.
-4. **Verification**: After each fix, test on all 4 target devices. Regression test the bottom sheet 3-state snap, marker taps, filter dropdowns, and voice search.
-
-### Goals
-
-- ✅ Bottom sheet drag is buttery smooth (60fps) on all devices
-- ✅ No tap conflicts between map markers and bottom sheet
-- ✅ Voice search mic never stays stuck in listening state
-- ✅ Filter dropdowns always fully visible (no clipping)
-- ✅ Full-screen mode exit button always tappable regardless of address bar state
-- ✅ No Safari auto-zoom on input focus (font-size ≥ 16px on all inputs)
-- ✅ PWA add-to-home-screen works on first visit
-- ✅ Print route renders correctly on mobile Safari
+| Bottom sheet drag stutter | Changed `.sidebar-tabs` `touch-action: none` → `pan-y` to avoid Leaflet handler conflict | ✅ |
+| Bottom sheet snap position drift | Dynamic `getBoundingClientRect()` + `--safe-bottom` padding | ✅ |
+| Map tap vs bottom sheet tap | Added `.leaflet-marker-icon`/`.leaflet-popup` guards in click-outside; button/input/select guards in drag handler | ✅ |
+| Voice search mic icon stuck | `isListening` set before `rec.start()`; try/catch guards; Samsung Internet `onend` race handled | ✅ |
+| Filter dropdowns clipped (landscape) | Form font-sizes 8px→11px; `overflow-y:visible` on `#filters` | ✅ |
+| Full-screen map exit button overlap | Moved from `top:8px` to `bottom:16px + var(--safe-bottom)` | ✅ |
+| PWA add-to-home-screen splash | Generated PNG icons (180, 192, 512) via Pillow; manifest refs updated | ✅ |
+| Safari zoom on input focus | `@supports -webkit-touch-callout` forces `font-size: 16px !important` on inputs | ✅ |
+| Print route layout | Populate `.print-route-table` with stops + leg distances before `window.print()` | ✅ |
 
 ---
 
@@ -258,3 +239,7 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 6. **Brothers Cannabis Lincoln**: Coordinates are at town center (Nominatim couldn't resolve "Unit 2" in address). Needs manual building-level placement.
 7. **Churches currently excluded** from suitable-for-ads (client requested). Confirm this is still desired.
 8. **Chain naming normalization**: NAPA (4 variants), Dunkin' Donuts → Dunkin' (2 entries still use old name), Circle K naming inconsistencies (7+ variants across 16 locations).
+9. **Offline awareness**: Show banner when user is offline.
+10. **OSRM retry**: Graceful retry on OSRM timeout/failure.
+11. **Tile error handling**: Show fallback when map tiles fail to load.
+12. **Route auto-save**: Automatically save route as named entry on creation.
