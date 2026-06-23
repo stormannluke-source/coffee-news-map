@@ -25238,12 +25238,15 @@ function loadPresetTownRoute(town) {
     showToast('No suitable businesses in ' + town, 'error');
     return;
   }
-  // Sort by category group for logical grouping
+  // Compute town center (average of all business coordinates)
+  var sumLat = 0, sumLng = 0, cc = 0;
+  bizs.forEach(function(b) { var p = coords[b.key]; if (p) { sumLat += p.lat; sumLng += p.lng; cc++; } });
+  var cLat = sumLat / cc, cLng = sumLng / cc;
+  // Sort by distance from town center (closest first) for efficient driving
   bizs.sort(function(a, b) {
-    var ga = getCategoryGroup(a.category).label;
-    var gb = getCategoryGroup(b.category).label;
-    if (ga !== gb) return ga < gb ? -1 : 1;
-    return a.name < b.name ? -1 : 1;
+    var pa = coords[a.key], pb = coords[b.key];
+    if (!pa || !pb) return pa ? -1 : pb ? 1 : 0;
+    return distanceMiles(pa.lat, pa.lng, cLat, cLng) - distanceMiles(pb.lat, pb.lng, cLat, cLng);
   });
   var stops = [];
   bizs.forEach(function(biz) {

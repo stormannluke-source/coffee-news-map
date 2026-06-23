@@ -227,7 +227,7 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **Quick-filter pills removed**: Category dropdown is the sole business-type filter. Removed HTML/CSS/JS for the 9 quick-filter pills (All · Food · Shopping · Health · Auto · Services · Lodging · Religion). Simplified filter UI — Region/Town/Category/Search/Reset in top bar.
 - **Filter popover on mobile**: Filter controls hide behind a "🔍 Filter" button on both portrait mobile and landscape. Tapping shows a popover below the header. Desktop (width > 700px) keeps filters visible inline as before.
 - **Header buttons moved to left**: 📋 List, 📍 Route, 📝 Notes, 🔍 Filter, 📥 CSV now sit between the title and the filter bar on the left side of the header.
-- **Preloaded routes**: 📋 Preloaded Routes section in Route tab with 23 per-town routes (top 15 suitable-for-ads businesses) and 5 cross-town corridor routes. One-tap load, no manual route building needed.
+- **Preloaded routes**: 📋 Preloaded Routes section in Route tab with 24 per-town routes (all suitable-for-ads businesses sorted by distance from town center, closest first) and 5 cross-town corridor routes (top 5 per town). One-tap load, no manual route building needed.
 - **Landscape UX overhaul**: 4 improvements for horizontal phone use:
   - **Right-side panel**: Sidebar switches from bottom sheet to a right-side panel (45vw, max 340px) in landscape, so map and sidebar are visible simultaneously
   - **Collapsed filter popover**: Filter controls hide behind a single "🔍 Filter" button; tapping it shows a popover below the header with all dropdowns
