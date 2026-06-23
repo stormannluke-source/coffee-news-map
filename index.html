@@ -314,6 +314,29 @@ body.fullscreen #fullscreenExit { display: block; }
   #sidebar.open .sidebar-content { padding-bottom: calc(8px + var(--safe-bottom)); }
 }
 
+/* Landscape: ultra-compact header for short viewports */
+@media (max-height: 480px) and (orientation: landscape) {
+  #header { padding: calc(2px + var(--safe-top)) 6px 1px 6px; gap: 1px; }
+  #header h1 { font-size: 9px; }
+  #header .subtitle { display: none; }
+  .header-left { gap: 4px; }
+  .header-actions { gap: 2px; }
+  .header-actions .btn { font-size: 8px; padding: 2px 5px; min-width: 28px; }
+  #filters { gap: 2px; overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  #filters::-webkit-scrollbar { display: none; }
+  #filters label { display: none; }
+  #filters select, #filters input { font-size: 8px; padding: 1px 3px; max-width: 70px; }
+  #filters select { max-width: 55px; }
+  #filters #searchFilter { max-width: 70px; }
+  #filters #count { font-size: 8px; }
+  #quickFilters { display: none; }
+  #activeFilters { display: none; }
+  /* Sidebar starts hidden in landscape to maximize map space */
+  #sidebar { transform: translateY(100dvh); }
+  #sidebar.open { transform: translateY(8dvh); }
+  #sidebar.hidden { transform: translateY(100dvh); }
+}
+
 /* Initial loading spinner */
 #loadingSpinner {
   position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
