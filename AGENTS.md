@@ -196,7 +196,7 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **Quick filter pills**: All · Food · Shopping · Health · Auto · Services · Lodging · Religion — pill buttons below header instantly filter by business type
 - **Voice search**: Microphone button in search bar uses Web Speech API (webkitSpeechRecognition). Shows listening indicator, populates search on result. Pressing 🎤 while listening stops recording. `rec.stop()` called on result + 10s safety timeout prevents mic from staying on indefinitely
 - **Auto-geolocate**: On page load, checks `navigator.permissions` — if geolocation was previously granted, auto-locates and adds user marker without user action
-- **Route planner upgrades**: "📍 Navigate" button launches native maps in turn-by-turn navigation mode — Apple Maps `dirflg=d` (iOS), Google Maps `dir_action=navigate` (Android) — with all stops as waypoints. Per-stop driving distances/times from OSRM shown inline in route list (falls back to Haversine straight-line before optimization). "🔊 Announce" button reads full route aloud via Web Speech API (stop names, distances, drive times, addresses).
+- **Route planner upgrades**: "📍 Navigate" button launches native maps in turn-by-turn navigation mode — Apple Maps `dirflg=d` (iOS), Google Maps `dir_action=navigate` (Android) — with all stops as waypoints. Per-stop driving distances/times from OSRM shown inline in route list (falls back to Haversine straight-line before optimization). "🔊 Announce" button reads full route aloud via Web Speech API (stop name + address only).
 - **OSRM bug fix**: `coordsStr` variable was undefined in `optimizeRoute()` — OSRM calls silently failed. Added missing coordinate string construction.
 - **Voice search mic safety**: Added `rec.stop()` on result + 10s `AbortController`-style safety timeout so microphone never stays on indefinitely.
 - **Smart default zoom**: Initial zoom increased to 9 (from 8), plus `fitBounds` on first data load for tighter auto-fit
@@ -208,6 +208,8 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **Filter state persistence**: Selected region/town/category/search/sort saved to localStorage, restored on page reload.
 - **Detail pane UX**: Auto-scrolls sidebar content to top on tab switch. Closing detail auto-collapses bottom sheet to peek. Swipe-right gesture on detail pane goes back to browse list.
 - **Bug fix pass (Jun 23, 2026)**: Fixed toast() undefined (voice search), notes localStorage key typo (coffeNews_notes→coffeeNews_notes) with legacy migration, geolocate crash (addUserLocationMarker, permissions guards, GEO_OPTS), navigateBtn stuck disabled after OSRM (re-enabled in .then/.catch), QuotaExceededError handling (toast on setItem failure). Added global error boundary (window.onerror/unhandledrejection → toast). Fixed startup ordering (loadSavedData before initMap). Added .gitignore.
+- **Category filter collapsed to 7 legend groups**: Replaced ~30 raw category options with the 7 broad groups matching the map legend. Added shared `CATEGORY_GROUPS` constant and `getCategoryGroup()` helper. Merged Grocery/Restaurant/Food with Retail/Gift/Hardware into Food/Retail (7 groups total).
+- **Announce route simplified**: Removed intro sentence, leg distances, and drive times from speech output. Now reads only "Stop N: {name}. Located at {address}."
 
 ---
 
