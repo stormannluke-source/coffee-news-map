@@ -128,6 +128,15 @@ You can mark a business as visited from its map window or detail card.
 Each visit gets a date stamp. Visits show a green ✅ label in the
 Notes tab.
 
+When you mark a visit, two things happen automatically:
+  1. The business is removed from your current route (if it's on one)
+  2. A follow-up date is set to remind you when to call back
+
+The follow-up interval (e.g. 14 days, 30 days) is controlled by the
+"Auto follow-up" setting in the 📋 Preloaded Routes section.
+You can change it anytime — set it to 0 if you don't want automatic
+follow-ups.
+
 To remove a visit: tap ✕ Remove next to the date.
 
 
