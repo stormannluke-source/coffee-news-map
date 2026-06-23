@@ -401,6 +401,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .note-item-tag { display: inline-block; font-size: 10px; padding: 1px 5px; border-radius: 3px; margin-right: 4px; }
 .note-item-tag.note { background: #fef9e7; color: #b7950b; }
 .note-item-tag.visited { background: #eafaf1; color: #1e8449; }
+.note-item-tag.overdue { background: #fde8e8; color: #c0392b; }
+.note-item-tag.due-today { background: #fef5e7; color: #d68910; }
+.note-item-tag.coming-up { background: #ebf5fb; color: #2980b9; }
+.followup-section-header { font-size: 12px; font-weight: 600; padding: 6px 8px; margin: 8px 0 4px 0; border-radius: 4px; }
+.followup-section-header.overdue { background: #fde8e8; color: #c0392b; border-left: 3px solid #e74c3c; }
+.followup-section-header.due-today { background: #fef5e7; color: #d68910; border-left: 3px solid #f39c12; }
+.followup-section-header.coming-up { background: #ebf5fb; color: #2980b9; border-left: 3px solid #3498db; }
 .note-empty { text-align: center; color: #999; padding: 40px 20px; font-size: 13px; }
 
 /* Popup notes */
@@ -24919,13 +24926,13 @@ function showNotesTab(filter) {
   updateNotesList();
 }
 
-function renderNoteItem(item) {
+function renderNoteItem(item, followUpClass) {
   var html = '<div class="note-item">';
   html += '<div class="note-item-name">' + escapeHtml(item.name) + '</div>';
   html += '<div class="note-item-addr">' + escapeHtml(item.address || item.town) + ', ' + escapeHtml(item.city) + '</div>';
   html += '<div style="margin-bottom:4px;">';
   if (item.note) html += '<span class="note-item-tag note">\ud83d\udcdd Note</span>';
-  if (item.followUp) html += '<span class="note-item-tag" style="background:#f39c12;">\u23f0 ' + item.followUp + '</span>';
+  if (item.followUp) html += '<span class="note-item-tag ' + (followUpClass || '') + '">\u23f0 ' + item.followUp + '</span>';
   if (item.lastVisit) {
     html += '<span class="note-item-tag visited">\u2705 Visited ' + formatDate(item.lastVisit) + '</span>';
     html += '<button class="popup-route-btn" style="border-color:#e74c3c;color:#e74c3c;font-size:10px;padding:1px 6px;margin-left:4px;" onclick="deleteLastVisit(\'' + item.key + '\')">\u2715 Remove</button>';
@@ -25010,11 +25017,29 @@ function updateNotesList() {
     items = items.filter(function(item) { return (item.name || '').toLowerCase().indexOf(notesSearchTerm) !== -1; });
   }
 
-  // Sort: most recently updated/visited first, or follow-up date ascending
   if (notesTabFilter === 'followups') {
     items.sort(function(a, b) {
       return (a.followUp || '9999-99-99').localeCompare(b.followUp || '9999-99-99');
     });
+    var today = new Date(); today.setHours(0,0,0,0);
+    var todayStr = today.toISOString().slice(0,10);
+    var threeDays = new Date(today); threeDays.setDate(threeDays.getDate() + 3);
+    var threeDaysStr = threeDays.toISOString().slice(0,10);
+    var overdue = [], dueToday = [], comingUp = [], later = [];
+    items.forEach(function(item) {
+      if (item.followUp < todayStr) overdue.push(item);
+      else if (item.followUp === todayStr) dueToday.push(item);
+      else if (item.followUp <= threeDaysStr) comingUp.push(item);
+      else later.push(item);
+    });
+    var html = '';
+    if (overdue.length) { html += '<div class="followup-section-header overdue">🔴 Overdue (' + overdue.length + ')</div>'; overdue.forEach(function(i) { html += renderNoteItem(i, 'overdue'); }); }
+    if (dueToday.length) { html += '<div class="followup-section-header due-today">🟠 Due Today (' + dueToday.length + ')</div>'; dueToday.forEach(function(i) { html += renderNoteItem(i, 'due-today'); }); }
+    if (comingUp.length) { html += '<div class="followup-section-header coming-up">🔵 Coming Up (' + comingUp.length + ')</div>'; comingUp.forEach(function(i) { html += renderNoteItem(i, 'coming-up'); }); }
+    if (later.length) { html += '<div class="followup-section-header">📅 Later (' + later.length + ')</div>'; later.forEach(function(i) { html += renderNoteItem(i); }); }
+    if (!html) { html = '<div class="note-empty">No follow-ups set. Add a follow-up date to a note to see it here.</div>'; }
+    container.innerHTML = html;
+    return;
   } else {
     items.sort(function(a, b) {
       var aDate = a.updated || a.lastVisit || '';
@@ -25024,7 +25049,7 @@ function updateNotesList() {
   }
 
   if (items.length === 0) {
-    container.innerHTML = '<div class="note-empty">No ' + (notesTabFilter === 'notes' ? 'notes' : notesTabFilter === 'visited' ? 'visits' : notesTabFilter === 'followups' ? 'follow-ups' : 'notes or visits') + (notesSearchTerm ? ' matching "' + escapeHtml(notesSearchTerm) + '"' : '') + ' yet. Click a business on the map to get started, or use “+ Add Note”.</div>';
+    container.innerHTML = '<div class="note-empty">No ' + (notesTabFilter === 'notes' ? 'notes' : notesTabFilter === 'visited' ? 'visits' : 'notes or visits') + (notesSearchTerm ? ' matching "' + escapeHtml(notesSearchTerm) + '"' : '') + ' yet. Click a business on the map to get started, or use “+ Add Note”.</div>';
     return;
   }
 
