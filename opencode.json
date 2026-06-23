@@ -1,7 +1,18 @@
 {
-  "provider": "anthropic",
-  "modelOptions": {
-    "thinking": { "type": "adaptive" },
-    "output_config": { "effort": "high" }
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-opus-4-8",
+  "provider": {
+    "anthropic": {
+      "models": {
+        "claude-opus-4-8": {
+          "options": {
+            "thinking": {
+              "type": "adaptive",
+              "budgetTokens": 16000
+            }
+          }
+        }
+      }
+    }
   }
 }
