@@ -132,18 +132,23 @@ To remove a visit: tap ✕ Remove next to the date.
 
 
 ROUTE PLANNER (📍 Route)
-------------------------
+-----------------------
 1. Pick a preloaded route from the 📋 Preloaded Routes section,
    or tap dots on the map to add your own stops
 2. Stops appear in the Route tab — each stop shows its distance
    from the previous stop (straight-line estimate by default, or
    actual driving distance after tapping 🗺 Optimize)
-3. Slide the ⠿ handle up or down to change the order
-4. Tap 🗺 Optimize to reorder stops for the shortest drive
-5. Tap 📍 Navigate to get turn-by-turn directions on your phone
+3. Preloaded routes load the first 15 stops into your active route.
+   The rest wait in the queue. As you mark visits or remove stops,
+   the route automatically refills from the queue — you never see
+   a huge list, and Google/Apple Maps always gets a manageable number
+4. Slide the ⠿ handle up or down to change the order
+5. Tap 🗺 Optimize to reorder stops for the shortest drive
+6. Tap 📍 Navigate to get turn-by-turn directions on your phone
    (Apple Maps on iPhone, Google Maps on Android)
-6. Tap 🖨 Print for a paper copy of the route
-7. Tap ✕ Clear to remove all stops
+   — only the first 12 stops are sent since that's all maps can handle
+7. Tap 🖨 Print for a paper copy of the route
+8. Tap ✕ Clear to remove all stops and empty the queue
 
 
 PRELOADED ROUTES
@@ -152,10 +157,34 @@ The Route tab has a "Preloaded Routes" section with routes ready to go:
   • One route per town — tap a town name to load every suitable
     business, sorted by distance from town center (closest first)
   • Corridor routes — multi-town trips like "Presque Isle to Caribou"
+  • First 15 stops go into your active route; the rest wait in the
+    queue (shown as "Queue: N remaining" in the route summary)
+  • As you visit/remove stops, the next ones from the queue
+    automatically fill in
+  • Far-away stops (like Eagle Lodge 3.6 mi from center) appear at
+    the bottom of the queue, so they come last
   • Tap any route to load it instantly, then add/remove stops as needed
   • No manual setup needed
-  • Far-away stops (like Eagle Lodge 3.6 mi from center) appear at
-    the bottom, so you can skip them if they're not worth the drive
+
+
+VISITS & ROUTES
+---------------
+When you mark a business as visited (from its map window or detail card),
+it is automatically removed from your current route. The next stop from
+the queue takes its place. This way your active route stays at ~15 stops
+and you don't need to manually clean up visited stops.
+
+
+FOLLOW-UPS & ROUTES
+-------------------
+In the Notes tab (including the ⏰ Follow-ups view), each business has
+a "+ Add to Route" button. Tap it to add that business back to your
+current route. This is useful when a follow-up date comes due:
+  • Visit a business → it's removed from your route
+  • Set a follow-up date on its note ("call back in 2 weeks")
+  • When the date rolls around, the business shows up in ⏰ Follow-ups
+  • Tap "+ Add to Route" to bring it back into your day's plan
+
 
 SAVED ROUTES
 ------------

@@ -228,6 +228,9 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **Header buttons moved to left**: 📋 List, 📍 Route, 📝 Notes, 🔍 Filter, 📥 CSV now sit between the title and the filter bar on the left side of the header.
 - **Preloaded routes**: 📋 Preloaded Routes section in Route tab with 24 per-town routes (all suitable-for-ads businesses sorted by distance from town center, closest first) and 5 cross-town corridor routes (top 5 per town). One-tap load, no manual route building needed.
 - **Leg distances in route list**: Each stop shows distance from previous stop (~straight-line by default, actual driving distance/time after Optimize). Lets salesperson decide if an outlier stop is worth the drive.
+- **Rolling window route pool**: Preloaded routes load first 15 stops into active route, rest into queue (`routePool`). As stops are visited or removed, pool auto-refills via `refillRoute()`. Solves Google Maps 12-stop limit and keeps sidebar manageable.
+- **Mark Visit auto-removes from route**: `toggleVisit()` checks if the business is in `routeStops` and splices it out, then calls `refillRoute()` to pull the next stop from the pool.
+- **Add to Route from Notes tab**: `renderNoteItem()` now shows a "+ Add to Route" / "✕ Remove from Route" button alongside "Show on Map", so follow-ups can be turned into route stops directly from the Notes tab.
 - **Landscape UX overhaul**: 4 improvements for horizontal phone use:
   - **Right-side panel**: Sidebar switches from bottom sheet to a right-side panel (45vw, max 340px) in landscape, so map and sidebar are visible simultaneously
   - **Collapsed filter popover**: Filter controls hide behind a single "🔍 Filter" button; tapping it shows a popover below the header with all dropdowns

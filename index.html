@@ -763,6 +763,8 @@ let coords = {};
 let USE_CLUSTERS = false; // Clustering disabled — shows all individual markers
 let map, markerClusterGroup, routeLayer, routePolyline;
 let routeStops = [];
+let routePool = [];      // Queue of stops waiting to enter active route
+const ROUTE_WINDOW = 15; // Max stops shown in active route at once
 let routeLegData = [];   // OSRM leg data: [{distance, duration}] per leg (index i = leg from stop i to i+1)
 let routeTotalDist = 0;  // OSRM total distance in meters
 let routeTotalDur = 0;   // OSRM total duration in seconds
@@ -23956,7 +23958,11 @@ function updateRouteView() {
   // Drag and drop handlers
   setupRouteDragDrop();
 
-  var summaryHtml = '<div class="route-summary"><div class="route-summary-row"><span class="route-summary-label">Stops:</span><span class="route-summary-value">' + routeStops.length + '</span></div>';
+  var summaryHtml = '<div class="route-summary">';
+  summaryHtml += '<div class="route-summary-row"><span class="route-summary-label">Stops:</span><span class="route-summary-value">' + routeStops.length + '</span></div>';
+  if (routePool.length > 0) {
+    summaryHtml += '<div class="route-summary-row"><span class="route-summary-label">Queue:</span><span class="route-summary-value">' + routePool.length + ' remaining</span></div>';
+  }
   if (routeTotalDist > 0) {
     var totalKm = (routeTotalDist / 1000).toFixed(1);
     var totalMin = Math.round(routeTotalDur / 60);
@@ -23977,6 +23983,7 @@ function invalidateRouteData() {
 function removeRouteStop(idx) {
   routeStops.splice(idx, 1);
   invalidateRouteData();
+  refillRoute();
   updateRouteView();
   updateMap();
 }
@@ -23984,6 +23991,7 @@ function removeRouteStop(idx) {
 function clearRoute() {
   if (routeStops.length === 0) return;
   routeStops = [];
+  routePool = [];
   invalidateRouteData();
   if (routePolyline) { map.removeLayer(routePolyline); routePolyline = null; }
   updateRouteView();
@@ -23991,9 +23999,25 @@ function clearRoute() {
   showToast('Route cleared', 'info');
 }
 
+function refillRoute() {
+  if (routePool.length === 0) return;
+  var needed = ROUTE_WINDOW - routeStops.length;
+  if (needed <= 0) return;
+  var addCount = Math.min(needed, routePool.length);
+  for (var i = 0; i < addCount; i++) {
+    routeStops.push(routePool[i]);
+  }
+  routePool = routePool.slice(addCount);
+  invalidateRouteData();
+}
+
 function openRouteInMaps() {
   if (routeStops.length < 2) return;
-  var stops = routeStops;
+  var maxStops = 12;
+  var stops = routeStops.slice(0, maxStops);
+  if (routeStops.length > maxStops) {
+    showToast('Only first ' + maxStops + ' stops sent to maps (' + routePool.length + ' more in queue)', 'info');
+  }
   var first = stops[0];
   var last = stops[stops.length - 1];
 
@@ -24858,6 +24882,16 @@ function toggleVisit(key) {
   VISITS[key].push(new Date().toISOString());
   saveVisits();
 
+  // Remove from active route if present, then refill from pool
+  var idx = routeStops.findIndex(function(s) { return s.key === key; });
+  if (idx !== -1) {
+    routeStops.splice(idx, 1);
+    invalidateRouteData();
+    refillRoute();
+    updateRouteView();
+    updateMap();
+  }
+
   // Refresh popup
   var biz = businesses.find(function(b) { return b.key === key; });
   if (biz) {
@@ -24939,7 +24973,9 @@ function renderNoteItem(item, followUpClass) {
   html += '<button class="popup-route-btn" style="border-color:#e74c3c;color:#e74c3c;margin-left:4px;" onclick="deleteNoteFromNotesTab(\'' + item.key + '\')">Delete</button>';
   html += '</div>';
   html += '<div class="note-item-actions">';
-  html += '<button class="popup-route-btn" onclick="flyToBusiness(\'' + item.key + '\')">\ud83d\udccd Show on Map</button>';
+  html += '<button class="popup-route-btn" onclick="flyToBusiness(\'' + item.key + '\')">📍 Show on Map</button>';
+  var inRoute = routeStops.some(function(s) { return s.key === item.key; });
+  html += '<button class="popup-route-btn" onclick="toggleRouteStop(\'' + item.key + '\')">' + (inRoute ? '✕ Remove from Route' : '+ Add to Route') + '</button>';
   html += '</div>';
   html += '</div>';
   return html;
@@ -25222,11 +25258,18 @@ function loadPresetTownRoute(town) {
     showToast('Could not build route for ' + town, 'error');
     return;
   }
-  routeStops = stops;
+  routePool = [];
+  if (stops.length > ROUTE_WINDOW) {
+    routeStops = stops.slice(0, ROUTE_WINDOW);
+    routePool = stops.slice(ROUTE_WINDOW);
+  } else {
+    routeStops = stops;
+  }
+  invalidateRouteData();
   updateRouteView();
   updateMap();
   switchTab('route');
-  showToast('Route: ' + town + ' (' + stops.length + ' stops)', 'success');
+  showToast('Route: ' + town + ' (' + routeStops.length + ' stops' + (routePool.length ? ', ' + routePool.length + ' in queue' : '') + ')', 'success');
 }
 
 function loadPresetCorridorRoute(idx) {
@@ -25261,11 +25304,18 @@ function loadPresetCorridorRoute(idx) {
     showToast('Could not build corridor route', 'error');
     return;
   }
-  routeStops = stops;
+  routePool = [];
+  if (stops.length > ROUTE_WINDOW) {
+    routeStops = stops.slice(0, ROUTE_WINDOW);
+    routePool = stops.slice(ROUTE_WINDOW);
+  } else {
+    routeStops = stops;
+  }
+  invalidateRouteData();
   updateRouteView();
   updateMap();
   switchTab('route');
-  showToast('Route: ' + corridor.name + ' (' + stops.length + ' stops)', 'success');
+  showToast('Route: ' + corridor.name + ' (' + routeStops.length + ' stops' + (routePool.length ? ', ' + routePool.length + ' in queue' : '') + ')', 'success');
 }
 
 function renderPresetRoutes() {
