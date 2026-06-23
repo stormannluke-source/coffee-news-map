@@ -595,6 +595,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
         <div class="preset-routes-section" id="presetRoutesSection">
           <div class="preset-routes-heading">📋 Preloaded Routes</div>
           <div style="font-size:11px;color:#888;margin-bottom:4px;">Auto follow-up: <input type="number" id="followupDaysInput" value="14" min="0" max="365" style="width:50px;font-size:11px;padding:2px;border:1px solid #ddd;border-radius:3px;" onchange="updateFollowupDays(this.value)"> days (0 = none)</div>
+          <div style="font-size:11px;color:#888;margin-bottom:4px;"><label><input type="checkbox" id="autoVisitToggle" onchange="toggleAutoVisit(this.checked)"> Auto-visit: stay 60s → mark visited</label></div>
           <div id="presetRoutesList"></div>
         </div>
         <div class="saved-routes-section" id="savedRoutesSection">
@@ -777,6 +778,9 @@ let VISITS = {};       // { bizKey: [ 'ISO-date', ... ] }
 let SAVED_ROUTES = {}; // { name: [ { key, name, address, city, town, category, lat, lng }, ... ] }
 let notesTabFilter = 'all'; // 'all' | 'notes' | 'visited'
 let followupDays = 14; // Auto follow-up interval in days (0 = none)
+let autoVisitEnabled = false;
+let autoVisitWatchId = null;
+let autoVisitTimers = {}; // { stopKey: setTimeoutId } for dwell timer
 
 // Load saved data from localStorage
 function loadSavedData() {
@@ -815,6 +819,10 @@ function loadSavedData() {
   try {
     const f = localStorage.getItem('coffeeNews_followupDays');
     if (f) followupDays = parseInt(f, 10) || 14;
+  } catch(e) {}
+  try {
+    const av = localStorage.getItem('coffeeNews_autoVisit');
+    if (av) autoVisitEnabled = av === '1';
   } catch(e) {}
 }
 
@@ -23996,6 +24004,8 @@ function removeRouteStop(idx) {
 
 function clearRoute() {
   if (routeStops.length === 0) return;
+  // Clear auto-visit dwell timers
+  Object.keys(autoVisitTimers).forEach(function(k) { clearTimeout(autoVisitTimers[k]); delete autoVisitTimers[k]; });
   routeStops = [];
   routePool = [];
   invalidateRouteData();
@@ -24024,6 +24034,54 @@ function saveFollowupDays() {
 function updateFollowupDays(val) {
   followupDays = parseInt(val, 10) || 0;
   saveFollowupDays();
+}
+
+function toggleAutoVisit(enabled) {
+  autoVisitEnabled = enabled;
+  try { localStorage.setItem('coffeeNews_autoVisit', enabled ? '1' : '0'); } catch(e) { handleStorageError(e); }
+  if (enabled) startAutoVisit();
+  else stopAutoVisit();
+}
+
+function startAutoVisit() {
+  if (!navigator.geolocation) { showToast('Geolocation not supported', 'error'); autoVisitEnabled = false; return; }
+  autoVisitWatchId = navigator.geolocation.watchPosition(
+    function(pos) { checkAutoVisitProximity(pos); },
+    function(err) { console.log('Auto-visit geo error:', err.message); },
+    { enableHighAccuracy: true, maximumAge: 10000, timeout: 15000 }
+  );
+  showToast('Auto-visit enabled', 'info');
+}
+
+function stopAutoVisit() {
+  if (autoVisitWatchId !== null) {
+    navigator.geolocation.clearWatch(autoVisitWatchId);
+    autoVisitWatchId = null;
+  }
+  Object.keys(autoVisitTimers).forEach(function(k) { clearTimeout(autoVisitTimers[k]); delete autoVisitTimers[k]; });
+}
+
+function checkAutoVisitProximity(pos) {
+  if (!autoVisitEnabled || routeStops.length === 0) return;
+  var userLat = pos.coords.latitude;
+  var userLng = pos.coords.longitude;
+  routeStops.forEach(function(stop) {
+    var d = distanceMiles(userLat, userLng, stop.lat, stop.lng) * 1609.34;
+    if (d <= 100) {
+      if (!autoVisitTimers[stop.key]) {
+        autoVisitTimers[stop.key] = setTimeout(function() {
+          if (!autoVisitEnabled) return;
+          navigator.geolocation.getCurrentPosition(function(np) {
+            var nd = distanceMiles(np.coords.latitude, np.coords.longitude, stop.lat, stop.lng) * 1609.34;
+            if (nd <= 100) { toggleVisit(stop.key); showToast('Auto-visited: ' + stop.name, 'success'); }
+          });
+          delete autoVisitTimers[stop.key];
+        }, 60000);
+      }
+    } else {
+      if (autoVisitTimers[stop.key]) { clearTimeout(autoVisitTimers[stop.key]); delete autoVisitTimers[stop.key]; }
+    }
+  });
 }
 
 function openRouteInMaps() {
@@ -25483,6 +25541,9 @@ updateNotesList();
 updateSavedRoutesList();
 var fud = document.getElementById('followupDaysInput');
 if (fud) fud.value = followupDays;
+var avt = document.getElementById('autoVisitToggle');
+if (avt) avt.checked = autoVisitEnabled;
+if (autoVisitEnabled) startAutoVisit();
 renderPresetRoutes();
 // Register service worker for offline caching
 if ('serviceWorker' in navigator) {

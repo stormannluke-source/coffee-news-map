@@ -160,6 +160,29 @@ ROUTE PLANNER (📍 Route)
 8. Tap ✕ Clear to remove all stops and empty the queue
 
 
+AUTO-VISIT (automatic check-in)
+-------------------------------
+Right below "Preloaded Routes" in the Route tab, there is an option:
+  ☐ Auto-visit: stay 60s → mark visited
+
+When you check this box, the map uses your phone's GPS to watch your
+location. If you stay within 100 meters (about a block) of a route
+stop for 60 seconds, the app automatically:
+  • Marks that business as visited
+  • Removes it from your route
+  • Fills in the next stop from the queue
+  • Sets a follow-up date (based on the "Auto follow-up" setting)
+  • Shows a message: "Auto-visited: Business Name"
+
+This saves you from having to tap ✅ Mark Visit every time. If you
+leave the stop before 60 seconds, nothing happens — you can come back
+later or just move on.
+
+Uncheck the box to turn it off. Your phone will ask for location
+permission the first time you turn it on. This uses GPS, so keep
+your phone plugged in if you use it all day.
+
+
 PRELOADED ROUTES
 -----------------
 The Route tab has a "Preloaded Routes" section with routes ready to go:
