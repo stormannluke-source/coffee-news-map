@@ -552,6 +552,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
           <button class="btn btn-primary" id="notesAllBtn" onclick="showNotesTab('all')" style="background:#2c3e50;">All</button>
           <button class="btn btn-outline" id="notesNotesBtn" onclick="showNotesTab('notes')" style="color:#333;border-color:#aaa;">With Notes</button>
           <button class="btn btn-outline" id="notesVisitedBtn" onclick="showNotesTab('visited')" style="color:#333;border-color:#aaa;">Visited</button>
+          <button class="btn btn-outline" id="notesAddBtn" onclick="showNotesTab('add')" style="color:#333;border-color:#aaa;">+ Add Note</button>
           <button class="btn btn-outline" onclick="exportNotes()" style="color:#333;border-color:#aaa;margin-left:auto;">⬇ Export</button>
           <button class="btn btn-outline" onclick="document.getElementById('importNotesInput').click()" style="color:#333;border-color:#aaa;">⬆ Import</button>
           <input type="file" id="importNotesInput" accept=".json" style="display:none" onchange="importNotes(this)" />
@@ -24777,14 +24778,71 @@ function showNotesTab(filter) {
     b.style.color = '#333';
     b.style.borderColor = '#aaa';
   });
-  var btn = document.getElementById('notes' + (filter === 'all' ? 'All' : filter === 'notes' ? 'Notes' : 'Visited') + 'Btn');
+  var btnIds = { all: 'notesAllBtn', notes: 'notesNotesBtn', visited: 'notesVisitedBtn', add: 'notesAddBtn' };
+  var btn = document.getElementById(btnIds[notesTabFilter]);
   if (btn) { btn.className = 'btn btn-primary'; btn.style.background = '#2c3e50'; }
+  // Update search placeholder to match mode
+  var ns = document.getElementById('notesSearch');
+  if (ns) ns.placeholder = (notesTabFilter === 'add') ? 'Look up a business to add a note…' : 'Search by name…';
   updateNotesList();
+}
+
+function renderNoteItem(item) {
+  var html = '<div class="note-item">';
+  html += '<div class="note-item-name">' + escapeHtml(item.name) + '</div>';
+  html += '<div class="note-item-addr">' + escapeHtml(item.address || item.town) + ', ' + escapeHtml(item.city) + '</div>';
+  html += '<div style="margin-bottom:4px;">';
+  if (item.note) html += '<span class="note-item-tag note">\ud83d\udcdd Note</span>';
+  if (item.lastVisit) {
+    html += '<span class="note-item-tag visited">\u2705 Visited ' + formatDate(item.lastVisit) + '</span>';
+    html += '<button class="popup-route-btn" style="border-color:#e74c3c;color:#e74c3c;font-size:10px;padding:1px 6px;margin-left:4px;" onclick="deleteLastVisit(\'' + item.key + '\')">\u2715 Remove</button>';
+  }
+  html += '</div>';
+  html += '<textarea class="popup-note-input" id="notes-tab-note-input-' + item.key + '" placeholder="Add a note about this business..." style="margin-bottom:4px;">' + (item.note ? escapeHtml(item.note) : '') + '</textarea>';
+  html += '<div style="margin-bottom:4px;">';
+  html += '<button class="popup-route-btn" style="border-color:#27ae60;color:#27ae60;" onclick="saveNoteFromNotesTab(\'' + item.key + '\')">Save</button>';
+  html += '<button class="popup-route-btn" style="border-color:#e74c3c;color:#e74c3c;margin-left:4px;" onclick="deleteNoteFromNotesTab(\'' + item.key + '\')">Delete</button>';
+  html += '</div>';
+  html += '<div class="note-item-actions">';
+  html += '<button class="popup-route-btn" onclick="flyToBusiness(\'' + item.key + '\')">\ud83d\udccd Show on Map</button>';
+  html += '</div>';
+  html += '</div>';
+  return html;
 }
 
 function updateNotesList() {
   var container = document.getElementById('notesContent');
   if (!container) return;
+
+  var notesSearch = document.getElementById('notesSearch');
+  var notesSearchTerm = notesSearch ? notesSearch.value.trim().toLowerCase() : '';
+
+  // ADD NOTE mode: look up ANY business (with or without a note) and add a note
+  if (notesTabFilter === 'add') {
+    if (!notesSearchTerm) {
+      container.innerHTML = '<div class="note-empty">Type a business name above to look it up and add a note.</div>';
+      return;
+    }
+    var matches = businesses.filter(function(b) {
+      return (b.name || '').toLowerCase().indexOf(notesSearchTerm) !== -1;
+    }).slice(0, 30);
+    if (matches.length === 0) {
+      container.innerHTML = '<div class="note-empty">No business matches "' + escapeHtml(notesSearchTerm) + '".</div>';
+      return;
+    }
+    var ahtml = '';
+    matches.forEach(function(biz) {
+      var k = biz.key;
+      var v = VISITS[k] || [];
+      ahtml += renderNoteItem({
+        key: k, name: biz.name, address: biz.address, city: biz.city, town: biz.town,
+        note: NOTES[k] ? NOTES[k].text : null,
+        lastVisit: v.length > 0 ? v[v.length - 1] : null,
+      });
+    });
+    container.innerHTML = ahtml;
+    return;
+  }
 
   var items = [];
 
@@ -24793,8 +24851,10 @@ function updateNotesList() {
     var note = NOTES[key] ? NOTES[key].text : null;
     var visits = VISITS[key] || [];
 
+    // Only list businesses that actually have a note or a visit
     if (notesTabFilter === 'notes' && !note) return;
     if (notesTabFilter === 'visited' && visits.length === 0) return;
+    if (notesTabFilter === 'all' && !note && visits.length === 0) return;
 
     items.push({
       key: key,
@@ -24810,8 +24870,6 @@ function updateNotesList() {
   });
 
   // Apply notes search filter
-  var notesSearch = document.getElementById('notesSearch');
-  var notesSearchTerm = notesSearch ? notesSearch.value.trim().toLowerCase() : '';
   if (notesSearchTerm) {
     items = items.filter(function(item) { return (item.name || '').toLowerCase().indexOf(notesSearchTerm) !== -1; });
   }
@@ -24824,32 +24882,12 @@ function updateNotesList() {
   });
 
   if (items.length === 0) {
-    container.innerHTML = '<div class="note-empty">No ' + (notesTabFilter === 'notes' ? 'notes' : notesTabFilter === 'visited' ? 'visits' : 'notes or visits') + (notesSearchTerm ? ' matching "' + escapeHtml(notesSearchTerm) + '"' : '') + ' yet. Click a business on the map to get started.</div>';
+    container.innerHTML = '<div class="note-empty">No ' + (notesTabFilter === 'notes' ? 'notes' : notesTabFilter === 'visited' ? 'visits' : 'notes or visits') + (notesSearchTerm ? ' matching "' + escapeHtml(notesSearchTerm) + '"' : '') + ' yet. Click a business on the map to get started, or use “+ Add Note”.</div>';
     return;
   }
 
   var html = '';
-  items.forEach(function(item) {
-    html += '<div class="note-item">';
-    html += '<div class="note-item-name">' + escapeHtml(item.name) + '</div>';
-    html += '<div class="note-item-addr">' + escapeHtml(item.address || item.town) + ', ' + escapeHtml(item.city) + '</div>';
-    html += '<div style="margin-bottom:4px;">';
-    if (item.note) html += '<span class="note-item-tag note">\ud83d\udcdd Note</span>';
-    if (item.lastVisit) {
-      html += '<span class="note-item-tag visited">\u2705 Visited ' + formatDate(item.lastVisit) + '</span>';
-      html += '<button class="popup-route-btn" style="border-color:#e74c3c;color:#e74c3c;font-size:10px;padding:1px 6px;margin-left:4px;" onclick="deleteLastVisit(\'' + item.key + '\')">\u2715 Remove</button>';
-    }
-    html += '</div>';
-    html += '<textarea class="popup-note-input" id="notes-tab-note-input-' + item.key + '" placeholder="Add a note about this business..." style="margin-bottom:4px;">' + (item.note ? escapeHtml(item.note) : '') + '</textarea>';
-    html += '<div style="margin-bottom:4px;">';
-    html += '<button class="popup-route-btn" style="border-color:#27ae60;color:#27ae60;" onclick="saveNoteFromNotesTab(\'' + item.key + '\')">Save</button>';
-    html += '<button class="popup-route-btn" style="border-color:#e74c3c;color:#e74c3c;margin-left:4px;" onclick="deleteNoteFromNotesTab(\'' + item.key + '\')">Delete</button>';
-    html += '</div>';
-    html += '<div class="note-item-actions">';
-    html += '<button class="popup-route-btn" onclick="flyToBusiness(\'' + item.key + '\')">\ud83d\udccd Show on Map</button>';
-    html += '</div>';
-    html += '</div>';
-  });
+  items.forEach(function(item) { html += renderNoteItem(item); });
   container.innerHTML = html;
 }
 
