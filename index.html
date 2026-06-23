@@ -460,29 +460,22 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
         <button id="voiceSearchBtn" onclick="startVoiceSearch()" title="Voice search" style="background:var(--input-bg);color:var(--input-text);border:1px solid #555;border-radius:4px;cursor:pointer;padding:2px 6px;font-size:13px">🎤</button>
       </span>
       <datalist id="searchSuggestions"></datalist>
-      <label>Sort</label>
-      <select id="sortFilter">
-        <option value="">Default</option>
-        <option value="name">Name A-Z</option>
-        <option value="name-desc">Name Z-A</option>
-
-      </select>
       <span id="count"></span>
       <button onclick="resetFilters()" title="Reset all filters" style="background:none;border:1px solid #ddd;border-radius:4px;cursor:pointer;padding:2px 8px;font-size:13px">↺ Reset</button>
     </div>
     <div id="activeFilters"></div>
   </div>
-  <div class="header-actions">
+  <div class="header-actions" style="position:relative;">
     <button class="btn btn-outline" id="toggleListBtn" onclick="toggleSidebar('browse')">📋 List</button>
     <button class="btn btn-outline" id="routeBtn" onclick="toggleSidebar('route')">📍 Route</button>
     <button class="btn btn-outline" id="notesBtn" onclick="toggleSidebar('notes')">📝 Notes</button>
     <button class="btn btn-outline" title="Download regional CSV" onclick="showCSVMenu()" style="font-size:11px;">📥 CSV</button>
-  </div>
-  <div id="csvMenu" style="display:none;position:absolute;top:100%;right:8px;background:#fff;border:1px solid #dee2e6;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,0.15);z-index:1001;padding:4px;">
-    <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Presque Isle Area')">📥 Presque Isle Area</button>
-    <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Houlton Region')">📥 Houlton Region</button>
-    <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Millinocket Area')">📥 Millinocket Area</button>
-    <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Lincoln Area')">📥 Lincoln Area</button>
+    <div id="csvMenu" style="display:none;position:absolute;top:100%;right:0;background:#fff;border:1px solid #dee2e6;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,0.15);z-index:1001;padding:4px;">
+      <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Presque Isle Area')">📥 Presque Isle Area</button>
+      <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Houlton Region')">📥 Houlton Region</button>
+      <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Millinocket Area')">📥 Millinocket Area</button>
+      <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Lincoln Area')">📥 Lincoln Area</button>
+    </div>
   </div>
 </div>
 
@@ -23451,7 +23444,6 @@ let allCategories = new Set();
     var saved = JSON.parse(localStorage.getItem('coffeeNews_filters') || '{}');
     if (saved.region) document.getElementById('regionFilter').value = saved.region;
     if (saved.category) document.getElementById('categoryFilter').value = saved.category;
-    if (saved.sort) document.getElementById('sortFilter').value = saved.sort;
     if (saved.search) document.getElementById('searchFilter').value = saved.search;
   } catch(e) {}
 
@@ -23480,7 +23472,6 @@ let allCategories = new Set();
         town: document.getElementById('townFilter').value,
         category: document.getElementById('categoryFilter').value,
         search: document.getElementById('searchFilter').value,
-        sort: document.getElementById('sortFilter').value,
       }));
     } catch(e) {}
   }
@@ -23506,11 +23497,6 @@ let allCategories = new Set();
     debouncedRefresh();
     saveFilterState();
   });
-  document.getElementById('sortFilter').addEventListener('change', function() {
-    updateList();
-    saveFilterState();
-  });
-
   // Populate search autocomplete datalist
   var datalist = document.getElementById('searchSuggestions');
   if (datalist) {
@@ -24445,7 +24431,6 @@ function updateList() {
   const container = document.getElementById('listContainer');
   const summary = document.getElementById('listSummary');
   const filtered = getFilteredBusinesses();
-  const sortVal = document.getElementById('sortFilter').value;
   var browseSearch = document.getElementById('browseSearch');
   var searchTerm = browseSearch ? browseSearch.value.trim().toLowerCase() : '';
   var list = filtered;
@@ -24459,13 +24444,8 @@ function updateList() {
     return;
   }
 
-  // Sort based on dropdown
   let sorted = list.slice();
-  if (sortVal === 'name') {
-    sorted.sort(function(a, b) { return (a.name || '').localeCompare(b.name || ''); });
-  } else if (sortVal === 'name-desc') {
-    sorted.sort(function(a, b) { return (b.name || '').localeCompare(a.name || ''); });
-  } else if (listSortCol) {
+  if (listSortCol) {
     sorted.sort(function(a, b) {
       var va = (a[listSortCol] || '').toLowerCase();
       var vb = (b[listSortCol] || '').toLowerCase();
