@@ -24003,19 +24003,9 @@ function announceRoute() {
   // Cancel any ongoing speech
   window.speechSynthesis.cancel();
 
-  var text = 'Your route has ' + routeStops.length + ' stops. ';
+  var text = '';
   routeStops.forEach(function(stop, i) {
     text += 'Stop ' + (i + 1) + ': ' + stop.name + '. ';
-    if (i > 0 && routeLegData.length > 0 && routeLegData[i - 1]) {
-      var leg = routeLegData[i - 1];
-      var legKm = (leg.distance / 1000).toFixed(1);
-      var legMin = Math.round(leg.duration / 60);
-      text += legKm + ' kilometers, about ' + legMin + ' minutes from the previous stop. ';
-    } else if (i > 0) {
-      var prev = routeStops[i - 1];
-      var d = distanceMiles(prev.lat, prev.lng, stop.lat, stop.lng);
-      text += 'Approximately ' + d.toFixed(1) + ' miles from the previous stop. ';
-    }
     if (stop.address) {
       text += 'Located at ' + stop.address + '. ';
     }
