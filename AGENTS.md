@@ -129,7 +129,7 @@ Coffee News/
 - Hierarchical filtering: Region → Town → Category → Search
 - Active filter badges: pill-shaped tags showing current filters, dismissible individually
 - Extended search: searches across name, address, town, category, and **phone number**
-- **Filter count badges**: (N) counts on quick-filter pills and all dropdown options (region, town, category)
+- **Filter count badges**: (N) counts on all dropdown options (region, town, category)
 - Category color dots in Browse list table
 - Color-coded markers with category SVG icons (see below)
 - Notes (textarea per business, saved to localStorage, red dot indicator) with **follow-up date** support
@@ -197,7 +197,6 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **3 missing addresses found**: Cigaret Shopper (64 North St, Houlton), Serendipitous Dragonfly (79 Main St, Houlton), Smith Bros. Plumbing & Heating (32 High St, Houlton) — all geocoded via Nominatim, all three now have building-level coordinates
 - **Map features**: Category filter, extended search (name/address/town/category), active filter badges with dismiss, category color dots in Browse list, suitable-for-ads default filter, notes/visits/routes (localStorage), export/import, reset button, console diagnostics
 - **Category SVG icons**: Markers now show category-specific SVG icons (building, cup, bag, heart, wrench, home, star) inside the colored circle
-- **Quick filter pills**: All · Food · Shopping · Health · Auto · Services · Lodging · Religion — pill buttons below header instantly filter by business type
 - **Voice search**: Microphone button in search bar uses Web Speech API (webkitSpeechRecognition). Shows listening indicator, populates search on result. Pressing 🎤 while listening stops recording. `rec.stop()` called on result + 10s safety timeout prevents mic from staying on indefinitely
 - **Auto-geolocate**: On page load, checks `navigator.permissions` — if geolocation was previously granted, auto-locates and adds user marker without user action
 - **Route planner upgrades**: "📍 Navigate" button launches native maps in turn-by-turn navigation mode — Apple Maps `dirflg=d` (iOS), Google Maps `dir_action=navigate` (Android) — with all stops as waypoints. Per-stop driving distances/times from OSRM shown inline in route list (falls back to Haversine straight-line before optimization). "🔊 Announce" button reads full route aloud via Web Speech API (stop name + address only).
@@ -224,6 +223,8 @@ python3 -m http.server 8000        # then visit http://localhost:8000
   - **Offline banner**: red bar at top toggled by navigator.onLine + online/offline events
   - **Follow-up dates**: date input in note editor (detail pane + notes tab), ⏰ Follow-ups filter button in Notes tab, sorted by follow-up date ascending
   - **4 regional CSVs**: 📥 CSV header button with dropdown menu, one download per region, proper UTF-8 BOM + CSV escaping
+- **Sticky hover fix (touch devices)**: All 18 `:hover` CSS rules wrapped in `@media (hover: hover)`, plus global `-webkit-tap-highlight-color: transparent` to prevent iOS Safari persistent gray tap highlight on buttons/tabs/list rows
+- **Quick-filter pills removed**: Category dropdown is the sole business-type filter. Removed HTML/CSS/JS for the 9 quick-filter pills (All · Food · Shopping · Health · Auto · Services · Lodging · Religion). Simplified filter UI — Region/Town/Category/Search/Reset in top bar.
 
 ---
 

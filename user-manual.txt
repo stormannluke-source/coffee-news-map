@@ -2,192 +2,194 @@ Coffee News of Aroostook — Business Directory Map
 User Manual
 ===================================================
 
-OVERVIEW
---------
+WHAT THIS IS
+------------
 An interactive map of 1,141 businesses across Aroostook County, Maine,
-organized into 4 regions. Designed for ad-sales field use — browse, filter,
-take notes, mark visits, plan routes, and export territory lists.
+sorted into 4 regions. Made for ad-sales field work — look up businesses,
+narrow your search, write notes, mark when you visit, plan driving routes,
+and make lists you can open in Excel or print.
 
-Open index.html in any browser. No server required.
+Open the file called index.html to start. No other setup needed.
 
 
-THE INTERFACE
--------------
+THE SCREEN LAYOUT
+-----------------
   ┌─────────────────────────────────────────────────┐
-  │  Header — title, filter bar, action buttons      │
-  ├─────────────────────────────────────────────────┤
-  │  Quick-filter pills                              │
+  │  Top bar — title, search controls, action buttons│
   ├─────────────────────────────────────────────────┤
   │                                   │              │
-  │        Map                        │   Sidebar    │
-  │        (markers, legend)          │   (browse,   │
+  │        Map                        │   Side       │
+  │        (colored dots,             │   panel      │
+  │         color key)                │   (browse,   │
   │                                   │   route,     │
   │                                   │   notes)     │
   │                                   │              │
   └─────────────────────────────────────────────────┘
 
 
-BROWSING BUSINESSES
--------------------
-On first load, the map shows all 863 businesses suitable for ads.
-Markers are color-coded by category (see legend, bottom-right).
+LOOKING UP BUSINESSES
+---------------------
+When you open the page, the map shows all 863 businesses that are good
+candidates for ads. Colored dots on the map stand for different types
+of businesses. The color key is in the bottom-right corner.
 
-Tap any marker to see a popup with:
+Tap any dot on the map to see a window with:
   • Business name, address, phone, email, website
-  • Add/Remove from Route button
-  • Directions (Google Maps)
+  • Add or Remove from Route
+  • Directions (opens Google Maps)
   • Share button
-  • Visit toggle
+  • Mark as Visited
 
 
-FILTERING
----------
-Use the header controls to narrow results:
+NARROWING YOUR SEARCH
+---------------------
+Use the controls at the top to shrink your results:
 
-  Region ▼    — pick one of 4 regions
-  Town ▼      — filtered by selected region
-  Category ▼  — one of 7 category groups
-  Search      — matches name, address, town, category, or phone digits
-  🎤          — voice search (microphone icon)
+  Region ▼      — pick one of 4 areas
+  Town ▼        — shows towns in the region you picked
+  Category ▼    — pick from 7 types
+  Search        — finds matches by name, address, town, type, or phone number
+  🎤            — voice search (speak into your microphone)
 
-Filter count badges (N) show how many businesses match each option.
-
-Quick-filter pills (below header):
-  All · Food · Shopping · Health · Auto · Services · Lodging · Religion
-Tap one to instantly filter by business type. Count badges show results.
+Each option has a number in parentheses, like "Food (342)". That's how
+many businesses fit that choice.
 
 
-BUSINESS DETAIL PANE
+BUSINESS DETAIL CARD
 --------------------
-Tap a marker or tap a row in the Browse list to open the detail pane.
-Shows full contact info with 📋 copy buttons for address and phone.
+Tap a dot on the map, or tap a row in the Browse list, to open the
+detail card. It shows full contact info. Tap the 📋 buttons next to
+an address or phone number to copy it.
 
-From the detail pane you can:
+From the detail card you can:
   • Get directions
-  • Add/Remove from route
-  • Share
+  • Add or Remove from Route
+  • Share with someone
   • Write a note
   • Set a follow-up date
   • Mark as visited
-  • See nearby businesses (within 0.5 miles)
+  • See nearby businesses (within half a mile)
 
 
 NOTES
 -----
-Every business can have a note (textarea) saved to your browser.
+You can write a note for any business. Notes are saved on your device
+and stay there until you clear them.
+
 Access notes from:
-  1. Detail pane — textarea with auto-save
-  2. Notes & Visits sidebar tab
+  1. Detail card — type your note and it saves automatically
+  2. Notes & Visits panel
 
-Each note can have a follow-up date (date picker).
-When you save a note, the follow-up date is saved with it.
+Each note can have a follow-up date (tap the calendar to pick one).
+When you save the note, the date is saved with it.
 
-NOTES TAB (sidebar → 📝 Notes & Visits)
-----------------------------------------
-Tabs within the Notes tab:
 
-  All           — businesses that have a note OR a visit
-  With Notes    — only businesses that have a note
-  Visited       — only businesses marked as visited
-  + Add Note    — search any business to add a note
-  ⏰ Follow-ups — grouped by urgency (see below)
+NOTES & VISITS TAB (📝 Notes)
+------------------------------
+Inside the Notes tab, there are smaller tabs:
 
-Each business has:
-  • Follow-up: <date input> — pick a callback date
-  • Textarea — write the note
+  All             — businesses that have a note OR a visit
+  With Notes      — only businesses that have a note
+  Visited         — only businesses you marked as visited
+  + Add Note      — look up any business to add a note
+  ⏰ Follow-ups   — see upcoming callbacks grouped by urgency
+
+Each business in the list has:
+  • Follow-up: <calendar> — pick a date to call them back
+  • A box to write your note
   • Save / Delete buttons
-  • 🗺 Show on Map — center the map on this business
-  • ✕ Remove — remove the last visit date
+  • 🗺 Show on Map — centers the map on this business
+  • ✕ Remove — deletes the last visit date
 
 FOLLOW-UPS ⏰
 -------------
-The Follow-ups view groups businesses with follow-up dates into:
+The Follow-ups tab groups businesses by how soon their date is:
 
-  🔴 Overdue (N)     — past due dates (red tags)
-  🟠 Due Today (N)   — due today (orange tags)
-  🔵 Coming Up (N)   — within 3 days (blue tags)
-  📅 Later (N)       — more than 3 days out
+  🔴 Overdue (N)     — dates that have already passed (red labels)
+  🟠 Due Today (N)   — dates that are today (orange labels)
+  🔵 Coming Up (N)   — dates within the next 3 days (blue labels)
+  📅 Later (N)       — dates more than 3 days away
 
-The earliest follow-ups appear first within each section.
+Within each group, the earliest dates come first.
 
 
 VISITS
 ------
-Mark a business as visited from its popup or detail pane.
-Each visit is date-stamped.
-Visits show a green ✅ tag in the Notes tab.
+You can mark a business as visited from its map window or detail card.
+Each visit gets a date stamp. Visits show a green ✅ label in the
+Notes tab.
 
-To remove a visit: tap ✕ Remove next to the visit date.
+To remove a visit: tap ✕ Remove next to the date.
 
 
 ROUTE PLANNER (📍 Route)
 ------------------------
-1. Tap markers on the map (or use detail pane) to add stops
-2. Stops appear in the Route tab sidebar
-3. Drag ⠿ handles to reorder
-4. Tap 🗺 Optimize to reorder stops for shortest driving distance
-   (uses OSRM routing engine — 2 retry attempts on failure)
-5. Tap 📍 Navigate to open turn-by-turn in Apple Maps (iOS)
-   or Google Maps (Android)
-6. Tap 🖨 Print for a printed route sheet
-7. Tap 🔊 Announce to hear stops read aloud (name + address)
+1. Tap dots on the map (or use the detail card) to add stops
+2. Stops appear in the Route tab
+3. Slide the ⠿ handle up or down to change the order
+4. Tap 🗺 Optimize to reorder stops for the shortest drive
+5. Tap 📍 Navigate to get turn-by-turn directions on your phone
+   (Apple Maps on iPhone, Google Maps on Android)
+6. Tap 🖨 Print for a paper copy of the route
+7. Tap 🔊 Announce to hear stops read out loud (name + address)
 8. Tap ✕ Clear to remove all stops
+
 
 SAVED ROUTES
 ------------
-  • 💾 Save Current — name and save the current route
-  • Saved routes persist in your browser
-  • Tap a saved route to restore it
-  • ⬇ Export / ⬆ Import — backup or transfer routes as JSON
+  • 💾 Save Current — name and save your route
+  • Saved routes stay on your device
+  • Tap a saved route to bring it back
+  • ⬇ Export / ⬆ Import — make a backup file or load one
 
 
-CSV EXPORT
-----------
-Tap 📥 CSV in the header → choose a region:
+MAKING A SPREADSHEET
+--------------------
+Tap 📥 CSV at the top and pick a region:
   • Presque Isle Area
   • Houlton Region
   • Millinocket Area
   • Lincoln Area
 
-Downloads a UTF-8 CSV file with all 11 fields for every business
-in that region. Open in Excel, Google Sheets, or Numbers.
+A file will download with every business in that region and all their
+information. Open it in Excel, Google Sheets, or Numbers.
 
 
 RECENTLY VIEWED (🕐 Recent tab)
 -------------------------------
-Shows the last 10 businesses you viewed, newest first.
-Tap one to jump back to its detail pane.
+Shows the last 10 businesses you looked at, newest first.
+Tap one to go back to its details.
 
 
 RESET
 -----
-Tap ↺ Reset to clear all filters, quick-filter selection, and
-the current route.
+Tap ↺ Reset to clear all your search choices and the current route.
 
 
-OFFLINE
--------
-If your internet connection drops, a red banner appears:
+LOSING INTERNET
+---------------
+If your internet connection goes out, a red bar appears at the top:
   "You are offline — map tiles may not load"
-The app still works — cached tiles and all localStorage data
-(notes, visits, routes) remain available.
+The map may not look right, but your notes, visits, and routes are
+still there because they are saved on your device.
 
 
-STORAGE
--------
-All notes, visits, saved routes, and filter preferences are stored
-in your browser's localStorage. They persist across page reloads.
-To clear them: browser settings → Clear site data.
+YOUR SAVED INFORMATION
+----------------------
+Notes, visits, routes, and your search choices are all saved on your
+device. They stay there even if you close the page and come back.
 
-Export notes/visits/routes as JSON for backup before clearing.
+To clear everything: go to your phone or computer settings and clear
+site data for this page. Make an export backup first if you want to
+keep anything.
 
 
 TIPS FOR AD-SALES FIELD USE
-----------------------------
-  • Before heading out, filter to one Town and review the list
-  • Download the CSV for that region as a printed backup
-  • Mark visits with ✅ as you complete calls
+---------------------------
+  • Before you head out, pick one Town and review the list
+  • Download the file for that region as a backup you can print
+  • Mark visits with ✅ as you finish each call
   • Set a follow-up date when a business asks you to call back
   • Check ⏰ Follow-ups each morning for today's callbacks
-  • Use Route Planner to optimize your driving route between stops
+  • Use the Route Planner to save driving time between stops
   • 📍 Navigate opens turn-by-turn directions on your phone

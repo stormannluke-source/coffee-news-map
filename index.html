@@ -41,6 +41,7 @@
   --safe-left: env(safe-area-inset-left, 0px);
   --safe-right: env(safe-area-inset-right, 0px);
 }
+* { -webkit-tap-highlight-color: transparent; }
 html { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; flex-direction: column; overflow: hidden; width: 100%; height: 100dvh; background: var(--bg); color: var(--text); }
 
@@ -69,15 +70,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   font-size: 12px; font-weight: 500; white-space: nowrap; transition: background 0.15s;
 }
 .btn-primary { background: #3498db; color: #fff; }
+@media (hover: hover) {
 .btn-primary:hover { background: #2980b9; }
-.btn-success { background: #27ae60; color: #fff; }
 .btn-success:hover { background: #219a52; }
-.btn-danger { background: #e74c3c; color: #fff; }
 .btn-danger:hover { background: #c0392b; }
-.btn-warning { background: #f39c12; color: #fff; }
 .btn-warning:hover { background: #d68910; }
-.btn-outline { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.4); }
 .btn-outline:hover { background: rgba(255,255,255,0.1); }
+}
 .btn:disabled { opacity: 0.5; cursor: default; }
 
 #main { display: flex; flex: 1; min-height: 0; position: relative; }
@@ -97,7 +96,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   font-weight: 500; color: #666; background: transparent; border: none; border-bottom: 2px solid transparent;
   transition: all 0.15s;
 }
+@media (hover: hover) {
 .sidebar-tab:hover { color: var(--text); background: rgba(0,0,0,0.03); }
+}
 .sidebar-tab.active { color: var(--text); border-bottom-color: #3498db; background: var(--bg); }
 
 .sidebar-content { flex: 1; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none; -ms-overflow-style: none; padding: 12px; }
@@ -112,11 +113,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   cursor: pointer; user-select: none; position: sticky; top: 0; z-index: 1;
   border-bottom: 2px solid #dee2e6;
 }
+@media (hover: hover) {
 .list-table th:hover { background: #e9ecef; }
+}
 .list-table th .sort-arrow { opacity: 0.3; margin-left: 4px; }
 .list-table th.sorted .sort-arrow { opacity: 1; }
 .list-table td { padding: 5px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+@media (hover: hover) {
 .list-table tr:hover { background: #f1f3f5; }
+}
 .list-table .list-cat { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 10px; color: #fff; }
 .list-empty { text-align: center; color: var(--text-muted); padding: 40px 20px; font-size: 13px; }
 .list-summary { font-size: 12px; color: var(--text-muted); padding: 8px 0 4px 0; border-bottom: 1px solid var(--border); margin-bottom: 8px; }
@@ -149,7 +154,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   cursor: pointer; color: #e74c3c; font-size: 16px; padding: 4px; flex-shrink: 0;
   background: none; border: none;
 }
+@media (hover: hover) {
 .route-stop-remove:hover { color: #c0392b; }
+}
 
 .route-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
 .route-summary { background: var(--card-bg); border: 1px solid var(--border); border-radius: 6px; padding: 10px; margin-bottom: 10px; }
@@ -192,7 +199,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 /* Popup */
 .popup-name { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
 .popup-info a { color: #3498db; text-decoration: none; }
+@media (hover: hover) {
 .popup-info a:hover { text-decoration: underline; }
+}
 .popup-cat { display: inline-block; background: #eee; padding: 1px 8px; border-radius: 3px; font-size: 11px; margin-top: 4px; }
 
 .popup-route-btn {
@@ -200,9 +209,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   border: 1px solid #3498db; background: #fff; color: #3498db; border-radius: 4px; cursor: pointer;
   transition: all 0.15s;
 }
+@media (hover: hover) {
 .popup-route-btn:hover { background: #3498db; color: #fff; }
+}
 .popup-route-btn.in-route { background: #e74c3c; color: #fff; border-color: #e74c3c; }
+@media (hover: hover) {
 .popup-route-btn.in-route:hover { background: #c0392b; border-color: #c0392b; }
+}
 
 /* Toast notification */
 .toast {
@@ -284,9 +297,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   .legend-title { font-size: 11px; }
   .leaflet-control-zoom a { width: 36px; height: 36px; font-size: 16px; line-height: 36px; }
   /* Quick filters: scroll horizontally instead of wrapping */
-  #quickFilters { flex-wrap: nowrap !important; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
-  #quickFilters::-webkit-scrollbar { display: none; }
-  .qf-btn { flex-shrink: 0; font-size: 10px; padding: 2px 8px; }
+
   /* Compact filter pills text — keep emoji on tiny screens */
 }
 
@@ -305,8 +316,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   #sidebar { transform: translateY(65dvh); }
   #sidebar.open { transform: translateY(10dvh); }
   #sidebar.hidden { transform: translateY(100dvh); }
-  #quickFilters { padding: 2px 8px; gap: 3px; }
-  .qf-btn { font-size: 9px; padding: 1px 5px; }
+
   #sidebar .sidebar-content { padding: 6px; padding-bottom: calc(8px + var(--safe-bottom)); }
   #sidebar.open .sidebar-content { padding-bottom: calc(8px + var(--safe-bottom)); }
 }
@@ -327,7 +337,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   #filters select { max-width: 80px; }
   #filters #searchFilter { max-width: 90px; }
   #filters #count { font-size: 9px; }
-  #quickFilters { display: none; }
   #activeFilters { display: none; }
   /* Sidebar starts hidden in landscape to maximize map space */
   #sidebar { transform: translateY(100dvh); }
@@ -370,7 +379,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .filter-badge .badge-clear {
   cursor: pointer; opacity: 0.6; font-size: 13px; line-height: 1; margin-left: 2px;
 }
+@media (hover: hover) {
 .filter-badge .badge-clear:hover { opacity: 1; }
+}
 
 /* Category dot in list */
 .list-dot {
@@ -416,7 +427,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .popup-note-input { width: 100%; font-size: 12px; padding: 4px 6px; border: 1px solid #ddd; border-radius: 4px; resize: vertical; min-height: 40px; box-sizing: border-box; }
 .popup-note-input:focus { border-color: #3498db; outline: none; }
 .popup-visit-btn { display: inline-block; margin-top: 4px; padding: 2px 8px; font-size: 11px; border: 1px solid #27ae60; background: #fff; color: #27ae60; border-radius: 4px; cursor: pointer; transition: all 0.15s; }
+@media (hover: hover) {
 .popup-visit-btn:hover { background: #27ae60; color: #fff; }
+}
 .popup-visit-btn.visited { background: #27ae60; color: #fff; }
 .popup-visit-info { font-size: 11px; color: #888; margin-top: 2px; }
 
@@ -424,12 +437,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .saved-routes-section { margin-top: 12px; border-top: 1px solid #dee2e6; padding-top: 12px; }
 .saved-routes-heading { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
 .saved-route-item { display: flex; align-items: center; gap: 6px; padding: 6px 8px; border: 1px solid #dee2e6; border-radius: 4px; margin-bottom: 4px; background: #fff; font-size: 12px; }
+@media (hover: hover) {
 .saved-route-item:hover { background: #f1f3f5; }
+}
 .saved-route-name { flex: 1; font-weight: 500; cursor: pointer; }
+@media (hover: hover) {
 .saved-route-name:hover { color: #3498db; }
+}
 .saved-route-info { font-size: 11px; color: #888; }
 .saved-route-del { cursor: pointer; color: #e74c3c; font-size: 14px; background: none; border: none; padding: 2px 4px; }
+@media (hover: hover) {
 .saved-route-del:hover { color: #c0392b; }
+}
 .saved-actions { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
 .saved-empty { text-align: center; color: #999; padding: 20px; font-size: 12px; }
 .save-route-input { display: flex; gap: 6px; margin: 8px 0; }
@@ -487,21 +506,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 </div>
 
 <div id="offlineBanner" style="display:none;background:#e74c3c;color:#fff;text-align:center;padding:4px;font-size:12px;font-weight:500;">🌐 You are offline — map tiles may not load</div>
-<div id="quickFilters" style="display:flex;gap:4px;padding:4px 16px;background:var(--bg-alt);border-bottom:1px solid var(--border);flex-wrap:wrap;max-width:100%;">
-  <button class="qf-btn qf-active" data-qf="all" onclick="applyQuickFilter('all')">All</button>
-  <button class="qf-btn" data-qf="food" data-label="Food" data-emoji="🍔" onclick="applyQuickFilter('food')">🍔 Food</button>
-  <button class="qf-btn" data-qf="retail" data-label="Shopping" data-emoji="🛍" onclick="applyQuickFilter('retail')">🛍 Shopping</button>
-  <button class="qf-btn" data-qf="health" data-label="Health" data-emoji="🏥" onclick="applyQuickFilter('health')">🏥 Health</button>
-  <button class="qf-btn" data-qf="auto" data-label="Auto" data-emoji="🔧" onclick="applyQuickFilter('auto')">🔧 Auto</button>
-  <button class="qf-btn" data-qf="services" data-label="Services" data-emoji="📋" onclick="applyQuickFilter('services')">📋 Services</button>
-  <button class="qf-btn" data-qf="lodging" data-label="Lodging" data-emoji="🏨" onclick="applyQuickFilter('lodging')">🏨 Lodging</button>
-  <button class="qf-btn" data-qf="religion" data-label="Religion" data-emoji="⛪" onclick="applyQuickFilter('religion')">⛪ Religion</button>
-</div>
-<style>
-.qf-btn { padding: 2px 10px; border: 1px solid var(--border); border-radius: 14px; background: var(--bg); color: var(--text); font-size: 11px; cursor: pointer; transition: all 0.15s; }
-.qf-btn:hover { background: var(--hover-bg); }
-.qf-btn.qf-active { background: #2c3e50; color: #fff; border-color: #2c3e50; }
-</style>
+
 
 <div id="main">
   <div id="map"></div>
@@ -767,21 +772,6 @@ function saveSavedRoutes() {
 }
 
 // ============================================================
-// QUICK FILTERS
-// ============================================================
-var activeQuickFilter = 'all';
-function applyQuickFilter(qf) {
-  activeQuickFilter = qf;
-  document.querySelectorAll('.qf-btn').forEach(function(b) {
-    b.classList.toggle('qf-active', b.dataset.qf === qf);
-  });
-  // Clear other filter selects
-  if (qf !== 'all') {
-    document.getElementById('categoryFilter').value = '';
-  }
-  debouncedRefresh();
-}
-
 function updateFilterCounts() {
   var regionVal = document.getElementById('regionFilter').value;
   var townVal = document.getElementById('townFilter').value;
@@ -796,28 +786,6 @@ function updateFilterCounts() {
       if (!biz.name.toLowerCase().includes(searchVal) && !(biz.address || '').toLowerCase().includes(searchVal) && !(biz.town || '').toLowerCase().includes(searchVal) && !(biz.category || '').toLowerCase().includes(searchVal) && !(biz.phone || '').replace(/[^0-9]/g, '').includes(searchVal.replace(/[^0-9]/g, ''))) return false;
     }
     return true;
-  });
-  var qfMap = {
-    food: ['grocery', 'restaurant', 'food', 'bakery', 'butcher', 'convenience', 'deli', 'cafe'],
-    retail: ['retail', 'gift', 'hardware', 'clothing', 'furniture', 'florist', 'jewelry', 'sporting goods', 'books', 'music', 'electronics', 'discount', 'thrift', 'antique', 'pawn', 'vape', 'cannabis', 'dispensary'],
-    health: ['healthcare', 'dental', 'vet', 'pharmacy', 'medical', 'chiropractic', 'optical', 'therapy', 'wellness'],
-    auto: ['auto', 'repair', 'gas', 'tire', 'car', 'truck', 'garage', 'service station'],
-    services: ['services', 'bank', 'insurance', 'real estate', 'attorney', 'lawyer', 'accounting', 'financial', 'beauty', 'salon', 'barber', 'nail', 'laundry', 'dry cleaning', 'storage', 'utility', 'construction', 'plumbing', 'electrical'],
-    lodging: ['lodging', 'hotel', 'motel', 'inn', 'campground', 'cabin', 'resort', 'bed and breakfast'],
-    religion: ['religion', 'church', 'temple', 'fellowship', 'ministry', 'mission', 'catholic', 'baptist', 'methodist', 'presbyterian', 'lutheran', 'congregational', 'pentecostal', 'church of god', 'church of christ', 'salvation army']
-  };
-  document.querySelectorAll('.qf-btn').forEach(function(btn) {
-    var qf = btn.dataset.qf;
-    if (qf === 'all') {
-      btn.textContent = 'All (' + base.length + ')';
-    } else {
-      var cats = qfMap[qf] || [];
-      var count = base.filter(function(b) {
-        var c = (b.category || '').toLowerCase();
-        return cats.some(function(k) { return c.indexOf(k) !== -1; });
-      }).length;
-      btn.textContent = (btn.dataset.emoji || '') + ' ' + (btn.dataset.label || qf) + ' (' + count + ')';
-    }
   });
   var regionSel = document.getElementById('regionFilter');
   for (var i = 0; i < regionSel.options.length; i++) {
@@ -23581,21 +23549,7 @@ function getFilteredBusinesses() {
     }
     return true;
   });
-  if (activeQuickFilter === 'all') return result;
-  var qfMap = {
-    food: ['grocery', 'restaurant', 'food', 'bakery', 'butcher', 'convenience', 'deli', 'cafe'],
-    retail: ['retail', 'gift', 'hardware', 'clothing', 'furniture', 'florist', 'jewelry', 'sporting goods', 'books', 'music', 'electronics', 'discount', 'thrift', 'antique', 'pawn', 'vape', 'cannabis', 'dispensary'],
-    health: ['healthcare', 'dental', 'vet', 'pharmacy', 'medical', 'chiropractic', 'optical', 'therapy', 'wellness'],
-    auto: ['auto', 'repair', 'gas', 'tire', 'car', 'truck', 'garage', 'service station'],
-    services: ['services', 'bank', 'insurance', 'real estate', 'attorney', 'lawyer', 'accounting', 'financial', 'beauty', 'salon', 'barber', 'nail', 'laundry', 'dry cleaning', 'storage', 'utility', 'construction', 'plumbing', 'electrical'],
-    lodging: ['lodging', 'hotel', 'motel', 'inn', 'campground', 'cabin', 'resort', 'bed and breakfast'],
-    religion: ['religion', 'church', 'temple', 'fellowship', 'ministry', 'mission', 'catholic', 'baptist', 'methodist', 'presbyterian', 'lutheran', 'congregational', 'pentecostal', 'church of god', 'church of christ', 'salvation army']
-  };
-  var cats = qfMap[activeQuickFilter] || [];
-  return result.filter(function(b) {
-    var c = (b.category || '').toLowerCase();
-    return cats.some(function(k) { return c.indexOf(k) !== -1; });
-  });
+  return result;
 }
 
 function updateActiveFilterBadges() {
@@ -23647,10 +23601,6 @@ function resetFilters() {
   document.getElementById('townFilter').innerHTML = '<option value="">All Towns</option>';
   document.getElementById('categoryFilter').value = '';
   document.getElementById('searchFilter').value = '';
-  activeQuickFilter = 'all';
-  document.querySelectorAll('.qf-btn').forEach(function(b) {
-    b.classList.toggle('qf-active', b.dataset.qf === 'all');
-  });
   routeStops = [];
   updateRouteView();
   updateMap();
