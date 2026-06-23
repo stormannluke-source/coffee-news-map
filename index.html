@@ -147,6 +147,7 @@ body.fullscreen #fullscreenExit { display: block; }
 .route-stop-info { flex: 1; min-width: 0; }
 .route-stop-name { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .route-stop-addr { font-size: 11px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.route-stop-dist { font-size: 10px; color: #27ae60; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 1px; }
 .route-stop-handle {
   cursor: grab; color: #aaa; font-size: 16px; padding: 4px; user-select: none; flex-shrink: 0;
 }
@@ -516,6 +517,7 @@ body.fullscreen #fullscreenExit { display: block; }
           <button class="btn btn-primary" id="navigateBtn" onclick="openRouteInMaps()" disabled style="background:#27ae60;">📍 Navigate</button>
           <button class="btn btn-danger" id="clearRouteBtn" onclick="clearRoute()">✕ Clear</button>
           <button class="btn btn-outline" onclick="printRoute()" id="printRouteBtn" disabled style="color:#333;border-color:#aaa;">🖨 Print</button>
+          <button class="btn btn-outline" onclick="announceRoute()" id="announceBtn" disabled style="color:#333;border-color:#aaa;">🔊 Announce</button>
         </div>
         <div id="routeError"></div>
         <div id="routeSummary"></div>
@@ -639,6 +641,9 @@ let userLocationMarker = null;
 let userLat = null;
 let userLng = null;
 let routeStops = [];
+let routeLegData = [];   // OSRM leg data: [{distance, duration}] per leg (index i = leg from stop i to i+1)
+let routeTotalDist = 0;  // OSRM total distance in meters
+let routeTotalDur = 0;   // OSRM total duration in seconds
 let recentlyViewed = []; // [{ key, name, address, city, town, category, lat, lng, ts }] max 10
 let currentDetailBiz = null;
 let currentTab = 'browse';
@@ -23692,11 +23697,13 @@ function updateRouteView() {
   const optimizeBtn = document.getElementById('optimizeBtn');
   const navigateBtn = document.getElementById('navigateBtn');
   const printBtn = document.getElementById('printRouteBtn');
+  const announceBtn = document.getElementById('announceBtn');
 
   error.innerHTML = '';
   optimizeBtn.disabled = routeStops.length < 2;
   navigateBtn.disabled = routeStops.length < 2;
   printBtn.disabled = routeStops.length === 0;
+  announceBtn.disabled = routeStops.length === 0;
 
   // Update route stop markers on map
   routeLayer.clearLayers();
@@ -23744,6 +23751,17 @@ function updateRouteView() {
     html += '<div class="route-stop-info">';
     html += '<div class="route-stop-name">' + escapeHtml(stop.name) + '</div>';
     html += '<div class="route-stop-addr">' + escapeHtml(stop.address || stop.town) + '</div>';
+    // Show distance from previous stop
+    if (routeLegData.length > 0 && routeLegData[i - 1]) {
+      var leg = routeLegData[i - 1];
+      var legKm = (leg.distance / 1000).toFixed(1);
+      var legMin = Math.round(leg.duration / 60);
+      html += '<div class="route-stop-dist">▸ ' + legKm + ' km · ' + legMin + ' min</div>';
+    } else if (i > 0) {
+      var prev = routeStops[i - 1];
+      var d = distanceMiles(prev.lat, prev.lng, stop.lat, stop.lng);
+      html += '<div class="route-stop-dist">▸ ~' + d.toFixed(1) + ' mi (straight-line)</div>';
+    }
     html += '</div>';
     html += '<span class="route-stop-handle" draggable="false">⠿</span>';
     html += '<button class="route-stop-remove" onclick="removeRouteStop(' + i + ')" title="Remove stop">✕</button>';
@@ -23755,11 +23773,27 @@ function updateRouteView() {
   // Drag and drop handlers
   setupRouteDragDrop();
 
-  summary.innerHTML = '<div class="route-summary"><div class="route-summary-row"><span class="route-summary-label">Stops:</span><span class="route-summary-value">' + routeStops.length + '</span></div></div>';
+  var summaryHtml = '<div class="route-summary"><div class="route-summary-row"><span class="route-summary-label">Stops:</span><span class="route-summary-value">' + routeStops.length + '</span></div>';
+  if (routeTotalDist > 0) {
+    var totalKm = (routeTotalDist / 1000).toFixed(1);
+    var totalMin = Math.round(routeTotalDur / 60);
+    var totalH = Math.floor(totalMin / 60);
+    var timeStr = totalH > 0 ? totalH + 'h ' + (totalMin % 60) + 'min' : totalMin + 'min';
+    summaryHtml += '<div class="route-summary-row"><span class="route-summary-label">Total:</span><span class="route-summary-value">' + totalKm + ' km · ' + timeStr + '</span></div>';
+  }
+  summaryHtml += '</div>';
+  summary.innerHTML = summaryHtml;
+}
+
+function invalidateRouteData() {
+  routeLegData = [];
+  routeTotalDist = 0;
+  routeTotalDur = 0;
 }
 
 function removeRouteStop(idx) {
   routeStops.splice(idx, 1);
+  invalidateRouteData();
   updateRouteView();
   updateMap();
 }
@@ -23767,6 +23801,7 @@ function removeRouteStop(idx) {
 function clearRoute() {
   if (routeStops.length === 0) return;
   routeStops = [];
+  invalidateRouteData();
   if (routePolyline) { map.removeLayer(routePolyline); routePolyline = null; }
   updateRouteView();
   updateMap();
@@ -23789,17 +23824,63 @@ function openRouteInMaps() {
   var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   if (isIOS) {
-    // Apple Maps: saddr=origin&daddr=stop1&daddr=stop2&...&daddr=destination
+    // Apple Maps — opens native app in driving navigation mode (dirflg=d)
     var daddrParams = stops.map(function(s) { return s.lat + ',' + s.lng; }).join('&daddr=');
-    var appleUrl = 'https://maps.apple.com/?saddr=' + origin + '&daddr=' + daddrParams;
+    var appleUrl = 'https://maps.apple.com/?daddr=' + daddrParams + '&dirflg=d';
     window.open(appleUrl, '_blank');
   } else {
-    // Google Maps: supports waypoints
+    // Google Maps — dir_action=navigate triggers turn-by-turn navigation
     var googleUrl = 'https://www.google.com/maps/dir/?api=1&origin=' + origin + '&destination=' + dest;
     if (waypoints) googleUrl += '&waypoints=' + encodeURIComponent(waypoints);
-    googleUrl += '&travelmode=driving';
+    googleUrl += '&travelmode=driving&dir_action=navigate';
     window.open(googleUrl, '_blank');
   }
+}
+
+// ============================================================
+// ANNOUNCE ROUTE (Web Speech API)
+// ============================================================
+function announceRoute() {
+  if (routeStops.length === 0) return;
+  if (!window.speechSynthesis) {
+    showToast('Speech synthesis not supported in this browser', 'error');
+    return;
+  }
+
+  // Cancel any ongoing speech
+  window.speechSynthesis.cancel();
+
+  var text = 'Your route has ' + routeStops.length + ' stops. ';
+  routeStops.forEach(function(stop, i) {
+    text += 'Stop ' + (i + 1) + ': ' + stop.name + '. ';
+    if (i > 0 && routeLegData.length > 0 && routeLegData[i - 1]) {
+      var leg = routeLegData[i - 1];
+      var legKm = (leg.distance / 1000).toFixed(1);
+      var legMin = Math.round(leg.duration / 60);
+      text += legKm + ' kilometers, about ' + legMin + ' minutes from the previous stop. ';
+    } else if (i > 0) {
+      var prev = routeStops[i - 1];
+      var d = distanceMiles(prev.lat, prev.lng, stop.lat, stop.lng);
+      text += 'Approximately ' + d.toFixed(1) + ' miles from the previous stop. ';
+    }
+    if (stop.address) {
+      text += 'Located at ' + stop.address + '. ';
+    }
+  });
+
+  var utterance = new SpeechSynthesisUtterance(text);
+  utterance.rate = 0.85;
+  utterance.pitch = 1.0;
+  utterance.volume = 1.0;
+  utterance.onend = function() {
+    showToast('✅ Route announcement finished', 'success');
+  };
+  utterance.onerror = function(e) {
+    showToast('⚠ Speech error: ' + e.error, 'error');
+  };
+
+  window.speechSynthesis.speak(utterance);
+  showToast('🔊 Announcing route...', 'info');
 }
 
 // ============================================================
@@ -23835,6 +23916,7 @@ function setupRouteDragDrop() {
       const targetIdx = parseInt(this.dataset.index);
       const item = routeStops.splice(dragSrcIdx, 1)[0];
       routeStops.splice(targetIdx, 0, item);
+      invalidateRouteData();
       updateRouteView();
       updateMap();
       dragSrcIdx = null;
@@ -23881,7 +23963,10 @@ function optimizeRoute() {
     updateMap();
   }
 
+  invalidateRouteData();
+
   // Build coordinate string: lng,lat;lng,lat;...
+  const coordsStr = routeStops.map(function(s) { return s.lng + ',' + s.lat; }).join(';');
   const url = OSRM_BASE + coordsStr + '?overview=full&steps=true&geometries=geojson&annotations=distance,duration';
 
   var controller = new AbortController();
@@ -23925,6 +24010,11 @@ function displayOptimizedRoute(route, waypoints) {
   // Fit map to route bounds
   map.fitBounds(routePolyline.getBounds(), { padding: [50, 50] });
 
+  // Store OSRM data for per-stop display
+  routeTotalDist = route.distance;
+  routeTotalDur = route.duration;
+  routeLegData = route.legs || [];
+
   // Build summary
   const totalKm = (route.distance / 1000).toFixed(1);
   const totalMin = Math.round(route.duration / 60);
@@ -23958,6 +24048,9 @@ function displayOptimizedRoute(route, waypoints) {
 
   html += '</div>';
   document.getElementById('routeSummary').innerHTML = html;
+
+  // Refresh the route list to show per-stop distances
+  updateRouteView();
 
   showToast('Route optimized: ' + totalKm + ' km, ' + timeStr, 'success');
 }
