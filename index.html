@@ -529,8 +529,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
       <button class="btn btn-outline" id="routeBtn" onclick="toggleSidebar('route')">📍 Route</button>
       <button class="btn btn-outline" id="notesBtn" onclick="toggleSidebar('notes')">📝 Notes</button>
       <button class="btn btn-outline" id="filterToggleBtn" onclick="toggleFilterPopover()" style="display:none;">🔍 Filter</button>
-      <button class="btn btn-outline" title="Download regional CSV" onclick="showCSVMenu()">📥 CSV</button>
-      <div id="csvMenu" style="display:none;position:absolute;top:100%;right:0;background:#fff;border:1px solid #dee2e6;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,0.15);z-index:1001;padding:4px;">
+      <button class="btn btn-outline" title="Download regional CSV" onclick="showCSVMenu(this)">📥 CSV</button>
+      <div id="csvMenu" style="display:none;background:#fff;border:1px solid #dee2e6;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,0.15);padding:4px;">
         <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Presque Isle Area')">📥 Presque Isle Area</button>
         <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Houlton Region')">📥 Houlton Region</button>
         <button class="btn" style="display:block;width:100%;text-align:left;background:none;color:#333;border:none;padding:6px 10px;font-size:12px;" onclick="downloadCSV('Millinocket Area')">📥 Millinocket Area</button>
@@ -23830,9 +23830,19 @@ function copyToClipboard(text, successMsg) {
   }
 }
 
-function showCSVMenu() {
+function showCSVMenu(btn) {
   var menu = document.getElementById('csvMenu');
-  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+    return;
+  }
+  // Position fixed relative to viewport so it overlays everything (map legend, etc.)
+  var rect = btn.getBoundingClientRect();
+  menu.style.position = 'fixed';
+  menu.style.zIndex = '10000';
+  menu.style.top = (rect.bottom + 2) + 'px';
+  menu.style.left = (rect.right - 200) + 'px';
+  menu.style.display = 'block';
   // Close filter popover if open on mobile so CSV menu isn't overlapped
   var filters = document.getElementById('filters');
   if (filters.classList.contains('active')) {
