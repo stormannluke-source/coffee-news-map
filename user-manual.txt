@@ -133,7 +133,8 @@ To remove a visit: tap ✕ Remove next to the date.
 
 ROUTE PLANNER (📍 Route)
 ------------------------
-1. Tap dots on the map (or use the detail card) to add stops
+1. Pick a preloaded route from the 📋 Preloaded Routes section,
+   or tap dots on the map to add your own stops
 2. Stops appear in the Route tab
 3. Slide the ⠿ handle up or down to change the order
 4. Tap 🗺 Optimize to reorder stops for the shortest drive
@@ -143,6 +144,14 @@ ROUTE PLANNER (📍 Route)
 7. Tap 🔊 Announce to hear stops read out loud (name + address)
 8. Tap ✕ Clear to remove all stops
 
+
+PRELOADED ROUTES
+-----------------
+The Route tab has a "Preloaded Routes" section with routes ready to go:
+  • One route per town — tap a town name to load the top 15 businesses
+  • Corridor routes — multi-town trips like "Presque Isle to Caribou"
+  • Tap any route to load it instantly, then add/remove stops as needed
+  • No manual setup needed
 
 SAVED ROUTES
 ------------
