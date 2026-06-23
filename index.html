@@ -405,7 +405,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 /* Popup notes */
 .popup-note-section { margin-top: 6px; }
 .popup-note-label { font-size: 11px; font-weight: 600; color: #888; margin-bottom: 2px; }
-.popup-note-text { font-size: 12px; padding: 4px 8px; background: #fef9e7; border-radius: 4px; border-left: 2px solid #f39c12; margin-bottom: 4px; }
 .popup-note-input { width: 100%; font-size: 12px; padding: 4px 6px; border: 1px solid #ddd; border-radius: 4px; resize: vertical; min-height: 40px; box-sizing: border-box; }
 .popup-note-input:focus { border-color: #3498db; outline: none; }
 .popup-visit-btn { display: inline-block; margin-top: 4px; padding: 2px 8px; font-size: 11px; border: 1px solid #27ae60; background: #fff; color: #27ae60; border-radius: 4px; cursor: pointer; transition: all 0.15s; }
@@ -23699,10 +23698,9 @@ function buildPopup(biz) {
 
       p += '</div>';
 
-  // Notes & Visit section
+  // Visit section
   p += '<div class="popup-note-section">';
   p += '<div id="popup-visit-' + key + '"></div>';
-  p += '<div id="popup-note-' + key + '"></div>';
   p += '</div>';
 
   p += '</div>';
@@ -24686,32 +24684,6 @@ function populatePopupNotes(key) {
     }
     visitDiv.innerHTML = vhtml;
   }
-
-  // Note info
-  var noteDiv = document.getElementById('popup-note-' + key);
-  if (noteDiv) {
-    var note = NOTES[key] ? NOTES[key].text : '';
-    var nhtml = '<div class="popup-note-section-inner">';
-    if (note) {
-      nhtml += '<div class="popup-note-label">Note:</div>';
-      nhtml += '<div class="popup-note-text">' + escapeHtml(note) + '</div>';
-    }
-    nhtml += '<textarea class="popup-note-input" id="note-input-' + key + '" placeholder="Add a note about this business..." oninput="autoSaveNote(\'' + key + '\')">' + escapeHtml(note) + '</textarea>';
-    nhtml += '</div>';
-    noteDiv.innerHTML = nhtml;
-  }
-}
-
-function autoSaveNote(key) {
-  var val = document.getElementById('note-input-' + key).value;
-  if (val.trim()) {
-    NOTES[key] = { text: val.trim(), updated: new Date().toISOString() };
-  } else {
-    delete NOTES[key];
-  }
-  saveNotes();
-  updateMarkerIndicator(key);
-  updateNotesList();
 }
 
 function toggleVisit(key) {
