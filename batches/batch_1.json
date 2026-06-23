@@ -1,0 +1,874 @@
+[
+  {
+    "name": "Aroostook Trusses Inc",
+    "town": "Presque Isle",
+    "phone": "(207) 768-5817",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "AutoZone",
+    "town": "Presque Isle",
+    "phone": "(207) 554-2136",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Big Cheese Pizza",
+    "town": "Presque Isle",
+    "phone": "(207) 764-5500",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bike Board and Ski",
+    "town": "Presque Isle",
+    "phone": "(207) 769-2453",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bowers Funeral Home and Cremation Services",
+    "town": "Presque Isle",
+    "phone": "(207) 760-8088",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Burger King",
+    "town": "Presque Isle",
+    "phone": "(207) 769-8231",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Cafe Desmoiselles",
+    "town": "Presque Isle",
+    "phone": "(207) 760-7587",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Carney Family Beverage",
+    "town": "Presque Isle",
+    "phone": "(207) 551-2246",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Carroll's Auto Sales (Chevrolet/GMC)",
+    "town": "Presque Isle",
+    "phone": "(888) 597-2531",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Chopsticks",
+    "town": "Presque Isle",
+    "phone": "(207) 764-6633",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Circle K Pizza & Deli",
+    "town": "Presque Isle",
+    "phone": "(207) 764-2313",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "City Drug Store",
+    "town": "Presque Isle",
+    "phone": "(207) 764-4424",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Coffee News of Aroostook",
+    "town": "Presque Isle",
+    "phone": "(207) 290-1212",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Cook Florist Inc",
+    "town": "Presque Isle",
+    "phone": "(207) 769-2731",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Country Collectibles",
+    "town": "Presque Isle",
+    "phone": "(207) 764-8060",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Domino's Pizza",
+    "town": "Presque Isle",
+    "phone": "(207) 554-5154",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Duncan-Graves Funeral Home",
+    "town": "Presque Isle",
+    "phone": "(207) 764-0625",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dunkin'",
+    "town": "Presque Isle",
+    "phone": "(207) 762-3825",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Fastenal Company",
+    "town": "Presque Isle",
+    "phone": "(207) 762-0000",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Freddy's Brew Pub",
+    "town": "Presque Isle",
+    "phone": "(207) 540-1445",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Freshies Presque Isle",
+    "town": "Presque Isle",
+    "phone": "(207) 769-0871",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gary's Furniture & Appliance",
+    "town": "Presque Isle",
+    "phone": "(207) 764-4016",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gentile Hall - UMPI",
+    "town": "Presque Isle",
+    "phone": "(207) 768-9772",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gills Point S Tire & Auto (formerly Hogan Tire)",
+    "town": "Presque Isle",
+    "phone": "(207) 764-1800",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Governor's Restaurant & Bakery",
+    "town": "Presque Isle",
+    "phone": "(207) 769-2274",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gram Russo's Italian Restaurant",
+    "town": "Presque Isle",
+    "phone": "(207) 764-3321",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Graves' Shop 'n Save",
+    "town": "Presque Isle",
+    "phone": "(207) 769-2181",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Griffeth Honda",
+    "town": "Presque Isle",
+    "phone": "(207) 769-2761",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hampton Inn Presque Isle",
+    "town": "Presque Isle",
+    "phone": "(207) 760-9292",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Hedrich Vending",
+    "town": "Presque Isle",
+    "phone": "(207) 764-3747",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hotham's Veterinary Services",
+    "town": "Presque Isle",
+    "phone": "(207) 768-7387",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Houlton Farms Dairy Bar",
+    "town": "Presque Isle",
+    "phone": "(207) 764-6200",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hub Coffee",
+    "town": "Presque Isle",
+    "phone": "(207) 554-4243",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Irish Setter Pub",
+    "town": "Presque Isle",
+    "phone": "(207) 764-5400",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Trust Company",
+    "town": "Presque Isle",
+    "phone": "(207) 764-8000",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "KeyBank",
+    "town": "Presque Isle",
+    "phone": "(207) 764-3151",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Levasseur Dentistry",
+    "town": "Presque Isle",
+    "phone": "(207) 764-3040",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Lowe's Home Improvement",
+    "town": "Presque Isle",
+    "phone": "(207) 554-3030",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Machias Savings Bank",
+    "town": "Presque Isle",
+    "phone": "(207) 768-3222",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mai Tai Restaurant",
+    "town": "Presque Isle",
+    "phone": "(207) 764-4426",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mainely Mexican",
+    "town": "Presque Isle",
+    "phone": "(207) 760-7520",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "McCluskey's RV Center",
+    "town": "Presque Isle",
+    "phone": "(207) 762-1721",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "McDonald's",
+    "town": "Presque Isle",
+    "phone": "(207) 764-1383",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mom and Me Pizzeria",
+    "town": "Presque Isle",
+    "phone": "(207) 540-1300",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "NAPA Auto Parts - Coastal Auto Parts",
+    "town": "Presque Isle",
+    "phone": "(207) 764-5553",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Norstate Federal Credit Union",
+    "town": "Presque Isle",
+    "phone": "(207) 762-3811",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "North Country Auto",
+    "town": "Presque Isle",
+    "phone": "(207) 762-6222",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northern Light AR Gould Hospital",
+    "town": "Presque Isle",
+    "phone": "(207) 768-4000",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northern Lights Motel",
+    "town": "Presque Isle",
+    "phone": "(207) 764-3473",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northern Maine Motors",
+    "town": "Presque Isle",
+    "phone": "(207) 540-6050",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Oriental Pearl",
+    "town": "Presque Isle",
+    "phone": "(207) 762-3268",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Overhead Door Co of Presque Isle",
+    "town": "Presque Isle",
+    "phone": "(207) 554-9044",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Parkhurst Siding Pub",
+    "town": "Presque Isle",
+    "phone": "(207) 769-7431",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pat's Pizza of Presque Isle",
+    "town": "Presque Isle",
+    "phone": "(207) 764-0367",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pepsi Bottling Group",
+    "town": "Presque Isle",
+    "phone": "(207) 760-3000",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Percy's Auto Sales Inc (Chrysler/Dodge/Jeep/Ram)",
+    "town": "Presque Isle",
+    "phone": "(207) 764-4493",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pine Village Inc",
+    "town": "Presque Isle",
+    "phone": "(207) 764-1674",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pizza Box",
+    "town": "Presque Isle",
+    "phone": "(207) 760-8344",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pizza Hut",
+    "town": "Presque Isle",
+    "phone": "(207) 762-8651",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Presque Isle Animal Hospital",
+    "town": "Presque Isle",
+    "phone": "(207) 764-6392",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Presque Isle Hotel",
+    "town": "Presque Isle",
+    "phone": "(207) 764-6504",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Presque Isle Inn and Convention Center",
+    "town": "Presque Isle",
+    "phone": "(207) 764-6504",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Presque Isle International Airport",
+    "town": "Presque Isle",
+    "phone": "(207) 764-2550",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Presque Isle Memorial Works",
+    "town": "Presque Isle",
+    "phone": "(207) 762-1521",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Presque Isle Pharmacy",
+    "town": "Presque Isle",
+    "phone": "(207) 760-9100",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Presque Isle Rehab and Nursing Center",
+    "town": "Presque Isle",
+    "phone": "(207) 764-0145",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Quiznos Sub",
+    "town": "Presque Isle",
+    "phone": "(207) 769-2700",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rathbun Lumber Company",
+    "town": "Presque Isle",
+    "phone": "(207) 764-4444",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Riverside Inn Restaurant",
+    "town": "Presque Isle",
+    "phone": "(207) 764-1447",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rob's Pit Stop",
+    "town": "Presque Isle",
+    "phone": "(207) 764-5447",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rodney's at 436 Main",
+    "town": "Presque Isle",
+    "phone": "(207) 768-5321",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rosella's Pizzeria",
+    "town": "Presque Isle",
+    "phone": "(207) 764-6644",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ruby Tuesday",
+    "town": "Presque Isle",
+    "phone": "(207) 764-2874",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "S.W. Collins Co.",
+    "town": "Presque Isle",
+    "phone": "(207) 764-2720",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Save A Lot",
+    "town": "Presque Isle",
+    "phone": "(207) 760-9003",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Shirley's & Harold's",
+    "town": "Presque Isle",
+    "phone": "(207) 764-5174",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Shogun Japanese Restaurant",
+    "town": "Presque Isle",
+    "phone": "(207) 540-1190",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "St. Apollonia Dental Clinic",
+    "town": "Presque Isle",
+    "phone": "(207) 554-5045",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Star City IGA",
+    "town": "Presque Isle",
+    "phone": "(207) 762-5151",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Steaks N' Stuff",
+    "town": "Presque Isle",
+    "phone": "(207) 762-2200",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Subway",
+    "town": "Presque Isle",
+    "phone": "(207) 764-7225",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "SureStay By Best Western Presque Isle",
+    "town": "Presque Isle",
+    "phone": "(207) 769-0111",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "TD Bank",
+    "town": "Presque Isle",
+    "phone": "(207) 764-3791",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Taco Bell / KFC",
+    "town": "Presque Isle",
+    "phone": "(207) 764-0734",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Teresa's Corner Cafe & Bakery",
+    "town": "Presque Isle",
+    "phone": "(207) 540-1500",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The County Glass Shop",
+    "town": "Presque Isle",
+    "phone": "(207) 764-0657",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The Kitchen & Bath Shop LLC",
+    "town": "Presque Isle",
+    "phone": "(207) 769-9990",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The Maple Pig",
+    "town": "Presque Isle",
+    "phone": "(207) 520-2548",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The Northeastland Hotel",
+    "town": "Presque Isle",
+    "phone": "(207) 768-5321",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "The Sandwich Shop",
+    "town": "Presque Isle",
+    "phone": "(207) 764-3797",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The Sidewalk Cafe",
+    "town": "Presque Isle",
+    "phone": "(207) 768-5321",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Theriault Equipment",
+    "town": "Presque Isle",
+    "phone": "(207) 764-4405",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Tim Hortons",
+    "town": "Presque Isle",
+    "phone": "(207) 760-9158",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "TimeOut Sports Bar & Restaurant (Presque Isle Hotel)",
+    "town": "Presque Isle",
+    "phone": "(207) 776-7835",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Tractor Supply",
+    "town": "Presque Isle",
+    "phone": "(207) 764-9900",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "University of Maine at Presque Isle (UMPI)",
+    "town": "Presque Isle",
+    "phone": "(207) 768-9400",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "VIP Tires & Service",
+    "town": "Presque Isle",
+    "phone": "(207) 764-3181",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Vickie's Hometown Pizza",
+    "town": "Presque Isle",
+    "phone": "(207) 762-6262",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Walgreens",
+    "town": "Presque Isle",
+    "phone": "(207) 764-5221",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Walmart Pharmacy",
+    "town": "Presque Isle",
+    "phone": "(207) 764-6935",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Walmart Supercenter",
+    "town": "Presque Isle",
+    "phone": "(207) 764-8485",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "White Smiles Family Dentistry",
+    "town": "Presque Isle",
+    "phone": "(207) 760-7216",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Winnie's Restaurant & Dairy",
+    "town": "Presque Isle",
+    "phone": "(207) 769-4971",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Cafe Sorpresso",
+    "town": "Washburn",
+    "phone": "(207) 455-8096",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Country Farms Market",
+    "town": "Washburn",
+    "phone": "(207) 455-8057",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Krispy Krunchy Chicken",
+    "town": "Washburn",
+    "phone": "(207) 455-8200",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "USPS Washburn Post Office",
+    "town": "Washburn",
+    "phone": "(207) 455-4987",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Washburn Coffee Shop",
+    "town": "Washburn",
+    "phone": "(207) 455-4062",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Washburn Family Practice",
+    "town": "Washburn",
+    "phone": "(207) 455-4750",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  }
+]

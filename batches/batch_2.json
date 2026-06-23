@@ -1,0 +1,874 @@
+[
+  {
+    "name": "Washburn Food Mart",
+    "town": "Washburn",
+    "phone": "(207) 455-8057",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Washburn Memorial Public Library",
+    "town": "Washburn",
+    "phone": "(207) 455-4814",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Washburn Post Office",
+    "town": "Washburn",
+    "phone": "(207) 455-4987",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Washburn Public Library",
+    "town": "Washburn",
+    "phone": "(207) 455-4814",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Washburn Recreation",
+    "town": "Washburn",
+    "phone": "(207) 455-4959",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Washburn Schools",
+    "town": "Washburn",
+    "phone": "(207) 455-4501",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Washburn Town Office",
+    "town": "Washburn",
+    "phone": "(207) 455-4111",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "White's Service",
+    "town": "Washburn",
+    "phone": "(207) 455-8345",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Advance Auto Parts",
+    "town": "Caribou",
+    "phone": "(207) 492-0027",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Affordable Finds",
+    "town": "Caribou",
+    "phone": "(207) 492-9555",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook Savings & Loan",
+    "town": "Caribou",
+    "phone": "(207) 498-8726",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Beaulieu's Garage & Body Shop",
+    "town": "Caribou",
+    "phone": "(207) 492-2471",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Best Western Caribou Inn",
+    "town": "Caribou",
+    "phone": "(207) 498-3733",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Big Cheese Pizza",
+    "town": "Caribou",
+    "phone": "(207) 493-3030",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Big Cheese Pizza (Caribou)",
+    "town": "Caribou",
+    "phone": "(207) 493-3030",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Brambleberry Market",
+    "town": "Caribou",
+    "phone": "(207) 498-8000",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Burger Boy",
+    "town": "Caribou",
+    "phone": "(207) 498-3139",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Burger King",
+    "town": "Caribou",
+    "phone": "(207) 498-3500",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "CARQUEST Auto Parts",
+    "town": "Caribou",
+    "phone": "(207) 498-6573",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "CITGO",
+    "town": "Caribou",
+    "phone": "(207) 498-2417",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Area Chamber of Commerce",
+    "town": "Caribou",
+    "phone": "(207) 498-6156",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Automotive Repair Services",
+    "town": "Caribou",
+    "phone": "(207) 498-4141",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Bowl-A-Drome",
+    "town": "Caribou",
+    "phone": "(207) 498-3386",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Bowl-O-Drome",
+    "town": "Caribou",
+    "phone": "(207) 498-3386",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Country Club",
+    "town": "Caribou",
+    "phone": "(207) 498-2561",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Dental",
+    "town": "Caribou",
+    "phone": "(207) 498-2531",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Eye Care P.A.",
+    "town": "Caribou",
+    "phone": "(207) 498-2538",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Family Medicine",
+    "town": "Caribou",
+    "phone": "(207) 498-3141",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Fire Department",
+    "town": "Caribou",
+    "phone": "(207) 493-4261",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Florist & Greenhouse",
+    "town": "Caribou",
+    "phone": "(207) 498-2296",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Ford Lincoln",
+    "town": "Caribou",
+    "phone": "(207) 498-3100",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Inn & Convention Center",
+    "town": "Caribou",
+    "phone": "(207) 498-3733",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Laundry & Dry Cleaning",
+    "town": "Caribou",
+    "phone": "(207) 498-6144",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Parks & Recreation Department",
+    "town": "Caribou",
+    "phone": "(207) 493-4224",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Pharmacy",
+    "town": "Caribou",
+    "phone": "(207) 498-8735",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Police Department",
+    "town": "Caribou",
+    "phone": "(207) 493-4201",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Public Library",
+    "town": "Caribou",
+    "phone": "(207) 493-4214",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Recreation Department",
+    "town": "Caribou",
+    "phone": "(207) 493-4224",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Rehab & Nursing Center",
+    "town": "Caribou",
+    "phone": "(207) 498-3102",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Save-a-Lot",
+    "town": "Caribou",
+    "phone": "(207) 498-2600",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Sub Shop",
+    "town": "Caribou",
+    "phone": "(207) 498-6021",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Theater",
+    "town": "Caribou",
+    "phone": "(207) 493-3013",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Town Office",
+    "town": "Caribou",
+    "phone": "(207) 493-3324",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Caribou Veterinary Clinic",
+    "town": "Caribou",
+    "phone": "(207) 498-3873",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Cary Medical Center",
+    "town": "Caribou",
+    "phone": "(207) 498-3111",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Cindy's Sub Shop",
+    "town": "Caribou",
+    "phone": "(207) 498-2525",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Circle K / Irving Oil",
+    "town": "Caribou",
+    "phone": "(207) 498-6474",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Clukey's Parts & Equipment",
+    "town": "Caribou",
+    "phone": "(207) 498-2707",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "County Sports Inc.",
+    "town": "Caribou",
+    "phone": "(207) 492-6072",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Crown Veterinary Services",
+    "town": "Caribou",
+    "phone": "(207) 498-2941",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "David Soucy Attorney",
+    "town": "Caribou",
+    "phone": "(207) 493-3144",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dollar General",
+    "town": "Caribou",
+    "phone": "(207) 401-5223",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dollar Tree",
+    "town": "Caribou",
+    "phone": "(207) 498-2010",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dunkin'",
+    "town": "Caribou",
+    "phone": "(207) 498-2032",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Evergreen Lanes",
+    "town": "Caribou",
+    "phone": "(207) 498-8687",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Evergreen Lanes featuring The Rendezvous Restaurant",
+    "town": "Caribou",
+    "phone": "(207) 498-8687",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Family Dental Care Caribou",
+    "town": "Caribou",
+    "phone": "(207) 492-4841",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Family Dollar",
+    "town": "Caribou",
+    "phone": "(207) 760-4219",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Frederick's Southside Restaurant",
+    "town": "Caribou",
+    "phone": "(207) 498-3464",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Frontier Pharmacy",
+    "town": "Caribou",
+    "phone": "(207) 493-7771",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gagnon's Auto & RV Sales Inc.",
+    "town": "Caribou",
+    "phone": "(888) 621-8937",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gifts Galore",
+    "town": "Caribou",
+    "phone": "(207) 492-2394",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gills Point S Tire & Auto",
+    "town": "Caribou",
+    "phone": "(207) 492-1500",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Greenhouse Restaurant",
+    "town": "Caribou",
+    "phone": "(207) 498-3733",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Griffeth Ford",
+    "town": "Caribou",
+    "phone": "(888) 426-6143",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Haney's",
+    "town": "Caribou",
+    "phone": "(207) 492-1323",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Haney's Building Specialties",
+    "town": "Caribou",
+    "phone": "(207) 492-1323",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hannaford Supermarket & Pharmacy",
+    "town": "Caribou",
+    "phone": "(207) 498-8824",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Heidi Silver Attorney",
+    "town": "Caribou",
+    "phone": "(207) 496-3792",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Highway Tire Inc.",
+    "town": "Caribou",
+    "phone": "(207) 496-5843",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Jade Palace Restaurant",
+    "town": "Caribou",
+    "phone": "(207) 498-3648",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Trust Company",
+    "town": "Caribou",
+    "phone": "(207) 498-3131",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "KeyBank",
+    "town": "Caribou",
+    "phone": "(207) 492-2151",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Lancaster-Morgan Funeral Home",
+    "town": "Caribou",
+    "phone": "(207) 492-2171",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Leo & Sons CITGO",
+    "town": "Caribou",
+    "phone": "(207) 498-3425",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Machias Savings Bank",
+    "town": "Caribou",
+    "phone": "(207) 498-6014",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Maine Veterans' Homes - Caribou",
+    "town": "Caribou",
+    "phone": "(207) 498-6074",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Matthew Hunter Attorney",
+    "town": "Caribou",
+    "phone": "(207) 492-2138",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "McDonald's",
+    "town": "Caribou",
+    "phone": "(207) 498-2181",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mike's Quik Stop & Deli",
+    "town": "Caribou",
+    "phone": "(207) 498-3790",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mobil / On the Run",
+    "town": "Caribou",
+    "phone": "(207) 498-3655",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Monica's Scandinavian Imports",
+    "town": "Caribou",
+    "phone": "(207) 493-4600",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Neale Adams Attorney",
+    "town": "Caribou",
+    "phone": "(207) 498-2557",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "North Country Animal Hospital",
+    "town": "Caribou",
+    "phone": "(207) 492-4651",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Northeastern Supply Co",
+    "town": "Caribou",
+    "phone": "(207) 496-3011",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northern Light Primary Care - Caribou",
+    "town": "Caribou",
+    "phone": "(207) 498-3476",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northern Light Walk-In Care - Caribou",
+    "town": "Caribou",
+    "phone": "(207) 498-3502",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northern Maine Brewing Company",
+    "town": "Caribou",
+    "phone": "(207) 492-2185",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northern Maine Dental",
+    "town": "Caribou",
+    "phone": "(207) 492-9521",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northern Maine General",
+    "town": "Caribou",
+    "phone": "(207) 492-1036",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Noyes Flower & Plant Shoppe",
+    "town": "Caribou",
+    "phone": "(207) 498-2296",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Noyes Flower and Plant Shoppe",
+    "town": "Caribou",
+    "phone": "(207) 498-2296",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Nylander Museum",
+    "town": "Caribou",
+    "phone": "(207) 493-4209",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Old Iron Inn Bed & Breakfast",
+    "town": "Caribou",
+    "phone": "(207) 492-4766",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "On the Run",
+    "town": "Caribou",
+    "phone": "(207) 498-3655",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Optix",
+    "town": "Caribou",
+    "phone": "(207) 493-3329",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Par & Grill",
+    "town": "Caribou",
+    "phone": "(207) 493-7000",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Par & Grill Restaurant",
+    "town": "Caribou",
+    "phone": "(207) 492-0988",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pines Dental",
+    "town": "Caribou",
+    "phone": "(207) 498-1314",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pines Health Services - Caribou Health Center",
+    "town": "Caribou",
+    "phone": "(207) 498-2356",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pines Health Services Caribou",
+    "town": "Caribou",
+    "phone": "(207) 498-2356",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pizza Hut",
+    "town": "Caribou",
+    "phone": "(207) 498-8523",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Plourde Furniture Co.",
+    "town": "Caribou",
+    "phone": "(207) 496-3521",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Plourde Furniture Company",
+    "town": "Caribou",
+    "phone": "(207) 496-3521",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Priority Tractor & Equipment",
+    "town": "Caribou",
+    "phone": "(207) 498-2549",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Reno's Family Restaurant",
+    "town": "Caribou",
+    "phone": "(207) 496-5331",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Richard Solman Attorney",
+    "town": "Caribou",
+    "phone": "(207) 496-3031",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rite Aid / Walgreens Pharmacy",
+    "town": "Caribou",
+    "phone": "(207) 498-8735",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ruska Coffee Co.",
+    "town": "Caribou",
+    "phone": "(207) 493-1616",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  }
+]

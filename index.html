@@ -17,7 +17,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Coffee News Map">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%232c3e50'/%3E%3Ctext x='96' y='130' font-size='120' text-anchor='middle' fill='%23fff'%3E☕%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="192x192" href="icon-192.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e50'/%3E%3Ctext x='16' y='24' font-size='22' text-anchor='middle' fill='%23fff'%3E☕%3C/text%3E%3C/svg%3E">
 <style>
 :root {
@@ -87,9 +88,9 @@ body.fullscreen #header, body.fullscreen #quickFilters, body.fullscreen #sidebar
 body.fullscreen #map { width: 100% !important; display: block !important; }
 body.fullscreen #fullscreenExit { display: block; }
 #fullscreenExit {
-  display: none; position: fixed; top: calc(8px + var(--safe-top, 0px)); right: 12px; z-index: 10000;
-  background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 6px;
-  padding: 8px 14px; font-size: 14px; cursor: pointer;
+  display: none; position: fixed; bottom: calc(16px + var(--safe-bottom, 0px)); right: calc(12px + var(--safe-right, 0px)); z-index: 10000;
+  background: rgba(0,0,0,0.7); color: #fff; border: none; border-radius: 6px;
+  padding: 10px 16px; font-size: 14px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 #map.has-sidebar { flex: none; width: calc(100% - 380px); }
 
@@ -185,6 +186,13 @@ body.fullscreen #fullscreenExit { display: block; }
   border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
+/* User location marker */
+.user-loc-marker {
+  width: 18px; height: 18px; border-radius: 50%;
+  background: #4285f4; border: 3px solid #fff;
+  box-shadow: 0 0 0 2px rgba(66,133,244,0.4), 0 1px 4px rgba(0,0,0,0.4);
+}
+
 /* Legend */
 .legend {
   background: var(--card-bg); padding: 10px 14px; border-radius: 6px;
@@ -230,15 +238,16 @@ body.fullscreen #fullscreenExit { display: block; }
   #sidebar { display: none !important; }
   #map.has-sidebar { width: 100% !important; flex: none !important; }
   #main { display: block !important; height: auto !important; }
-  #map { height: 500px !important; width: 100% !important; page-break-after: always; }
+  #map { display: none !important; }
+  #printContainer { display: block !important; }
   .print-header {
-    display: block !important; text-align: center; padding: 20px 0 10px; font-size: 18px; font-weight: 600;
+    display: block !important; text-align: center; padding: 12px 0 10px; font-size: 18px; font-weight: 600;
   }
   .print-route-table {
-    display: block !important; width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 20px;
+    display: table !important; width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 12px; table-layout: fixed;
   }
   .print-route-table th, .print-route-table td {
-    border: 1px solid #333; padding: 4px 8px; text-align: left;
+    border: 1px solid #333; padding: 4px 8px; text-align: left; word-wrap: break-word; overflow-wrap: break-word;
   }
   .print-route-table th { background: #f0f0f0 !important; color: #000 !important; }
   .popup-route-btn { display: none !important; }
@@ -251,7 +260,7 @@ body.fullscreen #fullscreenExit { display: block; }
   .route-actions { display: none !important; }
 }
 
-.print-header, .print-route-table { display: none; }
+#printContainer { display: none; }
 
 @media (max-width: 700px) {
   #header { padding: calc(4px + var(--safe-top)) 10px 4px 10px; }
@@ -273,7 +282,8 @@ body.fullscreen #fullscreenExit { display: block; }
   /* Drag handle — real div, not pseudo-element (needs touch-action for iOS) */
   .drag-handle { width: 36px; height: 8px; background: #ccc; border-radius: 4px; margin: 8px auto 6px auto; flex-shrink: 0; touch-action: none; }
   #sidebar.open .drag-handle { display: none; }
-  .sidebar-tabs { touch-action: none; }
+  /* pan-y lets vertical drag work while not blocking Leaflet's own touch handlers */
+  .sidebar-tabs { touch-action: pan-y; }
   #sidebar:not(.open) .sidebar-content { flex: 1; overflow-y: auto; }
   #sidebar.open .sidebar-content { overflow-y: auto; }
   .sidebar-tab { font-size: 11px; padding: 10px 8px; }
@@ -323,19 +333,28 @@ body.fullscreen #fullscreenExit { display: block; }
   .header-left { gap: 4px; }
   .header-actions { gap: 2px; }
   .header-actions .btn { font-size: 8px; padding: 2px 5px; min-width: 28px; }
-  #filters { gap: 2px; overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  /* overflow-x visible kept as auto for scroll; the native select picker overlays so it isn't clipped */
+  #filters { gap: 2px; overflow-x: auto; overflow-y: visible; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
   #filters::-webkit-scrollbar { display: none; }
   #filters label { display: none; }
-  #filters select, #filters input { font-size: 8px; padding: 1px 3px; max-width: 70px; }
-  #filters select { max-width: 55px; }
-  #filters #searchFilter { max-width: 70px; }
-  #filters #count { font-size: 8px; }
+  #filters select, #filters input { font-size: 11px; padding: 2px 4px; max-width: 90px; }
+  #filters select { max-width: 80px; }
+  #filters #searchFilter { max-width: 90px; }
+  #filters #count { font-size: 9px; }
   #quickFilters { display: none; }
   #activeFilters { display: none; }
   /* Sidebar starts hidden in landscape to maximize map space */
   #sidebar { transform: translateY(100dvh); }
   #sidebar.open { transform: translateY(8dvh); }
   #sidebar.hidden { transform: translateY(100dvh); }
+}
+
+/* iOS Safari auto-zooms text inputs with font-size < 16px on focus.
+   Force 16px on text inputs/textareas (selects don't trigger zoom). */
+@supports (-webkit-touch-callout: none) {
+  input[type="text"], input[type="search"], input:not([type]), textarea {
+    font-size: 16px !important;
+  }
 }
 
 /* Initial loading spinner */
@@ -471,6 +490,7 @@ body.fullscreen #fullscreenExit { display: block; }
   <div class="header-actions">
     <button class="btn btn-outline" id="toggleListBtn" onclick="toggleSidebar('browse')">📋 List</button>
     <button class="btn btn-outline" id="routeBtn" onclick="toggleSidebar('route')">📍 Route</button>
+    <button class="btn btn-outline" id="locateBtn" onclick="locateMe()" title="Find my location">📍 Locate</button>
     <button class="btn btn-outline" onclick="exportCSV()">⬇ CSV</button>
     <button class="btn btn-outline" id="fullscreenBtn" onclick="toggleFullscreen()" title="Full-screen map">🗺</button>
   </div>
@@ -563,7 +583,33 @@ body.fullscreen #fullscreenExit { display: block; }
 
 <div class="toast" id="toast"></div>
 
+<div id="printContainer">
+  <div class="print-header"></div>
+  <table class="print-route-table">
+    <thead><tr><th>#</th><th>Business</th><th>Address</th><th>Phone</th><th>Distance · Time</th></tr></thead>
+    <tbody id="printRouteBody"></tbody>
+  </table>
+</div>
+
 <script>
+// ============================================================
+// GLOBAL ERROR BOUNDARY
+// ============================================================
+// Surface uncaught errors as a toast instead of silently breaking the UI.
+window.addEventListener('error', function(e) {
+  try {
+    if (typeof showToast === 'function') {
+      showToast('Something went wrong — try reloading', 'error');
+    }
+    if (window.console && console.error) console.error('Uncaught error:', e.message, e.filename, e.lineno);
+  } catch(_) {}
+});
+window.addEventListener('unhandledrejection', function(e) {
+  try {
+    if (window.console && console.error) console.error('Unhandled promise rejection:', e.reason);
+  } catch(_) {}
+});
+
 // ============================================================
 // CONFIG
 // ============================================================
@@ -638,6 +684,7 @@ let coords = {};
 let USE_CLUSTERS = false; // Clustering disabled — shows all individual markers
 let map, markerClusterGroup, routeLayer, routePolyline;
 let userLocationMarker = null;
+let userLocationKnown = false;
 let userLat = null;
 let userLng = null;
 let routeStops = [];
@@ -655,27 +702,56 @@ let notesTabFilter = 'all'; // 'all' | 'notes' | 'visited'
 // Load saved data from localStorage
 function loadSavedData() {
   try {
-    const n = localStorage.getItem('coffeNews_notes');
-    if (n) NOTES = JSON.parse(n);
+    // Read from correct key; migrate from legacy typo'd key 'coffeNews_notes' if present
+    var n = localStorage.getItem('coffeeNews_notes');
+    if (!n) {
+      var legacy = localStorage.getItem('coffeNews_notes');
+      if (legacy) {
+        n = legacy;
+        try {
+          localStorage.setItem('coffeeNews_notes', legacy);
+          localStorage.removeItem('coffeNews_notes');
+        } catch(e) {}
+      }
+    }
+    if (n) {
+      var parsed = JSON.parse(n);
+      if (parsed && typeof parsed === 'object') NOTES = parsed;
+    }
   } catch(e) {}
   try {
     const v = localStorage.getItem('coffeeNews_visits');
-    if (v) VISITS = JSON.parse(v);
+    if (v) {
+      var pv = JSON.parse(v);
+      if (pv && typeof pv === 'object') VISITS = pv;
+    }
   } catch(e) {}
   try {
     const r = localStorage.getItem('coffeeNews_savedRoutes');
-    if (r) SAVED_ROUTES = JSON.parse(r);
+    if (r) {
+      var pr = JSON.parse(r);
+      if (pr && typeof pr === 'object') SAVED_ROUTES = pr;
+    }
   } catch(e) {}
 }
 
+var _quotaWarned = false;
+function handleStorageError(e) {
+  var isQuota = e && (e.name === 'QuotaExceededError' || e.code === 22 || e.code === 1014 ||
+    e.name === 'NS_ERROR_DOM_QUOTA_REACHED');
+  if (isQuota && !_quotaWarned) {
+    _quotaWarned = true;
+    if (typeof showToast === 'function') showToast('Storage full — changes may not be saved', 'error');
+  }
+}
 function saveNotes() {
-  try { localStorage.setItem('coffeeNews_notes', JSON.stringify(NOTES)); } catch(e) {}
+  try { localStorage.setItem('coffeeNews_notes', JSON.stringify(NOTES)); } catch(e) { handleStorageError(e); }
 }
 function saveVisits() {
-  try { localStorage.setItem('coffeeNews_visits', JSON.stringify(VISITS)); } catch(e) {}
+  try { localStorage.setItem('coffeeNews_visits', JSON.stringify(VISITS)); } catch(e) { handleStorageError(e); }
 }
 function saveSavedRoutes() {
-  try { localStorage.setItem('coffeeNews_savedRoutes', JSON.stringify(SAVED_ROUTES)); } catch(e) {}
+  try { localStorage.setItem('coffeeNews_savedRoutes', JSON.stringify(SAVED_ROUTES)); } catch(e) { handleStorageError(e); }
 }
 
 // ============================================================
@@ -740,25 +816,29 @@ var speechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
 var isListening = false;
 var currentRec = null;
 function startVoiceSearch() {
-  if (!speechRec) { toast('Voice search not supported in this browser', 2000); return; }
-  // If already listening, stop the mic
+  if (!speechRec) { showToast('Voice search not supported in this browser', 'info'); return; }
+  var btn = document.getElementById('voiceSearchBtn');
+  // If already listening, stop the mic and reset state immediately (Samsung Internet onend race)
   if (isListening && currentRec) {
-    currentRec.stop();
+    try { currentRec.stop(); } catch(e) {}
+    isListening = false;
+    currentRec = null;
+    if (btn) btn.textContent = '🎤';
     return;
   }
   var rec = new speechRec();
   currentRec = rec;
+  isListening = true; // set before start() to close the double-tap race window
   rec.lang = 'en-US';
   rec.interimResults = false;
   rec.maxAlternatives = 1;
-  var btn = document.getElementById('voiceSearchBtn');
   var recTimeout;
   rec.onstart = function() {
     isListening = true;
-    btn.textContent = '🔴';
-    toast('Listening...', 1500);
+    if (btn) btn.textContent = '🔴';
+    showToast('Listening...', 'info');
     // Safety: force-stop mic after 10s if no result comes through
-    recTimeout = setTimeout(function() { rec.stop(); }, 10000);
+    recTimeout = setTimeout(function() { try { rec.stop(); } catch(e) {} }, 10000);
   };
   rec.onresult = function(e) {
     clearTimeout(recTimeout);
@@ -766,41 +846,91 @@ function startVoiceSearch() {
     document.getElementById('searchFilter').value = q;
     updateSearchSuggestions(q);
     updateMap();
-    rec.stop();
+    try { rec.stop(); } catch(e) {}
   };
   rec.onend = function() {
     clearTimeout(recTimeout);
     isListening = false;
     currentRec = null;
-    btn.textContent = '🎤';
+    if (btn) btn.textContent = '🎤';
   };
   rec.onerror = function() {
     clearTimeout(recTimeout);
     isListening = false;
     currentRec = null;
-    btn.textContent = '🎤';
-    toast('Voice search failed', 1500);
+    if (btn) btn.textContent = '🎤';
+    showToast('Voice search failed', 'info');
   };
-  rec.start();
+  try {
+    rec.start();
+  } catch(e) {
+    // start() can throw if recognition is already active
+    isListening = false;
+    currentRec = null;
+    if (btn) btn.textContent = '🎤';
+  }
 }
 
 // ============================================================
 // AUTO-GEOLOCATE ON LOAD
 // ============================================================
+var GEO_OPTS = { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 };
+
+function onGeoSuccess(pos) {
+  userLat = pos.coords.latitude;
+  userLng = pos.coords.longitude;
+  userLocationKnown = true;
+  addUserLocationMarker();
+  var distOpt = document.querySelector('#sortFilter [value="distance"]');
+  if (distOpt) distOpt.disabled = false;
+}
+
+function addUserLocationMarker() {
+  if (!map || userLat == null || userLng == null) return;
+  if (userLocationMarker) {
+    userLocationMarker.setLatLng([userLat, userLng]);
+    return;
+  }
+  userLocationMarker = L.marker([userLat, userLng], {
+    icon: L.divIcon({
+      className: '',
+      html: '<div class="user-loc-marker" title="Your location"></div>',
+      iconSize: [18, 18], iconAnchor: [9, 9],
+    }),
+    zIndexOffset: 1000,
+    interactive: false,
+  }).addTo(map);
+}
+
 function tryAutoGeolocate() {
-  if (navigator.permissions) {
+  if (!('geolocation' in navigator)) return;
+  // navigator.permissions is unsupported for geolocation on iOS Safari; guard it.
+  if (navigator.permissions && navigator.permissions.query) {
     navigator.permissions.query({ name: 'geolocation' }).then(function(result) {
       if (result.state === 'granted') {
-        navigator.geolocation.getCurrentPosition(function(pos) {
-          userLat = pos.coords.latitude;
-          userLng = pos.coords.longitude;
-          userLocationKnown = true;
-          addUserLocationMarker();
-          document.getElementById('sortFilter').querySelector('[value="distance"]').disabled = false;
-        }, function() {});
+        navigator.geolocation.getCurrentPosition(onGeoSuccess, function() {}, GEO_OPTS);
       }
-    });
+    }).catch(function() {});
   }
+}
+
+// Manual "Locate Me" — works on all browsers including iOS Safari
+function locateMe() {
+  if (!('geolocation' in navigator)) {
+    showToast('Geolocation not supported in this browser', 'info');
+    return;
+  }
+  showToast('Locating…', 'info');
+  navigator.geolocation.getCurrentPosition(function(pos) {
+    onGeoSuccess(pos);
+    if (map) map.setView([userLat, userLng], 12);
+    showToast('Location found', 'success');
+  }, function(err) {
+    var msg = 'Could not get your location';
+    if (err && err.code === 1) msg = 'Location permission denied';
+    else if (err && err.code === 3) msg = 'Location request timed out';
+    showToast(msg, 'error');
+  }, GEO_OPTS);
 }
 
 // ============================================================
@@ -23996,7 +24126,9 @@ function optimizeRoute() {
     .then(function(data) {
       loading.style.display = 'none';
       document.getElementById('optimizeBtn').disabled = false;
+      document.getElementById('navigateBtn').disabled = routeStops.length < 2;
       if (data.code !== 'Ok') throw new Error('OSRM error: ' + data.message);
+      if (!data.routes || !data.routes.length) throw new Error('OSRM returned no route');
 
       const route = data.routes[0];
       displayOptimizedRoute(route, data.waypoints);
@@ -24004,6 +24136,7 @@ function optimizeRoute() {
     .catch(function(e) {
       loading.style.display = 'none';
       document.getElementById('optimizeBtn').disabled = false;
+      document.getElementById('navigateBtn').disabled = routeStops.length < 2;
       error.innerHTML = '<div class="route-error">⚠ ' + escapeHtml(e.message) + '</div>';
     });
 }
@@ -24097,7 +24230,11 @@ document.addEventListener('click', function(e) {
   if (window.innerWidth > 700) return;
   var sidebar = document.getElementById('sidebar');
   if (!sidebar.classList.contains('open')) return;
-  if (!sidebar.contains(e.target) && !e.target.closest('.leaflet-container') && !e.target.closest('.header-actions')) {
+  if (!sidebar.contains(e.target) &&
+      !e.target.closest('.leaflet-container') &&
+      !e.target.closest('.leaflet-marker-icon') &&
+      !e.target.closest('.leaflet-popup') &&
+      !e.target.closest('.header-actions')) {
     sidebar.classList.remove('open');
     setTimeout(function() { map.invalidateSize(); }, 400);
   }
@@ -24126,6 +24263,8 @@ document.addEventListener('click', function(e) {
 
   sidebar.addEventListener('touchstart', function(e) {
     if (e.touches.length !== 1) return;
+    // Don't hijack taps on interactive controls (buttons, inputs, links) into a drag
+    if (e.target.closest('button, input, select, textarea, a')) return;
     // Only capture if touch starts in the top 80px (handle + tabs area)
     var rect = sidebar.getBoundingClientRect();
     var touchY = e.touches[0].clientY - rect.top;
@@ -24357,6 +24496,39 @@ function exportCSV() {
 // ============================================================
 function printRoute() {
   if (routeStops.length === 0) return;
+  // Populate the print header + table so iOS Safari (and all browsers) render content
+  var header = document.querySelector('.print-header');
+  if (header) {
+    var totalStr = '';
+    if (routeTotalDist > 0) {
+      var totalKm = (routeTotalDist / 1000).toFixed(1);
+      var totalMin = Math.round(routeTotalDur / 60);
+      var totalH = Math.floor(totalMin / 60);
+      totalStr = ' — ' + totalKm + ' km · ' + (totalH > 0 ? totalH + 'h ' + (totalMin % 60) + 'min' : totalMin + 'min');
+    }
+    header.textContent = 'Coffee News Route (' + routeStops.length + ' stops' + totalStr + ')';
+  }
+  var body = document.getElementById('printRouteBody');
+  if (body) {
+    var rows = '';
+    routeStops.forEach(function(stop, i) {
+      var legStr = '—';
+      if (i > 0) {
+        if (routeLegData.length > 0 && routeLegData[i - 1]) {
+          var leg = routeLegData[i - 1];
+          legStr = (leg.distance / 1000).toFixed(1) + ' km · ' + Math.round(leg.duration / 60) + ' min';
+        } else if (stop.lat != null && routeStops[i - 1].lat != null) {
+          var d = distanceMiles(routeStops[i - 1].lat, routeStops[i - 1].lng, stop.lat, stop.lng);
+          legStr = '~' + d.toFixed(1) + ' mi';
+        }
+      }
+      rows += '<tr><td>' + (i + 1) + '</td><td>' + escapeHtml(stop.name || '') +
+        '</td><td>' + escapeHtml(stop.address || stop.town || '') +
+        '</td><td>' + escapeHtml(stop.phone || '') +
+        '</td><td>' + escapeHtml(legStr) + '</td></tr>';
+    });
+    body.innerHTML = rows;
+  }
   window.print();
 }
 
@@ -25010,11 +25182,11 @@ document.addEventListener('keydown', function(e) {
 // INIT
 // ============================================================
 console.log('Coffee News: starting up');
+loadSavedData();          // load notes/visits/routes BEFORE first render so marker indicators show
 initMap();
 updateMap();
 var spinner = document.getElementById('loadingSpinner');
 if (spinner) { spinner.style.display = 'none'; }
-loadSavedData();
 updateNotesList();
 updateSavedRoutesList();
 tryAutoGeolocate();

@@ -1,0 +1,874 @@
+[
+  {
+    "name": "Hair Razor",
+    "town": "Millinocket",
+    "phone": "(207) 723-5115",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hang Wong Restaurant",
+    "town": "Millinocket",
+    "phone": "(207) 723-6084",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hannaford Supermarket & Pharmacy",
+    "town": "Millinocket",
+    "phone": "(207) 723-8047",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hillcrest Golf Club",
+    "town": "Millinocket",
+    "phone": "(207) 723-8410",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Hotel Terrace & Restaurant",
+    "town": "Millinocket",
+    "phone": "(207) 723-4545",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ice Fish Inn",
+    "town": "Millinocket",
+    "phone": "(207) 723-9999",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Jandreau's Greenhouse",
+    "town": "Millinocket",
+    "phone": "(207) 723-6332",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "John & Sons Towing",
+    "town": "Millinocket",
+    "phone": "(207) 723-8586",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "John's Auto",
+    "town": "Millinocket",
+    "phone": "(207) 723-5481",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "K & M Motors",
+    "town": "Millinocket",
+    "phone": "(207) 723-5113",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Chamber of Commerce",
+    "town": "Millinocket",
+    "phone": "(207) 723-4443",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Federal Credit Union",
+    "town": "Millinocket",
+    "phone": "(207) 723-9718",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin General Store",
+    "town": "Millinocket",
+    "phone": "(207) 723-4123",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Inn & Suites",
+    "town": "Millinocket",
+    "phone": "(207) 723-4555",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Motors Chevrolet Cadillac",
+    "town": "Millinocket",
+    "phone": "(207) 723-5154",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Valley Health Center",
+    "town": "Millinocket",
+    "phone": "(207) 528-2285",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Knife Edge Trading Post",
+    "town": "Millinocket",
+    "phone": "(207) 723-6800",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Lamson Funeral Home",
+    "town": "Millinocket",
+    "phone": "(207) 723-4000",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Lankhorst Chiropractic",
+    "town": "Millinocket",
+    "phone": "(207) 723-9468",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Life Style Fitness Center",
+    "town": "Millinocket",
+    "phone": "(207) 723-6450",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Magic City Real Estate",
+    "town": "Millinocket",
+    "phone": "(207) 447-1000",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Mainely Photos",
+    "town": "Millinocket",
+    "phone": "(207) 723-5465",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Marie's Hair Design",
+    "town": "Millinocket",
+    "phone": "(207) 723-9336",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "McDonald's",
+    "town": "Millinocket",
+    "phone": "(207) 723-4900",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Melvin F Ferland Jewelry",
+    "town": "Millinocket",
+    "phone": "(207) 723-8207",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Memories Of Maine Gallery",
+    "town": "Millinocket",
+    "phone": "(207) 723-4834",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Millinocket Floral Shop",
+    "town": "Millinocket",
+    "phone": "(207) 723-9016",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Millinocket House of Pizza",
+    "town": "Millinocket",
+    "phone": "(207) 723-4528",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Millinocket Insurance Agency",
+    "town": "Millinocket",
+    "phone": "(207) 723-5461",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Millinocket Irving Mainway",
+    "town": "Millinocket",
+    "phone": "(207) 723-8964",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Millinocket Memorial Library",
+    "town": "Millinocket",
+    "phone": "(207) 723-7020",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Millinocket Regional Hospital",
+    "town": "Millinocket",
+    "phone": "(207) 723-5173",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Millinocket Variety",
+    "town": "Millinocket",
+    "phone": "(207) 723-9332",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Moose Prints Gallery & Gifts",
+    "town": "Millinocket",
+    "phone": "(207) 447-6906",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "New England Outdoor Center",
+    "town": "Millinocket",
+    "phone": "(207) 723-5438",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "North Woods Real Estate",
+    "town": "Millinocket",
+    "phone": "(207) 723-9086",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pamola Motor Lodge",
+    "town": "Millinocket",
+    "phone": "(207) 723-9746",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pampered & Polished",
+    "town": "Millinocket",
+    "phone": "(207) 723-4530",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Parks Edge Inn",
+    "town": "Millinocket",
+    "phone": "(207) 447-4321",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Penobscot Pie Co",
+    "town": "Millinocket",
+    "phone": "(207) 723-6333",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pete's Auto Body",
+    "town": "Millinocket",
+    "phone": "(207) 723-5920",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Preble Oil Co",
+    "town": "Millinocket",
+    "phone": "(207) 723-9994",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Realty Resources Management",
+    "town": "Millinocket",
+    "phone": "(207) 723-6613",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rideout's AG Market",
+    "town": "Millinocket",
+    "phone": "(207) 723-8816",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rite Aid",
+    "town": "Millinocket",
+    "phone": "(207) 723-9850",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "River Drivers' Restaurant",
+    "town": "Millinocket",
+    "phone": "(207) 723-8475",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Robert J Adams CPA",
+    "town": "Millinocket",
+    "phone": "(207) 723-6111",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Russ' Barber & Styling",
+    "town": "Millinocket",
+    "phone": "(207) 723-4040",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "SUBWAY",
+    "town": "Millinocket",
+    "phone": "(207) 723-7827",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Save-A-Lot Food Stores",
+    "town": "Millinocket",
+    "phone": "(207) 723-5077",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Scootic Inn",
+    "town": "Millinocket",
+    "phone": "(207) 723-4566",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Shippee David Jay OD",
+    "town": "Millinocket",
+    "phone": "(207) 723-5376",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Single Source Financial Ctr",
+    "town": "Millinocket",
+    "phone": "(207) 723-5264",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Spoiled Hair Studio",
+    "town": "Millinocket",
+    "phone": "(207) 723-5001",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "St Martin-Tours Thrift Store",
+    "town": "Millinocket",
+    "phone": "(207) 723-4513",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Steel Magnolias Day Spa",
+    "town": "Millinocket",
+    "phone": "(207) 723-5646",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sterns Lumber Co",
+    "town": "Millinocket",
+    "phone": "(207) 723-5144",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Steve's Auto Body",
+    "town": "Millinocket",
+    "phone": "(207) 723-0007",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Tractor Supply Co",
+    "town": "Millinocket",
+    "phone": "(207) 723-6582",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "U-Haul Neighborhood Dealer",
+    "town": "Millinocket",
+    "phone": "(207) 723-7123",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "West Branch Aviation",
+    "town": "Millinocket",
+    "phone": "(207) 723-4375",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "CVF Services",
+    "town": "Patten",
+    "phone": "(207) 538-6260",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Calculations Inc",
+    "town": "Patten",
+    "phone": "(207) 528-2306",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Conklin's Lodge & Camps",
+    "town": "Patten",
+    "phone": "(207) 528-2901",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Debbie's Deli & Pizza",
+    "town": "Patten",
+    "phone": "(207) 528-2012",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dollar General",
+    "town": "Patten",
+    "phone": "(207) 249-6704",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Eastmill Federal Credit Union",
+    "town": "Patten",
+    "phone": "(207) 528-6222",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ellis Family Market",
+    "town": "Patten",
+    "phone": "(207) 528-2457",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Fiddlehead Gifts & Florals",
+    "town": "Patten",
+    "phone": "(207) 528-1021",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "K & C Quik Stop & Service Center",
+    "town": "Patten",
+    "phone": "(207) 528-4400",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Brew Works",
+    "town": "Patten",
+    "phone": "(207) 631-2957",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Trust Company",
+    "town": "Patten",
+    "phone": "(207) 528-2211",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Main Street Outback Garage",
+    "town": "Patten",
+    "phone": "(207) 528-2975",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Patten Redemption Center",
+    "town": "Patten",
+    "phone": "(207) 944-8163",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Red Moose Gifts & Laundromat",
+    "town": "Patten",
+    "phone": "(207) 528-2059",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Richardson's Hardware (NAPA)",
+    "town": "Patten",
+    "phone": "(207) 528-2235",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Savage Paint & Body",
+    "town": "Patten",
+    "phone": "(207) 528-2331",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Circle K / Irving 24",
+    "town": "Sherman",
+    "phone": "(207) 365-4485",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Valley Motel",
+    "town": "Sherman",
+    "phone": "(207) 365-4554",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Salted Butter Farm",
+    "town": "Sherman",
+    "phone": "(207) 365-4100",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sherman Thriftway",
+    "town": "Sherman",
+    "phone": "(207) 365-4538",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mike's Elite Auto",
+    "town": "Shin Pond",
+    "phone": "(207) 528-2054",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mt. Chase Lodge",
+    "town": "Shin Pond",
+    "phone": "(207) 528-2183",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Shin Pond Village",
+    "town": "Shin Pond",
+    "phone": "(207) 528-2900",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Skinner's Wilderness Variety Store",
+    "town": "Shin Pond",
+    "phone": "(207) 528-2626",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashley Cunningham & Co Furniture",
+    "town": "Burlington",
+    "phone": "(207) 794-3091",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Banks Electric",
+    "town": "Burlington",
+    "phone": "(207) 732-5619",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Burlington General Store",
+    "town": "Burlington",
+    "phone": "(207) 732-4259",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "DuBois Lawn & Landscape",
+    "town": "Burlington",
+    "phone": "(501) 538-3788",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "J M Kilby Engineering",
+    "town": "Burlington",
+    "phone": "(207) 732-5404",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Maine Gas Refrigerators",
+    "town": "Burlington",
+    "phone": "(207) 732-4119",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Chester Forest Products",
+    "town": "Chester",
+    "phone": "(207) 794-3047",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The Maine Land Store / Treeline",
+    "town": "Chester",
+    "phone": "(207) 794-2044",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Barnes Brook Golf Course",
+    "town": "Enfield",
+    "phone": "(207) 732-3006",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "C&I Custom Builders",
+    "town": "Enfield",
+    "phone": "(207) 732-3792",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Chip's Citgo",
+    "town": "Enfield",
+    "phone": "(207) 732-5434",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Cold Stream Lumber",
+    "town": "Enfield",
+    "phone": "(207) 732-4020",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dollar General",
+    "town": "Enfield",
+    "phone": "(207) 732-1902",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Enfield General Store",
+    "town": "Enfield",
+    "phone": "(207) 732-4600",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hammond Lumber Company",
+    "town": "Enfield",
+    "phone": "(207) 732-3351",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northwoods Sporting Journal",
+    "town": "Enfield",
+    "phone": "(207) 732-4880",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pelletiers Greenhouse",
+    "town": "Enfield",
+    "phone": "(207) 732-3907",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Penobscot County Federal Credit Union",
+    "town": "Enfield",
+    "phone": "(207) 732-4560",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Penobscot River Realty",
+    "town": "Enfield",
+    "phone": "(207) 732-5385",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pine Tree Pet Supply",
+    "town": "Enfield",
+    "phone": "(207) 732-5374",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pleasant River Lumber Company",
+    "town": "Enfield",
+    "phone": "(207) 403-1507",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "R.N. French Real Estate",
+    "town": "Enfield",
+    "phone": "(207) 732-3977",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Savage Line LLC",
+    "town": "Enfield",
+    "phone": "(207) 732-3616",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "South Branch Concrete Company",
+    "town": "Enfield",
+    "phone": "(207) 290-1817",
+    "region": "lincoln_area",
+    "has_email": false,
+    "has_website": false
+  }
+]

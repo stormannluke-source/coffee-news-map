@@ -1,0 +1,222 @@
+╔══════════════════════════════════════════════════════════════╗
+║       Coffee News of Aroostook — Business Directory         ║
+║                    User Manual                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+CONTENTS
+────────
+1. Getting Started
+2. Browsing Businesses
+3. Route Planning
+4. Notes & Visit Tracking
+5. Exporting & Backing Up Your Data
+6. Route Printing
+
+
+1. GETTING STARTED
+═══════════════════
+
+The map is a single file (index.html). No installation or internet
+server is needed — just double-click to open it in any modern
+browser (Chrome, Firefox, Edge, Safari).
+
+Your notes, visits, and saved routes are stored on your own
+computer using the browser's local storage. They persist even
+after you close the page and come back later.
+
+  ⚠ IMPORTANT: Clearing your browser history/cache will erase
+     your notes and saved routes. Always export before clearing.
+
+
+2. BROWSING BUSINESSES
+══════════════════════
+
+The map shows all 1,093 businesses as colored dots:
+
+  Blue     = Government / Education / Library
+  Green    = Grocery / Restaurant / Food / Convenience
+  Red      = Auto / Auto Parts / Repair
+  Purple   = Healthcare / Dental / Vet
+  Orange   = Retail / Gift / Hardware
+  Brown    = Lodging / Hotel / Motel
+  Yellow   = Religion
+  Gray     = Services / Other
+
+Filtering:
+┬───────────┬─────────────────────────────────────────────┐
+│ Region    │ Limits to one of the 5 regions              │
+├───────────┼─────────────────────────────────────────────┤
+│ Town      │ Limits to a specific town                   │
+├───────────┼─────────────────────────────────────────────┤
+│ Search    │ Type any part of a business name            │
+└───────────┴─────────────────────────────────────────────┘
+
+The count at the top shows how many businesses match your
+current filters. The same filters apply to the map and the
+Browse list.
+
+Click any marker to see full details (address, phone, email,
+website) in a popup.
+
+The sidebar has three tabs:
+
+  📋 Browse    — Sortable table of all businesses
+  📍 Route     — Build and save driving routes
+  📝 Notes     — View your notes and visit history
+
+
+3. ROUTE PLANNING
+═════════════════
+
+Building a Route:
+──────────────
+  1. Click a business marker on the map
+  2. It's added to the Route Planner sidebar
+  3. Repeat for all stops
+  4. Each stop shows a numbered marker on the map
+
+Managing Stops:
+─────────────
+  • Reorder: Drag the ⠿ handle up or down
+  • Remove: Click the ✕ button on a stop
+  • Toggle: Click a marker a second time to remove it
+
+Optimizing a Route:
+────────────────
+  Click "🗺 Optimize Route" to automatically reorder
+  your stops in the most efficient driving order.
+  This uses OSRM (Open Source Routing Machine) — a free
+  online service. The route line draws in blue on the map.
+
+  ⚠ OSRM requires internet access. If you're offline, the
+     optimize feature won't work.
+
+The route summary shows:
+  • Total distance
+  • Estimated driving time
+  • Per-leg distances and times
+
+Saving a Route:
+────────────
+  • Click "💾 Save Current"
+  • Give it a name and click "Save"
+  • The route appears in the "Saved Routes" list below
+
+Loading a Saved Route:
+───────────────────
+  Click the route name in the "Saved Routes" list.
+
+  Loading a route replaces your current route stops.
+
+Deleting a Saved Route:
+─────────────────────
+  Click the ✖ button next to the route name.
+
+  ⚠ This cannot be undone unless you have a backup export.
+
+Printing a Route:
+──────────────
+  Click "🖨 Print" to print a route sheet for your trip.
+
+
+4. NOTES & VISIT TRACKING
+═════════════════════════
+
+Adding a Note:
+────────────
+  1. Click a business marker to open its popup
+  2. Type your note in the text box at the bottom
+  3. Notes auto-save as you type — no save button needed
+
+  Notes are useful for:
+  • Recording conversations ("Spoke with owner Jane")
+  • Tracking preferences ("Prefers email over phone")
+  • Noting follow-up actions ("Call back Tuesday")
+
+  Businesses with notes show a small red dot on their marker.
+
+Editing a Note:
+────────────
+  Re-open the popup and edit the text. It saves automatically.
+
+Deleting a Note:
+─────────────
+  Clear all the text and click away — the note is removed.
+
+Marking a Business as Visited:
+─────────────────────────────
+  • Click "✅ Mark Visited" in the popup
+  • The date is recorded
+  • The marker shows a green checkmark
+
+  • Click "Visit Again" to record another visit date
+  • All visit dates are stored in your visit history
+
+The Notes & Visits Tab:
+─────────────────────
+  Click the "📝 Notes & Visits" tab in the sidebar to see:
+
+  • "All"        — All businesses that have any activity
+  • "With Notes" — Only businesses that have notes
+  • "Visited"    — Only businesses you've visited
+
+  The list is sorted with most recently updated at the top.
+  Each item shows:
+  • Business name and location
+  • Note content (if any)
+  • Last visit date (if any)
+
+  Click "📍 Show on Map" to fly to any business on the map.
+
+  Click "⬇ Export" to download all your notes and visits
+  as a JSON file for backup.
+
+  Click "⬆ Import" to restore notes and visits from a
+  previously exported file.
+
+
+5. EXPORTING & BACKING UP YOUR DATA
+════════════════════════════════════
+
+All your notes, visits, and saved routes are stored in your
+browser. To avoid losing them:
+
+  → Export from the Notes tab:
+    Click "⬇ Export" to download your notes + visits as
+    a JSON file.
+
+  → Export from the Route tab:
+    Click "⬇ Export" under Saved Routes to download your
+    saved routes as a separate JSON file.
+
+  → To restore, click "⬆ Import" and select the file.
+
+  → To transfer to another computer:
+    1. Export both notes and saved routes on computer A
+    2. Copy the JSON files to computer B
+    3. Open index.html on computer B
+    4. Import both files
+
+  ⚠ The map itself (index.html) doesn't contain your
+     personal data — only the business directory. Your
+     notes and routes live in your browser's storage.
+
+
+6. ROUTE PRINTING
+═════════════════
+
+When you click "🖨 Print", the route prints with:
+  • A map showing the route line
+  • A numbered table of stops with addresses
+
+  Print styles are designed to be clean and ink-efficient.
+  Background colors, buttons, and controls are hidden.
+
+
+────────────────────────────────────────────────────────────
+Need help? Questions about this manual should be directed
+to the developer.
+
+Coffee News of Aroostook — Business Directory Map
+Data current as of June 19, 2026
+1093 businesses · 794 suitable for ad placement

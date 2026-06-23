@@ -1,0 +1,656 @@
+[
+  {
+    "name": "Aroostook Valley Health Center",
+    "town": "Ashland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Ashland 1-Stop (Citgo)",
+    "town": "Ashland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Ashland Building Supply",
+    "town": "Ashland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Ashland Community Center",
+    "town": "Ashland",
+    "website": "https://townofashland.org",
+    "email": ""
+  },
+  {
+    "name": "Ashland Drug Store",
+    "town": "Ashland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Ashland Family Pharmacy",
+    "town": "Ashland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Ashland Food Mart",
+    "town": "Ashland",
+    "website": "https://ashlandfood.com",
+    "email": ""
+  },
+  {
+    "name": "Ashland Health Center",
+    "town": "Ashland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Ashland Historical Society",
+    "town": "Ashland",
+    "website": "https://www.ashlandhistorical.org",
+    "email": ""
+  },
+  {
+    "name": "Ashland Post Office",
+    "town": "Ashland",
+    "website": "https://www.usps.com",
+    "email": ""
+  },
+  {
+    "name": "Ashland Public Library",
+    "town": "Ashland",
+    "website": "https://townofashland.org/library",
+    "email": ""
+  },
+  {
+    "name": "Ashland Recreation",
+    "town": "Ashland",
+    "website": "https://townofashland.org/recreation",
+    "email": ""
+  },
+  {
+    "name": "Ashland Schools",
+    "town": "Ashland",
+    "website": "https://www.ashland.k12.me.us",
+    "email": ""
+  },
+  {
+    "name": "Ashland Town Office",
+    "town": "Ashland",
+    "website": "https://townofashland.org",
+    "email": "townmanager@townofashland.org"
+  },
+  {
+    "name": "Ashland's Diner",
+    "town": "Ashland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "CARQUEST Auto Parts",
+    "town": "Ashland",
+    "website": "https://www.carquest.com",
+    "email": ""
+  },
+  {
+    "name": "Daigle Oil Co",
+    "town": "Ashland",
+    "website": "https://daigleoil.com",
+    "email": ""
+  },
+  {
+    "name": "Family Dollar",
+    "town": "Ashland",
+    "website": "https://www.familydollar.com",
+    "email": ""
+  },
+  {
+    "name": "Freem's Bar And Grill",
+    "town": "Ashland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Gateway Variety",
+    "town": "Ashland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Katahdin Trust Company",
+    "town": "Ashland",
+    "website": "https://www.katahdintrust.com",
+    "email": ""
+  },
+  {
+    "name": "Northeast Pellets",
+    "town": "Ashland",
+    "website": "https://www.northeastpellets.net",
+    "email": ""
+  },
+  {
+    "name": "Northwoods Diner",
+    "town": "Ashland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Prentiss & Carlisle",
+    "town": "Ashland",
+    "website": "https://prentissandcarlisle.com",
+    "email": ""
+  },
+  {
+    "name": "Qwik Stop II",
+    "town": "Ashland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Stimson-Ouellette Funeral Home",
+    "town": "Ashland",
+    "website": "https://www.ouellettefuneralhome.com",
+    "email": ""
+  },
+  {
+    "name": "USPS Ashland Post Office",
+    "town": "Ashland",
+    "website": "https://www.usps.com",
+    "email": ""
+  },
+  {
+    "name": "Acadia Medical Supply",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Bob's Service & Repair",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Boondocks Grille",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Caldwell's Auto",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Canterbury Royale Gourmet",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "County Bluegrass Festival",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Curtis Auto Airplane Repair & Sales Inc",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Family Haircuts By Lisa at Jack's Barbershop",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Fields Realty LLC",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Fort Fairfield Dental Center",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Fort Fairfield Hardware",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Fort Fairfield Public Library",
+    "town": "Fort Fairfield",
+    "website": "https://www.ffpl.org",
+    "email": ""
+  },
+  {
+    "name": "Fort Fairfield Town Office",
+    "town": "Fort Fairfield",
+    "website": "https://www.fortfairfield.org",
+    "email": "townmanager@fortfairfield.org"
+  },
+  {
+    "name": "Fort Fairfield Utilities District",
+    "town": "Fort Fairfield",
+    "website": "https://www.ffud.org",
+    "email": ""
+  },
+  {
+    "name": "Freshies Fort Fairfield",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Giggey's Auto Repair",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Hillside IGA",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "I Care Pharmacy",
+    "town": "Fort Fairfield",
+    "website": "https://ilifehacks.com/i-with-accent/",
+    "email": ""
+  },
+  {
+    "name": "Logan's Service and Repair",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "One Of A Kind",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "R & J Market",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Rite Aid Pharmacy",
+    "town": "Fort Fairfield",
+    "website": "https://www.riteaid.com",
+    "email": ""
+  },
+  {
+    "name": "Rogers Auto Repair",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Shell Gas Station",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Sisters Bakery & Coffee Shoppe",
+    "town": "Fort Fairfield",
+    "website": "https://www.sistersthai.com/",
+    "email": ""
+  },
+  {
+    "name": "The County Federal Credit Union",
+    "town": "Fort Fairfield",
+    "website": "https://www.countyfcu.org",
+    "email": ""
+  },
+  {
+    "name": "Turner Sanitation",
+    "town": "Fort Fairfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Village Restaurant",
+    "town": "Fort Fairfield",
+    "website": "https://harborlighthomes.org/homes/agawam-village-ispwich-ma/",
+    "email": ""
+  },
+  {
+    "name": "Mapleton Diner",
+    "town": "Mapleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mapleton Fire Department",
+    "town": "Mapleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mapleton General Store",
+    "town": "Mapleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mapleton Oil Co",
+    "town": "Mapleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mapleton One Stop",
+    "town": "Mapleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mapleton Post Office",
+    "town": "Mapleton",
+    "website": "https://www.usps.com",
+    "email": ""
+  },
+  {
+    "name": "Mapleton Town Office",
+    "town": "Mapleton",
+    "website": "https://mapletonmaine.gov",
+    "email": "townclerk@mapletonmaine.gov"
+  },
+  {
+    "name": "Mapleton United Baptist Church",
+    "town": "Mapleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mastro Motors Inc",
+    "town": "Mapleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "USPS Mapleton Post Office",
+    "town": "Mapleton",
+    "website": "https://www.usps.com",
+    "email": ""
+  },
+  {
+    "name": "A & M Auto Repair",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Al's Diner",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "All-Star Gymnastics",
+    "town": "Mars Hill",
+    "website": "https://www.all-star.biz/classes",
+    "email": ""
+  },
+  {
+    "name": "Aroostook Health Center",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Bear Paw Inn",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Big Rock Ski Area",
+    "town": "Mars Hill",
+    "website": "https://www.bigrockmaine.com",
+    "email": ""
+  },
+  {
+    "name": "BigRock Mountain",
+    "town": "Mars Hill",
+    "website": "https://www.bigrockmaine.com",
+    "email": ""
+  },
+  {
+    "name": "Brewer Service",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Central Aroostook Jr-Sr High School",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Circle K / On the Run",
+    "town": "Mars Hill",
+    "website": "https://www.circlek.com",
+    "email": ""
+  },
+  {
+    "name": "Dave's Auto & Truck Repair",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Duncan Funeral Home",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Family Dollar",
+    "town": "Mars Hill",
+    "website": "https://www.familydollar.com",
+    "email": ""
+  },
+  {
+    "name": "Fort Street Elementary School",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Freshies Mars Hill",
+    "town": "Mars Hill",
+    "website": "https://www.freshiesdeli.com/",
+    "email": ""
+  },
+  {
+    "name": "Hidden Country Treasures",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Horizons Surgical Services",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "M E Grass & Sons",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mars Hill Country Club",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mars Hill IGA",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mars Hill Pharmacy",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mars Hill Pharmacy Inc",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mars Hill Town Office",
+    "town": "Mars Hill",
+    "website": "https://www.marhillmaine.org",
+    "email": ""
+  },
+  {
+    "name": "McClay's Tax Service",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mike's Auto Sales and Service",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "My Sunset Cabins",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "New Beginning Auto Body",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Pineland Farms Potato Company Inc",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Therapy Shoppe LLC",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Timberwolves Restaurant",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "US Post Office - Mars Hill",
+    "town": "Mars Hill",
+    "website": "https://www.usps.com",
+    "email": ""
+  },
+  {
+    "name": "Walter T.A. Hansen Memorial Library",
+    "town": "Mars Hill",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "A Vie",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Academy Dental",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Ace Hardware - Maine Potato Growers Inc",
+    "town": "Presque Isle",
+    "website": "https://www.acehardware.com",
+    "email": ""
+  },
+  {
+    "name": "Advance Auto Parts",
+    "town": "Presque Isle",
+    "website": "https://www.advanceautoparts.com",
+    "email": ""
+  },
+  {
+    "name": "Airport Cafe & Gifts",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Amy's Flowers",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Arby's",
+    "town": "Presque Isle",
+    "website": "https://www.arbys.com",
+    "email": ""
+  },
+  {
+    "name": "Aroostook County Federal Savings and Loan",
+    "town": "Presque Isle",
+    "website": "https://www.aroostookcountyfederal.com",
+    "email": ""
+  },
+  {
+    "name": "Aroostook County Fitness",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Aroostook Door & Window",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Aroostook Mall",
+    "town": "Presque Isle",
+    "website": "https://www.aroostookmall.com",
+    "email": ""
+  },
+  {
+    "name": "Aroostook Monuments",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  }
+]

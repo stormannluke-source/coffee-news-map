@@ -1,0 +1,874 @@
+[
+  {
+    "name": "Sewall House Yoga Retreat",
+    "town": "Island Falls",
+    "phone": "(207) 463-3344",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "The Wood Shop",
+    "town": "Island Falls",
+    "phone": "(207) 463-2232",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Va-Jo-Wa Golf Course",
+    "town": "Island Falls",
+    "phone": "(207) 463-2128",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Aurora Mills and Farm",
+    "town": "Linneus",
+    "phone": "(207) 521-0094",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Brown's Appliance Service",
+    "town": "Linneus",
+    "phone": "(207) 532-2511",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Canine Equine Inn",
+    "town": "Linneus",
+    "phone": "(207) 542-9660",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Clark's Auto Sales",
+    "town": "Linneus",
+    "phone": "(207) 532-4009",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Clark's Variety",
+    "town": "Linneus",
+    "phone": "(207) 532-9394",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "County Home Improvements",
+    "town": "Linneus",
+    "phone": "(207) 532-4246",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "D & S Self Service Storage",
+    "town": "Linneus",
+    "phone": "(207) 532-4488",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ferris Qwik Stop (Linneus Corner Store)",
+    "town": "Linneus",
+    "phone": "(207) 532-9394",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Fox Hollow Photography",
+    "town": "Linneus",
+    "phone": "(207) 532-7286",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hagan Farms",
+    "town": "Linneus",
+    "phone": "(207) 532-9378",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Harry's Used Sales",
+    "town": "Linneus",
+    "phone": "(207) 532-9444",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "JSL Metal Recycling",
+    "town": "Linneus",
+    "phone": "(207) 532-7777",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin's Shadow Outfitters",
+    "town": "Linneus",
+    "phone": "(207) 649-9975",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Nature's Circle Farm",
+    "town": "Linneus",
+    "phone": "(207) 592-1476",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Plisga & Day - Surveys",
+    "town": "Linneus",
+    "phone": "(207) 532-2695",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rockwater Cabins",
+    "town": "Linneus",
+    "phone": "(207) 532-9607",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Stf Forest Products",
+    "town": "Linneus",
+    "phone": "(207) 532-2221",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sunnyside Family Farm",
+    "town": "Linneus",
+    "phone": "(207) 532-7058",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Wood Works & Rocks of Maine",
+    "town": "Linneus",
+    "phone": "(207) 532-4500",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dana Foster & Sons Trucking",
+    "town": "Littleton",
+    "phone": "(207) 332-7008",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Golding Construction",
+    "town": "Littleton",
+    "phone": "(207) 538-9044",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Henderson Helping Hand Massage",
+    "town": "Littleton",
+    "phone": "(207) 538-9313",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Houlton Band of Maliseet Indians",
+    "town": "Littleton",
+    "phone": "(207) 532-4273",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Littleton Service (Auto Body/Repair)",
+    "town": "Littleton",
+    "phone": "(207) 538-4358",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Perrin Realty Inc",
+    "town": "Littleton",
+    "phone": "(207) 532-3500",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Shady Ridge Disc Golf",
+    "town": "Littleton",
+    "phone": "(207) 517-7824",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Southern Aroostook Agricultural Museum",
+    "town": "Littleton",
+    "phone": "(207) 538-9300",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Watson's Water Well Drilling",
+    "town": "Littleton",
+    "phone": "(207) 538-9512",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Westerdahl Garage (Towing)",
+    "town": "Littleton",
+    "phone": "(207) 538-9594",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Folsoms Custom Meat Cutting",
+    "town": "Monticello",
+    "phone": "(207) 538-9449",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Good Farms Inc",
+    "town": "Monticello",
+    "phone": "(207) 538-9750",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Monticello Country Store",
+    "town": "Monticello",
+    "phone": "(207) 538-1119",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Transport Refrigeration Svc",
+    "town": "Monticello",
+    "phone": "(207) 538-9572",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bond Family Mercantile",
+    "town": "New Limerick",
+    "phone": "(207) 532-0505",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Cameron's Market",
+    "town": "New Limerick",
+    "phone": "(207) 532-2872",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Cochran Camp",
+    "town": "New Limerick",
+    "phone": "(207) 521-7241",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Houlton Community Golf Course",
+    "town": "New Limerick",
+    "phone": "(207) 532-2662",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Mini Music Shop (2nd location)",
+    "town": "New Limerick",
+    "phone": "(207) 532-4300",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Nature's Circle Farm",
+    "town": "New Limerick",
+    "phone": "(207) 532-9911",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "S H Nevers Inc (Logging)",
+    "town": "New Limerick",
+    "phone": "(207) 532-1133",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Tall Timber Lodge",
+    "town": "New Limerick",
+    "phone": "(207) 400-9170",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Tires Plus Total Car Care",
+    "town": "New Limerick",
+    "phone": "(207) 532-7923",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Wayne's Auto Inc",
+    "town": "New Limerick",
+    "phone": "(207) 532-2162",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Arborwall Solid Cedar Homes",
+    "town": "Oakfield",
+    "phone": "(800) 261-7254",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Higgins Brook Cabins",
+    "town": "Oakfield",
+    "phone": "(207) 538-5286",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Cedar Log Homes / Katahdin Forest Products",
+    "town": "Oakfield",
+    "phone": "(207) 757-8278",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Trust Company",
+    "town": "Oakfield",
+    "phone": "(207) 757-8288",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Knowles Corner ATV Club",
+    "town": "Oakfield",
+    "phone": "(207) 528-7731",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Oakfield Railway Museum",
+    "town": "Oakfield",
+    "phone": "(207) 757-8575",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Oakfield Thriftway",
+    "town": "Oakfield",
+    "phone": "(207) 757-8226",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Whitey's Market",
+    "town": "Oakfield",
+    "phone": "(207) 757-8323",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Autumn Bounty Farm",
+    "town": "Smyrna",
+    "phone": "(207) 757-8984",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Brookside Inn",
+    "town": "Smyrna",
+    "phone": "(207) 757-8456",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Currie Combs Stables",
+    "town": "Smyrna",
+    "phone": "(207) 757-8964",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Farm Fresh Feeds",
+    "town": "Smyrna",
+    "phone": "(207) 757-7300",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Kauffman Metals (Roofing)",
+    "town": "Smyrna",
+    "phone": "(207) 757-7122",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Lilley Dairy Farms",
+    "town": "Smyrna",
+    "phone": "(207) 694-0707",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Merri-Gold Greenhouse",
+    "town": "Smyrna",
+    "phone": "(207) 757-7777",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Moore Farms",
+    "town": "Smyrna",
+    "phone": "(207) 757-8200",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mt. Timoney Cycle Center",
+    "town": "Smyrna",
+    "phone": "(207) 757-8300",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northeastern Rustic",
+    "town": "Smyrna",
+    "phone": "(207) 757-8300",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pioneer Place (General Store)",
+    "town": "Smyrna",
+    "phone": "(207) 757-8984",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "RC Logging Supplies",
+    "town": "Smyrna",
+    "phone": "(207) 757-8691",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Spring Break Maple & Honey",
+    "town": "Smyrna",
+    "phone": "(207) 757-7373",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Sturdi-Built Storage Buildings",
+    "town": "Smyrna",
+    "phone": "(207) 757-7877",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Crandall's Hardware",
+    "town": "East Millinocket",
+    "phone": "(207) 746-5722",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Davis Pharmacy",
+    "town": "East Millinocket",
+    "phone": "(207) 746-3721",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Eastmill Federal Credit Union",
+    "town": "East Millinocket",
+    "phone": "(207) 746-3428",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Ellis Family Market",
+    "town": "East Millinocket",
+    "phone": "(207) 746-5019",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Family Dollar",
+    "town": "East Millinocket",
+    "phone": "(207) 447-3025",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gail's Gentle Grooming",
+    "town": "East Millinocket",
+    "phone": "(207) 746-0062",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hamlet Pub",
+    "town": "East Millinocket",
+    "phone": "(207) 746-5200",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "NAPA Auto Parts",
+    "town": "East Millinocket",
+    "phone": "(207) 746-5204",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Posh Salon",
+    "town": "East Millinocket",
+    "phone": "(207) 746-5556",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rick's Market",
+    "town": "East Millinocket",
+    "phone": "(207) 746-5597",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "83 North Bar Grill & Billiards",
+    "town": "Medway",
+    "phone": "(207) 746-6062",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Circle K / Medway Irving Big Stop",
+    "town": "Medway",
+    "phone": "(207) 746-9343",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "D & M Trailer Sales",
+    "town": "Medway",
+    "phone": "(207) 746-5621",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gilman Electrical Supply",
+    "town": "Medway",
+    "phone": "(207) 746-3207",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Grandbelly's Country Cafe",
+    "town": "Medway",
+    "phone": "(207) 746-6009",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Shadows Campground",
+    "town": "Medway",
+    "phone": "(207) 746-9349",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Lennie's Superette",
+    "town": "Medway",
+    "phone": "(207) 746-5100",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Noah's Ark Food & Ice Cream",
+    "town": "Medway",
+    "phone": "(207) 746-6070",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "River's Edge Motel & Pizza",
+    "town": "Medway",
+    "phone": "(207) 746-5162",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Two Rivers Canoe & Tackle",
+    "town": "Medway",
+    "phone": "(207) 746-8181",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "100 Mile Wilderness Inn",
+    "town": "Millinocket",
+    "phone": "(207) 731-3537",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Advance Auto Parts",
+    "town": "Millinocket",
+    "phone": "(207) 723-2010",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Angelos Pizza Grille",
+    "town": "Millinocket",
+    "phone": "(207) 723-6767",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Appalachian Trail Cafe",
+    "town": "Millinocket",
+    "phone": "(207) 723-6720",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Appalachian Trail Lodge",
+    "town": "Millinocket",
+    "phone": "(207) 723-4321",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Bangor Savings Bank",
+    "town": "Millinocket",
+    "phone": "(207) 746-3770",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Baxter Park Inn",
+    "town": "Millinocket",
+    "phone": "(207) 723-9777",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Blue Ox Saloon",
+    "town": "Millinocket",
+    "phone": "(207) 723-6936",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bragdon Energy Svc",
+    "town": "Millinocket",
+    "phone": "(207) 723-4297",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Campbells Service Ctr",
+    "town": "Millinocket",
+    "phone": "(207) 723-6330",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Circle K / Dunkin'",
+    "town": "Millinocket",
+    "phone": "(207) 723-6124",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Corner Car Wash",
+    "town": "Millinocket",
+    "phone": "(207) 723-9312",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dave's Garage",
+    "town": "Millinocket",
+    "phone": "(207) 723-5240",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dead River Co",
+    "town": "Millinocket",
+    "phone": "(207) 723-5151",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Designlab",
+    "town": "Millinocket",
+    "phone": "(207) 723-9988",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Don Howard Insurance",
+    "town": "Millinocket",
+    "phone": "(207) 723-9456",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dunkin' Donuts",
+    "town": "Millinocket",
+    "phone": "(207) 723-8749",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Family Dollar Store",
+    "town": "Millinocket",
+    "phone": "(207) 723-8013",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gather Inn",
+    "town": "Millinocket",
+    "phone": "(207) 400-0194",
+    "region": "millinocket_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Gracies Aunts Closet",
+    "town": "Millinocket",
+    "phone": "(207) 723-6006",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "H&R Block",
+    "town": "Millinocket",
+    "phone": "(207) 723-4818",
+    "region": "millinocket_area",
+    "has_email": false,
+    "has_website": false
+  }
+]

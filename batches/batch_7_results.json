@@ -1,0 +1,626 @@
+[
+  {
+    "name": "Thompson's Hardware Inc",
+    "town": "Enfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Applebee's Superette",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "C.S. Auto Repair",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Cardville Redemption Center",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Crystal Clear Communications",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Dunrite Car Care & Repair",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "GSV Surveying & Land Services",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Michaud Woodcrafters",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Northeast Concrete Specialists",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Old Country Store",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Rick Lyford Trucking Inc",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Riverside Heating",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Ryan's Carpet Cleaning",
+    "town": "Greenbush",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "95-ER Market",
+    "town": "Howland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Bangor Savings Bank",
+    "town": "Howland",
+    "website": "https://www.bangor.com/",
+    "email": ""
+  },
+  {
+    "name": "Bartlett Bench & Wire",
+    "town": "Howland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "House of Crafts & Flowers",
+    "town": "Howland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Howland-Enfield Federal Credit Union",
+    "town": "Howland",
+    "website": "https://www.howlandenfieldfcu.com/",
+    "email": "info@howlandenfieldfcu.com"
+  },
+  {
+    "name": "King's Rentals & Self Storage",
+    "town": "Howland",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mallett's Mill Inc",
+    "town": "Lee",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Marble Creek Acres Winery & Cidery",
+    "town": "Lee",
+    "website": "http://marblecreekacres.com/",
+    "email": ""
+  },
+  {
+    "name": "Raymond's Variety",
+    "town": "Lee",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Sleeping Bear Campground & Cabins",
+    "town": "Lee",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Acres Away Realty",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Aunnie Ashley's Variety",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Auto B Washed Wright",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Bangor Savings Bank",
+    "town": "Lincoln",
+    "website": "https://www.bangor.com/",
+    "email": ""
+  },
+  {
+    "name": "Barker Business Services",
+    "town": "Lincoln",
+    "website": "http://www.barkertax.com/",
+    "email": "taxman2@barkertax.com"
+  },
+  {
+    "name": "Big Apple Store",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Blazin' Trailz",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Briarwood Motor Inn",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Carl's Auto Parts",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Cigaret Shopper",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Clay Funeral Home",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Coastal Auto Parts",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Colonial Healthcare Assisted Living",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Dawson's Family Fitness",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Dead River Company",
+    "town": "Lincoln",
+    "website": "https://www.deadriver.com/",
+    "email": ""
+  },
+  {
+    "name": "Doc's Place",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Dollar Tree",
+    "town": "Lincoln",
+    "website": "https://www.dollartree.com/",
+    "email": ""
+  },
+  {
+    "name": "Dubay Auto Parts (NAPA)",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Eagle Lodge",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Earth's Bounty Natural Foods",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "F.A. Peabody Insurance",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Freedom Fitness",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Gatherings for the Home",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Gill's Point S Tire & Auto",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "H&R Block",
+    "town": "Lincoln",
+    "website": "https://www.hrblock.com/",
+    "email": ""
+  },
+  {
+    "name": "Hannaford Supermarket",
+    "town": "Lincoln",
+    "website": "https://hannaford.com/",
+    "email": ""
+  },
+  {
+    "name": "Health Access Network / Boreas Family Medicine",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Heart of Maine Winery",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "High Performance Hair & Tanning",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "KeyBank",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Lincoln Maine Federal Credit Union",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Lincoln News",
+    "town": "Lincoln",
+    "website": "https://www.lincnews.com/",
+    "email": ""
+  },
+  {
+    "name": "Lincoln Regional Food Cupboard & Thrift Store",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Lincoln Regional Veterinary Hospital",
+    "town": "Lincoln",
+    "website": "https://www.lincolnregionalveterinaryhospital.com/",
+    "email": ""
+  },
+  {
+    "name": "Lincoln Smiles Dentistry",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Machias Savings Bank",
+    "town": "Lincoln",
+    "website": "https://machiassavings.bank/",
+    "email": ""
+  },
+  {
+    "name": "Main Street Barber Shop",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Marden's Surplus & Salvage",
+    "town": "Lincoln",
+    "website": "https://www.mardens.com/",
+    "email": ""
+  },
+  {
+    "name": "McSea Books",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Northern Pines Care Estates",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Pelletier Ford of Lincoln",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Penobscot Valley Hospital",
+    "town": "Lincoln",
+    "website": "https://pvhme.org/",
+    "email": "info@pvhme.org"
+  },
+  {
+    "name": "Penobscot Valley Humane Society",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Possibilities Gift & Home",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "R.H. Foster Energy",
+    "town": "Lincoln",
+    "website": "https://rhfoster.com/",
+    "email": ""
+  },
+  {
+    "name": "S.W. Collins Co (DoItBest)",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Save A Life",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Select Design & Embroidery",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Simple Sentiments",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Steaks N' Stuff Market & Deli",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Tangles Hair Studio",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Town Line Auto Sales",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Town of Lincoln",
+    "town": "Lincoln",
+    "website": "https://www.lincolnmaine.org/",
+    "email": ""
+  },
+  {
+    "name": "True Value",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "United Country Lifestyle Properties of Maine",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Village Dry Cleaners",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Walmart Supercenter",
+    "town": "Lincoln",
+    "website": "https://www.walmart.com/",
+    "email": ""
+  },
+  {
+    "name": "Why Not Stop",
+    "town": "Lincoln",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Patriot Consulting LLC",
+    "town": "Lowell",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Big Apple Store",
+    "town": "Mattawamkeag",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Eva's Beauty Shoppe",
+    "town": "Mattawamkeag",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Markie's Garage",
+    "town": "Mattawamkeag",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mattawamkeag Wilderness Park Campground",
+    "town": "Mattawamkeag",
+    "website": "https://www.mwpark.com/",
+    "email": ""
+  },
+  {
+    "name": "PJ's General Store",
+    "town": "Mattawamkeag",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Pinetree Pellet Fuels LLC",
+    "town": "Mattawamkeag",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Reflection Hair Salon",
+    "town": "Mattawamkeag",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Wheeler World",
+    "town": "Mattawamkeag",
+    "website": "http://www.3wheelerworld.com/",
+    "email": ""
+  },
+  {
+    "name": "Wyman Hardware",
+    "town": "Mattawamkeag",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Lee Barbershop & Styling Salon",
+    "town": "Springfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Smith's General Store",
+    "town": "Springfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Springfield Fair",
+    "town": "Springfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Springfieldtyme Bed & Breakfast",
+    "town": "Springfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "T.E. Linscott Inc",
+    "town": "Springfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Wood & Wires Guitar Shop",
+    "town": "Springfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "H.C. Haynes Inc",
+    "town": "Winn",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Lakeville Shores Inc",
+    "town": "Winn",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Salmon Brook Grooming",
+    "town": "Winn",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Soucie's Junk Yard",
+    "town": "Winn",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Williams Trucking",
+    "town": "Winn",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Winn Equipment & Parts Inc",
+    "town": "Winn",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Winn Service Center",
+    "town": "Winn",
+    "website": "",
+    "email": ""
+  }
+]

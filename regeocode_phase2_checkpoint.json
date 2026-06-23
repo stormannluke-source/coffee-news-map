@@ -1,0 +1,2432 @@
+{
+  "index": 413,
+  "timestamp": 1781984446.954823,
+  "results": [
+    {
+      "key": "apostolic_church_in_jesus_name_ashland",
+      "name": "Apostolic Church in Jesus Name",
+      "improved": false
+    },
+    {
+      "key": "aroostook_valley_health_center_ashland",
+      "name": "Aroostook Valley Health Center",
+      "improved": false
+    },
+    {
+      "key": "ashland_building_supply_ashland",
+      "name": "Ashland Building Supply",
+      "improved": false
+    },
+    {
+      "key": "ashland_community_center_ashland",
+      "name": "Ashland Community Center",
+      "improved": false
+    },
+    {
+      "key": "ashland_drug_store_ashland",
+      "name": "Ashland Drug Store",
+      "improved": true
+    },
+    {
+      "key": "ashland_family_pharmacy_ashland",
+      "name": "Ashland Family Pharmacy",
+      "improved": false
+    },
+    {
+      "key": "ashland_food_mart_ashland",
+      "name": "Ashland Food Mart",
+      "improved": true
+    },
+    {
+      "key": "ashland_health_center_ashland",
+      "name": "Ashland Health Center",
+      "improved": false
+    },
+    {
+      "key": "ashland_historical_society_ashland",
+      "name": "Ashland Historical Society",
+      "improved": false
+    },
+    {
+      "key": "ashland_recreation_ashland",
+      "name": "Ashland Recreation",
+      "improved": false
+    },
+    {
+      "key": "ashland_schools_ashland",
+      "name": "Ashland Schools",
+      "improved": true
+    },
+    {
+      "key": "ashland_town_office_ashland",
+      "name": "Ashland Town Office",
+      "improved": true
+    },
+    {
+      "key": "ashland_union_congregational_church_ucc_ashland",
+      "name": "Ashland Union Congregational Church (UCC)",
+      "improved": false
+    },
+    {
+      "key": "ashland_s_diner_ashland",
+      "name": "Ashland's Diner",
+      "improved": false
+    },
+    {
+      "key": "daigle_oil_co_ashland",
+      "name": "Daigle Oil Co",
+      "improved": false
+    },
+    {
+      "key": "family_dollar_ashland",
+      "name": "Family Dollar",
+      "improved": true
+    },
+    {
+      "key": "freem_s_bar_and_grill_ashland",
+      "name": "Freem's Bar And Grill",
+      "improved": false
+    },
+    {
+      "key": "northeast_pellets_ashland",
+      "name": "Northeast Pellets",
+      "improved": false
+    },
+    {
+      "key": "northwoods_diner_old_post_cafe_ashland",
+      "name": "Northwoods Diner / Old Post Cafe",
+      "improved": false
+    },
+    {
+      "key": "old_post_cafe_ashland",
+      "name": "Old Post Cafe",
+      "improved": false
+    },
+    {
+      "key": "prentiss_carlisle_ashland",
+      "name": "Prentiss & Carlisle",
+      "improved": false
+    },
+    {
+      "key": "qwik_stop_ii_ashland",
+      "name": "Qwik Stop II",
+      "improved": false
+    },
+    {
+      "key": "st_mark_catholic_church_ashland",
+      "name": "St. Mark Catholic Church",
+      "improved": true
+    },
+    {
+      "key": "stimson_ouellette_funeral_home_ashland",
+      "name": "Stimson-Ouellette Funeral Home",
+      "improved": false
+    },
+    {
+      "key": "best_western_caribou_inn_caribou",
+      "name": "Best Western Caribou Inn",
+      "improved": false
+    },
+    {
+      "key": "burger_king_caribou",
+      "name": "Burger King",
+      "improved": false
+    },
+    {
+      "key": "caribou_automotive_repair_services_caribou",
+      "name": "Caribou Automotive Repair Services",
+      "improved": false
+    },
+    {
+      "key": "caribou_bowl_a_drome_caribou",
+      "name": "Caribou Bowl-A-Drome",
+      "improved": false
+    },
+    {
+      "key": "caribou_dental_caribou",
+      "name": "Caribou Dental",
+      "improved": false
+    },
+    {
+      "key": "caribou_family_medicine_caribou",
+      "name": "Caribou Family Medicine",
+      "improved": false
+    },
+    {
+      "key": "caribou_florist_greenhouse_caribou",
+      "name": "Caribou Florist & Greenhouse",
+      "improved": false
+    },
+    {
+      "key": "caribou_ford_lincoln_caribou",
+      "name": "Caribou Ford Lincoln",
+      "improved": false
+    },
+    {
+      "key": "caribou_laundry_dry_cleaning_caribou",
+      "name": "Caribou Laundry & Dry Cleaning",
+      "improved": false
+    },
+    {
+      "key": "caribou_parks_recreation_department_caribou",
+      "name": "Caribou Parks & Recreation Department",
+      "improved": false
+    },
+    {
+      "key": "circle_k_on_the_run_caribou",
+      "name": "Circle K / On the Run",
+      "improved": false
+    },
+    {
+      "key": "crown_veterinary_services_caribou",
+      "name": "Crown Veterinary Services",
+      "improved": false
+    },
+    {
+      "key": "family_dollar_caribou",
+      "name": "Family Dollar",
+      "improved": true
+    },
+    {
+      "key": "greenhouse_restaurant_caribou",
+      "name": "Greenhouse Restaurant",
+      "improved": false
+    },
+    {
+      "key": "matthew_hunter_attorney_caribou",
+      "name": "Matthew Hunter Attorney",
+      "improved": false
+    },
+    {
+      "key": "napa_auto_parts_coastal_auto_parts_caribou",
+      "name": "NAPA Auto Parts (Coastal Auto Parts)",
+      "improved": true
+    },
+    {
+      "key": "quality_inn_suites_caribou",
+      "name": "Quality Inn & Suites",
+      "improved": false
+    },
+    {
+      "key": "advance_auto_parts_fort_fairfield",
+      "name": "Advance Auto Parts",
+      "improved": false
+    },
+    {
+      "key": "bethel_baptist_church_fort_fairfield",
+      "name": "Bethel Baptist Church",
+      "improved": true
+    },
+    {
+      "key": "caldwell_s_auto_fort_fairfield",
+      "name": "Caldwell's Auto",
+      "improved": false
+    },
+    {
+      "key": "canterbury_royale_gourmet_fort_fairfield",
+      "name": "Canterbury Royale Gourmet",
+      "improved": false
+    },
+    {
+      "key": "celebration_center_assemblies_of_god_fort_fairfield",
+      "name": "Celebration Center (Assemblies of God)",
+      "improved": false
+    },
+    {
+      "key": "county_bluegrass_festival_fort_fairfield",
+      "name": "County Bluegrass Festival",
+      "improved": false
+    },
+    {
+      "key": "curtis_auto_airplane_repair_sales_inc_fort_fairfield",
+      "name": "Curtis Auto Airplane Repair & Sales Inc",
+      "improved": false
+    },
+    {
+      "key": "family_haircuts_by_lisa_at_jack_s_barbershop_fort_fairfield",
+      "name": "Family Haircuts By Lisa at Jack's Barbershop",
+      "improved": false
+    },
+    {
+      "key": "fields_realty_llc_fort_fairfield",
+      "name": "Fields Realty LLC",
+      "improved": false
+    },
+    {
+      "key": "fort_fairfield_dental_center_fort_fairfield",
+      "name": "Fort Fairfield Dental Center",
+      "improved": false
+    },
+    {
+      "key": "fort_fairfield_hardware_fort_fairfield",
+      "name": "Fort Fairfield Hardware",
+      "improved": false
+    },
+    {
+      "key": "fort_fairfield_utilities_district_fort_fairfield",
+      "name": "Fort Fairfield Utilities District",
+      "improved": false
+    },
+    {
+      "key": "i_care_pharmacy_fort_fairfield",
+      "name": "I Care Pharmacy",
+      "improved": false
+    },
+    {
+      "key": "logan_s_service_and_repair_fort_fairfield",
+      "name": "Logan's Service and Repair",
+      "improved": false
+    },
+    {
+      "key": "one_of_a_kind_fort_fairfield",
+      "name": "One Of A Kind",
+      "improved": false
+    },
+    {
+      "key": "r_j_market_fort_fairfield",
+      "name": "R & J Market",
+      "improved": false
+    },
+    {
+      "key": "rogers_auto_repair_fort_fairfield",
+      "name": "Rogers Auto Repair",
+      "improved": false
+    },
+    {
+      "key": "sisters_bakery_coffee_shoppe_fort_fairfield",
+      "name": "Sisters Bakery & Coffee Shoppe",
+      "improved": true
+    },
+    {
+      "key": "st_denis_catholic_church_fort_fairfield",
+      "name": "St. Denis Catholic Church",
+      "improved": true
+    },
+    {
+      "key": "st_paul_s_episcopal_church_fort_fairfield",
+      "name": "St. Paul's Episcopal Church",
+      "improved": false
+    },
+    {
+      "key": "the_county_federal_credit_union_fort_fairfield",
+      "name": "The County Federal Credit Union",
+      "improved": false
+    },
+    {
+      "key": "turner_sanitation_fort_fairfield",
+      "name": "Turner Sanitation",
+      "improved": false
+    },
+    {
+      "key": "boulevard_graphix_limestone",
+      "name": "Boulevard Graphix",
+      "improved": false
+    },
+    {
+      "key": "bunker_inn_limestone",
+      "name": "Bunker Inn",
+      "improved": false
+    },
+    {
+      "key": "caldwell_auto_parts_towing_limestone",
+      "name": "Caldwell Auto Parts & Towing",
+      "improved": true
+    },
+    {
+      "key": "cote_auto_repair_inc_limestone",
+      "name": "Cote Auto Repair Inc.",
+      "improved": false
+    },
+    {
+      "key": "eagles_redemption_center_limestone",
+      "name": "Eagles Redemption Center",
+      "improved": false
+    },
+    {
+      "key": "high_street_baptist_church_limestone",
+      "name": "High Street Baptist Church",
+      "improved": true
+    },
+    {
+      "key": "limestone_pack_ship_limestone",
+      "name": "Limestone Pack & Ship",
+      "improved": true
+    },
+    {
+      "key": "limestone_post_office_limestone",
+      "name": "Limestone Post Office",
+      "improved": true
+    },
+    {
+      "key": "limestone_public_library_limestone",
+      "name": "Limestone Public Library",
+      "improved": false
+    },
+    {
+      "key": "limestone_snowhawks_limestone",
+      "name": "Limestone Snowhawks",
+      "improved": false
+    },
+    {
+      "key": "loring_air_museum_limestone",
+      "name": "Loring Air Museum",
+      "improved": false
+    },
+    {
+      "key": "loring_job_corps_limestone",
+      "name": "Loring Job Corps",
+      "improved": true
+    },
+    {
+      "key": "manaus_books_coffee_limestone",
+      "name": "Manaus Books & Coffee",
+      "improved": false
+    },
+    {
+      "key": "new_england_kenworth_limestone",
+      "name": "New England Kenworth",
+      "improved": false
+    },
+    {
+      "key": "nike_acres_bed_breakfast_limestone",
+      "name": "Nike Acres Bed & Breakfast",
+      "improved": false
+    },
+    {
+      "key": "sfe_manufacturing_limestone",
+      "name": "SFE Manufacturing",
+      "improved": true
+    },
+    {
+      "key": "trp_limestone_limestone",
+      "name": "TRP Limestone",
+      "improved": false
+    },
+    {
+      "key": "trombley_industries_limestone",
+      "name": "Trombley Industries",
+      "improved": false
+    },
+    {
+      "key": "white_as_snow_laundromat_limestone",
+      "name": "White As Snow Laundromat",
+      "improved": false
+    },
+    {
+      "key": "chandler_farms_inc_mapleton",
+      "name": "Chandler Farms Inc.",
+      "improved": false
+    },
+    {
+      "key": "main_street_hair_design_mapleton",
+      "name": "Main Street Hair Design",
+      "improved": false
+    },
+    {
+      "key": "mapleton_diner_mapleton",
+      "name": "Mapleton Diner",
+      "improved": false
+    },
+    {
+      "key": "mapleton_general_store_mapleton",
+      "name": "Mapleton General Store",
+      "improved": false
+    },
+    {
+      "key": "mapleton_hardware_mapleton",
+      "name": "Mapleton Hardware",
+      "improved": false
+    },
+    {
+      "key": "mapleton_oil_co_mapleton",
+      "name": "Mapleton Oil Co",
+      "improved": true
+    },
+    {
+      "key": "mapleton_one_stop_mapleton",
+      "name": "Mapleton One Stop",
+      "improved": false
+    },
+    {
+      "key": "mapleton_post_office_mapleton",
+      "name": "Mapleton Post Office",
+      "improved": false
+    },
+    {
+      "key": "mapleton_united_methodist_church_mapleton",
+      "name": "Mapleton United Methodist Church",
+      "improved": false
+    },
+    {
+      "key": "mastro_motors_inc_mapleton",
+      "name": "Mastro Motors Inc",
+      "improved": false
+    },
+    {
+      "key": "state_road_advent_christian_church_mapleton",
+      "name": "State Road Advent Christian Church",
+      "improved": false
+    },
+    {
+      "key": "taste_of_home_restaurant_mapleton",
+      "name": "Taste of Home Restaurant",
+      "improved": false
+    },
+    {
+      "key": "west_chapman_advent_christian_church_mapleton",
+      "name": "West Chapman Advent Christian Church",
+      "improved": false
+    },
+    {
+      "key": "a_m_auto_repair_mars_hill",
+      "name": "A & M Auto Repair",
+      "improved": false
+    },
+    {
+      "key": "all_star_gymnastics_mars_hill",
+      "name": "All-Star Gymnastics",
+      "improved": false
+    },
+    {
+      "key": "apostolic_pentecostal_church_mars_hill",
+      "name": "Apostolic Pentecostal Church",
+      "improved": false
+    },
+    {
+      "key": "bigrock_mountain_mars_hill",
+      "name": "BigRock Mountain",
+      "improved": false
+    },
+    {
+      "key": "hidden_country_treasures_mars_hill",
+      "name": "Hidden Country Treasures",
+      "improved": false
+    },
+    {
+      "key": "m_e_grass_sons_mars_hill",
+      "name": "M E Grass & Sons",
+      "improved": true
+    },
+    {
+      "key": "mars_hill_country_club_mars_hill",
+      "name": "Mars Hill Country Club",
+      "improved": false
+    },
+    {
+      "key": "mike_s_auto_sales_and_service_mars_hill",
+      "name": "Mike's Auto Sales and Service",
+      "improved": false
+    },
+    {
+      "key": "my_sunset_cabins_mars_hill",
+      "name": "My Sunset Cabins",
+      "improved": false
+    },
+    {
+      "key": "new_beginning_auto_body_mars_hill",
+      "name": "New Beginning Auto Body",
+      "improved": false
+    },
+    {
+      "key": "pineland_farms_potato_company_inc_mars_hill",
+      "name": "Pineland Farms Potato Company Inc",
+      "improved": false
+    },
+    {
+      "key": "united_baptist_church_mars_hill",
+      "name": "United Baptist Church",
+      "improved": false
+    },
+    {
+      "key": "walter_t_a_hansen_memorial_library_mars_hill",
+      "name": "Walter T.A. Hansen Memorial Library",
+      "improved": false
+    },
+    {
+      "key": "a_vie_presque_isle",
+      "name": "A Vie",
+      "improved": false
+    },
+    {
+      "key": "airport_cafe_gifts_presque_isle",
+      "name": "Airport Cafe & Gifts",
+      "improved": true
+    },
+    {
+      "key": "aroostook_county_fitness_presque_isle",
+      "name": "Aroostook County Fitness",
+      "improved": false
+    },
+    {
+      "key": "aroostook_trusses_inc_presque_isle",
+      "name": "Aroostook Trusses Inc",
+      "improved": false
+    },
+    {
+      "key": "autozone_presque_isle",
+      "name": "AutoZone",
+      "improved": true
+    },
+    {
+      "key": "christian_life_assembly_presque_isle",
+      "name": "Christian Life Assembly",
+      "improved": false
+    },
+    {
+      "key": "church_of_jesus_presque_isle",
+      "name": "Church of Jesus",
+      "improved": false
+    },
+    {
+      "key": "circle_k_presque_isle",
+      "name": "Circle K",
+      "improved": true
+    },
+    {
+      "key": "dunkin_presque_isle",
+      "name": "Dunkin'",
+      "improved": true
+    },
+    {
+      "key": "gram_russo_s_italian_restaurant_presque_isle",
+      "name": "Gram Russo's Italian Restaurant",
+      "improved": false
+    },
+    {
+      "key": "hampton_inn_presque_isle_presque_isle",
+      "name": "Hampton Inn Presque Isle",
+      "improved": false
+    },
+    {
+      "key": "marden_s_surplus_salvage_presque_isle",
+      "name": "Marden's Surplus & Salvage",
+      "improved": true
+    },
+    {
+      "key": "northern_lights_motel_presque_isle",
+      "name": "Northern Lights Motel",
+      "improved": false
+    },
+    {
+      "key": "overhead_door_co_of_presque_isle_presque_isle",
+      "name": "Overhead Door Co of Presque Isle",
+      "improved": false
+    },
+    {
+      "key": "pat_s_pizza_of_presque_isle_presque_isle",
+      "name": "Pat's Pizza of Presque Isle",
+      "improved": false
+    },
+    {
+      "key": "pepsi_bottling_group_presque_isle",
+      "name": "Pepsi Bottling Group",
+      "improved": false
+    },
+    {
+      "key": "pine_village_inc_presque_isle",
+      "name": "Pine Village Inc",
+      "improved": false
+    },
+    {
+      "key": "presque_isle_hotel_presque_isle",
+      "name": "Presque Isle Hotel",
+      "improved": false
+    },
+    {
+      "key": "presque_isle_international_airport_presque_isle",
+      "name": "Presque Isle International Airport",
+      "improved": false
+    },
+    {
+      "key": "presque_isle_rehab_and_nursing_center_presque_isle",
+      "name": "Presque Isle Rehab and Nursing Center",
+      "improved": false
+    },
+    {
+      "key": "riverside_inn_restaurant_presque_isle",
+      "name": "Riverside Inn Restaurant",
+      "improved": false
+    },
+    {
+      "key": "rob_s_pit_stop_presque_isle",
+      "name": "Rob's Pit Stop",
+      "improved": false
+    },
+    {
+      "key": "rodney_s_at_436_main_presque_isle",
+      "name": "Rodney's at 436 Main",
+      "improved": false
+    },
+    {
+      "key": "rosella_s_pizzeria_presque_isle",
+      "name": "Rosella's Pizzeria",
+      "improved": false
+    },
+    {
+      "key": "surestay_by_best_western_presque_isle_presque_isle",
+      "name": "SureStay By Best Western Presque Isle",
+      "improved": false
+    },
+    {
+      "key": "the_county_glass_shop_presque_isle",
+      "name": "The County Glass Shop",
+      "improved": false
+    },
+    {
+      "key": "the_northeastland_hotel_presque_isle",
+      "name": "The Northeastland Hotel",
+      "improved": false
+    },
+    {
+      "key": "the_sidewalk_cafe_presque_isle",
+      "name": "The Sidewalk Cafe",
+      "improved": false
+    },
+    {
+      "key": "timeout_sports_bar_restaurant_presque_isle_hotel_presque_isle",
+      "name": "TimeOut Sports Bar & Restaurant (Presque Isle Hotel)",
+      "improved": false
+    },
+    {
+      "key": "cafe_sorpresso_washburn",
+      "name": "Cafe Sorpresso",
+      "improved": false
+    },
+    {
+      "key": "dollar_general_washburn",
+      "name": "Dollar General",
+      "improved": false
+    },
+    {
+      "key": "katahdin_trust_company_washburn",
+      "name": "Katahdin Trust Company",
+      "improved": false
+    },
+    {
+      "key": "st_catherine_catholic_church_washburn",
+      "name": "St. Catherine Catholic Church",
+      "improved": false
+    },
+    {
+      "key": "washburn_coffee_shop_washburn",
+      "name": "Washburn Coffee Shop",
+      "improved": false
+    },
+    {
+      "key": "washburn_family_practice_washburn",
+      "name": "Washburn Family Practice",
+      "improved": false
+    },
+    {
+      "key": "washburn_food_mart_washburn",
+      "name": "Washburn Food Mart",
+      "improved": false
+    },
+    {
+      "key": "washburn_recreation_washburn",
+      "name": "Washburn Recreation",
+      "improved": false
+    },
+    {
+      "key": "washburn_schools_washburn",
+      "name": "Washburn Schools",
+      "improved": true
+    },
+    {
+      "key": "washburn_town_office_washburn",
+      "name": "Washburn Town Office",
+      "improved": true
+    },
+    {
+      "key": "advantage_thermal_bridgewater",
+      "name": "Advantage Thermal",
+      "improved": false
+    },
+    {
+      "key": "backridge_auto_and_truck_repair_bridgewater",
+      "name": "Backridge Auto and Truck Repair",
+      "improved": false
+    },
+    {
+      "key": "boyd_s_repair_bridgewater",
+      "name": "Boyd's Repair",
+      "improved": false
+    },
+    {
+      "key": "bradbury_maple_farms_bridgewater",
+      "name": "Bradbury Maple Farms",
+      "improved": false
+    },
+    {
+      "key": "delong_builders_bridgewater",
+      "name": "DeLong Builders",
+      "improved": false
+    },
+    {
+      "key": "halls_new_and_used_bridgewater",
+      "name": "Halls New and Used",
+      "improved": false
+    },
+    {
+      "key": "hidden_meadow_farm_bridgewater",
+      "name": "Hidden Meadow Farm",
+      "improved": false
+    },
+    {
+      "key": "ragtime_designs_bridgewater",
+      "name": "Ragtime Designs",
+      "improved": false
+    },
+    {
+      "key": "shaw_s_oil_bridgewater",
+      "name": "Shaw's Oil",
+      "improved": false
+    },
+    {
+      "key": "smoldering_lake_outfitters_bridgewater",
+      "name": "Smoldering Lake Outfitters",
+      "improved": false
+    },
+    {
+      "key": "the_corner_store_bridgewater",
+      "name": "The Corner Store",
+      "improved": false
+    },
+    {
+      "key": "whited_bible_camp_bridgewater",
+      "name": "Whited Bible Camp",
+      "improved": false
+    },
+    {
+      "key": "wood_prairie_farm_bridgewater",
+      "name": "Wood Prairie Farm",
+      "improved": false
+    },
+    {
+      "key": "dyer_brook_union_church_dyer_brook",
+      "name": "Dyer Brook Union Church",
+      "improved": false
+    },
+    {
+      "key": "midnight_auto_repair_dyer_brook",
+      "name": "Midnight Auto Repair",
+      "improved": false
+    },
+    {
+      "key": "anderson_s_mill_pond_dairy_bar_hodgdon",
+      "name": "Anderson's Mill Pond Dairy Bar",
+      "improved": false
+    },
+    {
+      "key": "forticor_farms_hodgdon",
+      "name": "Forticor Farms",
+      "improved": false
+    },
+    {
+      "key": "hidden_spring_winery_hodgdon",
+      "name": "Hidden Spring Winery",
+      "improved": false
+    },
+    {
+      "key": "hodgdon_united_methodist_church_hodgdon",
+      "name": "Hodgdon United Methodist Church",
+      "improved": false
+    },
+    {
+      "key": "new_life_assembly_of_god_hodgdon",
+      "name": "New Life Assembly of God",
+      "improved": false
+    },
+    {
+      "key": "pleasant_view_tree_farm_hodgdon",
+      "name": "Pleasant View Tree Farm",
+      "improved": false
+    },
+    {
+      "key": "seiders_hill_top_lanes_hodgdon",
+      "name": "Seiders Hill-Top Lanes",
+      "improved": false
+    },
+    {
+      "key": "t_s_market_hodgdon",
+      "name": "T & S Market",
+      "improved": false
+    },
+    {
+      "key": "treeland_farm_hodgdon",
+      "name": "Treeland Farm",
+      "improved": false
+    },
+    {
+      "key": "wynes_trailside_popcorn_hodgdon",
+      "name": "Wynes Trailside Popcorn",
+      "improved": false
+    },
+    {
+      "key": "207_collectibles_houlton",
+      "name": "207 Collectibles",
+      "improved": false
+    },
+    {
+      "key": "acap_aroostook_county_action_program_houlton",
+      "name": "ACAP (Aroostook County Action Program)",
+      "improved": false
+    },
+    {
+      "key": "anciently_marked_tattoo_art_studio_houlton",
+      "name": "Anciently Marked Tattoo Art Studio",
+      "improved": false
+    },
+    {
+      "key": "andy_s_iga_foodliner_houlton",
+      "name": "Andy's IGA Foodliner",
+      "improved": false
+    },
+    {
+      "key": "aroostook_produce_dist_houlton",
+      "name": "Aroostook Produce Dist.",
+      "improved": false
+    },
+    {
+      "key": "bangor_savings_bank_houlton",
+      "name": "Bangor Savings Bank",
+      "improved": false
+    },
+    {
+      "key": "bates_fuel_houlton",
+      "name": "Bates Fuel",
+      "improved": false
+    },
+    {
+      "key": "betty_marie_s_sweet_shop_houlton",
+      "name": "Betty Marie's Sweet Shop",
+      "improved": false
+    },
+    {
+      "key": "bittersweet_thyme_houlton",
+      "name": "Bittersweet Thyme",
+      "improved": false
+    },
+    {
+      "key": "bittersweet_thyme_cafe_houlton",
+      "name": "Bittersweet Thyme Cafe",
+      "improved": false
+    },
+    {
+      "key": "brass_anchor_barbershop_houlton",
+      "name": "Brass Anchor Barbershop",
+      "improved": false
+    },
+    {
+      "key": "burger_king_houlton",
+      "name": "Burger King",
+      "improved": false
+    },
+    {
+      "key": "clark_s_auto_sales_houlton",
+      "name": "Clark's Auto Sales",
+      "improved": false
+    },
+    {
+      "key": "clukey_s_auto_supply_houlton",
+      "name": "Clukey's Auto Supply",
+      "improved": false
+    },
+    {
+      "key": "country_north_gifts_houlton",
+      "name": "Country North Gifts",
+      "improved": false
+    },
+    {
+      "key": "county_federal_credit_union_houlton",
+      "name": "County Federal Credit Union",
+      "improved": false
+    },
+    {
+      "key": "county_micro_inc_houlton",
+      "name": "County Micro, Inc",
+      "improved": false
+    },
+    {
+      "key": "county_yankee_grocer_houlton",
+      "name": "County Yankee Grocer",
+      "improved": false
+    },
+    {
+      "key": "davis_gates_alward_cpa_s_houlton",
+      "name": "Davis, Gates & Alward CPA's",
+      "improved": false
+    },
+    {
+      "key": "dead_river_company_houlton",
+      "name": "Dead River Company",
+      "improved": false
+    },
+    {
+      "key": "full_gospel_assembly_houlton",
+      "name": "Full Gospel Assembly",
+      "improved": true
+    },
+    {
+      "key": "gates_accounting_houlton",
+      "name": "Gates Accounting",
+      "improved": false
+    },
+    {
+      "key": "good_as_new_thrift_shop_houlton",
+      "name": "Good As New Thrift Shop",
+      "improved": false
+    },
+    {
+      "key": "greg_s_garage_houlton",
+      "name": "Greg's Garage",
+      "improved": false
+    },
+    {
+      "key": "hair_works_studio_houlton",
+      "name": "Hair Works Studio",
+      "improved": false
+    },
+    {
+      "key": "harbison_plumbing_heating_houlton",
+      "name": "Harbison Plumbing & Heating",
+      "improved": false
+    },
+    {
+      "key": "hatfield_realty_service_inc_houlton",
+      "name": "Hatfield Realty Service, Inc.",
+      "improved": false
+    },
+    {
+      "key": "hogan_tire_houlton",
+      "name": "Hogan Tire",
+      "improved": false
+    },
+    {
+      "key": "houlton_stamp_coins_antiques_houlton",
+      "name": "Houlton Stamp, Coins & Antiques",
+      "improved": false
+    },
+    {
+      "key": "hy_grow_organics_houlton",
+      "name": "Hy-Grow Organics",
+      "improved": false
+    },
+    {
+      "key": "ivey_s_motor_lodge_houlton",
+      "name": "Ivey's Motor Lodge",
+      "improved": false
+    },
+    {
+      "key": "jei_sports_of_maine_houlton",
+      "name": "JEI Sports of Maine",
+      "improved": false
+    },
+    {
+      "key": "label_shopper_houlton",
+      "name": "Label Shopper",
+      "improved": false
+    },
+    {
+      "key": "lincoln_agency_llc_houlton",
+      "name": "Lincoln Agency LLC",
+      "improved": false
+    },
+    {
+      "key": "main_street_fitness_inc_houlton",
+      "name": "Main Street Fitness Inc",
+      "improved": false
+    },
+    {
+      "key": "market_pizza_houlton",
+      "name": "Market Pizza",
+      "improved": false
+    },
+    {
+      "key": "mini_music_shop_houlton",
+      "name": "Mini Music Shop",
+      "improved": false
+    },
+    {
+      "key": "modern_beauty_salon_houlton",
+      "name": "Modern Beauty Salon",
+      "improved": false
+    },
+    {
+      "key": "mooers_realty_houlton",
+      "name": "Mooers Realty",
+      "improved": false
+    },
+    {
+      "key": "napa_coastal_auto_parts_houlton",
+      "name": "NAPA/Coastal Auto Parts",
+      "improved": false
+    },
+    {
+      "key": "priority_auto_sales_houlton",
+      "name": "Priority Auto Sales",
+      "improved": false
+    },
+    {
+      "key": "rather_b_quilting_houlton",
+      "name": "Rather-B-Quilting",
+      "improved": false
+    },
+    {
+      "key": "s_w_collins_houlton",
+      "name": "S.W. Collins",
+      "improved": false
+    },
+    {
+      "key": "sadie_s_bakery_houlton",
+      "name": "Sadie's Bakery",
+      "improved": false
+    },
+    {
+      "key": "sage_financial_houlton",
+      "name": "Sage Financial",
+      "improved": false
+    },
+    {
+      "key": "salvation_army_family_thrift_store_houlton",
+      "name": "Salvation Army Family Thrift Store",
+      "improved": false
+    },
+    {
+      "key": "sherwin_williams_houlton",
+      "name": "Sherwin Williams",
+      "improved": false
+    },
+    {
+      "key": "shiretown_coins_houlton",
+      "name": "Shiretown Coins",
+      "improved": false
+    },
+    {
+      "key": "shiretown_inn_suites_houlton",
+      "name": "Shiretown Inn & Suites",
+      "improved": true
+    },
+    {
+      "key": "shiretown_stove_outdoor_living_houlton",
+      "name": "Shiretown Stove & Outdoor Living",
+      "improved": false
+    },
+    {
+      "key": "steelstone_industries_houlton",
+      "name": "Steelstone Industries",
+      "improved": false
+    },
+    {
+      "key": "swallow_electric_houlton",
+      "name": "Swallow Electric",
+      "improved": false
+    },
+    {
+      "key": "the_country_co_op_and_farm_store_houlton",
+      "name": "The Country Co-op and Farm Store",
+      "improved": false
+    },
+    {
+      "key": "thompson_oil_co_houlton",
+      "name": "Thompson Oil Co",
+      "improved": false
+    },
+    {
+      "key": "tulgey_wood_emporium_houlton",
+      "name": "Tulgey Wood Emporium",
+      "improved": false
+    },
+    {
+      "key": "united_construction_forestry_united_ag_turf_houlton",
+      "name": "United Construction & Forestry / United Ag & Turf",
+      "improved": true
+    },
+    {
+      "key": "varney_agency_houlton",
+      "name": "Varney Agency",
+      "improved": false
+    },
+    {
+      "key": "wbcq_radio_houlton",
+      "name": "WBCQ Radio",
+      "improved": false
+    },
+    {
+      "key": "wiggy_s_trading_post_houlton",
+      "name": "Wiggy's Trading Post",
+      "improved": false
+    },
+    {
+      "key": "york_s_of_houlton_houlton",
+      "name": "York's of Houlton",
+      "improved": true
+    },
+    {
+      "key": "binotto_s_farm_stand_island_falls",
+      "name": "Binotto's Farm Stand",
+      "improved": false
+    },
+    {
+      "key": "birch_point_campground_cottages_island_falls",
+      "name": "Birch Point Campground & Cottages",
+      "improved": false
+    },
+    {
+      "key": "bishop_s_market_island_falls",
+      "name": "Bishop's Market",
+      "improved": false
+    },
+    {
+      "key": "bowers_funeral_home_island_falls",
+      "name": "Bowers Funeral Home",
+      "improved": false
+    },
+    {
+      "key": "daigle_oil_co_island_falls_island_falls",
+      "name": "Daigle Oil Co (Island Falls)",
+      "improved": false
+    },
+    {
+      "key": "island_falls_animal_health_clinic_island_falls",
+      "name": "Island Falls Animal Health Clinic",
+      "improved": false
+    },
+    {
+      "key": "island_falls_one_stop_island_falls",
+      "name": "Island Falls One Stop",
+      "improved": false
+    },
+    {
+      "key": "island_falls_opera_house_inn_lounge_island_falls",
+      "name": "Island Falls Opera House Inn & Lounge",
+      "improved": false
+    },
+    {
+      "key": "katahdin_valley_health_center_island_falls_island_falls",
+      "name": "Katahdin Valley Health Center - Island Falls",
+      "improved": false
+    },
+    {
+      "key": "mimi_s_cook_nook_island_falls",
+      "name": "Mimi's Cook Nook",
+      "improved": false
+    },
+    {
+      "key": "north_gate_grill_island_falls",
+      "name": "North Gate Grill",
+      "improved": false
+    },
+    {
+      "key": "porter_s_garage_island_falls",
+      "name": "Porter's Garage",
+      "improved": false
+    },
+    {
+      "key": "sewall_house_yoga_retreat_island_falls",
+      "name": "Sewall House Yoga Retreat",
+      "improved": false
+    },
+    {
+      "key": "united_baptist_church_island_falls",
+      "name": "United Baptist Church",
+      "improved": true
+    },
+    {
+      "key": "va_jo_wa_golf_course_island_falls",
+      "name": "Va-Jo-Wa Golf Course",
+      "improved": false
+    },
+    {
+      "key": "aurora_mills_and_farm_linneus",
+      "name": "Aurora Mills and Farm",
+      "improved": false
+    },
+    {
+      "key": "brown_s_appliance_service_linneus",
+      "name": "Brown's Appliance Service",
+      "improved": false
+    },
+    {
+      "key": "canine_equine_inn_linneus",
+      "name": "Canine Equine Inn",
+      "improved": false
+    },
+    {
+      "key": "clark_s_auto_sales_linneus",
+      "name": "Clark's Auto Sales",
+      "improved": false
+    },
+    {
+      "key": "clark_s_variety_linneus",
+      "name": "Clark's Variety",
+      "improved": false
+    },
+    {
+      "key": "county_home_improvements_linneus",
+      "name": "County Home Improvements",
+      "improved": false
+    },
+    {
+      "key": "d_s_self_service_storage_linneus",
+      "name": "D & S Self Service Storage",
+      "improved": false
+    },
+    {
+      "key": "fox_hollow_photography_linneus",
+      "name": "Fox Hollow Photography",
+      "improved": false
+    },
+    {
+      "key": "hagan_farms_linneus",
+      "name": "Hagan Farms",
+      "improved": false
+    },
+    {
+      "key": "harry_s_used_sales_linneus",
+      "name": "Harry's Used Sales",
+      "improved": false
+    },
+    {
+      "key": "jsl_metal_recycling_linneus",
+      "name": "JSL Metal Recycling",
+      "improved": false
+    },
+    {
+      "key": "katahdin_s_shadow_outfitters_linneus",
+      "name": "Katahdin's Shadow Outfitters",
+      "improved": false
+    },
+    {
+      "key": "nature_s_circle_farm_linneus",
+      "name": "Nature's Circle Farm",
+      "improved": false
+    },
+    {
+      "key": "plisga_day_surveys_linneus",
+      "name": "Plisga & Day - Surveys",
+      "improved": false
+    },
+    {
+      "key": "rockwater_cabins_linneus",
+      "name": "Rockwater Cabins",
+      "improved": false
+    },
+    {
+      "key": "stf_forest_products_linneus",
+      "name": "Stf Forest Products",
+      "improved": false
+    },
+    {
+      "key": "sunnyside_family_farm_linneus",
+      "name": "Sunnyside Family Farm",
+      "improved": false
+    },
+    {
+      "key": "wood_works_rocks_of_maine_linneus",
+      "name": "Wood Works & Rocks of Maine",
+      "improved": true
+    },
+    {
+      "key": "dana_foster_sons_trucking_littleton",
+      "name": "Dana Foster & Sons Trucking",
+      "improved": false
+    },
+    {
+      "key": "golding_construction_littleton",
+      "name": "Golding Construction",
+      "improved": false
+    },
+    {
+      "key": "henderson_helping_hand_massage_littleton",
+      "name": "Henderson Helping Hand Massage",
+      "improved": false
+    },
+    {
+      "key": "littleton_service_auto_body_repair_littleton",
+      "name": "Littleton Service (Auto Body/Repair)",
+      "improved": false
+    },
+    {
+      "key": "shady_ridge_disc_golf_littleton",
+      "name": "Shady Ridge Disc Golf",
+      "improved": false
+    },
+    {
+      "key": "southern_aroostook_agricultural_museum_littleton",
+      "name": "Southern Aroostook Agricultural Museum",
+      "improved": false
+    },
+    {
+      "key": "watson_s_water_well_drilling_littleton",
+      "name": "Watson's Water Well Drilling",
+      "improved": false
+    },
+    {
+      "key": "westerdahl_garage_towing_littleton",
+      "name": "Westerdahl Garage (Towing)",
+      "improved": true
+    },
+    {
+      "key": "monticello_baptist_church_monticello",
+      "name": "Monticello Baptist Church",
+      "improved": false
+    },
+    {
+      "key": "cochran_camp_new_limerick",
+      "name": "Cochran Camp",
+      "improved": false
+    },
+    {
+      "key": "lakeside_restaurant_new_limerick",
+      "name": "Lakeside Restaurant",
+      "improved": false
+    },
+    {
+      "key": "s_h_nevers_inc_logging_new_limerick",
+      "name": "S H Nevers Inc (Logging)",
+      "improved": false
+    },
+    {
+      "key": "tall_timber_lodge_new_limerick",
+      "name": "Tall Timber Lodge",
+      "improved": false
+    },
+    {
+      "key": "tires_plus_total_car_care_new_limerick",
+      "name": "Tires Plus Total Car Care",
+      "improved": false
+    },
+    {
+      "key": "a_place_to_eat_oakfield",
+      "name": "A Place to Eat",
+      "improved": false
+    },
+    {
+      "key": "arborwall_solid_cedar_homes_oakfield",
+      "name": "Arborwall Solid Cedar Homes",
+      "improved": false
+    },
+    {
+      "key": "bethel_church_oakfield",
+      "name": "Bethel Church",
+      "improved": false
+    },
+    {
+      "key": "higgins_brook_cabins_oakfield",
+      "name": "Higgins Brook Cabins",
+      "improved": false
+    },
+    {
+      "key": "katahdin_cedar_log_homes_katahdin_forest_products_oakfield",
+      "name": "Katahdin Cedar Log Homes / Katahdin Forest Products",
+      "improved": false
+    },
+    {
+      "key": "katahdin_trust_company_oakfield",
+      "name": "Katahdin Trust Company",
+      "improved": false
+    },
+    {
+      "key": "oakfield_railway_museum_oakfield",
+      "name": "Oakfield Railway Museum",
+      "improved": false
+    },
+    {
+      "key": "oakfield_thriftway_oakfield",
+      "name": "Oakfield Thriftway",
+      "improved": false
+    },
+    {
+      "key": "whitey_s_market_oakfield",
+      "name": "Whitey's Market",
+      "improved": false
+    },
+    {
+      "key": "currie_combs_stables_smyrna",
+      "name": "Currie Combs Stables",
+      "improved": false
+    },
+    {
+      "key": "farm_fresh_feeds_smyrna",
+      "name": "Farm Fresh Feeds",
+      "improved": false
+    },
+    {
+      "key": "lilley_dairy_farms_smyrna",
+      "name": "Lilley Dairy Farms",
+      "improved": false
+    },
+    {
+      "key": "mt_timoney_cycle_center_smyrna",
+      "name": "Mt. Timoney Cycle Center",
+      "improved": false
+    },
+    {
+      "key": "smyrna_baptist_church_smyrna",
+      "name": "Smyrna Baptist Church",
+      "improved": false
+    },
+    {
+      "key": "posh_salon_east_millinocket",
+      "name": "Posh Salon",
+      "improved": false
+    },
+    {
+      "key": "83_north_bar_grill_billiards_medway",
+      "name": "83 North Bar Grill & Billiards",
+      "improved": true
+    },
+    {
+      "key": "big_apple_convenience_store_medway",
+      "name": "Big Apple Convenience Store",
+      "improved": false
+    },
+    {
+      "key": "country_diner_medway",
+      "name": "Country Diner",
+      "improved": true
+    },
+    {
+      "key": "d_m_trailer_sales_medway",
+      "name": "D & M Trailer Sales",
+      "improved": false
+    },
+    {
+      "key": "gilman_electrical_supply_medway",
+      "name": "Gilman Electrical Supply",
+      "improved": false
+    },
+    {
+      "key": "glad_tidings_church_of_god_medway",
+      "name": "Glad Tidings Church of God",
+      "improved": false
+    },
+    {
+      "key": "grandbelly_s_country_cafe_medway",
+      "name": "Grandbelly's Country Cafe",
+      "improved": false
+    },
+    {
+      "key": "katahdin_shadows_campground_medway",
+      "name": "Katahdin Shadows Campground",
+      "improved": false
+    },
+    {
+      "key": "lennie_s_superette_medway",
+      "name": "Lennie's Superette",
+      "improved": false
+    },
+    {
+      "key": "noah_s_ark_food_ice_cream_medway",
+      "name": "Noah's Ark Food & Ice Cream",
+      "improved": true
+    },
+    {
+      "key": "river_s_edge_motel_pizza_medway",
+      "name": "River's Edge Motel & Pizza",
+      "improved": false
+    },
+    {
+      "key": "two_rivers_canoe_tackle_medway",
+      "name": "Two Rivers Canoe & Tackle",
+      "improved": true
+    },
+    {
+      "key": "abol_bridge_campground_store_millinocket",
+      "name": "Abol Bridge Campground & Store",
+      "improved": false
+    },
+    {
+      "key": "gather_inn_millinocket",
+      "name": "Gather Inn",
+      "improved": false
+    },
+    {
+      "key": "h_r_block_millinocket",
+      "name": "H&R Block",
+      "improved": false
+    },
+    {
+      "key": "hillcrest_golf_club_millinocket",
+      "name": "Hillcrest Golf Club",
+      "improved": false
+    },
+    {
+      "key": "hotel_terrace_restaurant_millinocket",
+      "name": "Hotel Terrace & Restaurant",
+      "improved": true
+    },
+    {
+      "key": "ice_fish_inn_millinocket",
+      "name": "Ice Fish Inn",
+      "improved": false
+    },
+    {
+      "key": "katahdin_chamber_of_commerce_millinocket",
+      "name": "Katahdin Chamber of Commerce",
+      "improved": false
+    },
+    {
+      "key": "millinocket_army_navy_store_millinocket",
+      "name": "Millinocket Army Navy Store",
+      "improved": false
+    },
+    {
+      "key": "millinocket_house_of_pizza_millinocket",
+      "name": "Millinocket House of Pizza",
+      "improved": false
+    },
+    {
+      "key": "realty_resources_management_millinocket",
+      "name": "Realty Resources Management",
+      "improved": false
+    },
+    {
+      "key": "russ_barber_styling_millinocket",
+      "name": "Russ' Barber & Styling",
+      "improved": true
+    },
+    {
+      "key": "west_branch_aviation_millinocket",
+      "name": "West Branch Aviation",
+      "improved": false
+    },
+    {
+      "key": "young_house_bed_breakfast_millinocket",
+      "name": "Young House Bed & Breakfast",
+      "improved": false
+    },
+    {
+      "key": "back_wood_bbq_mount_chase",
+      "name": "Back Wood BBQ",
+      "improved": false
+    },
+    {
+      "key": "dollar_general_patten",
+      "name": "Dollar General",
+      "improved": true
+    },
+    {
+      "key": "f_a_peabody_insurance_sherman",
+      "name": "F.A. Peabody Insurance",
+      "improved": false
+    },
+    {
+      "key": "katahdin_valley_motel_sherman",
+      "name": "Katahdin Valley Motel",
+      "improved": false
+    },
+    {
+      "key": "monarda_calvary_baptist_church_sherman",
+      "name": "Monarda Calvary Baptist Church",
+      "improved": false
+    },
+    {
+      "key": "salted_butter_farm_sherman",
+      "name": "Salted Butter Farm",
+      "improved": false
+    },
+    {
+      "key": "washburn_memorial_church_ucc_sherman",
+      "name": "Washburn Memorial Church (UCC)",
+      "improved": false
+    },
+    {
+      "key": "mike_s_elite_auto_shin_pond",
+      "name": "Mike's Elite Auto",
+      "improved": false
+    },
+    {
+      "key": "mt_chase_lodge_shin_pond",
+      "name": "Mt. Chase Lodge",
+      "improved": false
+    },
+    {
+      "key": "shin_pond_pub_shin_pond",
+      "name": "Shin Pond Pub",
+      "improved": true
+    },
+    {
+      "key": "shin_pond_village_shin_pond",
+      "name": "Shin Pond Village",
+      "improved": false
+    },
+    {
+      "key": "skinner_s_wilderness_variety_store_shin_pond",
+      "name": "Skinner's Wilderness Variety Store",
+      "improved": false
+    },
+    {
+      "key": "ashley_cunningham_co_furniture_burlington",
+      "name": "Ashley Cunningham & Co Furniture",
+      "improved": true
+    },
+    {
+      "key": "banks_electric_burlington",
+      "name": "Banks Electric",
+      "improved": false
+    },
+    {
+      "key": "burlington_baptist_church_burlington",
+      "name": "Burlington Baptist Church",
+      "improved": false
+    },
+    {
+      "key": "burlington_general_store_burlington",
+      "name": "Burlington General Store",
+      "improved": false
+    },
+    {
+      "key": "j_m_kilby_engineering_burlington",
+      "name": "J M Kilby Engineering",
+      "improved": false
+    },
+    {
+      "key": "maine_gas_refrigerators_burlington",
+      "name": "Maine Gas Refrigerators",
+      "improved": false
+    },
+    {
+      "key": "chester_baptist_church_chester",
+      "name": "Chester Baptist Church",
+      "improved": false
+    },
+    {
+      "key": "furever_friends_doggie_daycare_chester",
+      "name": "Furever Friends Doggie Daycare",
+      "improved": false
+    },
+    {
+      "key": "the_maine_land_store_treeline_chester",
+      "name": "The Maine Land Store / Treeline",
+      "improved": false
+    },
+    {
+      "key": "c_i_custom_builders_enfield",
+      "name": "C&I Custom Builders",
+      "improved": false
+    },
+    {
+      "key": "enfield_baptist_church_enfield",
+      "name": "Enfield Baptist Church",
+      "improved": false
+    },
+    {
+      "key": "penobscot_river_realty_enfield",
+      "name": "Penobscot River Realty",
+      "improved": false
+    },
+    {
+      "key": "savage_line_llc_enfield",
+      "name": "Savage Line LLC",
+      "improved": false
+    },
+    {
+      "key": "west_enfield_church_of_god_enfield",
+      "name": "West Enfield Church of God",
+      "improved": false
+    },
+    {
+      "key": "applebee_s_superette_greenbush",
+      "name": "Applebee's Superette",
+      "improved": true
+    },
+    {
+      "key": "cardville_redemption_center_greenbush",
+      "name": "Cardville Redemption Center",
+      "improved": false
+    },
+    {
+      "key": "cardville_united_pentecostal_church_greenbush",
+      "name": "Cardville United Pentecostal Church",
+      "improved": false
+    },
+    {
+      "key": "gsv_surveying_land_services_greenbush",
+      "name": "GSV Surveying & Land Services",
+      "improved": false
+    },
+    {
+      "key": "michaud_woodcrafters_greenbush",
+      "name": "Michaud Woodcrafters",
+      "improved": false
+    },
+    {
+      "key": "northeast_concrete_specialists_greenbush",
+      "name": "Northeast Concrete Specialists",
+      "improved": false
+    },
+    {
+      "key": "rick_lyford_trucking_inc_greenbush",
+      "name": "Rick Lyford Trucking Inc",
+      "improved": false
+    },
+    {
+      "key": "ryan_s_carpet_cleaning_greenbush",
+      "name": "Ryan's Carpet Cleaning",
+      "improved": false
+    },
+    {
+      "key": "howland_enfield_federal_credit_union_howland",
+      "name": "Howland-Enfield Federal Credit Union",
+      "improved": false
+    },
+    {
+      "key": "st_leo_the_great_church_catholic_howland",
+      "name": "St. Leo the Great Church (Catholic)",
+      "improved": true
+    },
+    {
+      "key": "christian_and_missionary_alliance_church_of_lee_lee",
+      "name": "Christian and Missionary Alliance Church of Lee",
+      "improved": false
+    },
+    {
+      "key": "lee_baptist_church_lee",
+      "name": "Lee Baptist Church",
+      "improved": false
+    },
+    {
+      "key": "mallett_s_mill_inc_lee",
+      "name": "Mallett's Mill Inc",
+      "improved": false
+    },
+    {
+      "key": "marble_creek_acres_winery_cidery_lee",
+      "name": "Marble Creek Acres Winery & Cidery",
+      "improved": false
+    },
+    {
+      "key": "sleeping_bear_campground_cabins_lee",
+      "name": "Sleeping Bear Campground & Cabins",
+      "improved": false
+    },
+    {
+      "key": "bible_baptist_church_of_lincoln_lincoln",
+      "name": "Bible Baptist Church of Lincoln",
+      "improved": false
+    },
+    {
+      "key": "briarwood_motor_inn_lincoln",
+      "name": "Briarwood Motor Inn",
+      "improved": false
+    },
+    {
+      "key": "charlie_s_seafood_market_lincoln",
+      "name": "Charlie's Seafood Market",
+      "improved": false
+    },
+    {
+      "key": "circle_k_lincoln_irving_mainway_lincoln",
+      "name": "Circle K / Lincoln Irving Mainway",
+      "improved": false
+    },
+    {
+      "key": "clay_funeral_home_lincoln",
+      "name": "Clay Funeral Home",
+      "improved": false
+    },
+    {
+      "key": "doc_s_place_lincoln",
+      "name": "Doc's Place",
+      "improved": false
+    },
+    {
+      "key": "gatherings_for_the_home_lincoln",
+      "name": "Gatherings for the Home",
+      "improved": false
+    },
+    {
+      "key": "goldstar_cleaners_lincoln",
+      "name": "Goldstar Cleaners",
+      "improved": false
+    },
+    {
+      "key": "health_access_network_boreas_family_medicine_lincoln",
+      "name": "Health Access Network / Boreas Family Medicine",
+      "improved": false
+    },
+    {
+      "key": "high_performance_hair_tanning_lincoln",
+      "name": "High Performance Hair & Tanning",
+      "improved": true
+    },
+    {
+      "key": "lincoln_house_of_pizza_lincoln",
+      "name": "Lincoln House of Pizza",
+      "improved": false
+    },
+    {
+      "key": "lincoln_regional_veterinary_hospital_lincoln",
+      "name": "Lincoln Regional Veterinary Hospital",
+      "improved": false
+    },
+    {
+      "key": "main_street_barber_shop_lincoln",
+      "name": "Main Street Barber Shop",
+      "improved": false
+    },
+    {
+      "key": "marden_s_surplus_salvage_lincoln",
+      "name": "Marden's Surplus & Salvage",
+      "improved": true
+    },
+    {
+      "key": "ninja_express_japanese_steakhouse_lincoln",
+      "name": "Ninja Express Japanese Steakhouse",
+      "improved": false
+    },
+    {
+      "key": "possibilities_gift_home_lincoln",
+      "name": "Possibilities Gift & Home",
+      "improved": false
+    },
+    {
+      "key": "simple_sentiments_lincoln",
+      "name": "Simple Sentiments",
+      "improved": false
+    },
+    {
+      "key": "stewart_professional_learning_center_cowork_lincoln",
+      "name": "Stewart Professional Learning Center & CoWork",
+      "improved": false
+    },
+    {
+      "key": "taco_bell_lincoln",
+      "name": "Taco Bell",
+      "improved": false
+    },
+    {
+      "key": "tangles_hair_studio_lincoln",
+      "name": "Tangles Hair Studio",
+      "improved": false
+    },
+    {
+      "key": "true_value_lincoln",
+      "name": "True Value",
+      "improved": true
+    },
+    {
+      "key": "united_country_lifestyle_properties_of_maine_lincoln",
+      "name": "United Country Lifestyle Properties of Maine",
+      "improved": false
+    },
+    {
+      "key": "village_dry_cleaners_lincoln",
+      "name": "Village Dry Cleaners",
+      "improved": false
+    },
+    {
+      "key": "eva_s_beauty_shoppe_mattawamkeag",
+      "name": "Eva's Beauty Shoppe",
+      "improved": false
+    },
+    {
+      "key": "markie_s_garage_mattawamkeag",
+      "name": "Markie's Garage",
+      "improved": false
+    },
+    {
+      "key": "markie_s_pizza_joint_mattawamkeag",
+      "name": "Markie's Pizza Joint",
+      "improved": false
+    },
+    {
+      "key": "mattawamkeag_baptist_church_mattawamkeag",
+      "name": "Mattawamkeag Baptist Church",
+      "improved": false
+    },
+    {
+      "key": "pj_s_general_store_mattawamkeag",
+      "name": "PJ's General Store",
+      "improved": false
+    },
+    {
+      "key": "pinetree_pellet_fuels_llc_mattawamkeag",
+      "name": "Pinetree Pellet Fuels LLC",
+      "improved": false
+    },
+    {
+      "key": "reflection_hair_salon_mattawamkeag",
+      "name": "Reflection Hair Salon",
+      "improved": false
+    },
+    {
+      "key": "waggin_tails_pet_spa_mattawamkeag",
+      "name": "Waggin Tails Pet SPA",
+      "improved": false
+    },
+    {
+      "key": "wheeler_world_mattawamkeag",
+      "name": "Wheeler World",
+      "improved": false
+    },
+    {
+      "key": "wyman_hardware_mattawamkeag",
+      "name": "Wyman Hardware",
+      "improved": false
+    },
+    {
+      "key": "zion_pentecostal_church_mattawamkeag",
+      "name": "Zion Pentecostal Church",
+      "improved": false
+    },
+    {
+      "key": "grammy_anna_s_springfield",
+      "name": "Grammy Anna's",
+      "improved": false
+    },
+    {
+      "key": "lee_barbershop_styling_salon_springfield",
+      "name": "Lee Barbershop & Styling Salon",
+      "improved": true
+    },
+    {
+      "key": "smith_s_general_store_springfield",
+      "name": "Smith's General Store",
+      "improved": false
+    },
+    {
+      "key": "springfield_congregational_church_ucc_springfield",
+      "name": "Springfield Congregational Church (UCC)",
+      "improved": true
+    },
+    {
+      "key": "springfield_fair_springfield",
+      "name": "Springfield Fair",
+      "improved": false
+    },
+    {
+      "key": "springfieldtyme_bed_breakfast_springfield",
+      "name": "Springfieldtyme Bed & Breakfast",
+      "improved": false
+    },
+    {
+      "key": "t_e_linscott_inc_springfield",
+      "name": "T.E. Linscott Inc",
+      "improved": false
+    },
+    {
+      "key": "wood_wires_guitar_shop_springfield",
+      "name": "Wood & Wires Guitar Shop",
+      "improved": false
+    },
+    {
+      "key": "berry_land_take_out_winn",
+      "name": "Berry Land Take Out",
+      "improved": false
+    },
+    {
+      "key": "h_c_haynes_inc_winn",
+      "name": "H.C. Haynes Inc",
+      "improved": false
+    },
+    {
+      "key": "lakeville_shores_inc_winn",
+      "name": "Lakeville Shores Inc",
+      "improved": false
+    },
+    {
+      "key": "salmon_brook_grooming_winn",
+      "name": "Salmon Brook Grooming",
+      "improved": false
+    },
+    {
+      "key": "soucie_s_junk_yard_winn",
+      "name": "Soucie's Junk Yard",
+      "improved": false
+    },
+    {
+      "key": "st_thomas_episcopal_church_winn",
+      "name": "St. Thomas Episcopal Church",
+      "improved": true
+    },
+    {
+      "key": "williams_trucking_winn",
+      "name": "Williams Trucking",
+      "improved": false
+    },
+    {
+      "key": "winn_equipment_parts_inc_winn",
+      "name": "Winn Equipment & Parts Inc",
+      "improved": false
+    },
+    {
+      "key": "winn_general_store_winn",
+      "name": "Winn General Store",
+      "improved": false
+    },
+    {
+      "key": "winn_service_center_winn",
+      "name": "Winn Service Center",
+      "improved": false
+    }
+  ],
+  "improved": 50,
+  "still_imprecise": [
+    "apostolic_church_in_jesus_name_ashland",
+    "aroostook_valley_health_center_ashland",
+    "ashland_building_supply_ashland",
+    "ashland_community_center_ashland",
+    "ashland_family_pharmacy_ashland",
+    "ashland_health_center_ashland",
+    "ashland_historical_society_ashland",
+    "ashland_recreation_ashland",
+    "ashland_union_congregational_church_ucc_ashland",
+    "ashland_s_diner_ashland",
+    "daigle_oil_co_ashland",
+    "freem_s_bar_and_grill_ashland",
+    "northeast_pellets_ashland",
+    "northwoods_diner_old_post_cafe_ashland",
+    "old_post_cafe_ashland",
+    "prentiss_carlisle_ashland",
+    "qwik_stop_ii_ashland",
+    "stimson_ouellette_funeral_home_ashland",
+    "best_western_caribou_inn_caribou",
+    "burger_king_caribou",
+    "caribou_automotive_repair_services_caribou",
+    "caribou_bowl_a_drome_caribou",
+    "caribou_dental_caribou",
+    "caribou_family_medicine_caribou",
+    "caribou_florist_greenhouse_caribou",
+    "caribou_ford_lincoln_caribou",
+    "caribou_laundry_dry_cleaning_caribou",
+    "caribou_parks_recreation_department_caribou",
+    "circle_k_on_the_run_caribou",
+    "crown_veterinary_services_caribou",
+    "greenhouse_restaurant_caribou",
+    "matthew_hunter_attorney_caribou",
+    "quality_inn_suites_caribou",
+    "advance_auto_parts_fort_fairfield",
+    "caldwell_s_auto_fort_fairfield",
+    "canterbury_royale_gourmet_fort_fairfield",
+    "celebration_center_assemblies_of_god_fort_fairfield",
+    "county_bluegrass_festival_fort_fairfield",
+    "curtis_auto_airplane_repair_sales_inc_fort_fairfield",
+    "family_haircuts_by_lisa_at_jack_s_barbershop_fort_fairfield",
+    "fields_realty_llc_fort_fairfield",
+    "fort_fairfield_dental_center_fort_fairfield",
+    "fort_fairfield_hardware_fort_fairfield",
+    "fort_fairfield_utilities_district_fort_fairfield",
+    "i_care_pharmacy_fort_fairfield",
+    "logan_s_service_and_repair_fort_fairfield",
+    "one_of_a_kind_fort_fairfield",
+    "r_j_market_fort_fairfield",
+    "rogers_auto_repair_fort_fairfield",
+    "st_paul_s_episcopal_church_fort_fairfield",
+    "the_county_federal_credit_union_fort_fairfield",
+    "turner_sanitation_fort_fairfield",
+    "boulevard_graphix_limestone",
+    "bunker_inn_limestone",
+    "cote_auto_repair_inc_limestone",
+    "eagles_redemption_center_limestone",
+    "limestone_public_library_limestone",
+    "limestone_snowhawks_limestone",
+    "loring_air_museum_limestone",
+    "manaus_books_coffee_limestone",
+    "new_england_kenworth_limestone",
+    "nike_acres_bed_breakfast_limestone",
+    "trp_limestone_limestone",
+    "trombley_industries_limestone",
+    "white_as_snow_laundromat_limestone",
+    "chandler_farms_inc_mapleton",
+    "main_street_hair_design_mapleton",
+    "mapleton_diner_mapleton",
+    "mapleton_general_store_mapleton",
+    "mapleton_hardware_mapleton",
+    "mapleton_one_stop_mapleton",
+    "mapleton_post_office_mapleton",
+    "mapleton_united_methodist_church_mapleton",
+    "mastro_motors_inc_mapleton",
+    "state_road_advent_christian_church_mapleton",
+    "taste_of_home_restaurant_mapleton",
+    "west_chapman_advent_christian_church_mapleton",
+    "a_m_auto_repair_mars_hill",
+    "all_star_gymnastics_mars_hill",
+    "apostolic_pentecostal_church_mars_hill",
+    "bigrock_mountain_mars_hill",
+    "hidden_country_treasures_mars_hill",
+    "mars_hill_country_club_mars_hill",
+    "mike_s_auto_sales_and_service_mars_hill",
+    "my_sunset_cabins_mars_hill",
+    "new_beginning_auto_body_mars_hill",
+    "pineland_farms_potato_company_inc_mars_hill",
+    "united_baptist_church_mars_hill",
+    "walter_t_a_hansen_memorial_library_mars_hill",
+    "a_vie_presque_isle",
+    "aroostook_county_fitness_presque_isle",
+    "aroostook_trusses_inc_presque_isle",
+    "christian_life_assembly_presque_isle",
+    "church_of_jesus_presque_isle",
+    "gram_russo_s_italian_restaurant_presque_isle",
+    "hampton_inn_presque_isle_presque_isle",
+    "northern_lights_motel_presque_isle",
+    "overhead_door_co_of_presque_isle_presque_isle",
+    "pat_s_pizza_of_presque_isle_presque_isle",
+    "pepsi_bottling_group_presque_isle",
+    "pine_village_inc_presque_isle",
+    "presque_isle_hotel_presque_isle",
+    "presque_isle_international_airport_presque_isle",
+    "presque_isle_rehab_and_nursing_center_presque_isle",
+    "riverside_inn_restaurant_presque_isle",
+    "rob_s_pit_stop_presque_isle",
+    "rodney_s_at_436_main_presque_isle",
+    "rosella_s_pizzeria_presque_isle",
+    "surestay_by_best_western_presque_isle_presque_isle",
+    "the_county_glass_shop_presque_isle",
+    "the_northeastland_hotel_presque_isle",
+    "the_sidewalk_cafe_presque_isle",
+    "timeout_sports_bar_restaurant_presque_isle_hotel_presque_isle",
+    "cafe_sorpresso_washburn",
+    "dollar_general_washburn",
+    "katahdin_trust_company_washburn",
+    "st_catherine_catholic_church_washburn",
+    "washburn_coffee_shop_washburn",
+    "washburn_family_practice_washburn",
+    "washburn_food_mart_washburn",
+    "washburn_recreation_washburn",
+    "9_lake_outfitters_bridgewater",
+    "advantage_thermal_bridgewater",
+    "backridge_auto_and_truck_repair_bridgewater",
+    "boyd_s_repair_bridgewater",
+    "bradbury_maple_farms_bridgewater",
+    "delong_builders_bridgewater",
+    "halls_new_and_used_bridgewater",
+    "hidden_meadow_farm_bridgewater",
+    "ragtime_designs_bridgewater",
+    "shaw_s_oil_bridgewater",
+    "smoldering_lake_outfitters_bridgewater",
+    "the_corner_store_bridgewater",
+    "whited_bible_camp_bridgewater",
+    "wood_prairie_farm_bridgewater",
+    "dyer_brook_union_church_dyer_brook",
+    "midnight_auto_repair_dyer_brook",
+    "anderson_s_mill_pond_dairy_bar_hodgdon",
+    "forticor_farms_hodgdon",
+    "hidden_spring_winery_hodgdon",
+    "hodgdon_united_methodist_church_hodgdon",
+    "new_life_assembly_of_god_hodgdon",
+    "pleasant_view_tree_farm_hodgdon",
+    "seiders_hill_top_lanes_hodgdon",
+    "t_s_market_hodgdon",
+    "treeland_farm_hodgdon",
+    "wynes_trailside_popcorn_hodgdon",
+    "207_collectibles_houlton",
+    "acap_aroostook_county_action_program_houlton",
+    "anciently_marked_tattoo_art_studio_houlton",
+    "andy_s_iga_foodliner_houlton",
+    "aroostook_produce_dist_houlton",
+    "bangor_savings_bank_houlton",
+    "bates_fuel_houlton",
+    "betty_marie_s_sweet_shop_houlton",
+    "bittersweet_thyme_houlton",
+    "bittersweet_thyme_cafe_houlton",
+    "brass_anchor_barbershop_houlton",
+    "burger_king_houlton",
+    "clark_s_auto_sales_houlton",
+    "clukey_s_auto_supply_houlton",
+    "country_north_gifts_houlton",
+    "county_federal_credit_union_houlton",
+    "county_micro_inc_houlton",
+    "county_yankee_grocer_houlton",
+    "davis_gates_alward_cpa_s_houlton",
+    "dead_river_company_houlton",
+    "gates_accounting_houlton",
+    "good_as_new_thrift_shop_houlton",
+    "greg_s_garage_houlton",
+    "hair_works_studio_houlton",
+    "harbison_plumbing_heating_houlton",
+    "hatfield_realty_service_inc_houlton",
+    "hogan_tire_houlton",
+    "houlton_stamp_coins_antiques_houlton",
+    "hy_grow_organics_houlton",
+    "ivey_s_motor_lodge_houlton",
+    "jei_sports_of_maine_houlton",
+    "label_shopper_houlton",
+    "lincoln_agency_llc_houlton",
+    "main_street_fitness_inc_houlton",
+    "market_pizza_houlton",
+    "mini_music_shop_houlton",
+    "modern_beauty_salon_houlton",
+    "mooers_realty_houlton",
+    "napa_coastal_auto_parts_houlton",
+    "priority_auto_sales_houlton",
+    "rather_b_quilting_houlton",
+    "s_w_collins_houlton",
+    "sadie_s_bakery_houlton",
+    "sage_financial_houlton",
+    "salvation_army_family_thrift_store_houlton",
+    "sherwin_williams_houlton",
+    "shiretown_coins_houlton",
+    "shiretown_stove_outdoor_living_houlton",
+    "steelstone_industries_houlton",
+    "swallow_electric_houlton",
+    "the_country_co_op_and_farm_store_houlton",
+    "thompson_oil_co_houlton",
+    "tulgey_wood_emporium_houlton",
+    "varney_agency_houlton",
+    "wbcq_radio_houlton",
+    "wiggy_s_trading_post_houlton",
+    "binotto_s_farm_stand_island_falls",
+    "birch_point_campground_cottages_island_falls",
+    "bishop_s_market_island_falls",
+    "bowers_funeral_home_island_falls",
+    "daigle_oil_co_island_falls_island_falls",
+    "island_falls_animal_health_clinic_island_falls",
+    "island_falls_one_stop_island_falls",
+    "island_falls_opera_house_inn_lounge_island_falls",
+    "katahdin_valley_health_center_island_falls_island_falls",
+    "mimi_s_cook_nook_island_falls",
+    "north_gate_grill_island_falls",
+    "porter_s_garage_island_falls",
+    "sewall_house_yoga_retreat_island_falls",
+    "va_jo_wa_golf_course_island_falls",
+    "aurora_mills_and_farm_linneus",
+    "brown_s_appliance_service_linneus",
+    "canine_equine_inn_linneus",
+    "clark_s_auto_sales_linneus",
+    "clark_s_variety_linneus",
+    "county_home_improvements_linneus",
+    "d_s_self_service_storage_linneus",
+    "fox_hollow_photography_linneus",
+    "hagan_farms_linneus",
+    "harry_s_used_sales_linneus",
+    "jsl_metal_recycling_linneus",
+    "katahdin_s_shadow_outfitters_linneus",
+    "nature_s_circle_farm_linneus",
+    "plisga_day_surveys_linneus",
+    "rockwater_cabins_linneus",
+    "stf_forest_products_linneus",
+    "sunnyside_family_farm_linneus",
+    "dana_foster_sons_trucking_littleton",
+    "golding_construction_littleton",
+    "henderson_helping_hand_massage_littleton",
+    "littleton_service_auto_body_repair_littleton",
+    "shady_ridge_disc_golf_littleton",
+    "southern_aroostook_agricultural_museum_littleton",
+    "watson_s_water_well_drilling_littleton",
+    "monticello_baptist_church_monticello",
+    "cochran_camp_new_limerick",
+    "lakeside_restaurant_new_limerick",
+    "s_h_nevers_inc_logging_new_limerick",
+    "tall_timber_lodge_new_limerick",
+    "tires_plus_total_car_care_new_limerick",
+    "a_place_to_eat_oakfield",
+    "arborwall_solid_cedar_homes_oakfield",
+    "bethel_church_oakfield",
+    "higgins_brook_cabins_oakfield",
+    "katahdin_cedar_log_homes_katahdin_forest_products_oakfield",
+    "katahdin_trust_company_oakfield",
+    "oakfield_railway_museum_oakfield",
+    "oakfield_thriftway_oakfield",
+    "whitey_s_market_oakfield",
+    "currie_combs_stables_smyrna",
+    "farm_fresh_feeds_smyrna",
+    "lilley_dairy_farms_smyrna",
+    "mt_timoney_cycle_center_smyrna",
+    "smyrna_baptist_church_smyrna",
+    "posh_salon_east_millinocket",
+    "big_apple_convenience_store_medway",
+    "d_m_trailer_sales_medway",
+    "gilman_electrical_supply_medway",
+    "glad_tidings_church_of_god_medway",
+    "grandbelly_s_country_cafe_medway",
+    "katahdin_shadows_campground_medway",
+    "lennie_s_superette_medway",
+    "river_s_edge_motel_pizza_medway",
+    "abol_bridge_campground_store_millinocket",
+    "gather_inn_millinocket",
+    "h_r_block_millinocket",
+    "hillcrest_golf_club_millinocket",
+    "ice_fish_inn_millinocket",
+    "katahdin_chamber_of_commerce_millinocket",
+    "millinocket_army_navy_store_millinocket",
+    "millinocket_house_of_pizza_millinocket",
+    "realty_resources_management_millinocket",
+    "west_branch_aviation_millinocket",
+    "young_house_bed_breakfast_millinocket",
+    "back_wood_bbq_mount_chase",
+    "f_a_peabody_insurance_sherman",
+    "katahdin_valley_motel_sherman",
+    "monarda_calvary_baptist_church_sherman",
+    "salted_butter_farm_sherman",
+    "washburn_memorial_church_ucc_sherman",
+    "mike_s_elite_auto_shin_pond",
+    "mt_chase_lodge_shin_pond",
+    "shin_pond_village_shin_pond",
+    "skinner_s_wilderness_variety_store_shin_pond",
+    "banks_electric_burlington",
+    "burlington_baptist_church_burlington",
+    "burlington_general_store_burlington",
+    "j_m_kilby_engineering_burlington",
+    "maine_gas_refrigerators_burlington",
+    "chester_baptist_church_chester",
+    "furever_friends_doggie_daycare_chester",
+    "the_maine_land_store_treeline_chester",
+    "c_i_custom_builders_enfield",
+    "enfield_baptist_church_enfield",
+    "penobscot_river_realty_enfield",
+    "savage_line_llc_enfield",
+    "west_enfield_church_of_god_enfield",
+    "cardville_redemption_center_greenbush",
+    "cardville_united_pentecostal_church_greenbush",
+    "gsv_surveying_land_services_greenbush",
+    "michaud_woodcrafters_greenbush",
+    "northeast_concrete_specialists_greenbush",
+    "rick_lyford_trucking_inc_greenbush",
+    "ryan_s_carpet_cleaning_greenbush",
+    "howland_enfield_federal_credit_union_howland",
+    "christian_and_missionary_alliance_church_of_lee_lee",
+    "lee_baptist_church_lee",
+    "mallett_s_mill_inc_lee",
+    "marble_creek_acres_winery_cidery_lee",
+    "sleeping_bear_campground_cabins_lee",
+    "bible_baptist_church_of_lincoln_lincoln",
+    "briarwood_motor_inn_lincoln",
+    "charlie_s_seafood_market_lincoln",
+    "circle_k_lincoln_irving_mainway_lincoln",
+    "clay_funeral_home_lincoln",
+    "doc_s_place_lincoln",
+    "gatherings_for_the_home_lincoln",
+    "goldstar_cleaners_lincoln",
+    "health_access_network_boreas_family_medicine_lincoln",
+    "lincoln_house_of_pizza_lincoln",
+    "lincoln_regional_veterinary_hospital_lincoln",
+    "main_street_barber_shop_lincoln",
+    "ninja_express_japanese_steakhouse_lincoln",
+    "possibilities_gift_home_lincoln",
+    "simple_sentiments_lincoln",
+    "stewart_professional_learning_center_cowork_lincoln",
+    "taco_bell_lincoln",
+    "tangles_hair_studio_lincoln",
+    "united_country_lifestyle_properties_of_maine_lincoln",
+    "village_dry_cleaners_lincoln",
+    "eva_s_beauty_shoppe_mattawamkeag",
+    "markie_s_garage_mattawamkeag",
+    "markie_s_pizza_joint_mattawamkeag",
+    "mattawamkeag_baptist_church_mattawamkeag",
+    "pj_s_general_store_mattawamkeag",
+    "pinetree_pellet_fuels_llc_mattawamkeag",
+    "reflection_hair_salon_mattawamkeag",
+    "waggin_tails_pet_spa_mattawamkeag",
+    "wheeler_world_mattawamkeag",
+    "wyman_hardware_mattawamkeag",
+    "zion_pentecostal_church_mattawamkeag",
+    "grammy_anna_s_springfield",
+    "smith_s_general_store_springfield",
+    "springfield_fair_springfield",
+    "springfieldtyme_bed_breakfast_springfield",
+    "t_e_linscott_inc_springfield",
+    "wood_wires_guitar_shop_springfield",
+    "berry_land_take_out_winn",
+    "h_c_haynes_inc_winn",
+    "lakeville_shores_inc_winn",
+    "salmon_brook_grooming_winn",
+    "soucie_s_junk_yard_winn",
+    "williams_trucking_winn",
+    "winn_equipment_parts_inc_winn",
+    "winn_general_store_winn",
+    "winn_service_center_winn"
+  ]
+}

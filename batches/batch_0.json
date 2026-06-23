@@ -1,0 +1,874 @@
+[
+  {
+    "name": "Aroostook Valley Health Center",
+    "town": "Ashland",
+    "phone": "(207) 435-6341",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland 1-Stop (Citgo)",
+    "town": "Ashland",
+    "phone": "(207) 435-2202",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Building Supply",
+    "town": "Ashland",
+    "phone": "(207) 435-6386",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Community Center",
+    "town": "Ashland",
+    "phone": "(207) 435-6893",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Drug Store",
+    "town": "Ashland",
+    "phone": "(207) 435-6200",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Family Pharmacy",
+    "town": "Ashland",
+    "phone": "(207) 435-6200",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Food Mart",
+    "town": "Ashland",
+    "phone": "(207) 435-6451",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Health Center",
+    "town": "Ashland",
+    "phone": "(207) 435-6341",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Historical Society",
+    "town": "Ashland",
+    "phone": "(207) 435-6532",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Post Office",
+    "town": "Ashland",
+    "phone": "(207) 435-3321",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Public Library",
+    "town": "Ashland",
+    "phone": "(207) 435-6532",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Recreation",
+    "town": "Ashland",
+    "phone": "(207) 762-1882",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Schools",
+    "town": "Ashland",
+    "phone": "(207) 435-3481",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland Town Office",
+    "town": "Ashland",
+    "phone": "(207) 435-3211",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ashland's Diner",
+    "town": "Ashland",
+    "phone": "(207) 435-8240",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "CARQUEST Auto Parts",
+    "town": "Ashland",
+    "phone": "(207) 435-6940",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Daigle Oil Co",
+    "town": "Ashland",
+    "phone": "(207) 435-8251",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Family Dollar",
+    "town": "Ashland",
+    "phone": "(207) 544-7813",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Freem's Bar And Grill",
+    "town": "Ashland",
+    "phone": "(207) 435-7113",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gateway Variety",
+    "town": "Ashland",
+    "phone": "(207) 435-6890",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Trust Company",
+    "town": "Ashland",
+    "phone": "(207) 764-8000",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Northeast Pellets",
+    "town": "Ashland",
+    "phone": "(207) 435-6230",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northwoods Diner",
+    "town": "Ashland",
+    "phone": "(207) 435-2902",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Prentiss & Carlisle",
+    "town": "Ashland",
+    "phone": "(207) 435-6249",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Qwik Stop II",
+    "town": "Ashland",
+    "phone": "(207) 435-6595",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Stimson-Ouellette Funeral Home",
+    "town": "Ashland",
+    "phone": "(207) 435-6030",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "USPS Ashland Post Office",
+    "town": "Ashland",
+    "phone": "(207) 435-3321",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Acadia Medical Supply",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-1234",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bob's Service & Repair",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-3050",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Boondocks Grille",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-6074",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caldwell's Auto",
+    "town": "Fort Fairfield",
+    "phone": "(207) 473-7269",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Canterbury Royale Gourmet",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-4910",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "County Bluegrass Festival",
+    "town": "Fort Fairfield",
+    "phone": "(207) 227-6242",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Curtis Auto Airplane Repair & Sales Inc",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-3500",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Family Haircuts By Lisa at Jack's Barbershop",
+    "town": "Fort Fairfield",
+    "phone": "(207) 496-9001",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Fields Realty LLC",
+    "town": "Fort Fairfield",
+    "phone": "(207) 551-5835",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Fort Fairfield Dental Center",
+    "town": "Fort Fairfield",
+    "phone": "(207) 473-7723",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Fort Fairfield Hardware",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-3487",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Fort Fairfield Public Library",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-3880",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Fort Fairfield Town Office",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-3800",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Fort Fairfield Utilities District",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-1391",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Freshies Fort Fairfield",
+    "town": "Fort Fairfield",
+    "phone": "(207) 473-7472",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Giggey's Auto Repair",
+    "town": "Fort Fairfield",
+    "phone": "(207) 473-7269",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hillside IGA",
+    "town": "Fort Fairfield",
+    "phone": "(207) 473-7942",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "I Care Pharmacy",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-1302",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Logan's Service and Repair",
+    "town": "Fort Fairfield",
+    "phone": "(207) 492-9202",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "One Of A Kind",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-6076",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "R & J Market",
+    "town": "Fort Fairfield",
+    "phone": "(207) 473-7788",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rite Aid Pharmacy",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-1191",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rogers Auto Repair",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-1390",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Shell Gas Station",
+    "town": "Fort Fairfield",
+    "phone": "(207) 473-7472",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sisters Bakery & Coffee Shoppe",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-1888",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The County Federal Credit Union",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-5710",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Turner Sanitation",
+    "town": "Fort Fairfield",
+    "phone": "(207) 476-5095",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Village Restaurant",
+    "town": "Fort Fairfield",
+    "phone": "(207) 472-6074",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mapleton Diner",
+    "town": "Mapleton",
+    "phone": "(207) 764-0056",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mapleton Fire Department",
+    "town": "Mapleton",
+    "phone": "(207) 760-8001",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mapleton General Store",
+    "town": "Mapleton",
+    "phone": "(207) 764-8547",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mapleton Oil Co",
+    "town": "Mapleton",
+    "phone": "(207) 764-6039",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mapleton One Stop",
+    "town": "Mapleton",
+    "phone": "(207) 764-8547",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mapleton Post Office",
+    "town": "Mapleton",
+    "phone": "(207) 764-5677",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mapleton Town Office",
+    "town": "Mapleton",
+    "phone": "(207) 764-3754",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mapleton United Baptist Church",
+    "town": "Mapleton",
+    "phone": "(207) 764-6034",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mastro Motors Inc",
+    "town": "Mapleton",
+    "phone": "(207) 769-2201",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "USPS Mapleton Post Office",
+    "town": "Mapleton",
+    "phone": "(207) 764-5677",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "A & M Auto Repair",
+    "town": "Mars Hill",
+    "phone": "(207) 429-9140",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Al's Diner",
+    "town": "Mars Hill",
+    "phone": "(207) 429-8186",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "All-Star Gymnastics",
+    "town": "Mars Hill",
+    "phone": "(207) 429-8021",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook Health Center",
+    "town": "Mars Hill",
+    "phone": "(207) 768-4915",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bear Paw Inn",
+    "town": "Mars Hill",
+    "phone": "(207) 425-6241",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Big Rock Ski Area",
+    "town": "Mars Hill",
+    "phone": "(207) 425-6711",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "BigRock Mountain",
+    "town": "Mars Hill",
+    "phone": "(207) 425-6711",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Brewer Service",
+    "town": "Mars Hill",
+    "phone": "(207) 425-6521",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Central Aroostook Jr-Sr High School",
+    "town": "Mars Hill",
+    "phone": "(207) 425-2811",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Circle K / On the Run",
+    "town": "Mars Hill",
+    "phone": "(207) 429-9286",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dave's Auto & Truck Repair",
+    "town": "Mars Hill",
+    "phone": "(207) 429-8047",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Duncan Funeral Home",
+    "town": "Mars Hill",
+    "phone": "(207) 764-0625",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Family Dollar",
+    "town": "Mars Hill",
+    "phone": "(207) 613-5086",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Fort Street Elementary School",
+    "town": "Mars Hill",
+    "phone": "(207) 429-8514",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Freshies Mars Hill",
+    "town": "Mars Hill",
+    "phone": "(207) 429-9286",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hidden Country Treasures",
+    "town": "Mars Hill",
+    "phone": "(207) 425-2800",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Horizons Surgical Services",
+    "town": "Mars Hill",
+    "phone": "(207) 425-2392",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "M E Grass & Sons",
+    "town": "Mars Hill",
+    "phone": "(207) 425-5451",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mars Hill Country Club",
+    "town": "Mars Hill",
+    "phone": "(207) 425-4802",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mars Hill IGA",
+    "town": "Mars Hill",
+    "phone": "(207) 425-2411",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mars Hill Pharmacy",
+    "town": "Mars Hill",
+    "phone": "(207) 425-4431",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mars Hill Pharmacy Inc",
+    "town": "Mars Hill",
+    "phone": "(207) 425-4431",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mars Hill Town Office",
+    "town": "Mars Hill",
+    "phone": "(207) 425-3731",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "McClay's Tax Service",
+    "town": "Mars Hill",
+    "phone": "(207) 429-8540",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mike's Auto Sales and Service",
+    "town": "Mars Hill",
+    "phone": "(207) 764-8009",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "My Sunset Cabins",
+    "town": "Mars Hill",
+    "phone": "(207) 227-5024",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "New Beginning Auto Body",
+    "town": "Mars Hill",
+    "phone": "(207) 429-9810",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pineland Farms Potato Company Inc",
+    "town": "Mars Hill",
+    "phone": "(207) 429-8126",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Therapy Shoppe LLC",
+    "town": "Mars Hill",
+    "phone": "(207) 227-2677",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Timberwolves Restaurant",
+    "town": "Mars Hill",
+    "phone": "(207) 425-1056",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "US Post Office - Mars Hill",
+    "town": "Mars Hill",
+    "phone": "(207) 429-9177",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Walter T.A. Hansen Memorial Library",
+    "town": "Mars Hill",
+    "phone": "(207) 429-9625",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "A Vie",
+    "town": "Presque Isle",
+    "phone": "(207) 764-4837",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Academy Dental",
+    "town": "Presque Isle",
+    "phone": "(207) 764-3764",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ace Hardware - Maine Potato Growers Inc",
+    "town": "Presque Isle",
+    "phone": "(207) 764-2471",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Advance Auto Parts",
+    "town": "Presque Isle",
+    "phone": "(207) 760-0541",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Airport Cafe & Gifts",
+    "town": "Presque Isle",
+    "phone": "(207) 764-5403",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Amy's Flowers",
+    "town": "Presque Isle",
+    "phone": "(207) 769-2697",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Arby's",
+    "town": "Presque Isle",
+    "phone": "(207) 764-5172",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook County Federal Savings and Loan",
+    "town": "Presque Isle",
+    "phone": "(207) 764-6591",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook County Fitness",
+    "town": "Presque Isle",
+    "phone": "(207) 768-0378",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook Door & Window",
+    "town": "Presque Isle",
+    "phone": "(207) 760-8152",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook Mall",
+    "town": "Presque Isle",
+    "phone": "(207) 764-2616",
+    "region": "presque_isle_area",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook Monuments",
+    "town": "Presque Isle",
+    "phone": "(207) 764-3121",
+    "region": "presque_isle_area",
+    "has_email": false,
+    "has_website": false
+  }
+]

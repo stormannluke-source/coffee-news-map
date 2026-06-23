@@ -1,0 +1,656 @@
+[
+  {
+    "name": "Sewall House Yoga Retreat",
+    "town": "Island Falls",
+    "website": "https://sewallhouse.com/",
+    "email": ""
+  },
+  {
+    "name": "The Wood Shop",
+    "town": "Island Falls",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Va-Jo-Wa Golf Course",
+    "town": "Island Falls",
+    "website": "https://www.vajowa-golf-course.com/",
+    "email": ""
+  },
+  {
+    "name": "Aurora Mills and Farm",
+    "town": "Linneus",
+    "website": "https://auroramillsandfarm.com/",
+    "email": "auroramills@pwless.net"
+  },
+  {
+    "name": "Brown's Appliance Service",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Canine Equine Inn",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Clark's Auto Sales",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Clark's Variety",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "County Home Improvements",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "D & S Self Service Storage",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Ferris Qwik Stop (Linneus Corner Store)",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Fox Hollow Photography",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Hagan Farms",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Harry's Used Sales",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "JSL Metal Recycling",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Katahdin's Shadow Outfitters",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Nature's Circle Farm",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Plisga & Day - Surveys",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Rockwater Cabins",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Stf Forest Products",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Sunnyside Family Farm",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Wood Works & Rocks of Maine",
+    "town": "Linneus",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Dana Foster & Sons Trucking",
+    "town": "Littleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Golding Construction",
+    "town": "Littleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Henderson Helping Hand Massage",
+    "town": "Littleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Houlton Band of Maliseet Indians",
+    "town": "Littleton",
+    "website": "https://maliseets.net/",
+    "email": ""
+  },
+  {
+    "name": "Littleton Service (Auto Body/Repair)",
+    "town": "Littleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Perrin Realty Inc",
+    "town": "Littleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Shady Ridge Disc Golf",
+    "town": "Littleton",
+    "website": "https://shadyridgediscgolf.com/",
+    "email": "ShadyRidge@pm.me"
+  },
+  {
+    "name": "Southern Aroostook Agricultural Museum",
+    "town": "Littleton",
+    "website": "https://southernaroostookagriculturalmuseum.org/",
+    "email": "southernaroostookagmuseum@gmail.com"
+  },
+  {
+    "name": "Watson's Water Well Drilling",
+    "town": "Littleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Westerdahl Garage (Towing)",
+    "town": "Littleton",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Folsoms Custom Meat Cutting",
+    "town": "Monticello",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Good Farms Inc",
+    "town": "Monticello",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Monticello Country Store",
+    "town": "Monticello",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Transport Refrigeration Svc",
+    "town": "Monticello",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Bond Family Mercantile",
+    "town": "New Limerick",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Cameron's Market",
+    "town": "New Limerick",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Cochran Camp",
+    "town": "New Limerick",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Houlton Community Golf Course",
+    "town": "New Limerick",
+    "website": "https://houltongolf.com/",
+    "email": ""
+  },
+  {
+    "name": "Mini Music Shop (2nd location)",
+    "town": "New Limerick",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Nature's Circle Farm",
+    "town": "New Limerick",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "S H Nevers Inc (Logging)",
+    "town": "New Limerick",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Tall Timber Lodge",
+    "town": "New Limerick",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Tires Plus Total Car Care",
+    "town": "New Limerick",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Wayne's Auto Inc",
+    "town": "New Limerick",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Arborwall Solid Cedar Homes",
+    "town": "Oakfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Higgins Brook Cabins",
+    "town": "Oakfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Katahdin Cedar Log Homes / Katahdin Forest Products",
+    "town": "Oakfield",
+    "website": "https://www.katahdincedarloghomes.com/",
+    "email": ""
+  },
+  {
+    "name": "Katahdin Trust Company",
+    "town": "Oakfield",
+    "website": "https://katahdintrust.com/",
+    "email": ""
+  },
+  {
+    "name": "Knowles Corner ATV Club",
+    "town": "Oakfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Oakfield Railway Museum",
+    "town": "Oakfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Oakfield Thriftway",
+    "town": "Oakfield",
+    "website": "https://oakfield-thriftway.edan.io",
+    "email": ""
+  },
+  {
+    "name": "Whitey's Market",
+    "town": "Oakfield",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Autumn Bounty Farm",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Brookside Inn",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Currie Combs Stables",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Farm Fresh Feeds",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Kauffman Metals (Roofing)",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Lilley Dairy Farms",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Merri-Gold Greenhouse",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Moore Farms",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mt. Timoney Cycle Center",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Northeastern Rustic",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Pioneer Place (General Store)",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "RC Logging Supplies",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Spring Break Maple & Honey",
+    "town": "Smyrna",
+    "website": "https://mainemapleandhoney.com/",
+    "email": "info@mainemapleandhoney.com"
+  },
+  {
+    "name": "Sturdi-Built Storage Buildings",
+    "town": "Smyrna",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Crandall's Hardware",
+    "town": "East Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Davis Pharmacy",
+    "town": "East Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Eastmill Federal Credit Union",
+    "town": "East Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Ellis Family Market",
+    "town": "East Millinocket",
+    "website": "https://www.ellisfamilymarket.com/",
+    "email": "peter.ellis@hannaford.com"
+  },
+  {
+    "name": "Family Dollar",
+    "town": "East Millinocket",
+    "website": "https://www.familydollar.com/",
+    "email": ""
+  },
+  {
+    "name": "Gail's Gentle Grooming",
+    "town": "East Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Hamlet Pub",
+    "town": "East Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "NAPA Auto Parts",
+    "town": "East Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Posh Salon",
+    "town": "East Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Rick's Market",
+    "town": "East Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "83 North Bar Grill & Billiards",
+    "town": "Medway",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Circle K / Medway Irving Big Stop",
+    "town": "Medway",
+    "website": "https://circlek.com/",
+    "email": ""
+  },
+  {
+    "name": "D & M Trailer Sales",
+    "town": "Medway",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Gilman Electrical Supply",
+    "town": "Medway",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Grandbelly's Country Cafe",
+    "town": "Medway",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Katahdin Shadows Campground",
+    "town": "Medway",
+    "website": "https://katahdinshadows.com/",
+    "email": ""
+  },
+  {
+    "name": "Lennie's Superette",
+    "town": "Medway",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Noah's Ark Food & Ice Cream",
+    "town": "Medway",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "River's Edge Motel & Pizza",
+    "town": "Medway",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Two Rivers Canoe & Tackle",
+    "town": "Medway",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "100 Mile Wilderness Inn",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Advance Auto Parts",
+    "town": "Millinocket",
+    "website": "https://www.advanceautoparts.com/",
+    "email": ""
+  },
+  {
+    "name": "Angelos Pizza Grille",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Appalachian Trail Cafe",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Appalachian Trail Lodge",
+    "town": "Millinocket",
+    "website": "https://appalachiantrailhostel.com/",
+    "email": "info@appalachiantrailhostel.com"
+  },
+  {
+    "name": "Bangor Savings Bank",
+    "town": "Millinocket",
+    "website": "https://www.bangor.com/",
+    "email": ""
+  },
+  {
+    "name": "Baxter Park Inn",
+    "town": "Millinocket",
+    "website": "https://baxterparkinn.com/",
+    "email": ""
+  },
+  {
+    "name": "Blue Ox Saloon",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Bragdon Energy Svc",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Campbells Service Ctr",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Circle K / Dunkin'",
+    "town": "Millinocket",
+    "website": "https://circlek.com/",
+    "email": ""
+  },
+  {
+    "name": "Corner Car Wash",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Dave's Garage",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Dead River Co",
+    "town": "Millinocket",
+    "website": "https://www.deadriver.com/",
+    "email": ""
+  },
+  {
+    "name": "Designlab",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Don Howard Insurance",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Dunkin' Donuts",
+    "town": "Millinocket",
+    "website": "https://www.dunkindonuts.com/",
+    "email": ""
+  },
+  {
+    "name": "Family Dollar Store",
+    "town": "Millinocket",
+    "website": "https://www.familydollar.com/",
+    "email": ""
+  },
+  {
+    "name": "Gather Inn",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Gracies Aunts Closet",
+    "town": "Millinocket",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "H&R Block",
+    "town": "Millinocket",
+    "website": "https://www.hrblock.com/",
+    "email": ""
+  }
+]

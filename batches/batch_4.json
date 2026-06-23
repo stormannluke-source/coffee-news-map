@@ -1,0 +1,874 @@
+[
+  {
+    "name": "Cary Library",
+    "town": "Houlton",
+    "phone": "(207) 532-1302",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Chadwick Florist & Greenhouses",
+    "town": "Houlton",
+    "phone": "(207) 532-3520",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Circle K",
+    "town": "Houlton",
+    "phone": "(207) 532-3131",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Clark's Auto Sales",
+    "town": "Houlton",
+    "phone": "(207) 532-4009",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Clukey's Auto Supply",
+    "town": "Houlton",
+    "phone": "(207) 532-7457",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Cole's Shoe Store & Shoe Service Inc.",
+    "town": "Houlton",
+    "phone": "(207) 532-2658",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Country North Gifts",
+    "town": "Houlton",
+    "phone": "(207) 532-7986",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "County Co-op and Farm Store",
+    "town": "Houlton",
+    "phone": "(207) 521-5284",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "County Federal Credit Union",
+    "town": "Houlton",
+    "phone": "(207) 532-0443",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "County Micro, Inc",
+    "town": "Houlton",
+    "phone": "(207) 532-0009",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "County Tractor of Houlton",
+    "town": "Houlton",
+    "phone": "(207) 532-9300",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "County Yankee Grocer",
+    "town": "Houlton",
+    "phone": "(207) 532-6310",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Crimps & Lites Salon",
+    "town": "Houlton",
+    "phone": "(207) 532-4465",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Daigle Oil Co.",
+    "town": "Houlton",
+    "phone": "(207) 532-2281",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Daniel's Florist",
+    "town": "Houlton",
+    "phone": "(207) 532-2041",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Davis, Gates & Alward CPA's",
+    "town": "Houlton",
+    "phone": "(207) 532-2722",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dead River Company",
+    "town": "Houlton",
+    "phone": "(207) 532-3520",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Divine Family Hair Studio",
+    "town": "Houlton",
+    "phone": "(207) 538-2292",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Doc's Place",
+    "town": "Houlton",
+    "phone": "(207) 532-4161",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dollar Tree",
+    "town": "Houlton",
+    "phone": "(207) 532-5150",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Duff Service Station",
+    "town": "Houlton",
+    "phone": "(207) 532-2061",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Dunn Funeral Home",
+    "town": "Houlton",
+    "phone": "(207) 532-7403",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Eastern Maine Electric Co-op",
+    "town": "Houlton",
+    "phone": "(207) 532-9821",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "F.A. Peabody",
+    "town": "Houlton",
+    "phone": "(207) 532-2211",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Family Dollar",
+    "town": "Houlton",
+    "phone": "(207) 532-2469",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "First Choice Realty",
+    "town": "Houlton",
+    "phone": "(207) 532-4037",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Gates Accounting",
+    "town": "Houlton",
+    "phone": "(207) 532-6686",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Good As New Thrift Shop",
+    "town": "Houlton",
+    "phone": "(207) 532-0632",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Goodrich's Jewelry",
+    "town": "Houlton",
+    "phone": "(207) 532-3047",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Greater Houlton Christian Academy",
+    "town": "Houlton",
+    "phone": "(207) 532-7676",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Greg's Garage",
+    "town": "Houlton",
+    "phone": "(207) 694-0505",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hair Works Studio",
+    "town": "Houlton",
+    "phone": "(207) 532-4247",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hannaford Supermarket",
+    "town": "Houlton",
+    "phone": "(207) 532-0665",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Harbison Plumbing & Heating",
+    "town": "Houlton",
+    "phone": "(207) 532-3939",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hatfield Realty Service, Inc.",
+    "town": "Houlton",
+    "phone": "(207) 532-3500",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Heart to Heart Gift Shop",
+    "town": "Houlton",
+    "phone": "(207) 532-3562",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hidden Spring Winery",
+    "town": "Houlton",
+    "phone": "(207) 532-0753",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Hogan Tire",
+    "town": "Houlton",
+    "phone": "(207) 532-9501",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Houlton Community Golf Club",
+    "town": "Houlton",
+    "phone": "(207) 532-2662",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Houlton Farms Dairy",
+    "town": "Houlton",
+    "phone": "(207) 532-8027",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Houlton Market Square Shopping Center",
+    "town": "Houlton",
+    "phone": "(207) 532-9107",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Houlton Powersports",
+    "town": "Houlton",
+    "phone": "(207) 532-4381",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Houlton Regional Hospital",
+    "town": "Houlton",
+    "phone": "(207) 532-2900",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Houlton Stamp, Coins & Antiques",
+    "town": "Houlton",
+    "phone": "(207) 227-2531",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Houlton Water Company",
+    "town": "Houlton",
+    "phone": "(207) 532-2259",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Hy-Grow Organics",
+    "town": "Houlton",
+    "phone": "(207) 521-5009",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ivey's Motor Lodge",
+    "town": "Houlton",
+    "phone": "(207) 532-4431",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "JEI Sports of Maine",
+    "town": "Houlton",
+    "phone": "(207) 532-1577",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Trust Co.",
+    "town": "Houlton",
+    "phone": "(207) 532-2241",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Label Shopper",
+    "town": "Houlton",
+    "phone": "(207) 532-1542",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Lincoln Agency LLC",
+    "town": "Houlton",
+    "phone": "(207) 532-9222",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Lisa's Hair Designs",
+    "town": "Houlton",
+    "phone": "(207) 532-4211",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Louisiana Pacific",
+    "town": "Houlton",
+    "phone": "(207) 532-9300",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "MACS Trading Post",
+    "town": "Houlton",
+    "phone": "(207) 532-9700",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Machias Savings Bank",
+    "town": "Houlton",
+    "phone": "(207) 532-7894",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Main Street Fitness Inc",
+    "town": "Houlton",
+    "phone": "(207) 532-2300",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Marden's",
+    "town": "Houlton",
+    "phone": "(207) 532-5700",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Market Square Housing/CC Realty Mgmt",
+    "town": "Houlton",
+    "phone": "(207) 532-9107",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mini Music Shop",
+    "town": "Houlton",
+    "phone": "(207) 532-4300",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Modern Beauty Salon",
+    "town": "Houlton",
+    "phone": "(207) 532-2001",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mooers Realty",
+    "town": "Houlton",
+    "phone": "(207) 532-7900",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "NAPA/Coastal Auto Parts",
+    "town": "Houlton",
+    "phone": "(207) 532-3871",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pioneer Broadband",
+    "town": "Houlton",
+    "phone": "(866) 335-1254",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Porter's Cash Fuel",
+    "town": "Houlton",
+    "phone": "(207) 532-7557",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Priority Auto Sales",
+    "town": "Houlton",
+    "phone": "(207) 532-7422",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Putnam House",
+    "town": "Houlton",
+    "phone": "(207) 532-2442",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rather-B-Quilting",
+    "town": "Houlton",
+    "phone": "(207) 532-9229",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "S.W. Collins",
+    "town": "Houlton",
+    "phone": "(207) 532-0864",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sadie's Bakery",
+    "town": "Houlton",
+    "phone": "(207) 532-7986",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sage Financial",
+    "town": "Houlton",
+    "phone": "(207) 532-0880",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Scottish Inn",
+    "town": "Houlton",
+    "phone": "(207) 532-1800",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sherwin Williams",
+    "town": "Houlton",
+    "phone": "(207) 532-4600",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Shiretown Coins",
+    "town": "Houlton",
+    "phone": "(207) 532-2647",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Shiretown Inn and Suites",
+    "town": "Houlton",
+    "phone": "(207) 532-4431",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Shiretown Stove & Outdoor Living",
+    "town": "Houlton",
+    "phone": "(207) 538-8899",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sleepy Hollow Bed & Breakfast",
+    "town": "Houlton",
+    "phone": "(207) 532-7493",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sloat's Machining & Fabrication",
+    "town": "Houlton",
+    "phone": "(207) 532-9271",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Smith Bros. Plumbing & Heating",
+    "town": "Houlton",
+    "phone": "(207) 532-9271",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Star Dust Motel",
+    "town": "Houlton",
+    "phone": "(207) 532-6700",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "State Farm Insurance",
+    "town": "Houlton",
+    "phone": "(207) 532-4211",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Steelstone Industries",
+    "town": "Houlton",
+    "phone": "(207) 532-2221",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Swallow Electric",
+    "town": "Houlton",
+    "phone": "(207) 532-2233",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Tate & Lyle",
+    "town": "Houlton",
+    "phone": "(207) 532-9311",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Temple Theater",
+    "town": "Houlton",
+    "phone": "(207) 532-2600",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "The Country Co-op and Farm Store",
+    "town": "Houlton",
+    "phone": "(207) 521-5284",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Thompson Oil Co",
+    "town": "Houlton",
+    "phone": "(207) 532-0000",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Uncle Willy's Candy Shoppe",
+    "town": "Houlton",
+    "phone": "(207) 532-3640",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "United Construction & Forestry / United Ag & Turf",
+    "town": "Houlton",
+    "phone": "(207) 532-9300",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Varney Agency",
+    "town": "Houlton",
+    "phone": "(207) 532-7571",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Volumes Book Store",
+    "town": "Houlton",
+    "phone": "(207) 532-7727",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "WBCQ Radio",
+    "town": "Houlton",
+    "phone": "(207) 532-3600",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Wal-Mart #1974",
+    "town": "Houlton",
+    "phone": "(207) 532-6900",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ward Cedar Log Homes",
+    "town": "Houlton",
+    "phone": "(207) 532-6531",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Weston's Mobil",
+    "town": "Houlton",
+    "phone": "(207) 532-9566",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Wiggy's Trading Post",
+    "town": "Houlton",
+    "phone": "(207) 532-2189",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "York's of Houlton",
+    "town": "Houlton",
+    "phone": "(207) 532-6544",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Binotto's Farm Stand",
+    "town": "Island Falls",
+    "phone": "(207) 463-2851",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Birch Point Campground & Cottages",
+    "town": "Island Falls",
+    "phone": "(207) 463-2213",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Bishop's Market",
+    "town": "Island Falls",
+    "phone": "(207) 463-2301",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bowers Funeral Home",
+    "town": "Island Falls",
+    "phone": "(207) 532-3333",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Daigle Oil Co (Island Falls)",
+    "town": "Island Falls",
+    "phone": "(207) 463-2296",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Island Falls Animal Health Clinic",
+    "town": "Island Falls",
+    "phone": "(207) 463-2244",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Island Falls One Stop",
+    "town": "Island Falls",
+    "phone": "(207) 463-2232",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Jerry's Food Store / Jerry's Thriftway",
+    "town": "Island Falls",
+    "phone": "(207) 463-2828",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Federal Credit Union",
+    "town": "Island Falls",
+    "phone": "(207) 463-2251",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Trust Company",
+    "town": "Island Falls",
+    "phone": "(207) 463-2228",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Valley Health Center - Island Falls",
+    "town": "Island Falls",
+    "phone": "(207) 463-2244",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Northern Katahdin Valley Solid Waste",
+    "town": "Island Falls",
+    "phone": "(207) 757-8700",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Porter's Garage",
+    "town": "Island Falls",
+    "phone": "(207) 463-2255",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  }
+]

@@ -1,0 +1,656 @@
+[
+  {
+    "name": "Aroostook Trusses Inc",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "AutoZone",
+    "town": "Presque Isle",
+    "website": "https://www.autozone.com",
+    "email": ""
+  },
+  {
+    "name": "Big Cheese Pizza",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Bike Board and Ski",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Bowers Funeral Home and Cremation Services",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Burger King",
+    "town": "Presque Isle",
+    "website": "https://www.bk.com",
+    "email": ""
+  },
+  {
+    "name": "Cafe Desmoiselles",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Carney Family Beverage",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Carroll's Auto Sales (Chevrolet/GMC)",
+    "town": "Presque Isle",
+    "website": "https://www.carrollsautosales.com",
+    "email": ""
+  },
+  {
+    "name": "Chopsticks",
+    "town": "Presque Isle",
+    "website": "https://chopsticksva.com/",
+    "email": ""
+  },
+  {
+    "name": "Circle K Pizza & Deli",
+    "town": "Presque Isle",
+    "website": "https://www.circlek.com",
+    "email": ""
+  },
+  {
+    "name": "City Drug Store",
+    "town": "Presque Isle",
+    "website": "https://www.mygnp.com/pharmacies/city-drug-store-presque-isle-me-04769/",
+    "email": ""
+  },
+  {
+    "name": "Coffee News of Aroostook",
+    "town": "Presque Isle",
+    "website": "https://www.coffeenewsofaroostook.com",
+    "email": ""
+  },
+  {
+    "name": "Cook Florist Inc",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Country Collectibles",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Domino's Pizza",
+    "town": "Presque Isle",
+    "website": "https://www.dominos.com",
+    "email": ""
+  },
+  {
+    "name": "Duncan-Graves Funeral Home",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Dunkin'",
+    "town": "Presque Isle",
+    "website": "https://www.dunkindonuts.com",
+    "email": ""
+  },
+  {
+    "name": "Fastenal Company",
+    "town": "Presque Isle",
+    "website": "https://www.fastenal.com",
+    "email": ""
+  },
+  {
+    "name": "Freddy's Brew Pub",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Freshies Presque Isle",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Gary's Furniture & Appliance",
+    "town": "Presque Isle",
+    "website": "https://presque-isle-me.findstorenearme.us/garys-furniture-appliance/",
+    "email": ""
+  },
+  {
+    "name": "Gentile Hall - UMPI",
+    "town": "Presque Isle",
+    "website": "https://www.umpi.edu/gentile-hall",
+    "email": ""
+  },
+  {
+    "name": "Gills Point S Tire & Auto (formerly Hogan Tire)",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Governor's Restaurant & Bakery",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Gram Russo's Italian Restaurant",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Graves' Shop 'n Save",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Griffeth Honda",
+    "town": "Presque Isle",
+    "website": "https://www.carfax.com/Reviews-Griffeth-Honda-Presque-Isle-ME_VDQJKXBFG1?msockid=35d8d119ab5c63a527a5c665aa2a6205",
+    "email": ""
+  },
+  {
+    "name": "Hampton Inn Presque Isle",
+    "town": "Presque Isle",
+    "website": "https://www.hilton.com",
+    "email": ""
+  },
+  {
+    "name": "Hedrich Vending",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Hotham's Veterinary Services",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Houlton Farms Dairy Bar",
+    "town": "Presque Isle",
+    "website": "https://www.houltonfarms.com",
+    "email": ""
+  },
+  {
+    "name": "Hub Coffee",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Irish Setter Pub",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Katahdin Trust Company",
+    "town": "Presque Isle",
+    "website": "https://www.katahdintrust.com",
+    "email": ""
+  },
+  {
+    "name": "KeyBank",
+    "town": "Presque Isle",
+    "website": "https://www.key.com",
+    "email": ""
+  },
+  {
+    "name": "Levasseur Dentistry",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Lowe's Home Improvement",
+    "town": "Presque Isle",
+    "website": "https://www.lowes.com",
+    "email": ""
+  },
+  {
+    "name": "Machias Savings Bank",
+    "town": "Presque Isle",
+    "website": "https://www.machiassavingsbank.com",
+    "email": ""
+  },
+  {
+    "name": "Mai Tai Restaurant",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Mainely Mexican",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "McCluskey's RV Center",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "McDonald's",
+    "town": "Presque Isle",
+    "website": "https://www.mcdonalds.com",
+    "email": ""
+  },
+  {
+    "name": "Mom and Me Pizzeria",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "NAPA Auto Parts - Coastal Auto Parts",
+    "town": "Presque Isle",
+    "website": "https://www.napaonline.com",
+    "email": ""
+  },
+  {
+    "name": "Norstate Federal Credit Union",
+    "town": "Presque Isle",
+    "website": "https://www.norstatefcu.org",
+    "email": ""
+  },
+  {
+    "name": "North Country Auto",
+    "town": "Presque Isle",
+    "website": "https://www.maineautomall.com/dealer/north-country-auto/",
+    "email": ""
+  },
+  {
+    "name": "Northern Light AR Gould Hospital",
+    "town": "Presque Isle",
+    "website": "https://northernlighthealth.org",
+    "email": ""
+  },
+  {
+    "name": "Northern Lights Motel",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Northern Maine Motors",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Oriental Pearl",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Overhead Door Co of Presque Isle",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Parkhurst Siding Pub",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Pat's Pizza of Presque Isle",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Pepsi Bottling Group",
+    "town": "Presque Isle",
+    "website": "https://www.pepsi.com",
+    "email": ""
+  },
+  {
+    "name": "Percy's Auto Sales Inc (Chrysler/Dodge/Jeep/Ram)",
+    "town": "Presque Isle",
+    "website": "https://percysauto.com",
+    "email": ""
+  },
+  {
+    "name": "Pine Village Inc",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Pizza Box",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Pizza Hut",
+    "town": "Presque Isle",
+    "website": "https://www.pizzahut.com",
+    "email": ""
+  },
+  {
+    "name": "Presque Isle Animal Hospital",
+    "town": "Presque Isle",
+    "website": "https://www.presqueisleanimalhospital.com",
+    "email": "piah@piah.biz"
+  },
+  {
+    "name": "Presque Isle Hotel",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Presque Isle Inn and Convention Center",
+    "town": "Presque Isle",
+    "website": "https://www.presqueisleinn.com",
+    "email": ""
+  },
+  {
+    "name": "Presque Isle International Airport",
+    "town": "Presque Isle",
+    "website": "https://www.presqueisleairport.com",
+    "email": ""
+  },
+  {
+    "name": "Presque Isle Memorial Works",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Presque Isle Pharmacy",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Presque Isle Rehab and Nursing Center",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Quiznos Sub",
+    "town": "Presque Isle",
+    "website": "https://www.quiznos.com",
+    "email": ""
+  },
+  {
+    "name": "Rathbun Lumber Company",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Riverside Inn Restaurant",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Rob's Pit Stop",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Rodney's at 436 Main",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Rosella's Pizzeria",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Ruby Tuesday",
+    "town": "Presque Isle",
+    "website": "https://www.rubytuesday.com",
+    "email": ""
+  },
+  {
+    "name": "S.W. Collins Co.",
+    "town": "Presque Isle",
+    "website": "https://www.swcollins.com",
+    "email": ""
+  },
+  {
+    "name": "Save A Lot",
+    "town": "Presque Isle",
+    "website": "https://www.savealot.com",
+    "email": ""
+  },
+  {
+    "name": "Shirley's & Harold's",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Shogun Japanese Restaurant",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "St. Apollonia Dental Clinic",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Star City IGA",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Steaks N' Stuff",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Subway",
+    "town": "Presque Isle",
+    "website": "https://www.subway.com",
+    "email": ""
+  },
+  {
+    "name": "SureStay By Best Western Presque Isle",
+    "town": "Presque Isle",
+    "website": "https://www.bestwestern.com",
+    "email": ""
+  },
+  {
+    "name": "TD Bank",
+    "town": "Presque Isle",
+    "website": "https://www.tdbank.com",
+    "email": ""
+  },
+  {
+    "name": "Taco Bell / KFC",
+    "town": "Presque Isle",
+    "website": "https://www.tacobell.com",
+    "email": ""
+  },
+  {
+    "name": "Teresa's Corner Cafe & Bakery",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "The County Glass Shop",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "The Kitchen & Bath Shop LLC",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "The Maple Pig",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "The Northeastland Hotel",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "The Sandwich Shop",
+    "town": "Presque Isle",
+    "website": "https://sandwich-shop.res-menu.net/",
+    "email": ""
+  },
+  {
+    "name": "The Sidewalk Cafe",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Theriault Equipment",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Tim Hortons",
+    "town": "Presque Isle",
+    "website": "https://www.timhortons.com",
+    "email": ""
+  },
+  {
+    "name": "TimeOut Sports Bar & Restaurant (Presque Isle Hotel)",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Tractor Supply",
+    "town": "Presque Isle",
+    "website": "https://www.tractorsupply.com",
+    "email": ""
+  },
+  {
+    "name": "University of Maine at Presque Isle (UMPI)",
+    "town": "Presque Isle",
+    "website": "https://www.umpi.edu",
+    "email": ""
+  },
+  {
+    "name": "VIP Tires & Service",
+    "town": "Presque Isle",
+    "website": "https://www.vipauto.com",
+    "email": ""
+  },
+  {
+    "name": "Vickie's Hometown Pizza",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Walgreens",
+    "town": "Presque Isle",
+    "website": "https://www.walgreens.com",
+    "email": ""
+  },
+  {
+    "name": "Walmart Pharmacy",
+    "town": "Presque Isle",
+    "website": "https://www.walmart.com",
+    "email": ""
+  },
+  {
+    "name": "Walmart Supercenter",
+    "town": "Presque Isle",
+    "website": "https://www.walmart.com",
+    "email": ""
+  },
+  {
+    "name": "White Smiles Family Dentistry",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Winnie's Restaurant & Dairy",
+    "town": "Presque Isle",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Cafe Sorpresso",
+    "town": "Washburn",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Country Farms Market",
+    "town": "Washburn",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Krispy Krunchy Chicken",
+    "town": "Washburn",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "USPS Washburn Post Office",
+    "town": "Washburn",
+    "website": "https://www.usps.com",
+    "email": ""
+  },
+  {
+    "name": "Washburn Coffee Shop",
+    "town": "Washburn",
+    "website": "",
+    "email": ""
+  },
+  {
+    "name": "Washburn Family Practice",
+    "town": "Washburn",
+    "website": "",
+    "email": ""
+  }
+]

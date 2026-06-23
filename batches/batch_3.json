@@ -1,0 +1,874 @@
+[
+  {
+    "name": "Ruska Coffee Company",
+    "town": "Caribou",
+    "phone": "(207) 493-1616",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "S.W. Collins Co.",
+    "town": "Caribou",
+    "phone": "(207) 496-6723",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Save-A-Lot",
+    "town": "Caribou",
+    "phone": "(207) 498-2600",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sean Duplessie - State Farm Insurance",
+    "town": "Caribou",
+    "phone": "(207) 493-3252",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Shell",
+    "town": "Caribou",
+    "phone": "(207) 496-8111",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sherwin-Williams Paint Store",
+    "town": "Caribou",
+    "phone": "(207) 493-3150",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sizzle & Slice Restaurant / Bar",
+    "town": "Caribou",
+    "phone": "(207) 496-3400",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Sleeper's Market",
+    "town": "Caribou",
+    "phone": "(207) 498-8181",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Subway",
+    "town": "Caribou",
+    "phone": "(207) 493-4520",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "TD Bank",
+    "town": "Caribou",
+    "phone": "(207) 498-2521",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The Caribou Theater",
+    "town": "Caribou",
+    "phone": "(207) 493-3013",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "The Cubby Thriftstore",
+    "town": "Caribou",
+    "phone": "(207) 760-7070",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The Pet Vet",
+    "town": "Caribou",
+    "phone": "(207) 498-2930",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Thomas Pelletier Attorney",
+    "town": "Caribou",
+    "phone": "(207) 498-6428",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Tim Hortons",
+    "town": "Caribou",
+    "phone": "(207) 493-7009",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Todd Collins Attorney",
+    "town": "Caribou",
+    "phone": "(207) 498-2557",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "US Post Office - Caribou",
+    "town": "Caribou",
+    "phone": "(207) 492-0080",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Valley Home Health Services",
+    "town": "Caribou",
+    "phone": "(207) 492-1149",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Works Of Heart",
+    "town": "Caribou",
+    "phone": "(207) 492-0860",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Wreaths by Natalie",
+    "town": "Caribou",
+    "phone": "(207) 496-0831",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook National Wildlife Refuge",
+    "town": "Limestone",
+    "phone": "(866) 724-0526",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Boulevard Graphix",
+    "town": "Limestone",
+    "phone": "(207) 325-2583",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bunker Inn",
+    "town": "Limestone",
+    "phone": "(207) 325-6072",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Caldwell Auto Parts & Towing",
+    "town": "Limestone",
+    "phone": "(207) 325-8802",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Cote Auto Repair Inc.",
+    "town": "Limestone",
+    "phone": "(207) 325-4757",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Cote's Auto Repair",
+    "town": "Limestone",
+    "phone": "(207) 325-4757",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "DFAS",
+    "town": "Limestone",
+    "phone": "(866) 724-0526",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Dollar General",
+    "town": "Limestone",
+    "phone": "(207) 543-4583",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Eagles Redemption Center",
+    "town": "Limestone",
+    "phone": "(207) 325-6146",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Grammie's Treasures",
+    "town": "Limestone",
+    "phone": "(207) 325-4965",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Home Town Fuels",
+    "town": "Limestone",
+    "phone": "(207) 325-4411",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Katahdin Trust Co.",
+    "town": "Limestone",
+    "phone": "(207) 325-4711",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Limestone Community School",
+    "town": "Limestone",
+    "phone": "(207) 325-4700",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Limestone Country Club",
+    "town": "Limestone",
+    "phone": "(207) 325-6158",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Limestone Development Foundation & Chamber of Commerce",
+    "town": "Limestone",
+    "phone": "(207) 325-4025",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Limestone Pack & Ship",
+    "town": "Limestone",
+    "phone": "(207) 325-6146",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Limestone Post Office",
+    "town": "Limestone",
+    "phone": "(207) 325-4709",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Limestone Public Library",
+    "town": "Limestone",
+    "phone": "(207) 325-4704",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Limestone Town Office",
+    "town": "Limestone",
+    "phone": "(207) 325-4700",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Loring Commerce Centre",
+    "town": "Limestone",
+    "phone": "(207) 328-7005",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Loring Development Authority",
+    "town": "Limestone",
+    "phone": "(207) 328-7000",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Loring Job Corps",
+    "town": "Limestone",
+    "phone": "(207) 328-4212",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Loring Job Corps Center",
+    "town": "Limestone",
+    "phone": "(207) 328-4212",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Loring Utilities Office",
+    "town": "Limestone",
+    "phone": "(207) 328-4119",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Maine School of Science and Mathematics",
+    "town": "Limestone",
+    "phone": "(207) 325-3303",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Manaus Books & Coffee",
+    "town": "Limestone",
+    "phone": "(207) 325-6146",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Manaus Books & Coffee Shop",
+    "town": "Limestone",
+    "phone": "(207) 325-6146",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Mike's Family Market",
+    "town": "Limestone",
+    "phone": "(207) 325-4767",
+    "region": "caribou_limestone",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "New England Kenworth",
+    "town": "Limestone",
+    "phone": "(207) 328-4600",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pines Health Services - Loring Health Center",
+    "town": "Limestone",
+    "phone": "(207) 328-4631",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pines Loring Health Center",
+    "town": "Limestone",
+    "phone": "(207) 328-4631",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Rendezvous Restaurant",
+    "town": "Limestone",
+    "phone": "(207) 328-7211",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Robert A. Frost Memorial Library",
+    "town": "Limestone",
+    "phone": "(207) 325-4706",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "SFE Manufacturing",
+    "town": "Limestone",
+    "phone": "(207) 496-9662",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "SFE Manufacturing Inc.",
+    "town": "Limestone",
+    "phone": "(207) 496-9662",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "St. Louis Church",
+    "town": "Limestone",
+    "phone": "(207) 325-4843",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "T and A Variety",
+    "town": "Limestone",
+    "phone": "(207) 325-4950",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "TRP Limestone",
+    "town": "Limestone",
+    "phone": "(207) 328-4600",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Talk of the Town Hair Salon",
+    "town": "Limestone",
+    "phone": "(207) 325-3440",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The Bunker Inn",
+    "town": "Limestone",
+    "phone": "(207) 325-6072",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Trombley Industries",
+    "town": "Limestone",
+    "phone": "(207) 328-4503",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "US Post Office - Limestone",
+    "town": "Limestone",
+    "phone": "(207) 325-4838",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "White As Snow Laundromat",
+    "town": "Limestone",
+    "phone": "(207) 325-4900",
+    "region": "caribou_limestone",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "#9 Lake Outfitters",
+    "town": "Bridgewater",
+    "phone": "(207) 429-9632",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "A&T Investments",
+    "town": "Bridgewater",
+    "phone": "(207) 425-2545",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Advantage Thermal",
+    "town": "Bridgewater",
+    "phone": "(207) 907-0522",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook Pentecostal Campground",
+    "town": "Bridgewater",
+    "phone": "(207) 429-9731",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Backridge Auto and Truck Repair",
+    "town": "Bridgewater",
+    "phone": "(207) 532-3369",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Boyd's Repair",
+    "town": "Bridgewater",
+    "phone": "(207) 429-8216",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bradbury Barrel Company",
+    "town": "Bridgewater",
+    "phone": "(207) 429-8141",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Bradbury Maple Farms",
+    "town": "Bridgewater",
+    "phone": "(207) 551-5227",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bradstreet Family Farm",
+    "town": "Bridgewater",
+    "phone": "(207) 429-8538",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bridgewater Mainway / Circle K / Foster's Bridgewater",
+    "town": "Bridgewater",
+    "phone": "(207) 425-2968",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "DeLong Builders",
+    "town": "Bridgewater",
+    "phone": "(207) 429-9223",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Halls New and Used",
+    "town": "Bridgewater",
+    "phone": "(207) 429-8500",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Hidden Meadow Farm",
+    "town": "Bridgewater",
+    "phone": "(207) 425-4050",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Icelandics North",
+    "town": "Bridgewater",
+    "phone": "(207) 425-7113",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "J & J Cedar Mill",
+    "town": "Bridgewater",
+    "phone": "(207) 425-7710",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "RH Foster (Foster's Bridgewater)",
+    "town": "Bridgewater",
+    "phone": "(207) 425-2740",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Ragtime Designs",
+    "town": "Bridgewater",
+    "phone": "(207) 425-4100",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Shaw's Oil",
+    "town": "Bridgewater",
+    "phone": "(207) 429-8888",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Smoldering Lake Outfitters",
+    "town": "Bridgewater",
+    "phone": "(207) 429-0910",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The Cooperage",
+    "town": "Bridgewater",
+    "phone": "(207) 425-4269",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "The Corner Store",
+    "town": "Bridgewater",
+    "phone": "(207) 429-8536",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Wood Prairie Farm",
+    "town": "Bridgewater",
+    "phone": "(207) 425-7741",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Benn Auto Sales Inc",
+    "town": "Hodgdon",
+    "phone": "(207) 532-3540",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Crown of Maine Taxidermy",
+    "town": "Hodgdon",
+    "phone": "(207) 532-0753",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Forticor Farms",
+    "town": "Hodgdon",
+    "phone": "(207) 532-9696",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Hidden Spring Winery",
+    "town": "Hodgdon",
+    "phone": "(207) 532-0753",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Pleasant View Tree Farm",
+    "town": "Hodgdon",
+    "phone": "(207) 532-4769",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Seiders Hill-Top Lanes",
+    "town": "Hodgdon",
+    "phone": "(207) 254-2133",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Seiders Variety & Redemption Center",
+    "town": "Hodgdon",
+    "phone": "(207) 532-3301",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "T & S Market",
+    "town": "Hodgdon",
+    "phone": "(207) 532-6672",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Treeland Farm",
+    "town": "Hodgdon",
+    "phone": "(207) 532-2018",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Wynes Trailside Popcorn",
+    "town": "Hodgdon",
+    "phone": "(207) 521-1339",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "38's Auto Service",
+    "town": "Houlton",
+    "phone": "(207) 532-2424",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "ACAP (Aroostook County Action Program)",
+    "town": "Houlton",
+    "phone": "(207) 532-4216",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Adalia North Hair Salon",
+    "town": "Houlton",
+    "phone": "(207) 254-2241",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Advance Auto Parts",
+    "town": "Houlton",
+    "phone": "(207) 532-1111",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Albert Fitzpatrick Trucking",
+    "town": "Houlton",
+    "phone": "(207) 532-6714",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook Auto Tech",
+    "town": "Houlton",
+    "phone": "(207) 532-2173",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook Milling Co. Inc.",
+    "town": "Houlton",
+    "phone": "(207) 532-6130",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Aroostook Produce Dist.",
+    "town": "Houlton",
+    "phone": "(207) 532-6886",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bam Truck Brokerage",
+    "town": "Houlton",
+    "phone": "(207) 532-4188",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Bangor Savings Bank",
+    "town": "Houlton",
+    "phone": "(207) 532-2203",
+    "region": "houlton_region",
+    "has_email": true,
+    "has_website": false
+  },
+  {
+    "name": "Bates Fuel",
+    "town": "Houlton",
+    "phone": "(207) 532-3520",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Betty Marie's Sweet Shop",
+    "town": "Houlton",
+    "phone": "(207) 521-5260",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Brass Anchor Barbershop",
+    "town": "Houlton",
+    "phone": "(207) 538-8197",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  },
+  {
+    "name": "Buildings Etc.",
+    "town": "Houlton",
+    "phone": "(207) 538-9000",
+    "region": "houlton_region",
+    "has_email": false,
+    "has_website": false
+  }
+]
