@@ -15,7 +15,7 @@ Business directory database for the **Coffee News of Aroostook**, a free weekly 
 - Google Geocoding API sweep: 962 ROOFTOP (84.3%), 177 road/town-level — cost $5.71
 - All data synced: 1141 entries, 1141 coordinates, 0 orphans
 - Cannabis dispensaries: 20
-- Suitable for ad placement: 861/1141 (75.5%)
+- Suitable for ad placement: 863/1141 (75.6%)
 - Circle K names normalized: 7 variants → consistent naming
 
 ---
@@ -174,7 +174,7 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 
 ## Completed Work
 
-- **1122 businesses** in directory, **843 suitable for ads** (75.1%), **18 cannabis dispensaries added**, **2 recovered** = 1142 total (3 duplicates removed → 1139 unique)
+- **1141 businesses** in directory, **863 (75.6%) suitable for ads**, **20 cannabis dispensaries**
 - **Full data accuracy audit** completed — 7 data corruption errors fixed (fabricated addresses, wrong phone numbers). Most notable: Bangor Savings Bank Howland (72 Billings Ln → 22 Main St), Daigle Oil (6 Norton Ln → 50 Bangor St), F.A. Peabody Insurance (1 Peabody Ave → 29 North St)
 - **28 town-only addresses** resolved — all have street addresses now
 - **Chain deep dive**: 13 missing chains added (Harbor Freight, Dollar Tree, Subway FF, Advance Auto FF, Dollar General FF/Washburn/Millinocket, NAPA Caribou, O'Reilly Houlton, Tractor Supply Houlton, Taco Bell/Family Dollar/Walgreens Lincoln). All 30+ towns checked systematically — 29 towns confirmed with zero missing chains
@@ -193,10 +193,12 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 - **3 missing addresses found**: Cigaret Shopper (64 North St, Houlton), Serendipitous Dragonfly (79 Main St, Houlton), Smith Bros. Plumbing & Heating (32 High St, Houlton) — all geocoded via Nominatim, all three now have building-level coordinates
 - **Map features**: Category filter, extended search (name/address/town/category), active filter badges with dismiss, category color dots in Browse list, suitable-for-ads default filter, notes/visits/routes (localStorage), export/import, reset button, console diagnostics
 - **Category SVG icons**: Markers now show category-specific SVG icons (building, cup, bag, heart, wrench, home, star) inside the colored circle
-- **Category SVG icons**: Markers now show category-specific SVG icons (building, cup, bag, heart, wrench, home, star) inside the colored circle
 - **Quick filter pills**: All · Food · Shopping · Health · Auto · Services · Lodging · Religion — pill buttons below header instantly filter by business type
-- **Voice search**: Microphone button in search bar uses Web Speech API (webkitSpeechRecognition). Shows listening indicator, populates search on result
+- **Voice search**: Microphone button in search bar uses Web Speech API (webkitSpeechRecognition). Shows listening indicator, populates search on result. Pressing 🎤 while listening stops recording. `rec.stop()` called on result + 10s safety timeout prevents mic from staying on indefinitely
 - **Auto-geolocate**: On page load, checks `navigator.permissions` — if geolocation was previously granted, auto-locates and adds user marker without user action
+- **Route planner upgrades**: "📍 Navigate" button launches native maps in turn-by-turn navigation mode — Apple Maps `dirflg=d` (iOS), Google Maps `dir_action=navigate` (Android) — with all stops as waypoints. Per-stop driving distances/times from OSRM shown inline in route list (falls back to Haversine straight-line before optimization). "🔊 Announce" button reads full route aloud via Web Speech API (stop names, distances, drive times, addresses).
+- **OSRM bug fix**: `coordsStr` variable was undefined in `optimizeRoute()` — OSRM calls silently failed. Added missing coordinate string construction.
+- **Voice search mic safety**: Added `rec.stop()` on result + 10s `AbortController`-style safety timeout so microphone never stays on indefinitely.
 - **Smart default zoom**: Initial zoom increased to 9 (from 8), plus `fitBounds` on first data load for tighter auto-fit
 - **Smooth bottom sheet**: GPU-accelerated `transform: translateY()` instead of `height` for 60fps on iOS/Android. Real-time finger-following during swipe with rubber-band resistance. Computes target position dynamically from CSS classes — works on all screen sizes.
 - **Data sanity audit**: Systematic check of all 1142 entries. Fixed 5 corrupted emails (phone/data fused into email fields), 2 wrong ZIP codes, removed 3 duplicates (BigRock Mountain/Old Post Cafe/Clark's Auto Sales Linneus), renamed Howland-Enfield FCU → The County FCU - Howland (5 years out of date), updated Handy Stop address to 2 Coffin St
@@ -211,7 +213,7 @@ python3 -m http.server 8000        # then visit http://localhost:8000
 ## Remaining Work
 
 1. **5 businesses missing phone numbers** (web search exhaustive): Dollar General Fort Fairfield (non-207 number rejected), Lowell Baptist Church, Bittersweet Thyme, Bittersweet Thyme Cafe, Anciently Marked Tattoo Art Studio. Resolvable only by phone call or in-person visit.
-2. **Email research**: 234/1139 (20.5%). Further improvement requires phone calls.
+2. **Email research**: 197/1141 (17.3%). Further improvement requires phone calls.
 3. **Website research**: 587/1141 (51.4%). Remaining ~554 likely don't maintain a web presence.
 4. **Wendy's Houlton**: Permitted Jul 2025, not yet open as of Jun 2026. Monitor periodically.
 5. **363 road/town-level geocodes**: ~1-2km precision on rural routes. Most address queries already exhausted. ~92 of these are town-center fallbacks (~1-2km spread). Further precision requires manual coordinate placement.
